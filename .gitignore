@@ -1,0 +1,11 @@
+.DS_Store
+.ipynb_checkpoints/
+.env
+# Local test output. The shared cache lives in data/week01/serp_cache/ and IS tracked.
+/serp_cache/
+/notebooks/serp_cache/
+/notebooks/week01_results.csv
+# Raw exports contain identifiable usernames and links. Keep local; share only the processed CSVs in data/.
+/data/raw/
+# Answer keys. Do not publish before students finish the exercises.
+/instructor/
