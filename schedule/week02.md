@@ -59,7 +59,7 @@ Post a time check in the main chat at each boundary. Hints for Exercise 2 come f
 ## Homework (45 minutes or less)
 
 - Finish Exercise 5 on your own data.
-- Add to your project card: what could go wrong in my data, and how would I check?
+- Add to your project card (`project/designing_your_project.md`): what could go wrong in my data, and how would I check?
 
 ## Hand-off to Week 3
 

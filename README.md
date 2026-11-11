@@ -63,7 +63,7 @@ Week 1's coding session has **no debugging**. You run a working template, change
 ## What we expect
 
 - Attend both sessions each week and bring a laptop.
-- Bring a dataset or a plan for one, plus a rough research question.
+- Bring a dataset or a plan for one, plus a rough research question. [Designing your project](project/designing_your_project.md) helps you shape it into a main question and sub-questions.
 - Complete the short weekly notebook and keep your verification log.
 - In week 8, present a working pipeline on your own data.
 
@@ -74,6 +74,7 @@ This workshop is not for credit. There are no grades, but the weekly work builds
 ```
 README.md            this file
 schedule/            weekly plans (learning session and coding session)
+project/             guide and template for designing your project
 notebooks/           Colab-ready notebooks for each week
 data/                shared datasets (see data/README.md)
 scripts/             helpers that build the notebooks and datasets

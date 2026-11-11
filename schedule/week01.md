@@ -60,7 +60,7 @@ Five minutes max: read the last line of the error, re-read the step, ask the par
 ## Homework (45 minutes or less)
 
 - Run one search on a topic from your own research in two places and add the results to your CSV.
-- Add one line to your project card: what question could comparing search results across places help answer?
+- Draft your project card using `project/designing_your_project.md`: a case study, one main research question, and 2–3 sub-questions. Rough is fine.
 
 ## Hand-off to Week 2
 
