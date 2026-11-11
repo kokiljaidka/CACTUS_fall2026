@@ -1,6 +1,6 @@
 # CACTUS Fall 2026
 
-**Coding with AI for Communication and Culture Research**
+**CACTUS: Computational Analysis for Communication on Text, User-generated content, and Social networks**
 An 8-week hands-on Python series for graduate students working on AI, culture, social media, and related topics.
 
 National University of Singapore · Organizer: Dr. Kokil Jaidka (jaidka@nus.edu.sg)
