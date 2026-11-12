@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CACTUS Week 3: Verify and Analyze (presenter)</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#0e1814;color:#e4efe6;font-family:'Figtree',Arial,sans-serif}
+#view{position:fixed;inset:0 0 56px 0;overflow:hidden}
+.s{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%) scale(var(--k,.5));transform-origin:center;display:none;overflow:hidden;background:#fff}
+.s.on{display:block}
+.s section{width:1920px;height:1080px;position:relative;overflow:hidden}
+.s section *{margin:0}
+.s h1{font-size:96px;font-weight:600;line-height:1.1}
+.s h2{font-size:64px;font-weight:600;line-height:1.15}
+.s h3{font-size:44px;font-weight:600;line-height:1.2}
+.s p{font-size:32px;line-height:1.4}
+.s ul,.s ol{padding-left:1.2em}
+.s table{border-collapse:collapse;width:100%}
+.s th,.s td{padding:.35em .6em;text-align:left;border-bottom:1px solid #c6d1c4;vertical-align:top}
+.s th{font-weight:600}
+.s aside{display:none}
+#bar{position:fixed;left:0;right:0;bottom:0;height:56px;display:flex;align-items:center;justify-content:center;gap:16px;background:#14241c;border-top:1px solid #2b4036;font-size:16px}
+#bar button{font:inherit;color:#e4efe6;background:#23382e;border:1px solid #2b4036;border-radius:8px;padding:6px 16px;cursor:pointer}
+#bar button:disabled{opacity:.4;cursor:default}
+#bar a{color:#9fd0b0}
+#ct{min-width:70px;text-align:center;font-variant-numeric:tabular-nums}
+@page{size:1920px 1080px;margin:0}
+@media print{
+ html,body{background:#fff;height:auto}
+ #view{position:static;overflow:visible}
+ #bar{display:none}
+ .s{display:block!important;position:relative;left:0;top:0;transform:none;break-after:page;page-break-after:always}
+}
+
+#view{right:360px}
+#notes{position:fixed;top:0;right:0;bottom:56px;width:360px;overflow:auto;padding:16px 18px;background:#14241c;border-left:1px solid #2b4036;font-size:15px;line-height:1.5}
+#notes p{margin:0 0 10px}
+#notes b{color:#e8b13a}
+body.nonotes #notes{display:none}
+body.nonotes #view{right:0}
+@media (max-width:900px){#notes{display:none}#view{right:0}}
+@media print{#notes{display:none}}
+</style></head><body><div id="view"><div class="s"><section id="cover" data-transition="fade" style="background:#14241C;color:#E4EFE6;font-family:'Figtree', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-size:28px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#E8B13A">CACTUS Fall 2026 · Week 3 · Learning session</p>
+<div style="display:flex;flex-direction:column;gap:32px">
+<h1 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:132px;font-weight:700;line-height:1.05;color:#F2F7F3">Verify and analyze</h1>
+<p style="font-size:40px;line-height:1.35;color:#B9CCBF;width:1300px">A number can be computed correctly and still be wrong for the question. Today you learn to test it.</p>
+</div>
+<p style="font-size:28px;color:#B9CCBF">Kokil Jaidka · National University of Singapore</p>
+
+</section></div><div class="s"><section id="idea" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">The idea</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Last week we checked cleaning. This week we check statistics.</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">Cleaning code</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Loses rows or changes values. A row count can reveal it.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">Statistics code</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Gives one number that looks fine. Nothing on the screen tells you it is wrong.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:2px solid #237A4B;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">So we test it</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Against an answer we already know.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="claims" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Concept</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">What an estimate claims</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">A difference in means</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">The average of one group minus the average of the other.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">A regression coefficient</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">With one yes-or-no predictor, the same difference, plus a standard way to say how uncertain it is.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">An interval</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">A range that shows how much the estimate would move if we ran the study again.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px">Today's example, made up: a platform adds an “AI-generated” label to some posts. Does it change how likely people say they are to share them?</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="demo" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Live demo 1</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">One simulated study, with a known answer</h2>
+<div style="background:#14241C;color:#E4EFE6;border-radius:16px;padding:32px 44px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.6">
+d = simulate(100, true_effect=-0.6)<br>est, lo, hi = estimate(d)
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;background:#F8FAF7;border:2px solid #237A4B;border-radius:14px;padding:24px 28px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:600;color:#237A4B">True effect</p>
+<p style="font-size:56px;font-weight:700;font-family:'Bricolage Grotesque', Georgia, serif">−0.6</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:14px;padding:24px 28px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:600;color:#4F6057">Your estimate</p>
+<p style="font-size:56px;font-weight:700;font-family:'Bricolage Grotesque', Georgia, serif;color:#4F6057">?</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:14px;padding:24px 28px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:600;color:#4F6057">Interval</p>
+<p style="font-size:56px;font-weight:700;font-family:'Bricolage Grotesque', Georgia, serif;color:#4F6057">? to ?</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px"><b>Predict first:</b> will the estimate be close to −0.6? Will it be exactly −0.6?</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="noise" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:96px 128px 160px;display:flex;flex-direction:column;gap:24px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Noise and sample size</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:64px;font-weight:700;line-height:1.1">Run it again, and the estimate moves</h2>
+<svg viewBox="0 0 1664 516" width="1664" height="516" aria-label="Twenty simulated studies. Each line is the interval from one study. Nineteen cross the vertical green line at the true effect of minus 0.6; one does not."><rect x="0" y="0" width="1664" height="516" fill="#F8FAF7"/><line x1="907.6" y1="0" x2="907.6" y2="516" stroke="#9AA9A0" stroke-width="2" stroke-dasharray="6 6"/><line x1="680.7" y1="0" x2="680.7" y2="516" stroke="#237A4B" stroke-width="4"/><line x1="791.6" y1="18" x2="1322.3" y2="18" stroke="#C2571A" stroke-width="6" stroke-linecap="round"/><circle cx="1057.0" cy="18" r="8" fill="#C2571A"/><line x1="359.4" y1="43" x2="986.7" y2="43" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="673.1" cy="43" r="8" fill="#237A4B"/><line x1="313.1" y1="68" x2="898.9" y2="68" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="606.0" cy="68" r="8" fill="#237A4B"/><line x1="364.0" y1="93" x2="910.4" y2="93" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="637.2" cy="93" r="8" fill="#237A4B"/><line x1="355.7" y1="118" x2="955.7" y2="118" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="655.7" cy="118" r="8" fill="#237A4B"/><line x1="499.9" y1="143" x2="1067.9" y2="143" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="783.9" cy="143" r="8" fill="#237A4B"/><line x1="281.8" y1="168" x2="850.9" y2="168" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="566.3" cy="168" r="8" fill="#237A4B"/><line x1="507.5" y1="193" x2="1100.0" y2="193" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="803.8" cy="193" r="8" fill="#237A4B"/><line x1="408.4" y1="218" x2="1043.8" y2="218" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="726.1" cy="218" r="8" fill="#237A4B"/><line x1="169.7" y1="243" x2="865.8" y2="243" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="517.8" cy="243" r="8" fill="#237A4B"/><line x1="342.6" y1="268" x2="955.1" y2="268" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="648.8" cy="268" r="8" fill="#237A4B"/><line x1="406.7" y1="293" x2="1020.2" y2="293" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="713.5" cy="293" r="8" fill="#237A4B"/><line x1="473.6" y1="318" x2="1021.2" y2="318" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="747.4" cy="318" r="8" fill="#237A4B"/><line x1="466.0" y1="343" x2="1082.1" y2="343" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="774.1" cy="343" r="8" fill="#237A4B"/><line x1="413.6" y1="368" x2="1068.7" y2="368" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="741.2" cy="368" r="8" fill="#237A4B"/><line x1="234.6" y1="393" x2="839.7" y2="393" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="537.1" cy="393" r="8" fill="#237A4B"/><line x1="448.2" y1="418" x2="1085.6" y2="418" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="766.9" cy="418" r="8" fill="#237A4B"/><line x1="176.5" y1="443" x2="788.4" y2="443" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="482.4" cy="443" r="8" fill="#237A4B"/><line x1="557.5" y1="468" x2="1145.4" y2="468" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="851.5" cy="468" r="8" fill="#237A4B"/><line x1="222.9" y1="493" x2="824.1" y2="493" stroke="#237A4B" stroke-width="6" stroke-linecap="round"/><circle cx="523.5" cy="493" r="8" fill="#237A4B"/></svg>
+<p style="font-size:28px;line-height:1.4;width:1664px">Twenty studies of 100 people each, with the same true effect of −0.6 (solid green line; dashed line is zero). Each line is one study's interval. <b>Orange is an interval that misses the truth.</b></p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="interval" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Concept</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">What an interval says, and what it does not</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:2px solid #237A4B;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">It says</h3>
+<p style="font-size:30px;line-height:1.4;color:#15251D">If we ran the study many times, about 95 of 100 intervals built this way would contain the true effect.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:38px;font-weight:600">It does not say</h3>
+<p style="font-size:30px;line-height:1.4;color:#15251D">That the true effect has a 95% chance of being inside this one interval. Or that a result below .05 is a verdict.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px">A wider interval means more uncertainty. A bigger sample makes it narrower.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="confounder" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Concept</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">A confounder can flip the answer</h2>
+<div style="display:flex;gap:20px;align-items:stretch">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;color:#237A4B">Example</p>
+<p style="font-size:32px;line-height:1.3">Students who attend tutoring score <b>lower</b> than students who do not.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;color:#C2571A">The confounder</p>
+<p style="font-size:32px;line-height:1.3">Students who were already struggling are more likely to attend tutoring.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;color:#237A4B">What it does</p>
+<p style="font-size:32px;line-height:1.3">The comparison mixes the effect of tutoring with who chooses tutoring.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px"><b>An experiment</b> avoids this by deciding who gets the treatment by chance. <b>Survey or platform data</b> usually cannot. You will see this in the coding session.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="aicheck" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Live demo 2</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Check an AI’s answer against the truth</h2>
+<div style="background:#14241C;color:#E4EFE6;border-radius:16px;padding:32px 44px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5">
+Using this table, estimate the effect of the label on sharing intent and tell me what it shows. (paste columns and sample rows)
+</div>
+<div style="display:flex;gap:24px">
+<p style="flex:1;font-size:30px;line-height:1.35;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:14px;padding:24px 28px"><b>1.</b> Compare its number with the known effect, −0.6</p>
+<p style="flex:1;font-size:30px;line-height:1.35;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:14px;padding:24px 28px"><b>2.</b> Read what it says the result proves</p>
+<p style="flex:1;font-size:30px;line-height:1.35;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:14px;padding:24px 28px"><b>3.</b> Ask: what could I not tell from this answer?</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="overclaim" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Writing it up</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Over-claiming</h2>
+<table style="font-size:30px;color:#15251D">
+<tr><th style="width:46%;text-align:left">A claim you will see</th><th style="width:54%;text-align:left">What it needs</th></tr>
+<tr><td>“The label causes lower sharing.”</td><td>A design that supports a cause, such as random assignment</td></tr>
+<tr><td>“It is significant, so it is large.”</td><td>Look at the size of the estimate, not only at the p-value</td></tr>
+<tr><td>“No effect was found, so there is none.”</td><td>A small sample may be too noisy to tell</td></tr>
+<tr><td>“The AI said so.”</td><td>A check you ran yourself</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="github" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">A first look</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">A notebook belongs in a repository</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">History</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Every saved version is kept. You can see what changed.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Sharing</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">A link lets a supervisor or a co-author open exactly what you ran.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:2px solid #C2571A;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Never include</h3>
+<p style="font-size:30px;line-height:1.35;color:#15251D">Keys, passwords, or private data. Anything you commit may be visible.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px">You will do this in the coding session. Create a free GitHub account before then.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div><div class="s"><section id="next" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">What to do next</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Before the coding session</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Practice page</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Planted-effect lab, about 20 minutes. It ends with a small Colab task.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Required reading</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Textbook Chapter 8, sections 8.1 and 8.2, and Chapter 4, section 4.3.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Set up</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">A free GitHub account, and a working key or a clear plan for Week 4 data access.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px">In the coding session: simulate, recover the effect, find three bugs in AI code, and see a confounder flip an answer.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 3</p>
+
+</section></div></div><div id="notes"></div><div id="bar"><button id="pv" type="button">Previous</button><span id="ct"></span><button id="nx" type="button">Next</button><span>Press N to hide or show notes</span></div><script>var NOTES=["<p><b>TIME<\/b> 1 min (0:00)<\/p><p><b>SAY<\/b> Welcome back. Last week we checked cleaning. This week we check statistics, because a statistics result is one number that can look perfectly fine and still be wrong.<\/p><p><b>DO<\/b> Welcome people. Post the course site link. Ask who has made their GitHub account and who has started on data access (a show of hands or the chat).<\/p><p><b>NOTE<\/b> This is a 60-minute session. The live work is in the coding session.<\/p>", "<p><b>TIME<\/b> 4 min (0:01)<\/p><p><b>SAY<\/b> Cleaning mistakes usually show up as rows that vanish. Statistics mistakes show up as nothing. You get one number and no warning. So we use a trick: test the code on data where we already know the answer.<\/p><p><b>DO<\/b> Read the three cards. Say: today the answer we know is a number we plant ourselves.<\/p><p><b>WATCH FOR<\/b> People who feel statistics is not their area. Say: you do not need to calculate anything by hand. You need to know how to check.<\/p>", "<p><b>TIME<\/b> 5 min (0:05)<\/p><p><b>SAY<\/b> Three things an estimate can mean. A difference in means. A regression coefficient, which with one yes-or-no predictor is the same difference with a standard way to measure its uncertainty. And an interval.<\/p><p><b>DO<\/b> Introduce the made-up example: a platform adds an AI-generated label to some posts, and we ask whether it changes how likely people say they are to share. Say it is invented, so we can know the truth.<\/p><p><b>IF ASKED what a regression is<\/b> a straight-line summary. For two groups it is just the gap between their averages. Chapter 8 explains more.<\/p><p><b>WATCH FOR<\/b> Do not go into formulas.<\/p>", "<p><b>TIME<\/b> 8 min (0:10 to 0:18)<\/p><p><b>DO (live demo)<\/b> Open the Week 3 notebook, run the setup cell, then the simulate and estimate cells from the warm-up. Set the true effect to -0.6 and the sample to 100 per study. Before you run, ask the room to predict: close to -0.6? exactly -0.6?<\/p><p><b>SAY<\/b> The truth is -0.6. We will see what the code finds.<\/p><p><b>DO<\/b> Run it. Read the estimate and the interval aloud. Ask: does the interval contain the truth? Run it two or three more times and ask what changes.<\/p><p><b>SAY<\/b> The estimate is never exactly the truth. That is not a mistake. That is noise.<\/p><p><b>IF THE RUN IS ODD<\/b> say, good, that is exactly the point, and run again.<\/p>", "<p><b>TIME<\/b> 6 min (0:18 to 0:24)<\/p><p><b>SAY<\/b> Here are twenty studies of 100 people, all with the same true effect. Each line is one study&#x27;s interval. The green line is the truth. Nearly all intervals cross it. One does not.<\/p><p><b>DO<\/b> Ask the room: if we ran a hundred studies, about how many intervals would miss? (About five.) Then run the 100-study cell from the warm-up and show the count of intervals that contain the truth.<\/p><p><b>SAY<\/b> Make the sample bigger and the lines get shorter. Make it smaller and they scatter.<\/p><p><b>DO<\/b> Change the sample to 20, then to 1000, and run again. Do not explain why in detail; let them see it.<\/p><p><b>NOTE<\/b> The chart is a simulation made once for this slide, so a live run will differ slightly.<\/p>", "<p><b>TIME<\/b> 6 min (0:24 to 0:30)<\/p><p><b>SAY<\/b> What an interval says: if we repeated the study many times, about 95 of 100 intervals built this way would contain the true effect. What it does not say: that the true effect has a 95 percent chance of being inside this one interval. And a p-value below .05 is not a verdict.<\/p><p><b>DO<\/b> Read the two cards. Point back to the chart: one of the twenty missed. That is the 95 percent at work.<\/p><p><b>SAY<\/b> Wider means more uncertainty. A bigger sample makes it narrower.<\/p><p><b>IF ASKED about p-values<\/b> they are one way to summarize the same variation. We will not use .05 as a pass or fail line.<\/p><p><b>WATCH FOR<\/b> People who want a simple rule. Say: the rule is to report the estimate and its uncertainty in a sentence.<\/p>", "<p><b>TIME<\/b> 8 min (0:30 to 0:38)<\/p><p><b>SAY<\/b> Sometimes the comparison mixes two things together. Students who attend tutoring score lower. That does not mean tutoring hurts. Students who were already struggling are more likely to attend.<\/p><p><b>DO<\/b> Read the three cards. Ask the room for one example from their own field where who gets exposed is not random.<\/p><p><b>SAY<\/b> An experiment avoids this by deciding who gets the treatment by chance. Survey or platform data usually cannot.<\/p><p><b>SAY<\/b> In the coding session you will see a case where the naive comparison points the wrong way.<\/p><p><b>NOTE<\/b> Do not show the survey results from the notebook here. Students predict and compute them in Exercise 3.<\/p>", "<p><b>TIME<\/b> 8 min (0:38 to 0:46)<\/p><p><b>DO (live demo)<\/b> Open the experiment data in the notebook, paste the column names and first three rows into an AI chat with the prompt on the slide, and let it answer. Read its code and its conclusion aloud.<\/p><p><b>SAY<\/b> Step one: compare its number with the known effect, which is -0.6. Step two: read what it says the result proves. Step three: ask what you could not tell from this answer.<\/p><p><b>DO<\/b> Ask the room whether the AI&#x27;s number is plausible given what we know. If it used a method you did not expect, ask them what it assumed.<\/p><p><b>WATCH FOR<\/b> Do not turn this into the bug hunt. The planted bugs are in the coding session. If the AI happens to make a mistake, use it; if it is right, say good, and note that it is still only one run.<\/p>", "<p><b>TIME<\/b> 4 min (0:46 to 0:50)<\/p><p><b>SAY<\/b> Four claims you will see in papers and in AI answers. The label causes lower sharing: that needs a design that supports a cause. It is significant, so it is large: significance is not size. No effect was found, so there is none: a small sample may be too noisy. The AI said so: you need your own check.<\/p><p><b>DO<\/b> Read the table. Ask which one they have seen recently.<\/p><p><b>SAY<\/b> When you write up a result, say what the estimate is, how uncertain it is, and what design it came from.<\/p>", "<p><b>TIME<\/b> 3 min (0:50 to 0:53)<\/p><p><b>SAY<\/b> In the coding session you put your notebook on GitHub. A repository keeps history, lets someone open exactly what you ran, and is safe only if no keys or private data are in it.<\/p><p><b>DO<\/b> Read the three cards. Say: create a free GitHub account before the coding session. Say it takes about five minutes.<\/p><p><b>WATCH FOR<\/b> People who are anxious about GitHub. Say: you are not learning git today, you are saving a copy of a notebook. A facilitator will walk through it.<\/p>", "<p><b>TIME<\/b> 4 min (0:53 to 0:57), then questions<\/p><p><b>SAY<\/b> Before the coding session: the practice page, which is about 20 minutes, the required reading (textbook Chapter 8 sections 8.1 and 8.2, and Chapter 4 section 4.3), a free GitHub account, and a check on your data access for Week 4.<\/p><p><b>DO<\/b> Post the practice page link, the course site link and the access guide in the chat. Remind them: in the coding session there is no lecture. Pairs in breakout rooms, facilitators visit.<\/p><p><b>SAY<\/b> Homework is to finish the GitHub exercise and add to your project card which statistics would answer each sub-question.<\/p><p><b>CLOSE<\/b> Thank everyone. Take questions for the last few minutes.<\/p>"];window.__onshow=function(i){document.getElementById('notes').innerHTML=NOTES[i]||''};document.addEventListener('keydown',function(e){if(e.key==='n'||e.key==='N')document.body.classList.toggle('nonotes')});
+(function(){
+var slides=[].slice.call(document.querySelectorAll('.s')),i=0,view=document.getElementById('view');
+var ct=document.getElementById('ct'),pv=document.getElementById('pv'),nx=document.getElementById('nx');
+function fit(){var k=Math.min(view.clientWidth/1920,view.clientHeight/1080);slides.forEach(function(s){s.style.setProperty('--k',k)});}
+function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach(function(s,j){s.classList.toggle('on',j===i)});
+ if(window.__onshow)window.__onshow(i);ct.textContent=(i+1)+' / '+slides.length;pv.disabled=i===0;nx.disabled=i===slides.length-1;
+ try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+pv.onclick=function(){show(i-1)};nx.onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){
+ if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1)}
+ else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1)}
+ else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1)});
+var x0=null;view.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+view.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)show(i+(d<0?1:-1));x0=null});
+view.addEventListener('click',function(e){if(e.target.closest('a'))return;show(i+(e.clientX>view.clientWidth/2?1:-1))});
+window.addEventListener('resize',fit);fit();
+var m=/^#(\d+)$/.exec(location.hash);show(m?parseInt(m[1],10)-1:0);
+})();
+</script></body></html>

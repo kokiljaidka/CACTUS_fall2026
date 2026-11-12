@@ -64,3 +64,20 @@ The matching check is on the page. If a student picks the wrong check, the messa
 - Students who treat the AI code as correct because it ran. Say: "It ran. Is that the same as right?"
 - Students who rush. The prediction box and the waterfall table are the point.
 - The live Exercise 2 in the coding session has **different** bugs. If a student asks, say they will see them there. Do not describe them.
+
+## Week 3: Planted-Effect Lab (4 levels and a bridge, about 20 minutes)
+
+Students do this between the learning session and the coding session. The numbers are random, so every student's run differs, and that is the point.
+
+| Level | Teaches | Common stall | Ask this |
+|---|---|---|---|
+| 1 One study | One estimate is noisy; the interval is the honest statement of that | Expecting the estimate to equal the truth; treating a miss as a mistake in the code | "If you ran it again, would you get the same number? What does that tell you?" |
+| 2 Run it 100 times | Roughly 95 in 100 intervals contain the truth; a bigger sample tightens the estimates | Not finding the sample size that gets the count of far-off estimates to 10 or fewer | "What happens to the spread when you double the sample? How far could you go?" |
+| 3 Who gets the treatment? | A confounder can flip the sign of a naive comparison; adjusting recovers the truth | Not seeing why the naive estimate goes negative | "Who is more likely to attend tutoring? How does that change who ends up in each group?" |
+| 4 What does each answer claim? | Certainty, size and cause need separate evidence | Choosing "ignores randomization" for any answer (the study was randomized) | "Does it claim more than one small study can give? Does it treat 'significant' as 'large'?" |
+| 5 Colab bridge | The same simulation as real code, checked by the 95-in-100 rule | `NameError` if imports are missing; counts far from 95 when the sample is tiny | "Run it three times. What range of counts do you get? Is it near 95?" |
+
+**Watch for:**
+- Students who treat the "right" answer to a prediction as the point. The point is that results vary.
+- The confounding level uses a tutoring story, not the notebook's label story, so the notebook's Exercise 3 still has something to discover. Do not tell students what the notebook's naive estimate will look like.
+- A very small sample (10 to 20) can occasionally give an odd run in the bridge. Rerun before concluding there is a bug.

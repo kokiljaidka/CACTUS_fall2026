@@ -44,8 +44,8 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 
 | What | Where |
 |---|---|
-| Lecture slides (about 11 slides) | `slides/week03_*.html`, `.pdf`, presenter view and handout (to build) |
-| Practice page: Planted-effect lab | `practice/week03_planted_effect_lab.html` (to build; spec in `practice/page_specs.md`) |
+| Lecture slides (11 slides) | `slides/week03_verify_and_analyze.html` and `.pdf` for students; `..._presenter.html` (press N for the script) and `..._handout.pdf` for the facilitator team. Source and notes: `slides/src/week03/` (built) |
+| Practice page: Planted-effect lab | `practice/week03_planted_effect_lab.html` (built; source in `practice/src/week03/`) |
 | Notebook | `notebooks/week03_verify_and_analyze.ipynb` (built; run top to bottom with a correct solution; the checks pass) |
 | Data | `data/week03_experiment.csv`, `data/week03_survey.csv`, from `scripts/make_week03_data.py` (built) |
 | Answer key | `instructor/week03_answer_key.md` (private; the true effect, the expected numbers, and the three planted bugs) |
@@ -85,8 +85,8 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 | 7 | A confounder | 8 | Survey, naive versus adjusted, and why experiments differ |
 | 8 | Demo: check an AI's answer | 8 | Compare with the known effect |
 | 9 | Over-claiming | 4 | "Proves", "causes", from the wrong design |
-| 10 | Before the coding session | 4 | Practice page, reading, GitHub |
-| 11 | Preview of GitHub | 3 | Why a notebook lives in a repo |
+| 10 | A first look at GitHub | 3 | Why a notebook lives in a repo; never keys or private data |
+| 11 | Before the coding session | 4 | Practice page, reading, setup |
 <!-- facilitator:end -->
 
 ---
