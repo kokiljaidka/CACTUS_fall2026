@@ -10,8 +10,8 @@ Starts Tuesday, Nov 17, 2026
 
 A workshop where you learn to use AI to write code for your own research, and to check that the code does what you meant. No prior coding experience is needed. All sessions run on Zoom. Each week has two parts:
 
-- **Learning session (about 2 hours):** a supervised walk-through of the week's concepts and worked examples. You can follow along on your laptop, and facilitators help anyone who gets stuck.
-- **Coding session (about 2 hours):** no lecture. You join a breakout room and work through the exercises, in pairs early on and on your own data later. Facilitators visit the rooms to troubleshoot.
+- **Learning session (about 1 hour from Week 2; 2 hours in Week 1):** a lecture with live demos on the week's concepts. You can follow along on your laptop, and facilitators help anyone who gets stuck.
+- **Coding session (about 2 hours every week):** no lecture. You join a breakout room and work through the exercises, in pairs early on and on your own data later. Facilitators visit the rooms to troubleshoot.
 
 You bring a dataset (or a plan to get one) and a rough research question. Over 8 weeks it becomes working code.
 

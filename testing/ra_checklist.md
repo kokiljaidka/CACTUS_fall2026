@@ -130,7 +130,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 - [ ] Open each deck from its Week page on the site, both the web version and the PDF. Do both match? Do arrow keys, the Previous/Next buttons, and swiping on a phone all work? Does the PDF have one slide per page, with fonts intact?
 
-- [ ] Present each deck aloud to a partner at normal speed. Time it. Does it fit the plan in the schedule (Week 1 session 1; Week 2 learning session)?
+- [ ] Present each deck aloud to a partner at normal speed. Time it. Does it fit the plan in the schedule (Week 1 session 1 is about 2 hours; the Week 2 learning session is 1 hour, with 11 slides presented and 3 appendix slides not presented)?
 - [ ] Read the **speaker notes** for every slide. Are they complete, accurate, and not contradictory?
 - [ ] Check every fact on the slides against the course site and schedule (times, chapter numbers, what to bring).
 - [ ] Any text too small to read when screen-shared on Zoom? Any slide that is too crowded?
@@ -145,6 +145,7 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 
 - [ ] **Week 1, Session 1 (about 2 hours):** follow the schedule. Test the project-card activity. Can students finish a card in 35 minutes? Do the sign-off criteria feel clear?
 - [ ] **Week 1, Session 2 (about 2 hours):** puzzle page, then the notebook. Does the time allocation hold? Where do students stall?
+- [ ] **Week 2 learning session (about 1 hour):** present the 11 main slides with the live demos. Does it fit in 60 minutes? Which slide runs long?
 - [ ] **Week 2, learning session and coding session:** same approach.
 - [ ] Note exactly which minutes ran over and what you would cut.
 - [ ] Test the **stuck protocol**: can an RA in the main room see "Ask for help" and respond fast enough?

@@ -1,7 +1,7 @@
 # Week 2: Clean it, chart it, check what the AI wrote
 
 **Theme:** AI as pair programmer. Students read, test, and distrust AI code.
-**Format:** Zoom. Learning session is a lecture with live demos; coding session is breakout rooms with no lecture. Between them, students do a 20-minute practice page.
+**Format:** Zoom. A 1-hour learning session (lecture with live demos), a 20-minute practice page, then a 2-hour coding session in breakout rooms with no lecture. About 3 hours live this week.
 
 ## Objectives
 
@@ -40,7 +40,7 @@ See [data/README.md](../data/README.md). Students use a different dataset in eac
 
 From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.net)), the Python version. Required, not graded.
 
-- **Before the learning session:** [Chapter 5, From file to data frame and back](https://cssbook.net/content/chapter05.html), sections 5.1 to 5.2.
+- **Before the learning session (this covers data types and messy data, which the session only mentions):** [Chapter 5, From file to data frame and back](https://cssbook.net/content/chapter05.html), sections 5.1 to 5.2.
 - **Before the coding session:** [Chapter 6, Data wrangling](https://cssbook.net/content/chapter06.html), sections 6.1 to 6.4 (filtering, calculating, grouping, merging), and [Chapter 4, How to write code](https://cssbook.net/content/chapter04.html), section 4.2 (understanding errors and getting help).
 
 <!-- facilitator:start -->
@@ -52,7 +52,7 @@ Section titles were checked against the chapter pages on cssbook.net (Nov 2026),
 
 - Share `data/starbucks_sea_comments.csv` with students (a shared Drive link, so they can upload it to Colab in seconds).
 - Share the Silent Changes link after the learning session.
-- Kokil runs the walk-through once, including the Lululemon check.
+- The lead facilitator runs the walk-through once beforehand, including the Lululemon check.
 - Do the practice page and the notebook warm-up yourself. Try a trap card (drop rows with missing tone) to see what students see.
 - Facilitators: read `instructor/facilitator_guide.md` (Week 2 section), `instructor/week02_answer_key.md`, and `instructor/week02_practice_key.md`. All are local only.
 - Facilitators should do Exercise 2 themselves beforehand, without the key.
@@ -60,35 +60,38 @@ Section titles were checked against the chapter pages on cssbook.net (Nov 2026),
 
 ---
 
-## Learning session (about 2 h): lecture with live demos
+## Learning session (about 1 h): lecture with live demos
 
-Kokil leads; facilitators watch the chat and help anyone who falls behind.
+The lead facilitator leads; the other facilitators watch the chat and help anyone who falls behind. This is a shorter session than Week 1: the required reading and the practice page carry the concepts, so the hour is for the live demos.
 
 | Time | Activity |
 |---|---|
-| 0:00 | **Concept: what is a table?** Rows, columns, types, missing values, and why messy data is normal. No syntax yet. |
-| 0:20 | **Walk-through: good vs bad prompt** (Lululemon). Ask for "the average views per post" first with no context, then again after pasting column names and a sample. Read the code line by line. |
-| 1:00 | **Walk-through: verification.** Run the AI's average views (2,506). Then check: how many posts have 0 views? Show that the code is correct but the question was wrong. Show `len()` before and after, `.head()`, and a hand count. |
-| 1:30 | **Walk-through: reading an error.** Trigger a real error, read the last line aloud, paste to the AI, and explain why the fix works. |
-| 1:50 | **Preview:** the Silent Changes page (do it before the coding session), the stuck protocol, and the exercises. |
+| 0:00 | **Welcome and recap.** Your project card, lists and dictionaries, predict before you run. |
+| 0:04 | **What is a table?** Rows, columns, and one line on types and messy data. Details are in the reading and the appendix slides, not presented. |
+| 0:09 | **Walk-through: good vs bad prompt** (Lululemon). Ask for "the average views per post" first with no context, then again after pasting column names and a sample. Read the code line by line. |
+| 0:24 | **Walk-through: verification.** Run the AI's average views (2,506). Then check: how many posts have 0 views? Show that the code is correct but the question was wrong. Then the three checks, and `len()` before and after. |
+| 0:45 | **Walk-through: reading an error.** Trigger a real error, read the last line aloud, paste to the AI, and explain why the fix works. |
+| 0:54 | **Preview:** the Silent Changes practice page, the required reading, and the stuck protocol. |
 
 <!-- facilitator:start -->
 ### Lecture plan (slides)
 
-| # | Slide | Notes |
-|---|---|---|
-| 1 | Recap of Week 1 | The project card, dictionaries and lists, the key habit: predict before you run |
-| 2 | What is a table? | Rows are things, columns are facts about them. One row of your project is what you wrote on your card |
-| 3 | Types | Number, text, date, true/false. A number stored as text looks the same and behaves differently |
-| 4 | Missing and messy | Empty cells, "N/A", duplicates. Messy is normal, not a failure |
-| 5 | Demo: the prompt with no context | Lululemon: "average views per post". Show what the AI guesses |
-| 6 | Demo: the prompt with context | Paste column names and sample rows. Read each line of the answer |
-| 7 | Demo: a right answer to the wrong question | 2,506 average, but 91% of posts have 0 views. Code correct, question wrong |
-| 8 | Three checks | Row count before and after; hand count of a few rows; compare with a second method |
-| 9 | Demo: `len()` and `.head()` | Show how a step changes the row count |
-| 10 | Reading an error | Last line first. Say it in your own words, then fix |
-| 11 | Silent changes | The idea behind the practice page: steps that remove or change rows without an error |
-| 12 | Next steps | The practice page (20 min), then the coding session. Stuck protocol |
+Eleven slides are presented in the hour. Three more are an appendix for self-study and questions. Full scripts are in the presenter view and the handout.
+
+| # | Slide | Min | Notes |
+|---|---|---|---|
+| 1 | Title | 1 | Welcome; the plan for the week |
+| 2 | Recap of Week 1 | 3 | Project card, dictionaries, predict first |
+| 3 | What is a table? | 5 | Rows and columns; one line each on types and messy data |
+| 4 | Demo: prompt with no context | 6 | Lululemon; let the failure show |
+| 5 | Demo: prompt with context | 9 | Paste columns and sample rows; read line by line |
+| 6 | A correct answer to the wrong question | 10 | 2,506 average; 91% of posts have 0 views |
+| 7 | Three checks | 6 | Row counts, by hand, a second method |
+| 8 | Demo: watch the row count change | 5 | `len()` before and after a step |
+| 9 | Demo: read an error | 9 | A `NameError`; last line first |
+| 10 | Silent changes | 3 | The idea behind the practice page |
+| 11 | Before the coding session | 3 | Practice page, reading, stuck protocol |
+| 12 to 14 | Appendix: divider, types, messy data | 0 | Backup slides, not presented |
 <!-- facilitator:end -->
 
 ---

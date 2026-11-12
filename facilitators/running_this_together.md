@@ -35,7 +35,7 @@ Each session has a team, not one presenter. Roles rotate so everyone does each o
 
 | Role | What they do | Time |
 |---|---|---|
-| **Lead** | Runs the learning session using the slides and script. In coding sessions, opens and closes and posts time checks. | Session plus about 1 hour of prep |
+| **Lead** | Runs the one-hour learning session using the slides and script. In coding sessions, opens and closes and posts time checks. | About 1 hour of session plus about 1 hour of prep |
 | **Host** | Zoom host: breakout rooms, chat, timekeeping, recordings, late joiners. | Session plus 15 minutes |
 | **Floaters (2 or more)** | Visit breakout rooms. Ask guiding questions before giving answers. Use the hint ladder in the answer key. | Session only |
 | **On call** | Kokil, reachable during every session for anything the team cannot resolve. | [Kokil to confirm availability] |
@@ -43,7 +43,7 @@ Each session has a team, not one presenter. Roles rotate so everyone does each o
 Suggested weekly rhythm for the team:
 
 1. **Before** (about 45 minutes, together or alone): read the week's script, do the practice page and notebook yourself, note anything you would stumble on.
-2. **During** (about 4 hours across two sessions).
+2. **During** (about 3 hours across the two sessions, from Week 2; Week 1 is about 4 hours).
 3. **After** (15 minutes): post three lines in the team chat: what worked, what stalled, what to fix. Anything that was confusing becomes a GitHub issue so the next cohort benefits.
 
 ## The ramp: nobody leads cold
