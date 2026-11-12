@@ -7,6 +7,8 @@ Shared datasets for CACTUS Fall 2026. Raw exports stay in `data/raw/` (local onl
 | `starbucks_sea_comments.csv` | Week 2 exercises | 4,174 | Public comments mentioning Starbucks, 5–14 Oct 2024, from TH, VN, MY, PH, SG, ID, HK. Many languages. Column `Translated` is machine translation |
 | `lululemon_instagram.csv` | Week 2 demo | 11,019 | Instagram posts mentioning Lululemon, Nov 2022 to Apr 2023. Accounts appear mostly North American |
 | `week02_toy_cafe.csv` | Week 2 practice page and notebook warm-up | 30 | Invented café comments (Brew Lane) with planted problems: 3 duplicates, 2 rows with no text, 2 dates in another format, scores stored as text. Clean result: 25 rows. Rebuild with `python3 scripts/week02_toy_data.py` |
+| `week03_experiment.csv` | Week 3 exercises | 300 | Simulated randomized experiment: a made-up "AI label" on shared posts and a `sharing_intent` score. The true effect is -0.6 and is stated in the notebook. Rebuild with `python3 scripts/make_week03_data.py` |
+| `week03_survey.csv` | Week 3 exercises | 800 | Simulated observational survey with a confounder (`prior_ai_use`), same true effect. The naive comparison is biased |
 | `week01/serp_cache/` and `serp_cache.zip` | Week 1 | 6 files | Saved SerpAPI responses for students without a key (create with `scripts/cache_week1.py`) |
 
 ## Columns worth knowing
@@ -15,11 +17,9 @@ Shared datasets for CACTUS Fall 2026. Raw exports stay in `data/raw/` (local onl
 
 **lululemon_instagram.csv:** `account_id` (pseudonymous), `Post Created`, `Type` (Photo, Album, Video), `Followers at Posting`, `Likes`, `Comments`, `Views`, `Description`, and similar word-percent columns.
 
-## Known quirks (useful for teaching, don't "fix" in the file)
+## Known quirks
 
-- Starbucks: 85 exact duplicate rows, 17 comments with missing text, some comments are only numbers, dates are stored as text in the CSV.
-- Lululemon: `Views` is 0 for every photo (it is not recorded), and the filename on the original export said 2024 but the posts are from Nov 2022 to Apr 2023.
-- The original spreadsheet had a second sheet, "Copy of starbucks", that is not identical to the first. It was not used.
+These datasets are real and messy on purpose, and the problems are not listed here: finding them is part of the exercises. Teaching staff have notes in the private instructor folder.
 
 ## Privacy
 

@@ -46,8 +46,9 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 |---|---|
 | Lecture slides (about 11 slides) | `slides/week03_*.html`, `.pdf`, presenter view and handout (to build) |
 | Practice page: Planted-effect lab | `practice/week03_planted_effect_lab.html` (to build; spec in `practice/page_specs.md`) |
-| Notebook | `notebooks/week03_verify_and_analyze.ipynb` (to build) |
-| Data | `data/week03_experiment.csv`, `data/week03_survey.csv`, from `scripts/make_week03_data.py` (to build) |
+| Notebook | `notebooks/week03_verify_and_analyze.ipynb` (built; run top to bottom with a correct solution; the checks pass) |
+| Data | `data/week03_experiment.csv`, `data/week03_survey.csv`, from `scripts/make_week03_data.py` (built) |
+| Answer key | `instructor/week03_answer_key.md` (private; the true effect, the expected numbers, and the three planted bugs) |
 
 ## Prep
 
@@ -129,5 +130,5 @@ Students leave with a notebook on GitHub, a verification log, and a sense of whi
 1. **GitHub route.** Confirm that Colab's "Save a copy in GitHub" works smoothly for new accounts. If not, fall back to uploading the notebook through the GitHub website.
 2. **Simulation story.** Draft: a made-up "AI label" on shared posts; outcome is sharing intent; a survey where heavy AI users are more likely to see the label. Change if you prefer another story.
 3. **Statistics level.** One or two predictors, linear regression. No logistic regression this week unless you want it.
-4. **Bugs for Exercise 2.** Candidates: a group coded 0 and 1 treated as a continuous number; a one-tailed test chosen to get a result; rows silently dropped before fitting; reporting "significant" for a tiny effect; claiming causation from the survey. Choose three and keep them in the private key.
+4. **Bugs for Exercise 2.** Chosen and built: a group coded backwards (the sign flips), rows silently dropped by selecting on the outcome, and an interval that is 1 standard error wide but presented as 95%. Details are in the private key.
 <!-- facilitator:end -->
