@@ -26,6 +26,7 @@ LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s]+)\)")
 PAGES = {
     "README.md": "index.md",
     "project/designing_your_project.md": "project.md",
+    "project/getting_data_access.md": "access.md",
     "data/README.md": "data.md",
     "schedule/week01.md": "weeks/week01.md",
     "schedule/week02.md": "weeks/week02.md",

@@ -1,10 +1,10 @@
 # Week 5: Analyze text
 
-**Theme:** Turning text into numbers loses things. Students learn to count, tokenize (including Chinese), run a dictionary-based sentiment score, and find patterns in a shared corpus, and to say what each step hides.
+**Theme:** Turning text into numbers loses things. Students learn to count, tokenize (including Chinese), run a dictionary-based sentiment score, and find patterns, first in a shared corpus and then in their own text, and to say what each step hides.
 **Format:** Zoom. A 1-hour learning session (lecture with live demos), a 20-minute practice page, then a 2-hour coding session in breakout rooms with no lecture. About 3 hours live.
 
 <!-- facilitator:start -->
-> **Status: draft for review.** Not on the student site yet. This week depends on a **shared corpus** that does not exist as its own file yet. See the decisions at the end.
+> **Status: draft for review.** Not on the student site yet. The shared corpus is built from data you already have; students bring their own text from Week 4. See the decisions at the end.
 <!-- facilitator:end -->
 
 ## Objectives
@@ -23,7 +23,7 @@ By the end of the week, students can:
 |---|---|---|
 | Learning (walk-through) | A few short texts in English and Chinese | Easy to follow token by token |
 | Practice page | Precomputed tokenizations and scores in the page | Shows the effect of choices without running code |
-| Coding (exercises) | **Shared corpus:** news results about AI from Singapore, Hong Kong and Taiwan (from the Week 1 saved searches, about 300 short texts in English and Chinese). Stretch: the Starbucks comments | Already collected, on topic, in two scripts |
+| Coding (exercises) | **Guided exercises on a shared corpus:** news results about AI from Singapore, Hong Kong and Taiwan (from the Week 1 saved searches, about 300 short texts in English and Chinese), so facilitators can help everyone with the same data. **Then your own text** from Week 4, if you have it. Stretch: the Starbucks comments | The shared corpus makes the first steps supportable. Your own data is what you will use for your project |
 
 ## Required reading
 
@@ -121,10 +121,11 @@ Students leave with counts, a sentiment score, and a list of where the methods f
 <!-- facilitator:start -->
 ## Decisions and open items (Week 5)
 
-1. **The shared corpus.** Draft: the Week 1 news results about AI from Singapore, Hong Kong and Taiwan. Pros: already collected, on topic, two scripts. Cons: short texts (titles and snippets), about 300 rows, and the texts come from search results. Alternative: use the Starbucks comments, which are plentiful and multilingual but not about AI. Which do you prefer?
+1. **The shared corpus.** Draft: the Week 1 news results about AI from Singapore, Hong Kong and Taiwan (298 short texts). Pros: already collected, on topic, two scripts. Cons: short texts (titles and snippets). It is only for the guided exercises; students then apply the methods to their own Week 4 text. You do not need to collect anything new.
 2. **Redistribution.** The saved search results include publisher snippets. Check SerpAPI's terms and the publishers' terms before keeping them in a public repository.
-3. **Chinese tokenizer.** Confirm the choice and the install time in Colab.
-4. **English sentiment tool.** Choose one dictionary-based tool. Say plainly that none covers Chinese well; students should notice and report it.
-5. **Week 6 dependency.** Week 6 needs human labels on a subset of this corpus (about 100 texts). Start labeling soon. The RAs could do it as a first community task, with a short codebook.
-6. **Bugs for Exercise 3.** Candidates: whitespace tokenizing Chinese; removing a stopword list that deletes "AI"; counting without lowercasing; averaging sentiment across languages; scoring translated text and calling it the original. Choose three and keep them in the private key.
+3. **Students without their own text yet.** They can stay on the shared corpus or the Starbucks comments. Decide whether that is acceptable.
+4. **Chinese tokenizer.** Confirm the choice and the install time in Colab.
+5. **English sentiment tool.** Choose one dictionary-based tool. Say plainly that none covers Chinese well; students should notice and report it.
+6. **Week 6 dependency.** Week 6 uses a small human-labeled set from the shared corpus (about 60 texts) for the common examples, and students label about 40 to 50 texts of their own. Facilitators could label the 60 as a first community task, with a short codebook.
+7. **Bugs for Exercise 3.** Candidates: whitespace tokenizing Chinese; removing a stopword list that deletes "AI"; counting without lowercasing; averaging sentiment across languages; scoring translated text and calling it the original. Choose three and keep them in the private key.
 <!-- facilitator:end -->

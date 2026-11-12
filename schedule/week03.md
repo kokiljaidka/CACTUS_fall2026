@@ -37,6 +37,7 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 ## Before the session
 
 - Create a GitHub account (free) at https://github.com. Do this before the coding session so it is not done in the session.
+- **Keep going on data access.** You need a working key (or a clear plan) for Week 4. See [Getting data access](../project/getting_data_access.md). An optional 30-minute **access clinic** will be offered this week for anyone stuck.
 
 <!-- facilitator:start -->
 ## Materials
@@ -116,6 +117,7 @@ Post a time check in the main chat at each boundary. Hints for Exercise 2 come f
 
 - Finish Exercise 4 (GitHub) and Ex 3 if not done.
 - Add to your project card: which statistics would answer each sub-question, and how you would test that code against a known answer.
+- Check your data access for Week 4. Add anything you learned to the shared table in [Getting data access](../project/getting_data_access.md).
 
 ## Hand-off to Week 4
 
