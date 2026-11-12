@@ -1,0 +1,1552 @@
+{
+  "search_metadata": {
+    "id": "6af5aaf36f082be816c70267",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/AmAPhV9twoXO3JkpyjUeiBN4UojURzZJaHO5Gy2dpWw/6af5aaf36f082be816c70267.json",
+    "markdown_endpoint": "https://serpapi.com/searches/AmAPhV9twoXO3JkpyjUeiBN4UojURzZJaHO5Gy2dpWw/6af5aaf36f082be816c70267.md",
+    "created_at": "2026-11-12 12:02:59 UTC",
+    "processed_at": "2026-11-12 12:02:59 UTC",
+    "google_news_url": "https://news.google.com/search?q=artificial+intelligence&hl=en&gl=SG",
+    "raw_html_file": "https://serpapi.com/searches/AmAPhV9twoXO3JkpyjUeiBN4UojURzZJaHO5Gy2dpWw/6af5aaf36f082be816c70267.html",
+    "total_time_taken": 1.25
+  },
+  "search_parameters": {
+    "engine": "google_news",
+    "gl": "sg",
+    "hl": "en",
+    "q": "artificial intelligence"
+  },
+  "news_results": [
+    {
+      "position": 1,
+      "title": "New Zealand workers say AI tracking of toilet breaks forces them to ‘hold on’",
+      "source": {
+        "name": "South China Morning Post",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.scmp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.scmp.com/week-asia/economics/article/3374231/new-zealand-workers-say-ai-tracking-toilet-breaks-forces-them-hold",
+      "thumbnail": "https://cdn.i-scmp.com/sites/default/files/styles/700x400/public/d8/images/canvas/2026/11/12/d8be7eef-3fc0-48da-85de-df8eae90dfe6_7fc96952.jpg?itok=zBSwIVcn&v=1794480487",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDVWMGxCZUZBNVZEZFpWRzFqVFJDUUF4aThCU2dLTWdB",
+      "date": "11/12/2026, 10:48 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:48:08Z"
+    },
+    {
+      "position": 2,
+      "title": "French army ministry to set up centre for defence-related AI",
+      "source": {
+        "name": "Yahoo News Singapore",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://sg.news.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://sg.news.yahoo.com/french-army-ministry-set-centre-111528857.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/5db106550180942d719508b5d14ccdc3a5d4038778c971e5def74099802bfece/lightyear_networkapi/resizefill_w800_h533%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F89d418633cc56fe1f7fd2c4c5c947bae.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTBWVzh3TjJzd01qTmxjMUZsVFJERUF4aW5CU2dLTWdB",
+      "date": "11/12/2026, 11:15 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:15:28Z"
+    },
+    {
+      "position": 3,
+      "title": "Public funds ploughing cash into AI will 'own' megatrends shaping economy",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Libby George"
+        ]
+      },
+      "link": "https://www.reuters.com/business/finance/public-funds-ploughing-cash-into-ai-will-own-megatrends-shaping-economy-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/K7GMRVUZJ5IHZLRTYSG626ZLVI.jpg?auth=47195ffa40569df905a973394977676a16efa8f3f8809b6d4c76c86f1e56142f&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDNPV0pFTnpkbFVrSkxTMlZEVFJERUF4aW1CU2dLTWdrcElwSVJHYWQ3cHdJ",
+      "date": "11/12/2026, 06:06 AM, +0000 UTC",
+      "iso_date": "2026-11-12T06:06:00Z"
+    },
+    {
+      "position": 4,
+      "title": "Chinese AI firms rush to secure Nvidia chip capacity as spy scandal stirs fear of US curbs",
+      "source": {
+        "name": "The Business Times",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.businesstimes.com.sg&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.businesstimes.com.sg/international/global/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-curbs",
+      "thumbnail": "https://cassette.sphdigital.com.sg/image/businesstimes/41bb2fb5e5580ee62875273955d80c52c35f1359c13cfaef72d1135236a0a795?w=960&dpr=1&f=webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXJTSGwyUkdRME9WWXRiVE53VFJERUF4aW1CU2dLTWdrQllJS1V1Q1Jxa1FF",
+      "date": "11/12/2026, 07:26 AM, +0000 UTC",
+      "iso_date": "2026-11-12T07:26:00Z"
+    },
+    {
+      "position": 5,
+      "title": "Advanced Micro Devices vs. Marvell Technology: Which Artificial Intelligence Stock Is a Better Buy Going into 2027?",
+      "source": {
+        "name": "The Motley Fool",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.fool.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Robert Izquierdo"
+        ]
+      },
+      "link": "https://www.fool.com/coverage/better-buy/2026/11/11/advanced-micro-devices-vs-marvell-technology-which-artificial-intelligence-stock-is-a-better-buy-going-into-2027/",
+      "thumbnail": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F98c4ccef9eacd8dcb5edbdac15d5c02a6e3a0663-1280x720.png&w=1200&op=resize",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtNMnBaYmxaNlJsWTBaakZ3VFJDZkF4ampCU2dLTWdhcEJJeXVyUVk",
+      "date": "11/12/2026, 03:32 AM, +0000 UTC",
+      "iso_date": "2026-11-12T03:32:00Z"
+    },
+    {
+      "position": 6,
+      "title": "Legislature uses AI to read legislation for the first time",
+      "source": {
+        "name": "Taipei Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.taipeitimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/12/2003867603",
+      "thumbnail": "https://img.taipeitimes.com/images/2026/11/12/P02-261112-603.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNTZORU0yVFhOTWNGQjNSMHBYVFJDY0F4anBCU2dLTWdNQnNBWQ",
+      "date": "11/12/2026, 03:31 AM, +0000 UTC",
+      "iso_date": "2026-11-12T03:31:26Z"
+    },
+    {
+      "position": 7,
+      "title": "UK Economy Defies Headwinds With Strongest Growth Since 2024",
+      "source": {
+        "name": "Bloomberg.com",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.bloomberg.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Philip Aldrick",
+          "Tom Rees"
+        ]
+      },
+      "link": "https://www.bloomberg.com/news/articles/2026-11-12/uk-economy-defies-headwinds-with-strongest-growth-since-2024",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/itc3k9KujAOU/v0/-1x-1.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFlVmxyU2xSaFRtdDBhUzFXVFJERUF4aW1CU2dLTWdZQm9JcUN4QVE",
+      "date": "11/12/2026, 08:13 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:13:40Z"
+    },
+    {
+      "position": 8,
+      "title": "Jensen Huang Was a Busy, Horny Little Bee and May Be Being Shown the Door (Updated)",
+      "source": {
+        "name": "Gizmodo",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://gizmodo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Tom McKay"
+        ]
+      },
+      "link": "https://gizmodo.com/jensen-huang-was-a-busy-horny-little-bee-report-2000838619",
+      "thumbnail": "https://gizmodo.com/app/uploads/2026/08/GettyImages-2286324485.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWlaR2hhWVdOcmNtSjNSMVJ0VFJERUF4aW1CU2dLTWdheFU1WlJKUWc",
+      "date": "11/11/2026, 10:37 PM, +0000 UTC",
+      "iso_date": "2026-11-11T22:37:12Z"
+    },
+    {
+      "position": 9,
+      "title": "IBM Digital Sovereignty Index: In the AI Era, Control Is No Longer Enough. Enterprises Must Prove It.",
+      "source": {
+        "name": "IBM Newsroom",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://newsroom.ibm.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://newsroom.ibm.com/2026-11-11-ibm-digital-sovereignty-index-in-the-ai-era,-control-is-no-longer-enough-enterprises-must-prove-it",
+      "thumbnail": "https://newsroom.ibm.com/image/fusion_security_02_ibm-digital-sovereignty-index_banner.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVZha0ZGWm0xdGIwdDNaMVkzVFJDVEFSallBaWdCTWdPbElRNA",
+      "date": "11/11/2026, 01:02 PM, +0000 UTC",
+      "iso_date": "2026-11-11T13:02:41Z"
+    },
+    {
+      "position": 10,
+      "title": "Tech giant Foxconn beats forecasts with third-quarter profit jump",
+      "source": {
+        "name": "Yahoo Finance Singapore",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://sg.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://sg.finance.yahoo.com/news/tech-giant-foxconn-beats-forecasts-065700448.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/c5657aecf313f040a129d45d139361a6d6bcfef01b1bbbaf444c737eb8705d61/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com.sg%2F248915e6128d98e1b1b4fc5eb4d79650.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTZUM0YzUmtVd2RVZElkMjl5VFJERUF4aW1CU2dLTWdZQmdKQ3FyQVk",
+      "date": "11/12/2026, 06:57 AM, +0000 UTC",
+      "iso_date": "2026-11-12T06:57:00Z"
+    },
+    {
+      "position": 11,
+      "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
+      "source": {
+        "name": "The New York Times",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.nytimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Tripp Mickle",
+          "Ryan Mac",
+          "Georgia Gee"
+        ]
+      },
+      "link": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+      "thumbnail": "https://static01.nyt.com/images/2026/11/11/multimedia/00Biz-Huang-Relationship-wlgb/00Biz-Huang-Relationship-wlgb-superJumbo.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5TRTAxYUhkdWNqSnhUR0oyVFJERUF4aW1CU2dLTWdhaEZKQ1BrUXM",
+      "date": "11/12/2026, 01:57 AM, +0000 UTC",
+      "iso_date": "2026-11-12T01:57:34Z"
+    },
+    {
+      "position": 12,
+      "title": "Artificial intelligence is desperately seeking its narrative",
+      "source": {
+        "name": "The Conversation",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://theconversation.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Frédéric Fréry"
+        ]
+      },
+      "link": "https://theconversation.com/artificial-intelligence-is-desperately-seeking-its-narrative-296067",
+      "thumbnail": "https://images.theconversation.com/files/770472/original/file-20260903-60-uqldmk.jpg?ixlib=rb-4.1.1&rect=347%2C0%2C3672%2C2448&q=50&auto=format&w=768&h=512&fit=crop&dpr=2",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUtVVms0VG5oUmFtOVhjWFJsVFJERUF4aW1CU2dLTWdtQlVZUUp2YUs1OGdB",
+      "date": "11/10/2026, 01:12 PM, +0000 UTC",
+      "iso_date": "2026-11-10T13:12:58Z"
+    },
+    {
+      "position": 13,
+      "title": "AVPN expands artificial intelligence training across Asia Pacific region",
+      "source": {
+        "name": "Vietnam Investment Review - VIR",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://vir.com.vn&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://vir.com.vn/avpn-expands-artificial-intelligence-training-across-asia-pacific-region-164902.html",
+      "thumbnail": "https://vir.com.vn/stores/ads_data/2026/102026/16/11/ma2026-mb-20261016113642.jpg?rt=20261016113643",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXhNekJKVUVwWFkzQnlRMUppVFJDakF4amJCU2dLTWdZUlVwQUhKUWM",
+      "date": "11/12/2026, 02:56 AM, +0000 UTC",
+      "iso_date": "2026-11-12T02:56:11Z"
+    },
+    {
+      "position": 14,
+      "title": "AI infrastructure spending in Asia-Pacific to rise 67% in 2026, says IDC",
+      "source": {
+        "name": "CRN Asia",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.crnasia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Dominic Johnson"
+        ]
+      },
+      "link": "https://www.crnasia.com/news/2026/artificial-intelligence/ai-infrastructure-spending-in-asia-pacific-to-rise-67-in-20",
+      "thumbnail": "https://www.crnasia.com/news/2026/artificial-intelligence/media_1d36388873e8ebfb69e3cdd7390c854868b2806b3.jpg?width=750&format=jpg&optimize=medium",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdiMjUwVEZOUFJGaEpWVEZ2VFJDZkF4amlCU2dLTWdZTmNvcU5zUVk",
+      "date": "11/11/2026, 09:37 PM, +0000 UTC",
+      "iso_date": "2026-11-11T21:37:57Z"
+    },
+    {
+      "position": 15,
+      "title": "Artificial Intelligence and the Future of K-12 Education: What Do Parents Want?",
+      "source": {
+        "name": "Institute for Family Studies",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://ifstudies.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://ifstudies.org/report-brief/artificial-intelligence-and-the-future-of-k-12-education-what-do-parents-want",
+      "thumbnail": "https://ifstudies.b-cdn.net/ifs-admin/resources/screenshot-2026-11-10-at-4-42-51-pm.png?quality=80&width=900",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXZSa3hpVjFoMmFIcHRYMUJvVFJEMkJCam1BeWdLTWdrTkVvaFBSZVNKNVFJ",
+      "date": "11/11/2026, 11:12 PM, +0000 UTC",
+      "iso_date": "2026-11-11T23:12:39Z"
+    },
+    {
+      "position": 16,
+      "title": "ICYMI: What landed for AI builders in October 2026",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Tymofii Kryvtsun"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/10/ML-22436-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNXpMVmczWDNrdFRHeHBkbmQxVFJDSEF4aVBCaWdLTWdB",
+      "date": "11/11/2026, 10:26 PM, +0000 UTC",
+      "iso_date": "2026-11-11T22:26:40Z"
+    },
+    {
+      "position": 17,
+      "title": "Nvidia leadership uncertainty puts Korean chip supply deals under scrutiny",
+      "source": {
+        "name": "KED Global",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.kedglobal.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202611120012",
+      "thumbnail": "https://www.kedglobal.com/data/ked/image/2026/11/12/ked202611120051.700x.0.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVNiUzFQWVROd1RHRTFabGt5VFJERUF4aW5CU2dLTWdrTk1ZSUtTaU11aUFJ",
+      "date": "11/12/2026, 11:40 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:40:00Z"
+    },
+    {
+      "position": 18,
+      "title": "In response to the increasing number of cyber-attacks using artificial intelligence (AI), the govern..",
+      "source": {
+        "name": "매일경제",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.mk.co.kr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mk.co.kr/en/it/12206748",
+      "thumbnail": "https://wimg.mk.co.kr/news/cms/202611/12/news-p.v1.20261112.eaf9c8e131dd42fe872e847b036c6a45_P1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUdPVmhYYldjeFZraG9kbFJCVFJDd0FoaThCU2dLTWdZQk1KaUNuQWc",
+      "date": "11/12/2026, 09:16 AM, +0000 UTC",
+      "iso_date": "2026-11-12T09:16:24Z"
+    },
+    {
+      "position": 19,
+      "title": "The use of artificial intelligence in regulatory activities – key areas and considerations",
+      "source": {
+        "name": "IFPMA",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.ifpma.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.ifpma.org/publications/the-use-of-artificial-intelligence-in-regulatory-activities-key-areas-and-considerations/",
+      "thumbnail": "https://www.ifpma.org/wp-content/uploads/2026/11/AI-use-in-regulatory-activities-317x302.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUlTRk5IUm0xWVNtTk1jVTlGVFJDdUFoaTlBaWdLTWdhSmxKQ25OUVk",
+      "date": "11/09/2026, 12:54 PM, +0000 UTC",
+      "iso_date": "2026-11-09T12:54:13Z"
+    },
+    {
+      "position": 20,
+      "title": "AI shakeout lands convertible investors better terms",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Niket Nishant",
+          "Medha Singh"
+        ]
+      },
+      "link": "https://www.reuters.com/business/ai-shakeout-lands-convertible-investors-better-terms-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/CLD5J4LXD5J6LAWIHFPX574A7Y.jpg?auth=8adb5b22ea4fa0a0699c34fa98c94c3f466127a0bb60b38e1fb74ee065194d7f&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVBRblpuVFVSdGNHczJNWHBNVFJDMkF4aThCU2dLTWdZQlVJS3ZKQWc",
+      "date": "11/12/2026, 11:13 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:13:56Z"
+    },
+    {
+      "position": 21,
+      "title": "APJC’s AI ‘FOMO’ is driving faster adoption, says Cisco’s Oliver Tuszik",
+      "source": {
+        "name": "CRN Asia",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.crnasia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Aaron Raj"
+        ]
+      },
+      "link": "https://www.crnasia.com/news/2026/artificial-intelligence/apjc-s-ai-fomo-is-driving-faster-adoption",
+      "thumbnail": "https://www.crnasia.com/news/2026/artificial-intelligence/media_164f9370c06efe937b4de5a05725193d6414f94a4.jpg?width=750&format=jpg&optimize=medium",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWFWbkJSTVc1TU9WbHRhMnRIVFJEZ0F4al9CQ2dLTWdtTkFvb1VSZVNwQlFN",
+      "date": "11/11/2026, 09:37 PM, +0000 UTC",
+      "iso_date": "2026-11-11T21:37:57Z"
+    },
+    {
+      "position": 22,
+      "title": "ISCA enrolls 3000 students in artificial intelligence accounting programme",
+      "source": {
+        "name": "Vietnam Investment Review - VIR",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://vir.com.vn&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://vir.com.vn/isca-enrolls-3000-students-in-artificial-intelligence-accounting-programme-164910.html",
+      "thumbnail": "https://vir.com.vn/stores/ads_data/2026/102026/16/11/ma2026-mb-20261016113642.jpg?rt=20261016113643",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXhNekJKVUVwWFkzQnlRMUppVFJDakF4amJCU2dLTWdZUlVwQUhKUWM",
+      "date": "11/11/2026, 03:44 AM, +0000 UTC",
+      "iso_date": "2026-11-11T03:44:25Z"
+    },
+    {
+      "position": 23,
+      "title": "AI to stay dominant force behind US business investment in 2027, Goldman says",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/BNH7FZ45MNIUZEY5MLA2XC3QOY.jpg?auth=0710b9097f39de2432324cf7ca5bb211b793b17fdbe63af7632e501a0270df7c&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWhPR1J3UWxSclRtdzROblJCVFJERUF4aW1CU2dLTWdZQlFJWnJKUWM",
+      "date": "11/12/2026, 08:52 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:52:12Z"
+    },
+    {
+      "position": 24,
+      "title": "SoftBank and Grab plan US$1.85bn seed capital for AI infrastructure in Malaysia",
+      "source": {
+        "name": "CRN Asia",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.crnasia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.crnasia.com/news/2026/artificial-intelligence/softbank-and-grab-plan-us-1",
+      "thumbnail": "https://www.crnasia.com/news/2026/artificial-intelligence/media_118f9e0745f0223e6b81b0aff48ef8fd424241d03.png?width=750&format=png&optimize=medium",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9ZalZLWlRSNFVHWmpOazFTVFJDckF4ak5CU2dLTWdZQmdKSUF0UVk",
+      "date": "11/11/2026, 09:37 PM, +0000 UTC",
+      "iso_date": "2026-11-11T21:37:57Z"
+    },
+    {
+      "position": 25,
+      "title": "Exclusive-Chinese AI firms rush to secure Nvidia chip capacity as spy scandal stirs fear of US curbs",
+      "source": {
+        "name": "Yahoo",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://malaysia.news.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Lincoln Feast",
+          "Eduardo Baptista (Park Suam)"
+        ]
+      },
+      "link": "https://malaysia.news.yahoo.com/exclusive-chinese-ai-firms-rush-053106355.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/20d0ecbcad51a99cf91555ebe1d1ab2481c0616635fc8c153015763c991fa606/lightyear_networkapi/resizefill_w800_h533%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F76abbb9e81f66dc001db4e1a5fdfbe66.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVBUVzloWHpJemMwWk5PV0ZHVFJERUF4aW5CU2dLTWdZQlVKQ0VxQWM",
+      "date": "11/12/2026, 05:32 AM, +0000 UTC",
+      "iso_date": "2026-11-12T05:32:00Z"
+    },
+    {
+      "position": 26,
+      "title": "Most large firms plan higher open-weight AI use to cap bills, study shows",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Léo Marchandon"
+        ]
+      },
+      "link": "https://www.reuters.com/business/most-large-firms-plan-higher-open-weight-ai-use-cap-bills-study-shows-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/HS6FS5CTU5LQJM6VDYBKWNJK7U.jpg?auth=d527b2497876484e356bc222ecb0dfb7e9f96f5f3116ea784c8d5475d2156574&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHhRMHRHUjFvME5GQlBXSGsxVFJERUF4aW1CU2dLTWdZUklJaXBIQWM",
+      "date": "11/12/2026, 09:04 AM, +0000 UTC",
+      "iso_date": "2026-11-12T09:04:43Z"
+    },
+    {
+      "position": 27,
+      "title": "Artificial Intelligence and Treasury Issuance",
+      "source": {
+        "name": "富途牛牛",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.futunn.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://news.futunn.com/en/post/1004283188/artificial-intelligence-and-treasury-issuance",
+      "thumbnail": "https://pubimg.futunn.com/2022052003435938bf88e2eb5e3.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW5RMk5hUlZaRFgwUnFZa2QyVFJERUF4aW1CU2dLTWdhcFFZendJQVU",
+      "date": "11/12/2026, 06:06 AM, +0000 UTC",
+      "iso_date": "2026-11-12T06:06:52Z"
+    },
+    {
+      "position": 28,
+      "title": "Build autonomous AI agents with Amazon Bedrock and Spring AI",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/11/ML-20629-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUllalJqWm10RGRrNU1RakpZVFJDSEF4aVBCaWdLTWdB",
+      "date": "11/12/2026, 01:18 AM, +0000 UTC",
+      "iso_date": "2026-11-12T01:18:23Z"
+    },
+    {
+      "position": 29,
+      "title": "IBM and Microsoft partner on Imagine Enterprise artificial intelligence platform",
+      "source": {
+        "name": "Vietnam Investment Review - VIR",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://vir.com.vn&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://vir.com.vn/ibm-and-microsoft-partner-on-imagine-enterprise-artificial-intelligence-platform-164896.html",
+      "thumbnail": "https://vir.com.vn/stores/ads_data/2026/102026/16/11/ma2026-mb-20261016113642.jpg?rt=20261016113643",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXhNekJKVUVwWFkzQnlRMUppVFJDakF4amJCU2dLTWdZUlVwQUhKUWM",
+      "date": "11/11/2026, 07:21 AM, +0000 UTC",
+      "iso_date": "2026-11-11T07:21:13Z"
+    },
+    {
+      "position": 30,
+      "title": "Accelerating generative AI delivery with reusable assets",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-delivery-with-reusable-assets/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/02/ML-20608-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVpjVU5HWW1zMUxVMXZiV0ZQVFJDSEF4aVBCaWdLTWdB",
+      "date": "11/11/2026, 07:19 PM, +0000 UTC",
+      "iso_date": "2026-11-11T19:19:21Z"
+    },
+    {
+      "position": 31,
+      "title": "Can the AI boom make enough money to sustain itself?",
+      "source": {
+        "name": "The Economist",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.economist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.economist.com/briefing/2026/11/12/can-the-ai-boom-make-enough-money-to-sustain-itself",
+      "thumbnail": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20261114_FBD001.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNhbTB0YmtoRWRVbHpNbkpvVFJDZkF4ampCU2dLTWdZTmM0WnJOUWM",
+      "date": "11/12/2026, 09:54 AM, +0000 UTC",
+      "iso_date": "2026-11-12T09:54:13Z"
+    },
+    {
+      "position": 32,
+      "title": "Australia to introduce mandatory reporting after OpenAI hack to combat artificial intelligence ‘going rogue’",
+      "source": {
+        "name": "The Guardian",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.theguardian.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Josh Butler",
+          "Tess Ikonomou"
+        ]
+      },
+      "link": "https://www.theguardian.com/technology/2026/nov/10/australia-manadatory-reporting-openai-medicare-hack",
+      "thumbnail": "https://i.guim.co.uk/img/media/dffa89dc77a6bbaad44df383335bad241ee8e4ac/250_0_2500_2000/master/2500.jpg?width=465&dpr=1&s=none&crop=none",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVlTbTFVTVRsclMzRnNSemxHVFJEMEFoalJBeWdLTWdhcGRJeXVyUWM",
+      "date": "11/10/2026, 02:31 AM, +0000 UTC",
+      "iso_date": "2026-11-10T02:31:00Z"
+    },
+    {
+      "position": 33,
+      "title": "Why you should expect an AI crash",
+      "source": {
+        "name": "The Economist",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.economist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "thumbnail": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20261114_LDD001_FH.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWpMVUpZVld4dFpETnlMV2xyVFJESUJCaU5CQ2dLTWdZVlVvaEtMUVE",
+      "date": "11/12/2026, 09:54 AM, +0000 UTC",
+      "iso_date": "2026-11-12T09:54:50Z"
+    },
+    {
+      "position": 34,
+      "title": "How AI and automation could transform the global egg industry",
+      "source": {
+        "name": "All about feed",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.foodagribusiness.world&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Tony McDougal"
+        ]
+      },
+      "link": "https://www.foodagribusiness.world/poultry/data-and-artificial-intelligence-the-next-revolution",
+      "thumbnail": "https://www.foodagribusiness.world/_next/image?url=%2Fapi%2Fucms-image%3Fpath%3D%252Fapi%252Fmedia%252Ffile%252FRevolution.png&w=3840&q=75&dpl=481b7f1b6d800ba856a3c81582614ab45fa10afc",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRjRlZmYTBoclRHWXhUMmxZVFJDZkF4amlCU2dLTWdZQlFJSmxVZ0k",
+      "date": "11/12/2026, 08:11 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:11:38Z"
+    },
+    {
+      "position": 35,
+      "title": "Jensen Huang’s recklessness leaves Nvidia with no good options",
+      "source": {
+        "name": "The Economist",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.economist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.economist.com/business/2026/11/12/jensen-huangs-recklessness-leaves-nvidia-with-no-good-options",
+      "thumbnail": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20261114_WBD003.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVRiRGsyVWpaU1QwdE9WemxuVFJDZkF4ampCU2dLTWdtQmRKQ3ZMV2ZZN1FF",
+      "date": "11/12/2026, 10:20 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:20:28Z"
+    },
+    {
+      "position": 36,
+      "title": "Quanta expects server business to grow",
+      "source": {
+        "name": "Taipei Times",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.taipeitimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.taipeitimes.com/News/biz/archives/2026/11/12/2003867570",
+      "thumbnail": "https://img.taipeitimes.com/images/2026/11/12/P09-261112-006.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTFMVFJpYlRaWE4xQXdZemRwVFJEQUF4aXNCU2dLTWdB",
+      "date": "11/11/2026, 04:00 PM, +0000 UTC",
+      "iso_date": "2026-11-11T16:00:00Z"
+    },
+    {
+      "position": 37,
+      "title": "Alibaba shares drop 7% as Nvidia saga triggers chip access fears",
+      "source": {
+        "name": "The Edge Malaysia",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://theedgemalaysia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jeanny Yu"
+        ]
+      },
+      "link": "https://theedgemalaysia.com/node/825506",
+      "thumbnail": "https://theedgemalaysia.com/_next/image?url=https%3A%2F%2Fassets.theedgemarkets.com%2Falibaba_20261112162232_Bloomberg.jpg&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNWhOREpXVWxKWFJraHdXREF5VFJDM0FSaVRBaWdCTWdzQllJYWxMT2VvVWxrSHFn",
+      "date": "11/12/2026, 08:26 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:26:44Z"
+    },
+    {
+      "position": 38,
+      "title": "AI Futures Project Pulls Its “Intelligence Explosion” Forecast Into 2027",
+      "source": {
+        "name": "Forbes",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.forbes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Anisha Sircar"
+        ]
+      },
+      "link": "https://www.forbes.com/sites/anishasircar/2026/11/12/ai-futures-project-pulls-its-intelligence-explosion-forecast-into-2027/",
+      "thumbnail": "https://imageio.forbes.com/specials-images/imageserve/6af59d2213472dfe20db95e4/TOPSHOT-CORRECTION---SWITZERLAND-COMPUTERS-AI-TECHNOLOGY/0x0.jpg?format=jpg&width=480",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUpjVkF4UmpKMWQyNVJPR2REVFJEQUFoamdBeWdLTWdhTmxveG50Z1U",
+      "date": "11/12/2026, 11:06 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:06:01Z"
+    },
+    {
+      "position": 39,
+      "title": "Digital minister opens National AI Readiness Week as drive targets five million AI-ready Malaysians",
+      "source": {
+        "name": "Yahoo",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://malaysia.news.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://malaysia.news.yahoo.com/digital-minister-opens-national-ai-080509514.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/911838c39b9631d84aef45e12b18e29a12e5c4c7e279a334fe13ea7c050e7b6d/lightyear_networkapi/resizefill_w976%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmmail.com.my%2Fd6f5dea502172cc9d917ba650a08e5ba.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHlUelZRVTNSUlNrNHhhREU1VFJERUF4aW5CU2dLTWdZQmtJcUZPQVU",
+      "date": "11/12/2026, 08:05 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:05:09Z"
+    },
+    {
+      "position": 40,
+      "title": "COMMENTARY: How clinical integration is impacting deal terms for AI-enabled medical devices",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.reuters.com/legal/transactional/how-clinical-integration-is-impacting-deal-terms-ai-enabled-medical-devices--pracin-2026-11-11/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/UBQAV74FA5PSFPMQFKNHMCVOSA.jpg?auth=efe3ad9b38bfb24e97a2711df887a7ba385a71aff05501669fdda2399e585524&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUhWelJCWkdvellWcEVXa0k1VFJERUF4aW1CU2dLTWdhQlVZak5KUVU",
+      "date": "11/11/2026, 01:59 PM, +0000 UTC",
+      "iso_date": "2026-11-11T13:59:42Z"
+    },
+    {
+      "position": 41,
+      "title": "Introducing the Web Search API on Amazon Bedrock AgentCore",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/11/ML-22165-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWZZMk42T0VOVldrZFdOM3BqVFJDSEF4aVBCaWdLTWdZSk01Um5MUWc",
+      "date": "11/11/2026, 11:13 PM, +0000 UTC",
+      "iso_date": "2026-11-11T23:13:16Z"
+    },
+    {
+      "position": 42,
+      "title": "Can AI help us talk to animals?",
+      "source": {
+        "name": "Euronews.com",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.euronews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.euronews.com/2026/11/09/could-artificial-intelligence-help-us-talk-with-animals-one-day",
+      "thumbnail": "https://images.euronews.com/articles/stories/09/98/57/13/1536x864_cmsv2_a330b90d-d34e-5199-b900-79c6d1dc154c-9985713.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXpUVTluTTBKTVNHTnZXbmhZVFJDZkF4ampCU2dLTWdtQllZU3VPZWJJdFFB",
+      "date": "11/09/2026, 02:58 PM, +0000 UTC",
+      "iso_date": "2026-11-09T14:58:57Z"
+    },
+    {
+      "position": 43,
+      "title": "AI spending helps lift UK growth to fastest since early 2024",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Suban Soraia Abdulla",
+          "David Milliken"
+        ]
+      },
+      "link": "https://www.reuters.com/world/uk/uk-economy-grows-07-q3-ons-data-shows-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/X5WETLKBX5PKXADCQASRYXHGZE.jpg?auth=b3c2cc1453e0d8d0c133785da81d0eb991526a6837e98f0f37df3eae6f7d0e59&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUZPWFZNVTBGNlJFMWhjV3N0VFJES0F4aWVCU2dLTWdrQndJRElUYU5FOVFB",
+      "date": "11/12/2026, 07:08 AM, +0000 UTC",
+      "iso_date": "2026-11-12T07:08:00Z"
+    },
+    {
+      "position": 44,
+      "title": "How skills and agents work in AWS Quick | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Jed Lechner"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/how-skills-and-agents-work-in-aws-quick/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-22266-1.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFkRzlaY2xRNWFIVkhaMnRtVFJEakF4ajdCQ2dLTWdZVlU0TE5OUVk",
+      "date": "11/10/2026, 12:21 AM, +0000 UTC",
+      "iso_date": "2026-11-10T00:21:34Z"
+    },
+    {
+      "position": 45,
+      "title": "Opinion — Funding the future: Why IP financing is the missing link for Malaysia's AI ambitions",
+      "source": {
+        "name": "The Edge Malaysia",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://theedgemalaysia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Hoe-Han Goh"
+        ]
+      },
+      "link": "https://theedgemalaysia.com/node/825494",
+      "thumbnail": "https://theedgemalaysia.com/_next/image?url=https%3A%2F%2Fassets.theedgemarkets.com%2F12mimos_20261112152601.jpg&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1ORkpMV2kwME5tWnlXREJpVFJERUF4aW1CU2dLTWdhaFE1Q3RvUVU",
+      "date": "11/12/2026, 07:32 AM, +0000 UTC",
+      "iso_date": "2026-11-12T07:32:16Z"
+    },
+    {
+      "position": 46,
+      "title": "It’s the Artificial Intelligence Muddle Now",
+      "source": {
+        "name": "Heatmap News",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://heatmap.news&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Robinson Meyer"
+        ]
+      },
+      "link": "https://heatmap.news/daily/the-artificial-intelligence-muddle",
+      "thumbnail": "https://heatmap.news/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy82ODY2MjM4OC9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTgwODEzMDQyOH0.ocDOjSSRH5SeGmwYD5O3QuuddGQ4qGzRYAZd43sVCSs/image.jpg?width=600&height=600&quality=99&coordinates=200%2C0%2C200%2C0",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTBVMXBrVVUxYU1uSm9RMEpCVFJDcUJCaXFCQ2dLTWdB",
+      "date": "11/12/2026, 12:20 AM, +0000 UTC",
+      "iso_date": "2026-11-12T00:20:14Z"
+    },
+    {
+      "position": 47,
+      "title": "Google’s Gemini Decisions API to handle up to 1,000 questions per request",
+      "source": {
+        "name": "InfoWorld",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.infoworld.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Prasanth Aby Thomas"
+        ]
+      },
+      "link": "https://www.infoworld.com/article/4247774/googles-gemini-decisions-api-to-handle-up-to-1000-questions-per-request.html",
+      "thumbnail": "https://www.infoworld.com/wp-content/uploads/2026/11/4247774-0-46563800-1794480838-shutterstock_2497349479_447e04.jpg?quality=50&strip=all",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTNZV3hoVUcxVFJHdFZOWFpYVFJDU0F4ajdCU2dLTWdZZFFvejFJQWc",
+      "date": "11/12/2026, 10:55 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:55:17Z"
+    },
+    {
+      "position": 48,
+      "title": "Artificial intelligence is expected to take centerstage in discussions at the upcoming ASEAN Summit, as Southeast Asian leaders seek to strengthen regional cooperation amid global uncertainties. | via ANC 24/7 Link to full story in the comments section.",
+      "source": {
+        "name": "Facebook",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.facebook.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.facebook.com/abscbnNEWS/posts/artificial-intelligence-is-expected-to-take-centerstage-in-discussions-at-the-up/1760466382795277/",
+      "thumbnail": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1760466346128614",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHpkVXhZVW5oWk5HVnNOV3QzVFJEckJCanZBeWdLTWdZUk1JNk9NUVk",
+      "date": "11/11/2026, 08:00 PM, +0000 UTC",
+      "iso_date": "2026-11-11T20:00:28Z"
+    },
+    {
+      "position": 49,
+      "title": "Artificial intelligence will change the economics of architectural practice",
+      "source": {
+        "name": "ArchitectureLive!",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://architecture.live&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Rajeev Kathpalia"
+        ]
+      },
+      "link": "https://architecture.live/artificial-intelligence-will-change-the-economics-of-architectural-practice/",
+      "thumbnail": "https://i0.wp.com/architecture.live/wp-content/uploads/2026/11/Artificial-intelligence-will-change-the-economics-of-architectural-practice-Rajiv-Kathpalia-on-the-future-of-architectural-practice.jpg?resize=800%2C441&ssl=1",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNUJTVlpoU2twb2RIUmphREpDVFJDYkF4anFCU2dLTWdzQkFJckdrV1FHOGppMHNB",
+      "date": "11/12/2026, 07:10 AM, +0000 UTC",
+      "iso_date": "2026-11-12T07:10:03Z"
+    },
+    {
+      "position": 50,
+      "title": "S&P 500 rises around 1.5% as artificial intelligence optimism and CoreWeave earnings fuel rebound",
+      "source": {
+        "name": "Traders Union",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://tradersunion.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://tradersunion.com/news/stocks/show/4202713-sandp-500-rises-1-48percent-today/",
+      "thumbnail": "https://files.tradersunion.com/images/analytics-news/sp500/small/sp500_10_small.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVlVRjlJVjJvMmRGWjJWSGxmVFJETkFoajBBeWdLTWdZQk1JNVpGQXM",
+      "date": "11/11/2026, 05:54 PM, +0000 UTC",
+      "iso_date": "2026-11-11T17:54:37Z"
+    },
+    {
+      "position": 51,
+      "title": "Artificial intelligence, new consumers and future of fashion business",
+      "source": {
+        "name": "Fashion United",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://fashionunited.uk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Alicia Reyes Sarmiento"
+        ]
+      },
+      "link": "https://fashionunited.uk/news/fairs/artificial-intelligence-new-consumers-and-future-of-fashion-business/2026111291288",
+      "thumbnail": "https://r.fashionunited.com/w7EOJs5MUUx10dPv0Hh9m6O-xqgDVbxxgBxPVn57ofg/resize:fill-down:720:480:0/gravity:ce/quality:70/aHR0cHM6Ly9mYXNoaW9udW5pdGVkLmNvbS9pbWcvdXBsb2FkLzIwMjYvMTEvMDcvZ2VtaW5pLWdlbmVyYXRlZC1pbWFnZS1renM5enhrenM5enhrenM5LXd0MGNmc3g2LTIwMjYtMTEtMDcuanhs",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUJTMDFzVTBJNE1rZHRRV2gyVFJDM0FSaVRBaWdCTWdZSmhZem1NZ2M",
+      "date": "11/12/2026, 05:12 AM, +0000 UTC",
+      "iso_date": "2026-11-12T05:12:35Z"
+    },
+    {
+      "position": 52,
+      "title": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21045-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVhlSEJZWVRaM1VFZHNVemRMVFJDSEF4aVBCaWdLTWdZSk5KS25NUWM",
+      "date": "11/11/2026, 03:10 PM, +0000 UTC",
+      "iso_date": "2026-11-11T15:10:23Z"
+    },
+    {
+      "position": 53,
+      "title": "Martins Otun Receives 2026 Global Recognition Award for Innovation in Artificial Intelligence and Pharmaceutical Technology",
+      "source": {
+        "name": "markets.businessinsider.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://markets.businessinsider.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://markets.businessinsider.com/news/stocks/martins-otun-receives-2026-global-recognition-award-for-innovation-in-artificial-intelligence-and-pharmaceutical-technology-1036749670",
+      "thumbnail": "https://storage.googleapis.com/mmstudio-images/gallery/zUJ6QeiqH3bZUCA6Ae5T6UvTw0q2/1794400677037-0.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWhhbDlHUWtoNlNqQTRORUpRVFJDZkF4ampCU2dLTWdhdFpaYk9wUWc",
+      "date": "11/11/2026, 04:05 PM, +0000 UTC",
+      "iso_date": "2026-11-11T16:05:25Z"
+    },
+    {
+      "position": 54,
+      "title": "Law firm Latham earmarks cash for associates' AI contributions",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sara Merken"
+        ]
+      },
+      "link": "https://www.reuters.com/legal/litigation/law-firm-latham-earmarks-cash-associates-ai-contributions-2026-11-11/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/CLD5J4LXD5J6LAWIHFPX574A7Y.jpg?auth=8adb5b22ea4fa0a0699c34fa98c94c3f466127a0bb60b38e1fb74ee065194d7f&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVBRblpuVFVSdGNHczJNWHBNVFJDMkF4aThCU2dLTWdZQlVJS3ZKQWc",
+      "date": "11/11/2026, 10:22 PM, +0000 UTC",
+      "iso_date": "2026-11-11T22:22:56Z"
+    },
+    {
+      "position": 55,
+      "title": "3 Artificial Intelligence (AI) Stocks to Buy on the Post-Election Dip and Hold for 5 Years",
+      "source": {
+        "name": "Yahoo Finance",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://finance.yahoo.com/technology/ai/articles/3-artificial-intelligence-ai-stocks-152102241.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/8585cb12c42a7e9837dcfa4f76dc0a05e1821d367c055427621862969e62745e/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2F94313190789de250ee8a611dcc520f26.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXFUVzF4TVhoa2JuQTBObGc1VFJERUF4aW1CU2dLTWdZZE5JeUxJUWM",
+      "date": "11/11/2026, 03:21 PM, +0000 UTC",
+      "iso_date": "2026-11-11T15:21:02Z"
+    },
+    {
+      "position": 56,
+      "title": "How to prepare the Pa for the responsible use of artificial intelligence",
+      "source": {
+        "name": "Il Sole 24 ORE",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://en.ilsole24ore.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Luca Brambilla",
+          "Barbara Quacquarelli"
+        ]
+      },
+      "link": "https://en.ilsole24ore.com/art/how-to-prepare-for-the-responsible-use-of-artificial-intelligence-AJIFhxDC",
+      "thumbnail": "https://i2.res.24o.it/images2010/S24/Documenti/2026/11/13/Immagini/Ritagli/AdobeStock_1441140951-U57880104681eGu-1440x752@IlSole24Ore-Web.jpeg?r=650x341",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlhblpsV1V0TmJYWnJkSE5PVFJEVEFoaUtCU2dLTWdheEJKSnhnUTA",
+      "date": "11/12/2026, 11:00 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:00:36Z"
+    },
+    {
+      "position": 57,
+      "title": "Australia plans new regulator for artificial intelligence after OpenAI hack",
+      "source": {
+        "name": "Nikkei Asia",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://asia.nikkei.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Shaun Turton"
+        ]
+      },
+      "link": "https://asia.nikkei.com/business/technology/artificial-intelligence/australia-plans-new-regulator-for-artificial-intelligence-after-openai-hack",
+      "thumbnail": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F1%2F8%2F5%2F3%2F13423581-1-eng-GB%2Fcf947ba82249-20261110135333092200-originalbc.jpg?fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms&format=auto&width=780",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFNRTR5Tm1kbVZVdEpabW90VFJDZkF4amlCU2dLTWdZZFlJd3FKZ2c",
+      "date": "11/10/2026, 03:56 AM, +0000 UTC",
+      "iso_date": "2026-11-10T03:56:00Z"
+    },
+    {
+      "position": 58,
+      "title": "Financial Times Names Cristina Criddle Chief Artificial Intelligence Correspondent",
+      "source": {
+        "name": "citybiz",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.citybiz.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.citybiz.co/article/932412/financial-times-names-cristina-criddle-chief-artificial-intelligence-correspondent/",
+      "thumbnail": "https://www.citybiz.co/wp-content/uploads/2026/11/Cristina-Criddle.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTJORTFzTlU1SGNUSndkVkZXVFJEN0FoallCQ2dLTWdhdGRJcU9OUVU",
+      "date": "11/12/2026, 07:52 AM, +0000 UTC",
+      "iso_date": "2026-11-12T07:52:04Z"
+    },
+    {
+      "position": 59,
+      "title": "South Africa and China advance plans for Artificial Intelligence Talent Development and Innovation Centre",
+      "source": {
+        "name": "Tech Review Africa",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://techreviewafrica.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://techreviewafrica.com/news/8273/south-africa-and-china-advance-plans-for-artificial-intelligence-talent-development-and-innovation-centre",
+      "thumbnail": "https://techreviewafrica.com/assets/images/news/2026/11/12/6af5a0482762c1794482248.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVlibmRhWkRoNllqQjVWbG81VFJDZEF4am5CU2dLTWdrQklKaWtsdWtkaFFJ",
+      "date": "11/12/2026, 11:19 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:19:58Z"
+    },
+    {
+      "position": 60,
+      "title": "Amazon Bedrock tokenomics data lake | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Steph Gooch"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/06/ML-21645-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTRjV3BIWmtob2RuZ3RMUzFXVFJDY0F4am9CU2dLTWdB",
+      "date": "11/10/2026, 04:56 PM, +0000 UTC",
+      "iso_date": "2026-11-10T16:56:36Z"
+    },
+    {
+      "position": 61,
+      "title": "Nvidia CEO faces allegations of second affair with employee after ties to Chinese woman suspected of espionage",
+      "source": {
+        "name": "Le Monde.fr",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.lemonde.fr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Arnaud Leparmentier"
+        ]
+      },
+      "link": "https://www.lemonde.fr/en/economy/article/2026/11/12/nvidia-ceo-faces-allegations-of-second-affair-with-employee-after-ties-to-chinese-woman-suspected-of-espionage_6778213_19.html",
+      "thumbnail": "https://img.lemde.fr/2026/11/11/0/0/2622/1748/664/0/75/0/bd896c3_ftp-1-6uijf5ikok0d-2026-11-11t224957z-297672016-rc2wjna9oj74-rtrmadp-3-nvidia-ceo.JPG",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNURWazlOVkdaS2IxYzBjM1JmVFJDN0F4aVlCU2dLTWdZcFlwS3VwUWc",
+      "date": "11/12/2026, 01:13 AM, +0000 UTC",
+      "iso_date": "2026-11-12T01:13:15Z"
+    },
+    {
+      "position": 62,
+      "title": "Exploring How Autistic Individuals Interact With Artificial Intelligence",
+      "source": {
+        "name": "SBU News",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.stonybrook.edu&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://news.stonybrook.edu/university/researchers-explore-how-autistic-individuals-interact-with-artificial-intelligence/",
+      "thumbnail": "https://news.stonybrook.edu/wp-content/uploads/2026/11/ben-zhang-26.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTVNbXBZVTA1Q1dFY3dOMWRQVFJDQUJSamdBeWdLTWdZbFZaaXRJUWc",
+      "date": "11/11/2026, 08:37 PM, +0000 UTC",
+      "iso_date": "2026-11-11T20:37:35Z"
+    },
+    {
+      "position": 63,
+      "title": "Jev and the era of model Tetris",
+      "source": {
+        "name": "CIO",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.cio.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Pete Johnson"
+        ]
+      },
+      "link": "https://www.cio.com/article/4247450/jev-and-the-era-of-model-tetris.html",
+      "thumbnail": "https://www.cio.com/wp-content/uploads/2026/11/4247450-0-83495100-1794474146-patrick-kuo-e2jXOJdz5v8-unsplash.jpg?quality=50&strip=all",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVpTRmxRUm5kaFRXZHVYM0ZyVFJEZ0F4al9CQ2dLTWdB",
+      "date": "11/12/2026, 09:04 AM, +0000 UTC",
+      "iso_date": "2026-11-12T09:04:01Z"
+    },
+    {
+      "position": 64,
+      "title": "Google has unveiled AlphaGenome 2 to help identify the causes of diseases",
+      "source": {
+        "name": "UkrMedia News",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://ukrmedia.news&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://ukrmedia.news/en/science-tech/google-alphagenome-2-shi-mutatsii-dnk-khvoroby/",
+      "thumbnail": "https://ukrmedia.news/wp-content/uploads/2026/11/Screenshot_6-4.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNUbVJsU3poeGIzcFBXV1J6VFJDaEF4amdCU2dLTWdZSmdJUlF4UVE",
+      "date": "11/12/2026, 08:51 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:51:28Z"
+    },
+    {
+      "position": 65,
+      "title": "Chinese banks have been using artificial intelligence (AI) for their work in earnest, from simple ta..",
+      "source": {
+        "name": "매일경제",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.mk.co.kr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mk.co.kr/en/world/12206141",
+      "thumbnail": "https://wimg.mk.co.kr/news/cms/202611/12/rcv.YNA.20261019.PRU20261019348101009_P1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNaVWxQUlVoeFRVNUVOVVZSVFJERUF4aW1CU2dLTWdZZE1vaHNIUWc",
+      "date": "11/12/2026, 01:40 AM, +0000 UTC",
+      "iso_date": "2026-11-12T01:40:46Z"
+    },
+    {
+      "position": 66,
+      "title": "Deutsche Telekom to double AI computing capacity at Munich facility",
+      "source": {
+        "name": "W.Media",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://w.media&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Conor Mcnevin"
+        ]
+      },
+      "link": "https://w.media/deutsche-telekom-to-double-ai-computing-capacity-at-munich-facility/",
+      "thumbnail": "https://w.media/wp-content/uploads/2026/11/image-2-1024x576.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDJVSEJSWjNsbVlWZHpZa1ZhVFJDZkF4ampCU2dLTWdB",
+      "date": "11/12/2026, 04:03 AM, +0000 UTC",
+      "iso_date": "2026-11-12T04:03:00Z"
+    },
+    {
+      "position": 67,
+      "title": "Japan’s Nikkei Rises for a Third Day Amid Optimism Over Artificial Intelligence",
+      "source": {
+        "name": "صحيفة مال",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://maaal.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://maaal.com/en/news/details/japans-nikkei-rises-for/",
+      "thumbnail": "https://maaal.com/_next/image/?url=https%3A%2F%2Fstage.maaal.com%2Fstorage%2Fuploads%2Fphotos%2Fnews%2F2026-11%2F1881571068322895.webp&w=3840&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUJlblpmUTNoMGEzaEtNR2w1VFJDZ0F4amlCU2dLTWdtWkVJNEpqcXBFcXdF",
+      "date": "11/11/2026, 02:43 PM, +0000 UTC",
+      "iso_date": "2026-11-11T14:43:07Z"
+    },
+    {
+      "position": 68,
+      "title": "This is not a bet against artificial intelligence (AI). There's only one reason we're shorting Nvid..",
+      "source": {
+        "name": "매일경제",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.mk.co.kr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mk.co.kr/en/world/12206613",
+      "thumbnail": "https://pimg.mk.co.kr/news/cms/202611/13/20261113_01110108000007_L00.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDJTVEF5YVZjeFVWQTBaVTR3VFJERUF4aW1CU2dLTWdhdE5ZTE9tUWs",
+      "date": "11/12/2026, 08:19 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:19:09Z"
+    },
+    {
+      "position": 69,
+      "title": "Advanced Micro Devices vs. Marvell Technology: Which Artificial Intelligence Stock Is a Better Buy Going into 2027?",
+      "source": {
+        "name": "The Globe and Mail",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.theglobeandmail.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/8792141/advanced-micro-devices-vs-marvell-technology-which-artificial-intelligence-stock-is-a-better-buy-going-into-2027/",
+      "thumbnail": "https://www.theglobeandmail.com/resizer/v2/GVU6BRXLRVFFZNIXINDQS4ZSAE.JPG?auth=d367fe1497a2800aae48a86fbd7f2471e8f829b7607bbcee26cf622ff75bfec0&width=300&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXNUWFJDVFhsemNHY3RUamhOVFJESUFSaXNBaWdLTWdZOVFZYlVLQWM",
+      "date": "11/12/2026, 03:58 AM, +0000 UTC",
+      "iso_date": "2026-11-12T03:58:47Z"
+    },
+    {
+      "position": 70,
+      "title": "The government will develop eight domestic artificial intelligence (AI) semiconductors used in auton..",
+      "source": {
+        "name": "매일경제",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.mk.co.kr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mk.co.kr/en/economy/12206622",
+      "thumbnail": "https://pimg.mk.co.kr/news/cms/202611/13/20261113_01160113000003_M00.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXdNbFpzYVdaVVNWUjJUalV4VFJEVEJCajBBeWdLTWdrQlFZU3RUU09hS3dJ",
+      "date": "11/12/2026, 10:20 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:20:01Z"
+    },
+    {
+      "position": 71,
+      "title": "The ranking of food and beverage brands recommended by generative artificial intelligence (AI) such",
+      "source": {
+        "name": "매일경제",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.mk.co.kr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mk.co.kr/en/business/12206088",
+      "thumbnail": "https://wimg.mk.co.kr/news/cms/202611/12/news-p.v1.20261112.5e1bdc7ee98c4df5b558174a63f0802a_P1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVVPVlpFV0RCa1IzTTFZalZYVFJDVEJSalNBeWdLTWdhRkE0aG55Z1E",
+      "date": "11/12/2026, 01:05 AM, +0000 UTC",
+      "iso_date": "2026-11-12T01:05:37Z"
+    },
+    {
+      "position": 72,
+      "title": "AI image falsely depicts soldiers supporting wanted Philippine senator",
+      "source": {
+        "name": "AFP Fact Check",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://factcheck.afp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://factcheck.afp.com/doc.afp.com.D74N99E",
+      "thumbnail": "https://factcheck.afp.com/sites/default/files/medias/factchecking/g2/2026-11/34abccc225cda27c2532878002b02368-en.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdiWGw1Vmtock5YbG9OVmRJVFJDZkFSaS1BaWdCTWdZTmtvNG52UVk",
+      "date": "11/12/2026, 04:48 AM, +0000 UTC",
+      "iso_date": "2026-11-12T04:48:17Z"
+    },
+    {
+      "position": 73,
+      "title": "Global powers head to Asia with trade, AI, security in focus",
+      "source": {
+        "name": "Yahoo News Singapore",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://sg.news.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://sg.news.yahoo.com/global-powers-head-asia-trade-030113380.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/6e0139dd7209503d357b8dc7ad8571472e2e1d48bf19a373008c5a5577e6e017/lightyear_networkapi/resizefill_w768_h512%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com.sg%2Ff5128a5e51740f36a7ba584b6f51b164.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTZVbUYyTmtKRU5GTnljelYyVFJERUF4aW1CU2dLTWdB",
+      "date": "11/12/2026, 03:01 AM, +0000 UTC",
+      "iso_date": "2026-11-12T03:01:00Z"
+    },
+    {
+      "position": 74,
+      "title": "EPFL Introduces New Bachelor In Artificial Intelligence",
+      "source": {
+        "name": "Mirage News",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.miragenews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.miragenews.com/epfl-introduces-new-bachelor-in-artificial-1776249/",
+      "thumbnail": "https://news.epfl.ch/image/169247/1108x622.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUdOVWhmVGt0eGRHeERYMWhLVFJDb0FSaXNBaWdCTWdB",
+      "date": "11/12/2026, 06:13 AM, +0000 UTC",
+      "iso_date": "2026-11-12T06:13:00Z"
+    },
+    {
+      "position": 75,
+      "title": "AI risk decoded: What are the real threats posed by AI?",
+      "source": {
+        "name": "IT Pro",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.itpro.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Kate O'flaherty"
+        ]
+      },
+      "link": "https://www.itpro.com/technology/artificial-intelligence/ai-risk-decoded-what-are-the-real-threats-posed-by-ai",
+      "thumbnail": "https://cdn.mos.cms.futurecdn.net/LZaczbyqEbZvgsEb8jX8UZ.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTVUV041YkdOcGJVczFSVmxhVFJERUF4aW1CU2dLTWdZdGhJak93UVE",
+      "date": "11/12/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:00:00Z"
+    },
+    {
+      "position": 76,
+      "title": "Asian shares mostly slip as Nvidia's troubles weigh on AI stocks, despite a rally on Wall St",
+      "source": {
+        "name": "Yahoo Finance",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Yuri Kageyama"
+        ]
+      },
+      "link": "https://finance.yahoo.com/markets/stocks/articles/asian-shares-mostly-slip-nvidias-041124515.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/e44aaccd208ec649138b58a114906dfa6999c667bbacfe8cb475cfd05b42fc42/lightyear_networkapi/resizefill_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fap.org%2Ffaf3701784e4c81b70f1e65af5eb5038.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWtOMFpMVTJKV01FNXJSMTk2VFJERUF4aW1CU2dLTWdhQlFJQUR0d1U",
+      "date": "11/12/2026, 04:18 AM, +0000 UTC",
+      "iso_date": "2026-11-12T04:18:11Z"
+    },
+    {
+      "position": 77,
+      "title": "Artificial intelligence and European firms: the cost of market-based financing",
+      "source": {
+        "name": "Zprávy Kurzy.cz",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://zpravy.kurzy.cz&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sofia Gori",
+          "Johannes Gross"
+        ]
+      },
+      "link": "https://zpravy.kurzy.cz/881655-artificial-intelligence-and-european-firms-the-cost-of-market-based-financing/",
+      "thumbnail": "https://i.fin.cz/zpravy/obrazky/55/881655/social-default.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNVbkpLV0hKVWNqUkNjbHAwVFJDSEF4aVBCaWdLTWdZcGhZNnVNUVk",
+      "date": "11/12/2026, 09:00 AM, +0000 UTC",
+      "iso_date": "2026-11-12T09:00:00Z"
+    },
+    {
+      "position": 78,
+      "title": "ECB economists turn to Reddit and AI to read investors' mood",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Balázs Korányi"
+        ]
+      },
+      "link": "https://www.reuters.com/technology/ecb-economists-turn-reddit-ai-read-investors-mood-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/6WIT5GZ2M5PETDIRDIC3JXWWPQ.jpg?auth=4626328dc55cf10cdeaa3dc8964a96eaf6ae31105f4d3ac01ecf55b1d3bd9e57&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDFabFJRUkdWRmJtTlFZVFpMVFJERUF4aW1CU2dLTWdB",
+      "date": "11/12/2026, 10:07 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:07:45Z"
+    },
+    {
+      "position": 79,
+      "title": "Opinion | How the internet could break",
+      "source": {
+        "name": "The Washington Post",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.washingtonpost.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.washingtonpost.com/opinions/2026/11/12/ai-is-exposing-internets-cybersecurity-vulnerabilities/",
+      "thumbnail": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/OVMLILRC5BFJNHKKF6O3S6Y7QY.jpg&w=1440",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRXbmRpZFRKTldHZEpaMGwxVFJERUF4aW5CU2dLTWdhbFZKS05KUWc",
+      "date": "11/12/2026, 11:04 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:04:00Z"
+    },
+    {
+      "position": 80,
+      "title": "People project a specific racial identity onto artificial intelligence, study finds",
+      "source": {
+        "name": "PsyPost",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.psypost.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.psypost.org/people-project-a-specific-racial-identity-onto-artificial-intelligence-study-finds/",
+      "thumbnail": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_750,h_375/https://www.psypost.org/wp-content/uploads/2026/04/artificial-intelligence-ai-chip-750x375.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFVSGhrVFVaNlJYVnBORU5LVFJEM0FoanVCU2dLTWdhSlk1S3RMUWM",
+      "date": "11/11/2026, 09:23 PM, +0000 UTC",
+      "iso_date": "2026-11-11T21:23:58Z"
+    },
+    {
+      "position": 81,
+      "title": "Google reworks TPU silicon into specialized systems for agents and security",
+      "source": {
+        "name": "Tom's Hardware",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.tomshardware.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Shane Downing"
+        ]
+      },
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-adds-two-new-specialized-chips-for-ai-agents-and-security-to-8th-gen-tpu-lineup-tpu-8i-max-puts-two-chips-on-one-package-for-long-context-work-tpu-8tx-swaps-arm-hosts-for-amd-epyc",
+      "thumbnail": "https://cdn.mos.cms.futurecdn.net/Ut57hXr6UTF3v4LJmkuGSi-2192-80.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUNPVzFxUW00NUxVVjNTRXB2VFJDZkF4ampCU2dLTWdrSmtwSVJNV2VwcmdF",
+      "date": "11/12/2026, 11:00 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:00:00Z"
+    },
+    {
+      "position": 82,
+      "title": "Editorial: The potential peril of AI is tremendous. So is the potential promise.",
+      "source": {
+        "name": "Post and Courier",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.postandcourier.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.postandcourier.com/opinion/editorials/potential-promise-and-peril-of-artificial-intelligence/article_5d912c25-ad6f-42db-a970-6c61535554f0.html",
+      "thumbnail": "https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/0/00/0005f55b-2536-402b-a4e3-08c4359c8b77/5b7f230817444.image.jpg?resize=400%2C260",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1RM1p6TlVOeFVpMWtaMU5vVFJDRUFoaVFBeWdLTWdZWk1KQXFuZ2c",
+      "date": "11/12/2026, 10:05 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:05:00Z"
+    },
+    {
+      "position": 83,
+      "title": "Prediction: This Under-the-Radar Artificial Intelligence (AI) Stock Is Going to Double Over the Next 12 Months",
+      "source": {
+        "name": "The Motley Fool",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.fool.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Anthony Di Pizio"
+        ]
+      },
+      "link": "https://www.fool.com/investing/2026/11/10/prediction-under-radar-ai-stock-double-12-months/",
+      "thumbnail": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F893870%2Fthe-upstart-logo-against-a-translucent-green-background.jpg&w=3840&op=resize",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVlUR010Y1VScVpIbHJWMUpvVFJERUF4aW1CU2dLTWdhRmtaUUl2UWM",
+      "date": "11/10/2026, 06:31 PM, +0000 UTC",
+      "iso_date": "2026-11-10T18:31:00Z"
+    },
+    {
+      "position": 84,
+      "title": "Professional work deserves professional tools. Meet AWS Quick. | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/professional-work-deserves-professional-tools-meet-aws-quick/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/07/ML-22360-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXNXalZLVWtsS1lYUjNabTlvVFJDSEF4aVBCaWdLTWdZSlE1SkhyUWM",
+      "date": "11/09/2026, 06:43 PM, +0000 UTC",
+      "iso_date": "2026-11-09T18:43:30Z"
+    },
+    {
+      "position": 85,
+      "title": "Howard Marks: Intelligent long-term investment questions rise with artificial intelligence",
+      "source": {
+        "name": "Traders Union",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://tradersunion.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://tradersunion.com/news/billionaires/show/4201834-ai-investment-questions-finance/",
+      "thumbnail": "https://files.tradersunion.com/images/twitter-news/howardmarksbook/small/howardmarksbook_01_small.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWtSR2QyZG1oa1NqVTRObkZCVFJETkFoajBBeWdLTWdhdFE0cXVvUWc",
+      "date": "11/11/2026, 04:48 PM, +0000 UTC",
+      "iso_date": "2026-11-11T16:48:32Z"
+    },
+    {
+      "position": 86,
+      "title": "EXCLUSIVE: Chinese AI firms rush to secure Nvidia chip capacity as spy scandal stirs fear of US curbs",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/I2HAV333JNK6HIF3QS3SO7JLZI.jpg?auth=122e5cc061b0ae95842c6d44ad93af1ab4bec16a25d5381f6b090704b3669b6e&width=1080&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVBUVWhEWlVjNFpYVndUWFZPVFJERUF4aW1CU2dLTWdZQlVKS0VxQWM",
+      "date": "11/12/2026, 05:31 AM, +0000 UTC",
+      "iso_date": "2026-11-12T05:31:00Z"
+    },
+    {
+      "position": 87,
+      "title": "Forget Nvidia CEO Jensen Huang's Affair Scandal -- There Are Far Bigger Issues With the AI Trade",
+      "source": {
+        "name": "The Motley Fool",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.fool.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sean Williams"
+        ]
+      },
+      "link": "https://www.fool.com/investing/2026/11/12/forget-nvidia-jensen-huang-affair-scandal-there-are-far-bigger-issues-with-the-ai-trade/",
+      "thumbnail": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ff9a463b162ea78c0a40a5e5777aaff0e678bd013-4000x3000.jpg&w=3840&op=resize",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDBkVGxyTUc5RlpucE9URXM0VFJEZ0F4aUFCU2dLTWdZcFJZeXRwUVk",
+      "date": "11/12/2026, 10:06 AM, +0000 UTC",
+      "iso_date": "2026-11-12T10:06:00Z"
+    },
+    {
+      "position": 88,
+      "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock | Amazon Web Services",
+      "source": {
+        "name": "Amazon Web Services (AWS)",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Saurabh Trikande",
+          "Chaitanya Manani"
+        ]
+      },
+      "link": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+      "thumbnail": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/02/ML-22229-featured-image.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRSMVUwTnpoU1FUZ3pTMWQxVFJDSEF4aVBCaWdLTWdZSk5aVG1xUWM",
+      "date": "11/11/2026, 01:07 AM, +0000 UTC",
+      "iso_date": "2026-11-11T01:07:19Z"
+    },
+    {
+      "position": 89,
+      "title": "Who could replace Jensen Huang as Nvidia's chief executive?",
+      "source": {
+        "name": "BBC",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Osmond Chia"
+        ]
+      },
+      "link": "https://www.bbc.com/news/articles/cqgm37dv20e8o",
+      "thumbnail": "https://ichef.bbci.co.uk/news/480/cpsprodpb/086c/live/13145560-de47-11f1-93e1-3b657b665bcf.jpg.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRXR2RrUm14M1dTMVRWa2xWVFJDb0FSaXNBaWdCTWdZQllKYlJwQWc",
+      "date": "11/12/2026, 11:21 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:21:25Z"
+    },
+    {
+      "position": 90,
+      "title": "New AI Learning Matrix Brings Nuance to “Wild West” Moment",
+      "source": {
+        "name": "Inside Higher Ed",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.insidehighered.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Kathryn Palmer"
+        ]
+      },
+      "link": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/11/12/new-ai-learning-matrix-brings-nuance-wild",
+      "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/2025-07/GettyImages-1693348762.jpg?itok=VxWPpe4V",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRlVzlPY1dnd1lqUlhNRXc1VFJDb0FSaXJBaWdCTWdhZE1KSzRIQWs",
+      "date": "11/12/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:00:00Z"
+    },
+    {
+      "position": 91,
+      "title": "NEWSLETTER: Nvidia drama revives chip export ban debate",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.reuters.com/technology/artificial-intelligence/nvidia-drama-revives-chip-export-ban-debate-2026-11-11/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/N5QNYOJ53ZG3LPO5RSPCA5ANYI.JPG?auth=78b73ca6cc3261658069fbc84821a87b61dd57cda8778f46fe469fa6e975ca75&width=1920&quality=80",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUJVRzlDY0Rjd2JWUTFSSGsyVFJERUF4aW1CU2dLTWdZQm9ZNFN2UVU",
+      "date": "11/11/2026, 11:15 PM, +0000 UTC",
+      "iso_date": "2026-11-11T23:15:06Z"
+    },
+    {
+      "position": 92,
+      "title": "Responsible AI: A Transformation That Belongs to All | General Assembly of the United Nations",
+      "source": {
+        "name": "Welcome to the United Nations",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.un.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.un.org/pga/81/meetings-and-events/responsible-ai-15-december-2026/",
+      "thumbnail": "https://www.un.org/pga/wp-content/uploads/sites/111/2026/11/pga81-responsible-ai-card.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWpTelJFZURSc2Fsa3pSMWxsVFJDUkF4ajhCU2dLTWdhQlY1UkVNZ2M",
+      "date": "11/11/2026, 12:36 PM, +0000 UTC",
+      "iso_date": "2026-11-11T12:36:32Z"
+    },
+    {
+      "position": 93,
+      "title": "AMD vs. Intel: Which Is the Better Artificial Intelligence (AI) Chip Stock to Buy Right Now?",
+      "source": {
+        "name": "The Motley Fool",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.fool.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Harsh Singh Chauhan"
+        ]
+      },
+      "link": "https://www.fool.com/investing/2026/11/10/amd-vs-intel-which-is-the-better-artificial-intelligence-ai-chip-stock-to-buy-right-now/",
+      "thumbnail": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ff3ea9d8e9c4a34724f58b65c8c2ef7fb4a794ec1-1365x720.jpg&w=1200&op=resize",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRjVUZEUlROVFJFNXdjVGR4VFJDU0F4ajdCU2dLTWdhZFJJcXVJUWc",
+      "date": "11/10/2026, 01:52 PM, +0000 UTC",
+      "iso_date": "2026-11-10T13:52:00Z"
+    },
+    {
+      "position": 94,
+      "title": "World shares are mixed as Nvidia's troubles weigh on AI stocks",
+      "source": {
+        "name": "ABC News - Breaking News, Latest News and Videos",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://abcnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Yuri Kageyama"
+        ]
+      },
+      "link": "https://abcnews.com/Business/wireStory/asian-shares-slip-nvidias-troubles-weigh-ai-stocks-138068465",
+      "thumbnail": "https://s.abcnews.com/images/US/wirestory_8bf08407eafe1655ed73112f7494029a_16x9_1600.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXNWbVZpYlV0dWNpMXhhR05xVFJDZkF4ampCU2dLTWdZbGNJanRLUWc",
+      "date": "11/12/2026, 08:57 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:57:52Z"
+    },
+    {
+      "position": 95,
+      "title": "Korea is one of the obvious winners of the artificial intelligence (AI) era. Even if the AI bubble",
+      "source": {
+        "name": "매일경제",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.mk.co.kr&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.mk.co.kr/en/economy/12206699",
+      "thumbnail": "https://pimg.mk.co.kr/news/cms/202611/13/20261113_01110110000003_M00.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXhRMFo0YUdJd1UxWjJTWHBTVFJEX0JCamdBeWdLTWdhdEZKeVBrUW8",
+      "date": "11/12/2026, 08:39 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:39:05Z"
+    },
+    {
+      "position": 96,
+      "title": "Australian companies face 'AI washing' claims after wave of job cuts, offshoring",
+      "source": {
+        "name": "Yahoo Finance",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Renju Jose",
+          "Christine Chen"
+        ]
+      },
+      "link": "https://finance.yahoo.com/technology/ai/articles/australian-companies-face-ai-washing-210132986.html",
+      "thumbnail": "https://s.yimg.com/lo/mysterio/api/263adba3e2c5461404c075289ae4372b7d29de0972d532a57a3461c3c7ad2b40/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F62015ed7cce63571534ba53ca4efded8.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDJjRTVxZVhKSFFXNXhiVzVqVFJEQkF4aXJCU2dLTWdrQjRJWURUMlExY1FF",
+      "date": "11/11/2026, 09:01 PM, +0000 UTC",
+      "iso_date": "2026-11-11T21:01:32Z"
+    },
+    {
+      "position": 97,
+      "title": "AI Startup Pays Humans $45 An Hour To Babysit Robots On Night Shifts",
+      "source": {
+        "name": "NDTV",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.ndtv.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Nikhil Pandey"
+        ]
+      },
+      "link": "https://www.ndtv.com/artificial-intelligence/ai-startup-pays-humans-45-an-hour-to-babysit-robots-on-night-shifts-12316522",
+      "thumbnail": "https://c.ndtvimg.com/2026-11/c67rn8p8_ai-startup-pays-humans-45-an-hour-to-babysit-robots-on-night-shifts_625x300_12_November_26.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVZiR3AxWms1cGNuSlBja3BhVFJDZkF4ampCU2dLTWdB",
+      "date": "11/12/2026, 08:54 AM, +0000 UTC",
+      "iso_date": "2026-11-12T08:54:50Z"
+    },
+    {
+      "position": 98,
+      "title": "Microsoft says small tweaks to model weights could create AI ‘sleeper agents’",
+      "source": {
+        "name": "IT Pro",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.itpro.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Nicole Kobie"
+        ]
+      },
+      "link": "https://www.itpro.com/technology/artificial-intelligence/microsoft-says-small-tweaks-to-model-weights-could-turn-ai-into-sleeper-agents",
+      "thumbnail": "https://cdn.mos.cms.futurecdn.net/Rud3GBXH2AAntdD3ph87TL-1920-80.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWtaVjgyUTBGTWVVNTFSelk1VFJDZkF4ampCU2dLTWdrQm9JNHlRV2FLc0FF",
+      "date": "11/12/2026, 11:30 AM, +0000 UTC",
+      "iso_date": "2026-11-12T11:30:12Z"
+    },
+    {
+      "position": 99,
+      "title": "AI has proved that a theory underpinning fundamental physics is trustworthy",
+      "source": {
+        "name": "The Economist",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.economist.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.economist.com/science-and-technology/2026/11/11/ai-has-proved-that-a-theory-underpinning-fundamental-physics-is-trustworthy",
+      "thumbnail": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20261114_STP002.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1jVzl0ZEZjdGMwNHhWVUkxVFJDZkF4ampCU2dLTWdhQkFvYW1EUWs",
+      "date": "11/11/2026, 06:15 PM, +0000 UTC",
+      "iso_date": "2026-11-11T18:15:29Z"
+    },
+    {
+      "position": 100,
+      "title": "Stopped in 35 secs: How OpenAI's Control Room will monitor AI safety risk",
+      "source": {
+        "name": "Business Standard",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.business-standard.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Anjaly Raj"
+        ]
+      },
+      "link": "https://www.business-standard.com/technology/artificial-intelligence/stopped-in-35-secs-how-openai-s-control-room-will-monitor-ai-safety-risk-126111200327_1.html",
+      "thumbnail": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-11/10/full/1794301863-2366.JPG",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUhPWEF6Um14cVRXMUVMWFJRVFJERUF4aW1CU2dLTWdtaFZKS0xNV2FEaUFJ",
+      "date": "11/12/2026, 05:52 AM, +0000 UTC",
+      "iso_date": "2026-11-12T05:52:07Z"
+    }
+  ],
+  "menu_links": [
+    {
+      "title": "Singapore",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFowTW5RU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFowTW5RU0JXVnVMVWRDS0FBUAE"
+    },
+    {
+      "title": "World",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKVFJ5Z0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JXVnVMVWRDR2dKVFJ5Z0FQAQ"
+    },
+    {
+      "title": "Your local news",
+      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+    },
+    {
+      "title": "Business",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKVFJ5Z0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKVFJ5Z0FQAQ"
+    },
+    {
+      "title": "Technology",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKVFJ5Z0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKVFJ5Z0FQAQ"
+    },
+    {
+      "title": "Entertainment",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKVFJ5Z0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKVFJ5Z0FQAQ"
+    },
+    {
+      "title": "Sports",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKVFJ5Z0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JXVnVMVWRDR2dKVFJ5Z0FQAQ"
+    },
+    {
+      "title": "Science",
+      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKVFJ5Z0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKVFJ5Z0FQAQ"
+    },
+    {
+      "title": "Health",
+      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE"
+    }
+  ],
+  "related_topics": [
+    {
+      "topic_token": "CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ",
+      "title": "Artificial intelligence"
+    },
+    {
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSkwyMHZNREV4ZUdjMUVnVmxiaTFIUWlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqJggKIiBDQkFTRWdvSkwyMHZNREV4ZUdjMUVnVmxiaTFIUWlnQVAB",
+      "title": "A.I. Artificial Intelligence"
+    },
+    {
+      "topic_token": "CAAqLAgKIiZDQkFTRmdvTkwyY3ZNVEZ4YUROa00zSXlkeElGWlc0dFIwSW9BQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqLAgKIiZDQkFTRmdvTkwyY3ZNVEZ4YUROa00zSXlkeElGWlc0dFIwSW9BQVAB",
+      "title": "Artificial Intelligence Act"
+    },
+    {
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSkwyMHZNRFZyWDJkakVnVmxiaTFIUWlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqJggKIiBDQkFTRWdvSkwyMHZNRFZyWDJkakVnVmxiaTFIUWlnQVAB",
+      "title": "Artificial intelligence in video games"
+    },
+    {
+      "topic_token": "CAAqKAgKIiJDQkFTRXdvS0wyMHZNREkyYURFek1CSUZaVzR0UjBJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&topic_token=CAAqKAgKIiJDQkFTRXdvS0wyMHZNREkyYURFek1CSUZaVzR0UjBJb0FBUAE",
+      "title": "Artificial intelligence systems integration"
+    }
+  ],
+  "related_publications": [
+    {
+      "publication_token": "CAAqKQgKIiNDQklTRkFnTWFoQUtEbTFwYm1SdFlYUjBaWEp6TG1GcEtBQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=sg&publication_token=CAAqKQgKIiNDQklTRkFnTWFoQUtEbTFwYm1SdFlYUjBaWEp6TG1GcEtBQVAB",
+      "title": "Walter Bradley Center for Natural and Artificial Intelligence",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/faviconV2?url=http://mindmatters.ai&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+    }
+  ]
+}

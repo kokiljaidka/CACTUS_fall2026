@@ -1,0 +1,632 @@
+{
+  "search_metadata": {
+    "id": "6af5aaf8412f43bfd331b240",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/BbGmudYbF9lEw7ATzSbU8XDHvuWam3EFckqB1svWXQs/6af5aaf8412f43bfd331b240.json",
+    "markdown_endpoint": "https://serpapi.com/searches/BbGmudYbF9lEw7ATzSbU8XDHvuWam3EFckqB1svWXQs/6af5aaf8412f43bfd331b240.md",
+    "pixel_position_endpoint": "https://serpapi.com/searches/BbGmudYbF9lEw7ATzSbU8XDHvuWam3EFckqB1svWXQs/6af5aaf8412f43bfd331b240.json_with_pixel_position",
+    "created_at": "2026-11-12 12:03:04 UTC",
+    "processed_at": "2026-11-12 12:03:04 UTC",
+    "google_url": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&oq=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&hl=zh-TW&gl=tw&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/BbGmudYbF9lEw7ATzSbU8XDHvuWam3EFckqB1svWXQs/6af5aaf8412f43bfd331b240.html",
+    "total_time_taken": 0.43
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "人工智慧",
+    "google_domain": "google.com",
+    "hl": "zh-TW",
+    "gl": "tw",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "人工智慧",
+    "total_results": 138,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://solwen.ai/posts/what-is-ai",
+      "thumbnail": "https://serpapi.com/searches/6af5aaf8412f43bfd331b240/images/YfBDxRiWzDuPrs3TrC7DAsj4T60berXKKFFgR_WgZko.jpg",
+      "original": "https://images.ctfassets.net/iucm281zyho6/4n37YtzW7pMThjSx58r0BW/9ae6de3c45cee6d3a8f14582cb9f3ace/__1.____-__.jpg",
+      "title": "Solwen AI - 為企業打造實際有價值的AI應用| Solwen AI",
+      "source_name": "Solwen AI - 為企業打造實際有價值的AI應用| Solwen AI"
+    },
+    {
+      "source": "https://edge.aif.tw/",
+      "thumbnail": "https://serpapi.com/searches/6af5aaf8412f43bfd331b240/images/AaDq-dqyRkVnTurEhDj-RwCsosQOcu0vBw1tiSNc8ek.jpg",
+      "original": "https://edge.aif.tw/content/images/size/w600/2026/10/20261101-03.jpg",
+      "title": "知勢- 提供AI新知與觀點的媒體",
+      "source_name": "財團法人人工智慧科技基金會"
+    },
+    {
+      "source": "https://ikala.cloud/blog/ai-learing/ai-introduction-trends",
+      "thumbnail": "https://serpapi.com/searches/6af5aaf8412f43bfd331b240/images/QGR-wVXtzRRISp7P0rb9UPkhhShwKlnmS5kaLwDTZBU.jpg",
+      "original": "https://ikala.cloud/wp-content/uploads/100%E7%AF%87%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF.png",
+      "title": "什麼是人工智慧(AI)？人工智慧的產業應用趨勢有哪些？ - iKala Cloud",
+      "source_name": "iKala Cloud"
+    },
+    {
+      "source": "https://www.google.com/goto?url=CAESawHEIkXXiqqWewFcCjkF4ncEGR4JL6RWfe45rCY4PW4PrctS7pyVKfBsuiKRbHqkO9DErUWH8VrdTziK2JRvl9-NoEKur0uvNx0OjiTRCkwrPSQw0OGzGyT-MGdtwEynvjXXOiHN7bwZood8&gsessionid=XrRgCpIIJtW1wboMOnXIHI426uf-FB7-aRzoOXMRGYk9j3FuodmWwg",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQUXsYOpSM2RioHKq6u-L16eonV_EWi5h0kCNwL07GqxXLXl8_YEAPC7w&s",
+      "original": "https://www.pcschool.com.tw/updimg/act/Blog/content/E00039/what-is-ai.jpg",
+      "title": "何謂AI？認識AI定義,類型與5大應用,搞懂什麼是人工智慧(AI ...",
+      "source_name": "巨匠電腦"
+    },
+    {
+      "source": "https://uedu.tw/ai/a/what-is-ai",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4c2b-yilAGyX8pKZ03RhmMQ01gdOx4__foiM1NI6kaBB94N3Buvqk7GA&s",
+      "original": "https://uedu.tw/static/images/ai_knowledge/what-is-ai.png",
+      "title": "什麼是人工智慧？從規則到學習— Uedu AI 優智慧",
+      "source_name": "Uedu"
+    },
+    {
+      "source": "https://www.goodtechnology.com.tw/ai.html",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aDSI29-YcAVePtR23J-LJm5zaHfvNX8mUEF_g7kq_hCBL69YW93LfGc&s",
+      "original": "https://www.goodtechnology.com.tw/img/qa/ai/1.svg",
+      "title": "人工智慧為何發燒？｜常見問題｜固德科技",
+      "source_name": "固德科技"
+    },
+    {
+      "source": "https://www.tsg.com.tw/blog/blog-328-what-is-ai",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmdIjTmZdtV7tH7_pVGRF_aL7-c_dirHmGOUkv2H4k59RersZBIR_saSE&s",
+      "original": "https://www.tsg.com.tw/Upload/tsg_blog/blog_202406171109097151.png",
+      "title": "AI基本概念，什麼是AI人工智慧？AI優勢與應用",
+      "source_name": "天矽科技"
+    },
+    {
+      "source": "https://ai4kids.ai/blogs/blog/what-is-ai?srsltid=AYCX9vLSWTme-hrzcwwa_F4VvqlNreHt5tweOOQb-iOCrl3IViQg03iF",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq5PfotkLjGWfCLmeEnPlnONytVIA5kl9YzRV2Qri8LuZFdlDlG2QxJ88&s",
+      "original": "http://ai4kids.ai/cdn/shop/articles/ai.png?v=1692957193",
+      "title": "用一句話來解釋人工智慧是什麼?－AI4kids",
+      "source_name": "AI4kids"
+    },
+    {
+      "source": "https://adbest.com.tw/blog/what-is-ai/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTK6p-BQvorqP6UaNQRCrV5hHSUlaCh5BxBSRpNEtiYuQ_t0AdxCogsk4&s",
+      "original": "https://adbest.com.tw/wp-content/uploads/2025/10/What-is-AI_-A-comprehensive-summary-of-6-technologies-3-stages-and-9-application-areas-of-artificial-intelligence.jpg",
+      "title": "AI是什麼？人工智慧6種技術、3大階段與9個應用領域全面整理 ...",
+      "source_name": "ADBest"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "AI要怎麼解釋？",
+      "type": "ai_overview",
+      "page_token": "mC7LZnicHdBNTuMwGABQcRmWNE7aolSqEIHYNBCLOLbTZoMcJ_3LZxJRUzddchZWPQwHmHuMNMuReEd4X9-we2__XC231vaH2WjknLvZdN0GmhvdmZE6DO96pBVApXQ7m95O0d1az-ODix46F2WCxSuooQDGRCw8bSZIEYwUygIdbInwTjJtISiMPFbQv6RAaeaXk5zLpTStVz3habFMEu6Ftublg4KkkzyzqwJbEbOAPpavVUtB-CGpTP_c5OhceclniaNeIVgxVC5zCOOUTLapf_BL3BMd1JKeI0cLYZVJJ8rQfS7cwAEP6SM-CzEec7HI8YBe9B5vdXxyzCSL8inyhLw_rSDcUcCU7JIoj8eO8ZpwFB4LoLgwkLB2Yfk5EZnxBibv_dRnpCEyuF7r4zy4_h2bv62NnfUf3eaiPxplm_pN2Z_938u__z0If-k",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=mC7LZnicHdBNTuMwGABQcRmWNE7aolSqEIHYNBCLOLbTZoMcJ_3LZxJRUzddchZWPQwHmHuMNMuReEd4X9-we2__XC231vaH2WjknLvZdN0GmhvdmZE6DO96pBVApXQ7m95O0d1az-ODix46F2WCxSuooQDGRCw8bSZIEYwUygIdbInwTjJtISiMPFbQv6RAaeaXk5zLpTStVz3habFMEu6Ftublg4KkkzyzqwJbEbOAPpavVUtB-CGpTP_c5OhceclniaNeIVgxVC5zCOOUTLapf_BL3BMd1JKeI0cLYZVJJ8rQfS7cwAEP6SM-CzEec7HI8YBe9B5vdXxyzCSL8inyhLw_rSDcUcCU7JIoj8eO8ZpwFB4LoLgwkLB2Yfk5EZnxBibv_dRnpCEyuF7r4zy4_h2bv62NnfUf3eaiPxplm_pN2Z_938u__z0If-k",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoiQUnopoHmgI7purzop6Pph4vvvJ8iLCJsayI6IkdoUmhhU0RvcG9FZzVvQ082YnE4SU9pbm8tbUhpdyIsImJzIjoiYy1QUzR4Sng5SHl4clBGWlE5X0xYWHRlTEZfOHNyMzdfWjc1Um1KU0lvbVpDa0FKQllpTUFrU0tTNWRMOXNYcTdxZFQteFVjUFJXZXoycDUycnJpNllUZVp6UFdQOW5kQUZSbWI4UWp4UVhVQ0JSV0FJcHpXWEhKUE5tMTYtbjJwYzltN25yV3VoeXU3bGxMXzdPR3VmWkdVbElTRUhrRmlBS1FrUW9RU1M1RExuR2dIVUF0Q2hBOUNpOTJ6My01ZWdyQ2RSaFNBb3dBIiwiaWQiOiJmY18tS3IxYXBMcEZiSGRwdFFQMWJfYjZRTV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoiQUnopoHmgI7purzop6Pph4vvvJ8iLCJsayI6IkdoUmhhU0RvcG9FZzVvQ082YnE4SU9pbm8tbUhpdyIsImJzIjoiYy1QUzR4Sng5SHl4clBGWlE5X0xYWHRlTEZfOHNyMzdfWjc1Um1KU0lvbVpDa0FKQllpTUFrU0tTNWRMOXNYcTdxZFQteFVjUFJXZXoycDUycnJpNllUZVp6UFdQOW5kQUZSbWI4UWp4UVhVQ0JSV0FJcHpXWEhKUE5tMTYtbjJwYzltN25yV3VoeXU3bGxMXzdPR3VmWkdVbElTRUhrRmlBS1FrUW9RU1M1RExuR2dIVUF0Q2hBOUNpOTJ6My01ZWdyQ2RSaFNBb3dBIiwiaWQiOiJmY18tS3IxYXBMcEZiSGRwdFFQMWJfYjZRTV81In0%3D"
+    },
+    {
+      "question": "請問 AI 的全名是什麼?",
+      "type": "ai_overview",
+      "page_token": "WH6nR3icHdBRTsIwAADQeBk-2VoEI4aYDFY2tFNK2239IbXr2NaOLTAd-OlZ_OIwHsB7mPhp4jvC-_i05d58X90VXdcep47T9_1w1zQ7q4eqqR15PO-Vo6S1L1KZ6eRmAu5zNfMPqTffZx7xSckhLxRg7xloEY_DE01aKw2-VmAV0gXpiV88KBb5ac1zDMVSugqu7S3XBtRxRRIctx5hbYhHpBcGSc34mMSrTsxBLUZRqY21sQHnjQFgvQFVZPirLgGiwELGVw1OLGdw_LyBdi2YEFEiuA4aqE5h8si6M45RTwNvmZrCqIAQtkBlAkPImCtDg0JaeShyuS8oZxgUPEL-OF5mHg4yrNyWSCRSSr3TU6IGuXqbjQb_KbNtXnfT9tDsLuqgZaezrey-qp_L7x-kDHXb",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=WH6nR3icHdBRTsIwAADQeBk-2VoEI4aYDFY2tFNK2239IbXr2NaOLTAd-OlZ_OIwHsB7mPhp4jvC-_i05d58X90VXdcep47T9_1w1zQ7q4eqqR15PO-Vo6S1L1KZ6eRmAu5zNfMPqTffZx7xSckhLxRg7xloEY_DE01aKw2-VmAV0gXpiV88KBb5ac1zDMVSugqu7S3XBtRxRRIctx5hbYhHpBcGSc34mMSrTsxBLUZRqY21sQHnjQFgvQFVZPirLgGiwELGVw1OLGdw_LyBdi2YEFEiuA4aqE5h8si6M45RTwNvmZrCqIAQtkBlAkPImCtDg0JaeShyuS8oZxgUPEL-OF5mHg4yrNyWSCRSSr3TU6IGuXqbjQb_KbNtXnfT9tDsLuqgZaezrey-qp_L7x-kDHXb",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoi6KuL5ZWPIEFJIOeahOWFqOWQjeaYr+S7gOm6vD8iLCJsayI6IkdncGhhU0RsaGFnZzVaQ04iLCJicyI6ImMtUFM0eEp4OUh5eHJQRlpROV9MWFh0ZUxGXzhzcjM3X1o3NVJtSlNJb21aQ2tBSkJZaU1Ba1NLUzVkTDlzWHE3cWRULXhVY1BSV2V6MnA1MnJyaTZZVGVaelBXUDluZEFGUm1iOFFqeFFYVUNCUldBSXB6V1hISlBObTE2LW4ycGM5bTducld1aHl1N2xsTF83T0d1ZlpHVWxJU0VIa0ZpQUtRa1FvUVNTNURMbkdnSFVBdENoQTlDaTkyejMtNWVnckNkUmhTQW93QSIsImlkIjoiZmNfLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU1fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoi6KuL5ZWPIEFJIOeahOWFqOWQjeaYr%2BS7gOm6vD8iLCJsayI6IkdncGhhU0RsaGFnZzVaQ04iLCJicyI6ImMtUFM0eEp4OUh5eHJQRlpROV9MWFh0ZUxGXzhzcjM3X1o3NVJtSlNJb21aQ2tBSkJZaU1Ba1NLUzVkTDlzWHE3cWRULXhVY1BSV2V6MnA1MnJyaTZZVGVaelBXUDluZEFGUm1iOFFqeFFYVUNCUldBSXB6V1hISlBObTE2LW4ycGM5bTducld1aHl1N2xsTF83T0d1ZlpHVWxJU0VIa0ZpQUtRa1FvUVNTNURMbkdnSFVBdENoQTlDaTkyejMtNWVnckNkUmhTQW93QSIsImlkIjoiZmNfLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU1fNSJ9"
+    },
+    {
+      "question": "人工智慧是什麼意思?",
+      "type": "ai_overview",
+      "page_token": "acvemnicHdDBboIwAADQ7Gc8KoXpoolZxqAim2y0FoSLoQUVaGmjjVWP-5ad_Jh9wP5jyY4zu7_T-_jkddd-3612WqvDZDAwxvS3Um551WdSDIrDuWMDVnBOC9ZORg8j8LhhU_9g3Gdp3JggP-MlT8mwLWcgTMXWZh68Ud3mfgJxE4nEDpsCqANtQUgJrzFQ54z7oCJGp2IYI6fVmYiatENeTKJL1rmEzMZeFECV22FNl4nGgMvY2Z1yUbbVCqZvZA6IlVl4FeJcKA-BUCYB4ot2V2MHjRaOdChELyswNzc_R-nitLTKd2RnF5JE-8S2MDyDV9bAHfNPBolwngeuRZKnU8bHdcRhNKtDF_v3Bi3LgDalTznH9BIdWaBUyhVYkMSuBJdpBwtqQ7e3Ycep0_sfm643Qk_UXm6vbF8VuirXhf5qfq6_f8paggE",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=acvemnicHdDBboIwAADQ7Gc8KoXpoolZxqAim2y0FoSLoQUVaGmjjVWP-5ad_Jh9wP5jyY4zu7_T-_jkddd-3612WqvDZDAwxvS3Um551WdSDIrDuWMDVnBOC9ZORg8j8LhhU_9g3Gdp3JggP-MlT8mwLWcgTMXWZh68Ud3mfgJxE4nEDpsCqANtQUgJrzFQ54z7oCJGp2IYI6fVmYiatENeTKJL1rmEzMZeFECV22FNl4nGgMvY2Z1yUbbVCqZvZA6IlVl4FeJcKA-BUCYB4ot2V2MHjRaOdChELyswNzc_R-nitLTKd2RnF5JE-8S2MDyDV9bAHfNPBolwngeuRZKnU8bHdcRhNKtDF_v3Bi3LgDalTznH9BIdWaBUyhVYkMSuBJdpBwtqQ7e3Ycep0_sfm643Qk_UXm6vbF8VuirXhf5qfq6_f8paggE",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoi5Lq65bel5pm65oWn5piv5LuA6bq85oSP5oCdPyIsImxrIjoiR2hqa3Vycmx0NlVnNXBtNjVvV25JT2VhaENEbWhJX21nSjAiLCJicyI6ImMtUFM0eEp4OUh5eHJQRlpROV9MWFh0ZUxGXzhzcjM3X1o3NVJtSlNJb21aQ2tBSkJZaU1Ba1NLUzVkTDlzWHE3cWRULXhVY1BSV2V6MnA1MnJyaTZZVGVaelBXUDluZEFGUm1iOFFqeFFYVUNCUldBSXB6V1hISlBObTE2LW4ycGM5bTducld1aHl1N2xsTF83T0d1ZlpHVWxJU0VIa0ZpQUtRa1FvUVNTNURMbkdnSFVBdENoQTlDaTkyejMtNWVnckNkUmhTQW93QSIsImlkIjoiZmNfLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU1fNSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoi5Lq65bel5pm65oWn5piv5LuA6bq85oSP5oCdPyIsImxrIjoiR2hqa3Vycmx0NlVnNXBtNjVvV25JT2VhaENEbWhJX21nSjAiLCJicyI6ImMtUFM0eEp4OUh5eHJQRlpROV9MWFh0ZUxGXzhzcjM3X1o3NVJtSlNJb21aQ2tBSkJZaU1Ba1NLUzVkTDlzWHE3cWRULXhVY1BSV2V6MnA1MnJyaTZZVGVaelBXUDluZEFGUm1iOFFqeFFYVUNCUldBSXB6V1hISlBObTE2LW4ycGM5bTducld1aHl1N2xsTF83T0d1ZlpHVWxJU0VIa0ZpQUtRa1FvUVNTNURMbkdnSFVBdENoQTlDaTkyejMtNWVnckNkUmhTQW93QSIsImlkIjoiZmNfLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU1fNSJ9"
+    },
+    {
+      "question": "AI 是 什麼 軟體？",
+      "type": "ai_overview",
+      "page_token": "KJTb83icHdDPboIwAIDx7GU8zhaIiyZmWRGmZLJQCmIvprQqlPInQmz1uGfZyYfZA-w9luw4s9t3_OX7-FRlU30_ZMUwdP1sPNZaPx7b9qj2j7ytx6y_NHzMmVI549Vs8jSBzwc-93qN3FajKMHeVgm1zfhwbxq7UMfLQMWJvwj9YBJa3sAaJHMLD7FndH5NuwwGDYFogQkyIZhK5vkFTaZrvFBJ3qAC26oLSfDOZXFOLA1J3bkRAIZk4sJ8tdzUqUlBF6dXXIRJb9NKFeyKt3m10ulSOBufliEwSFQaRCklHBiAJaUZcBxR45bY-JxZUexf4BuXfsHvLlwHK7pEIElfzFZNy1D54WsZoNhzNCZihSU3BERQeF1AmrvzerTXFrX3sgDChRN8gc3owM9ze_R_bL471MOsO7XHGz_t2bAXOzZ8yZ_b7x-i7oGR",
+      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=KJTb83icHdDPboIwAIDx7GU8zhaIiyZmWRGmZLJQCmIvprQqlPInQmz1uGfZyYfZA-w9luw4s9t3_OX7-FRlU30_ZMUwdP1sPNZaPx7b9qj2j7ytx6y_NHzMmVI549Vs8jSBzwc-93qN3FajKMHeVgm1zfhwbxq7UMfLQMWJvwj9YBJa3sAaJHMLD7FndH5NuwwGDYFogQkyIZhK5vkFTaZrvFBJ3qAC26oLSfDOZXFOLA1J3bkRAIZk4sJ8tdzUqUlBF6dXXIRJb9NKFeyKt3m10ulSOBufliEwSFQaRCklHBiAJaUZcBxR45bY-JxZUexf4BuXfsHvLlwHK7pEIElfzFZNy1D54WsZoNhzNCZihSU3BERQeF1AmrvzerTXFrX3sgDChRN8gc3owM9ze_R_bL471MOsO7XHGz_t2bAXOzZ8yZ_b7x-i7oGR",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoiQUkg5pivIOS7gOm6vCDou5/pq5TvvJ8iLCJsayI6IkdoUmhhU0RtbUs4ZzVMdUE2YnE4SU9pN24tbXJsQSIsImJzIjoiYy1QUzR4Sng5SHl4clBGWlE5X0xYWHRlTEZfOHNyMzdfWjc1Um1KU0lvbVpDa0FKQllpTUFrU0tTNWRMOXNYcTdxZFQteFVjUFJXZXoycDUycnJpNllUZVp6UFdQOW5kQUZSbWI4UWp4UVhVQ0JSV0FJcHpXWEhKUE5tMTYtbjJwYzltN25yV3VoeXU3bGxMXzdPR3VmWkdVbElTRUhrRmlBS1FrUW9RU1M1RExuR2dIVUF0Q2hBOUNpOTJ6My01ZWdyQ2RSaFNBb3dBIiwiaWQiOiJmY18tS3IxYXBMcEZiSGRwdFFQMWJfYjZRTV81In0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWaFUzY3RXalpEWmxKNGQzZFNhbTkzUTJwWVYxSjJZbTl4VW1kRk1WUk9TVTFYZG5aSVJFZFBlV0p2ZEdZdFQwSk1VbTl0V0Zwd2RrVXlSVFZUVmt4Q1REZERlRmQ1YkRsQ1ZVSXlNRmxLUWpFNVNHMXRNV2t4ZGpaMFVSSVhMVXR5TVdGd1RIQkdZa2hrY0hSUlVERmlYMkkyVVUwYUlrRklUakJGTjBkM1NqVTFjMFZGVHpWeFRFZzVkRkphUTFONlgwdFJNMDVrTUZFIiwiZmN2IjoiMyIsImVpIjoiLUtyMWFwTHBGYkhkcHRRUDFiX2I2UU0iLCJxYyI6IkNnM2t1cnJsdDZVZzVwbTY1b1duRUVWOWNwRTJQdyIsInF1ZXN0aW9uIjoiQUkg5pivIOS7gOm6vCDou5%2Fpq5TvvJ8iLCJsayI6IkdoUmhhU0RtbUs4ZzVMdUE2YnE4SU9pN24tbXJsQSIsImJzIjoiYy1QUzR4Sng5SHl4clBGWlE5X0xYWHRlTEZfOHNyMzdfWjc1Um1KU0lvbVpDa0FKQllpTUFrU0tTNWRMOXNYcTdxZFQteFVjUFJXZXoycDUycnJpNllUZVp6UFdQOW5kQUZSbWI4UWp4UVhVQ0JSV0FJcHpXWEhKUE5tMTYtbjJwYzltN25yV3VoeXU3bGxMXzdPR3VmWkdVbElTRUhrRmlBS1FrUW9RU1M1RExuR2dIVUF0Q2hBOUNpOTJ6My01ZWdyQ2RSaFNBb3dBIiwiaWQiOiJmY18tS3IxYXBMcEZiSGRwdFFQMWJfYjZRTV81In0%3D"
+    }
+  ],
+  "ai_overview": {
+    "text_blocks": [
+      {
+        "type": "paragraph",
+        "snippet": "人工智慧（Artificial Intelligence，簡稱 AI）是指讓電腦系統模擬人類智慧行為與認知功能的技術，涵蓋學習、推理、判斷、語言理解及視覺感知等能力。",
+        "reference_indexes": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "type": "heading",
+        "snippet": "核心概念與技術"
+      },
+      {
+        "type": "list",
+        "list": [
+          {
+            "snippet": "主要範疇：包含機器學習、深度學習、自然語言處理（NLP）與電腦視覺。",
+            "snippet_links": [
+              {
+                "text": "機器學習",
+                "link": "https://cloud.google.com/learn/what-is-artificial-intelligence?hl=zh-TW"
+              },
+              {
+                "text": "深度學習",
+                "link": "https://aws.amazon.com/tw/what-is/artificial-intelligence/"
+              }
+            ]
+          },
+          {
+            "snippet": "發展階段：目前主流為「狹義人工智慧」（ANI，專精特定任務），並正往通用人工智慧（AGI）與代理式 AI（AI Agent）等方向演進。"
+          },
+          {
+            "snippet": "常見應用：搜尋引擎、生成式 AI 聊天機器人、虛擬助理、自動駕駛與智慧製造等。",
+            "reference_indexes": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "snippet": "台灣的 AI 發展現況"
+      },
+      {
+        "type": "list",
+        "list": [
+          {
+            "snippet": "AI 新十大建設與人才方舟計畫：政府從國家戰略出發推動相關建設，並由教育部推動「人才方舟計畫」，將 AI 學習向下扎根至中小學環境。"
+          },
+          {
+            "snippet": "法規與治理：已公布人工智慧基本法，確立永續發展、人類自主、隱私保護與公平透明等核心原則。",
+            "snippet_links": [
+              {
+                "text": "人工智慧基本法",
+                "link": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0160093"
+              }
+            ],
+            "reference_indexes": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "snippet": "如果你想進一步了解，可以告訴我："
+      },
+      {
+        "type": "paragraph",
+        "snippet": "你想探討的是 AI 的基礎入門定義、特定技術（如機器學習/生成式AI），還是 AI 在某個產業（如醫療、教育、金融）的應用？",
+        "snippet_links": [
+          {
+            "text": "你想探討的是 AI 的基礎入門定義、特定技術（如機器學習/生成式AI），還是 AI 在某個產業（如醫療、教育、金融）的應用？",
+            "link": "https://www.google.com/search?q=%E4%BD%A0%E6%83%B3%E6%8E%A2%E8%A8%8E%E7%9A%84%E6%98%AF+AI+%E7%9A%84%E5%9F%BA%E7%A4%8E%E5%85%A5%E9%96%80%E5%AE%9A%E7%BE%A9%E3%80%81%E7%89%B9%E5%AE%9A%E6%8A%80%E8%A1%93%EF%BC%88%E5%A6%82%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%2F%E7%94%9F%E6%88%90%E5%BC%8FAI%EF%BC%89%EF%BC%8C%E9%82%84%E6%98%AF+AI+%E5%9C%A8%E6%9F%90%E5%80%8B%E7%94%A2%E6%A5%AD%EF%BC%88%E5%A6%82%E9%86%AB%E7%99%82%E3%80%81%E6%95%99%E8%82%B2%E3%80%81%E9%87%91%E8%9E%8D%EF%BC%89%E7%9A%84%E6%87%89%E7%94%A8%EF%BC%9F&udm=50",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_ai_mode&gl=tw&hl=zh-TW&q=%E4%BD%A0%E6%83%B3%E6%8E%A2%E8%A8%8E%E7%9A%84%E6%98%AF+AI+%E7%9A%84%E5%9F%BA%E7%A4%8E%E5%85%A5%E9%96%80%E5%AE%9A%E7%BE%A9%E3%80%81%E7%89%B9%E5%AE%9A%E6%8A%80%E8%A1%93%EF%BC%88%E5%A6%82%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%2F%E7%94%9F%E6%88%90%E5%BC%8FAI%EF%BC%89%EF%BC%8C%E9%82%84%E6%98%AF+AI+%E5%9C%A8%E6%9F%90%E5%80%8B%E7%94%A2%E6%A5%AD%EF%BC%88%E5%A6%82%E9%86%AB%E7%99%82%E3%80%81%E6%95%99%E8%82%B2%E3%80%81%E9%87%91%E8%9E%8D%EF%BC%89%E7%9A%84%E6%87%89%E7%94%A8%EF%BC%9F"
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "index": 0,
+        "title": "什麼是人工智慧 (AI)？ | Google Cloud",
+        "link": "https://cloud.google.com/learn/what-is-artificial-intelligence?hl=zh-TW",
+        "snippet": "定義: 電腦科學領域中執行學習、推論與解決問題等人類智慧任務的技術。 運作: 透過大量資料與演算法學習模式並預測，涵蓋機器學習、深度學習、自然語言處理與電腦視覺。 類型: 現今僅有狹義人工智慧(ANI)，未來包含通用(AGI)與超級(ASI)人工智慧。 優勢: 自動化、減少人為錯誤、排除重複任務、快速準確、無限可用及加速研發...",
+        "source": "Google Cloud",
+        "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://cloud.google.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvvuLeqrmw19xGlUnAE9jAJfHNYANlyxlK2Kio9gQjnsK0cQVPLo3mezczPfCDDTILMJwpiVeqDUtAeqo1GIvhtx0fe2SmZGm0feOKNDKxqPi6JtoQ4VKkZM_vYsOavORbrRlP4ApZsYVG8EhQqcDdjs"
+      },
+      {
+        "index": 1,
+        "title": "人工智慧 - 維基百科，自由的百科全書",
+        "link": "https://zh.wikipedia.org/zh-tw/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD",
+        "snippet": "人工智慧（AI）指讓電腦完成需要人類智慧的任務（如學習、推理、決策），橫跨工程學、數學與電腦科學。常見應用包括搜尋引擎、聊天機器人、虛擬助手、自動駕駛與策略遊戲，2020年代起廣泛使用生成式AI。研究目標包含學習、推理、知識表示、規劃、自然語言處理、感知及機器人學，主要技術有狀態空間搜尋、數學最佳化、形式邏輯、類神經網路與深...",
+        "source": "维基百科",
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://zh.wikipedia.org&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0YLkQQbi6iGA9maQAG_lEDQqbPSzgnMmv1gV6qg-g1_Q-l4m1rUWdcfyMsR4unkFmFwPgZFBVf9xhFTW54I71rtGbFdS_QGZNMuW8YWr0JcwwAwWjw0bFTkQa4H_KHzGCd0xVbb_5cqq0lbsBfQbIV88"
+      },
+      {
+        "index": 2,
+        "title": "什麼是人工智慧(AI)？",
+        "link": "https://www.paloaltonetworks.tw/cyberpedia/artificial-intelligence-ai",
+        "snippet": "什麼是人工智慧(AI)？ 目錄. 人工智慧說明 · AI 發展簡史 · AI 種類 · AI 技術的相互依存性 · 革新產業 · 人工智能研究的挑戰與機遇 · 使用AI 捍衛雲端 · 人工智能的未來 · 人工智慧常見問題. 1. 人工智慧說明. 人工智慧說明 · AI 發展簡史 · AI 種類 · AI 技術的相互依存性 ·",
+        "source": "www.paloaltonetworks.tw",
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.paloaltonetworks.tw&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      {
+        "index": 3,
+        "title": "什麼是人工智慧？ - Microsoft Azure",
+        "link": "https://azure.microsoft.com/zh-tw/resources/cloud-computing-dictionary/what-is-artificial-intelligence",
+        "snippet": "人工智慧(AI) 是指設計用來執行通常需要人類思考之工作的電腦系統或模型，例如理解語言、辨識模式、解決問題與做出決策。 傳統AI 系統只會遵循固定規則，但較新的AI 系統(如認知AI) 可以從資料中學習並持續改進，因此能更準確地處理新狀況。 AI 已用在許多日常工具中，包括虛擬助理、建議系統和聊天機器人。",
+        "source": "Microsoft Azure",
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://azure.microsoft.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      {
+        "index": 4,
+        "title": "什麼是 AI？– 人工智能說明 – AWS",
+        "link": "https://aws.amazon.com/tw/what-is/artificial-intelligence/",
+        "snippet": "AI: 機器模擬人類解題技術。包含ML與DL。 歷史: 1950 Alan Turing 引入概念; 1997 IBM Deep Blue 擊敗 Garry Kasparov; 2022 ChatGPT 普及。 AWS 支援: 超過 100k 客戶。服務含 Amazon Bedrock, SageMaker, EC2 Trn...",
+        "source": "Amazon Web Services (AWS)",
+        "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://aws.amazon.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      {
+        "index": 5,
+        "title": "被問AI資料中心發展！劉揚偉：老實說我也不知道",
+        "link": "https://fnc.ebc.net.tw/fncnews/business/222710",
+        "snippet": "媒體問及客戶是否有放緩投資AI的跡象，劉揚偉表示，目前AI算力的主要使用者，仍以模型開發者和雲端服務供應商（CSP）為主，另外政府和企業端也積極研究如何運用AI算力，這些終端用戶需求持續強勁，美國期中選舉後以及產業變化，短期內影響可能有限，長期來看，政策和近期市場出現的一些變數，還須持續觀察。 法人問及鴻海集團在矽光子共同封...",
+        "source": "東森電視",
+        "source_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://fnc.ebc.net.tw&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKQOf0Jwp8_9Xs5XXNsBTmN0nda8gaRhwhQcQIg0duCZ762NHl8hoAU_e7ke2LMBnCi379WG6ZmXUCeLF6YUvVS9PNyJQmzDczb37882Nqnpvr0FshAHyYaPc54sOwKOgRMYIjH-HQ4MSdxBw2PuWSVUw"
+      },
+      {
+        "index": 6,
+        "title": "人工智慧是什麼？AI應用案例、技術、未來發展都有的必修知識包來了",
+        "link": "https://www.cwlearning.com.tw/posts/3a7d6fee-d6ae-4be5-b7d8-9c1f02874b26",
+        "snippet": "人工智慧AI是什麼？ 人工智慧（Artificial Intelligence, AI）是什麼？AI人工智慧的定義，是讓系統或電腦設備有模擬人類思考模式、邏輯與行為的能力，且能自行透過數據分析的過程，持續校正、進化。簡單來說，AI人工智慧就是讓電腦盡量像人類一樣思考、執行策略的科技。 既然人類會思考https://ppid.",
+        "source": "天下學習",
+        "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cwlearning.com.tw&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTe4ME3w_BEhRiajh-UXemXmyXngwAIfMxH1fiLmjlzUWXbhOMAF6LBLY-8P5Od-ARkflsvRjLx8u7eS5xXmhivPDsc6fVplV9jchjDR6HByPDIS1ej66HlO7qvAfi8eRQR6zVxoMaeHMvWKzqxkgFcPks"
+      },
+      {
+        "index": 7,
+        "title": "人工智慧基本法-全國法規資料庫",
+        "link": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0160093",
+        "snippet": "法規：人工智慧基本法 公布：民國115年01月14日 主管機關：中央為國科會；地方為直轄市、縣（市）政府。 核心原則（第4條）：永續發展、人類自主、隱私保護、資安、透明、公平、問責。 組織：行政院設國家人工智慧戰略特別委員會。 施行：自公布之日起施行，相關法規應於二年內完成檢討與修訂。",
+        "source": "全國法規資料庫",
+        "source_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://law.moj.gov.tw&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      {
+        "index": 8,
+        "title": "卓榮泰：AI學習年齡層向下扎根助台灣邁向人工智慧島| 產經",
+        "link": "https://www.cna.com.tw/news/afe/202611120230.aspx",
+        "snippet": "（中央社記者吳家豪台北12日電）行政院長卓榮泰今天出席資訊月暨台灣教育科技展開幕典禮表示，從國家戰略高度來看，資訊發展須以人才、技術、產業、治理4面向同步推進，中間的靈魂就是人才培育；政府推動「AI新十大建設」並啟動「人才方舟計畫」，期盼把人工智慧（AI）學習年齡層往下降，帶領台灣邁向人工智慧島。 卓榮泰致詞指出，台灣資訊產...",
+        "source": "中央社 CNA",
+        "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cna.com.tw&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqOJoStDn3DZ9ZPO0bzmDKB-OZS277FB1dMPmvfsvLdaE7dAUfukKv3Yvc5cfL9UPGQu6IiMHLg-UPBc34rrO9RieKhn6hB_GLs3fP5zMWCoKyUUmR_KQ_m7PtxldnpK-SOr-h-smJubWWhOMKIHt5aB0"
+      }
+    ]
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "什麽是AI？| 人工智慧深度解析",
+      "link": "https://www.sap.com/taiwan/resources/what-is-artificial-intelligence",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESgQEBxCJF19Z6PosN6cRyE-wE7MuuDfVGBDIz2h7xmiUNbl3hiVvnbtK7blUl1vQXRb-kjKn4yYZfucQ5acZqRgRxqn8cmbnOXDaVUUfjBK9FxYOb9KZIVQqtwpbuUxtaO17CFzHRg3MepU2Vhtsr4PmJwPZtOoaevBVki2Ie2hYYqr4&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECCoQAQ&uoh=1",
+      "displayed_link": "https://www.sap.com › what-is-artificial-intelligence",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd-UAAAAe0lEQVR4AWNwL_ChKx4iFo5aOGohQ95bRhCmsuEIs0t-s6NaWPBpBRD_pxnOfpaHbuFcWltGBwsRltHBQoRl9LEw82EIyFw6WIiwjA4WIiyjg4UIy-hgIcIyOliIsIw-FiZfcyTWIgqKNoRltC684WpH68NRC6mKRy0EAHBbTni0yjioAAAAAElFTkSuQmCC.png",
+      "date": "2026年1月26日",
+      "snippet": "AI，也稱為人工智慧，是一項讓機器能夠像人類一樣進行推理和自主決策的技術。透過對海量資料的學習，AI技術能夠辨識語音、圖像和文字，發現模式與趨勢， ...",
+      "snippet_highlighted_words": [
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "AI，也稱為人工智慧\n，是一項讓機器能夠像人類一樣進行推理和自主決策的技術。透過對海量資料的學習，AI技術能夠辨識語音、圖像和文字，發現模式與趨勢， ...",
+          "source_info_link": "https://www.sap.com/taiwan/resources/what-is-artificial-intelligence",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd-UAAAAe0lEQVR4AWNwL_ChKx4iFo5aOGohQ95bRhCmsuEIs0t-s6NaWPBpBRD_pxnOfpaHbuFcWltGBwsRltHBQoRl9LEw82EIyFw6WIiwjA4WIiyjg4UIy-hgIcIyOliIsIw-FiZfcyTWIgqKNoRltC684WpH68NRC6mKRy0EAHBbTni0yjioAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cr0BL2dvdG8_dXJsPUNBRVNnUUVCeENKRjExQVY1YndZYW03SUhUV1FfTXdLV25OVTFHYWJBSkdxbDdyWTVWUU9ETlQyWU8zQ3U0UXNTSENDRldrRTZlXzhWalZRTWl6WHpVNkk5NUgtc19pUGItYm56WnBtbVo2MUZrWE5odmFfLTEyWGRsdDFLZWJhcUdzWUtZVThvZk96Tkg5WUZaaHp5TzNfb2ZVTVRXX3dHa2ZIVXVhTkRRSGs0MXMwWEpzEgQaAggAGrgEEgIIABoAIgAqADIGCAESAnR3OgBCBAgBEEVKAFoAcgB6AIJAkgQIRRAAGAAgACoRCgbkurrlt6UVO0GgQBoCYWkqGQoG5pm65oWnFXzipkAaAmFpGgbmmbrog70yvQEvZ290bz91cmw9Q0FFU2dRRUJ4Q0pGMTFBVjVid1lhbTdJSFRXUV9Nd0tXbk5VMUdhYkFKR3FsN3JZNVZRT0ROVDJZTzNDdTRRc1NIQ0NGV2tFNmVfOFZqVlFNaXpYelU2STk1SC1zX2lQYi1ibnpacG1tWjYxRmtYTmh2YV8tMTJYZGx0MUtlYmFxR3NZS1lVOG9mT3pOSDlZRlpoenlPM19vZlVNVFdfd0drZkhVdWFORFFIazQxczBYSnM6NOS7gOm6veaYr0FJ77yffCA8Yj7kurrlt6Xmmbrmhac8L2I-5rex5bqm6Kej5p6QfCBTQVBC4wFBSe-8jOS5n-eoseeCujxiPuS6uuW3peaZuuaFpzwvYj7vvIzmmK_kuIDpoIXorpPmqZ_lmajog73lpKDlg4_kurrpoZ7kuIDmqKPpgLLooYzmjqjnkIblkozoh6rkuLvmsbrnrZbnmoTmioDooZPjgILpgI_pgY7lsI3mtbfph4_os4fmlpnnmoTlrbjnv5LvvIxBSeaKgOihk-iDveWkoOi-qOitmOiqnumfs-OAgeWcluWDj-WSjOaWh-Wtl--8jOeZvOePvuaooeW8j-iIh-i2qOWLou-8jCZuYnNwOy4uLiICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cr0BL2dvdG8_dXJsPUNBRVNnUUVCeENKRjExQVY1YndZYW03SUhUV1FfTXdLV25OVTFHYWJBSkdxbDdyWTVWUU9ETlQyWU8zQ3U0UXNTSENDRldrRTZlXzhWalZRTWl6WHpVNkk5NUgtc19pUGItYm56WnBtbVo2MUZrWE5odmFfLTEyWGRsdDFLZWJhcUdzWUtZVThvZk96Tkg5WUZaaHp5TzNfb2ZVTVRXX3dHa2ZIVXVhTkRRSGs0MXMwWEpzEgQaAggAGrgEEgIIABoAIgAqADIGCAESAnR3OgBCBAgBEEVKAFoAcgB6AIJAkgQIRRAAGAAgACoRCgbkurrlt6UVO0GgQBoCYWkqGQoG5pm65oWnFXzipkAaAmFpGgbmmbrog70yvQEvZ290bz91cmw9Q0FFU2dRRUJ4Q0pGMTFBVjVid1lhbTdJSFRXUV9Nd0tXbk5VMUdhYkFKR3FsN3JZNVZRT0ROVDJZTzNDdTRRc1NIQ0NGV2tFNmVfOFZqVlFNaXpYelU2STk1SC1zX2lQYi1ibnpacG1tWjYxRmtYTmh2YV8tMTJYZGx0MUtlYmFxR3NZS1lVOG9mT3pOSDlZRlpoenlPM19vZlVNVFdfd0drZkhVdWFORFFIazQxczBYSnM6NOS7gOm6veaYr0FJ77yffCA8Yj7kurrlt6Xmmbrmhac8L2I-5rex5bqm6Kej5p6QfCBTQVBC4wFBSe-8jOS5n-eoseeCujxiPuS6uuW3peaZuuaFpzwvYj7vvIzmmK_kuIDpoIXorpPmqZ_lmajog73lpKDlg4_kurrpoZ7kuIDmqKPpgLLooYzmjqjnkIblkozoh6rkuLvmsbrnrZbnmoTmioDooZPjgILpgI_pgY7lsI3mtbfph4_os4fmlpnnmoTlrbjnv5LvvIxBSeaKgOihk-iDveWkoOi-qOitmOiqnumfs-OAgeWcluWDj-WSjOaWh-Wtl--8jOeZvOePvuaooeW8j-iIh-i2qOWLou-8jCZuYnNwOy4uLiICEAFIAFgAaAA",
+      "source": "SAP"
+    },
+    {
+      "position": 2,
+      "title": "人工智慧（AI）是什麼？AI 應用領域與3 大AI 種類介紹！",
+      "link": "https://solwen.ai/posts/what-is-ai",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXwHEIkXXa8eKXSCYPe8t1WhjXoFHqNLwQU2LL0m9H7hMsKibJ00hGhRKezTSIyz-9WlhZClbq8SEt_dUq_CG2zRbY6zF1pcTBp0jZpRBtX-VpH9HGp8I9I5vMIol8ZGJ&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECCcQAQ&uoh=1",
+      "displayed_link": "https://solwen.ai › posts › what-is-ai",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAY1BMVEVHcEwYGBsYGBsYGBwYGBsXFxkYGBsYGBsZGRwXFxoYGBsYGBsYGBoZGRwSEKQYGBsSAAsWEBda6KRY46EXFRlX355MvYcsXkcVBxMaISA0d1gxbFFEpHccKSVRzpNPyI49k2unSA5gAAAADnRSTlMAiFLBaybb-8M96eNQxO2ohFIAAAEsSURBVCiRXZPpsoMgDIWxtuLSO4ksilvb93_KsiTALX9w_CbnZEMIPkPzNwKMfTOI33PvIJ_u_g89evpv5nj1j8Kekth8rRg_5JPZjfVmeOk9UbiRZolbtLabSbFJuc1xi7b6oEhoY56VptUrM4CQc8ea78BcVZGvvfhZe6AzhQ6iIc23Cpq4b4U2ok-1Jz881VJoK8Z4O1_Eiu6jrNqz7SRSkcadB2JgJyJSrCQIBp3XtOrjbZeZ-kCyQXkPzOGh9eJIlucBBpagufrMXjQbKiXRHX2cVSzbcBNSVrgHts3cBFGtgFt9JzLrqsYDBD_1nonFxueRYUiX_WhkPGxz2UqTh81r4jMtmrwmnkryvHJcZl45-priV61mXGpeM5A_S52eQztJObXVc_gCnS0n1Y5ar14AAAAASUVORK5CYII.png",
+      "snippet": "人工智慧有哪些？AI 人工智慧應用在哪裡？本文將介紹3 大AI 種類與9 大AI 人工智慧生活應用領域！想了解最詳細的AI 介紹就看這篇！ 快速跳轉目錄. 何謂AI 人工智慧？",
+      "snippet_highlighted_words": [
+        "人工智慧",
+        "人工智慧",
+        "人工智慧",
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "人工智慧有哪些？AI 人工智慧應用在哪裡？本文將介紹3 大AI 種類與9 大AI 人工智慧生活應用領域！想了解最詳細的AI 介紹就看這篇！ 快速跳轉目錄. 何謂AI 人工智慧？",
+          "source_info_link": "https://solwen.ai/posts/what-is-ai",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAY1BMVEVHcEwYGBsYGBsYGBwYGBsXFxkYGBsYGBsZGRwXFxoYGBsYGBsYGBoZGRwSEKQYGBsSAAsWEBda6KRY46EXFRlX355MvYcsXkcVBxMaISA0d1gxbFFEpHccKSVRzpNPyI49k2unSA5gAAAADnRSTlMAiFLBaybb-8M96eNQxO2ohFIAAAEsSURBVCiRXZPpsoMgDIWxtuLSO4ksilvb93_KsiTALX9w_CbnZEMIPkPzNwKMfTOI33PvIJ_u_g89evpv5nj1j8Kekth8rRg_5JPZjfVmeOk9UbiRZolbtLabSbFJuc1xi7b6oEhoY56VptUrM4CQc8ea78BcVZGvvfhZe6AzhQ6iIc23Cpq4b4U2ok-1Jz881VJoK8Z4O1_Eiu6jrNqz7SRSkcadB2JgJyJSrCQIBp3XtOrjbZeZ-kCyQXkPzOGh9eJIlucBBpagufrMXjQbKiXRHX2cVSzbcBNSVrgHts3cBFGtgFt9JzLrqsYDBD_1nonFxueRYUiX_WhkPGxz2UqTh81r4jMtmrwmnkryvHJcZl45-priV61mXGpeM5A_S52eQztJObXVc_gCnS0n1Y5ar14AAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Co4BL2dvdG8_dXJsPUNBRVNYd0hFSWtYWERub1pNamMtRUdGeUZtZ1NuaFVIZnZRVHZnMElPdHNOekU0STl1VU5maHBtVjJ0WGVFRk9kS3ZLMlhYZTlLQmVNWmR5UjRuTDgtM2xETHlpQkgwV2RlTW54RWJ5S0RrOHoyNWlSSm5DWXlVOHVPY29aekoyaFhMYhIEGgIIABq6BBICCAEaACIAKgAyBggBEgJ0dzoAQgQIARBFSgBaAHIAegCCQJQECEUQABgAIAAqEQoG5Lq65belFVigYUAaAmFpKhkKBuaZuuaFpxVaFWVAGgJhaRoG5pm66IO9Mo4BL2dvdG8_dXJsPUNBRVNYd0hFSWtYWERub1pNamMtRUdGeUZtZ1NuaFVIZnZRVHZnMElPdHNOekU0STl1VU5maHBtVjJ0WGVFRk9kS3ZLMlhYZTlLQmVNWmR5UjRuTDgtM2xETHlpQkgwV2RlTW54RWJ5S0RrOHoyNWlSSm5DWXlVOHVPY29aekoyaFhMYjpQPGI-5Lq65bel5pm65oWnPC9iPu-8iEFJ77yJ5piv5LuA6bq877yfQUkg5oeJ55So6aCY5Z-f6IiHMyDlpKdBSSDnqK7poZ7ku4vntLnvvIFC-AE8Yj7kurrlt6Xmmbrmhac8L2I-5pyJ5ZOq5Lqb77yfQUkgPGI-5Lq65bel5pm65oWnPC9iPuaHieeUqOWcqOWTquijoe-8n-acrOaWh-Wwh-S7i-e0uTMg5aSnQUkg56iu6aGe6IiHOSDlpKdBSSA8Yj7kurrlt6Xmmbrmhac8L2I-55Sf5rS75oeJ55So6aCY5Z-f77yB5oOz5LqG6Kej5pyA6Kmz57Sw55qEQUkg5LuL57S55bCx55yL6YCZ56-H77yBIOW_q-mAn-i3s-i9ieebrumMhC4g5L2V6KyCQUkgPGI-5Lq65bel5pm65oWnPC9iPu-8nyICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Co4BL2dvdG8_dXJsPUNBRVNYd0hFSWtYWERub1pNamMtRUdGeUZtZ1NuaFVIZnZRVHZnMElPdHNOekU0STl1VU5maHBtVjJ0WGVFRk9kS3ZLMlhYZTlLQmVNWmR5UjRuTDgtM2xETHlpQkgwV2RlTW54RWJ5S0RrOHoyNWlSSm5DWXlVOHVPY29aekoyaFhMYhIEGgIIABq6BBICCAEaACIAKgAyBggBEgJ0dzoAQgQIARBFSgBaAHIAegCCQJQECEUQABgAIAAqEQoG5Lq65belFVigYUAaAmFpKhkKBuaZuuaFpxVaFWVAGgJhaRoG5pm66IO9Mo4BL2dvdG8_dXJsPUNBRVNYd0hFSWtYWERub1pNamMtRUdGeUZtZ1NuaFVIZnZRVHZnMElPdHNOekU0STl1VU5maHBtVjJ0WGVFRk9kS3ZLMlhYZTlLQmVNWmR5UjRuTDgtM2xETHlpQkgwV2RlTW54RWJ5S0RrOHoyNWlSSm5DWXlVOHVPY29aekoyaFhMYjpQPGI-5Lq65bel5pm65oWnPC9iPu-8iEFJ77yJ5piv5LuA6bq877yfQUkg5oeJ55So6aCY5Z-f6IiHMyDlpKdBSSDnqK7poZ7ku4vntLnvvIFC-AE8Yj7kurrlt6Xmmbrmhac8L2I-5pyJ5ZOq5Lqb77yfQUkgPGI-5Lq65bel5pm65oWnPC9iPuaHieeUqOWcqOWTquijoe-8n-acrOaWh-Wwh-S7i-e0uTMg5aSnQUkg56iu6aGe6IiHOSDlpKdBSSA8Yj7kurrlt6Xmmbrmhac8L2I-55Sf5rS75oeJ55So6aCY5Z-f77yB5oOz5LqG6Kej5pyA6Kmz57Sw55qEQUkg5LuL57S55bCx55yL6YCZ56-H77yBIOW_q-mAn-i3s-i9ieebrumMhC4g5L2V6KyCQUkgPGI-5Lq65bel5pm65oWnPC9iPu-8nyICEAFIAFgAaAA",
+      "source": "Solwen AI"
+    },
+    {
+      "position": 3,
+      "title": "人工智慧史- 維基百科，自由的百科全書",
+      "link": "https://www.google.com/goto?url=CAESiQEBxCJF18a__Qwz7T8-ePwqHEBIaTZoBOW7DFRLLnGu89eSR7tPQ445lzwEGaCKFlO9NdXxXV8YMUOt5hZ3ki6hxOxDXc3pBXPWqjQjeB5IlB-xV6bSJdKc8JkCmQLpsJA84l3pqrJ-Ds3u8nmIm9bmDOvJaL3oaNvPOCoIFSnvyTRhV8V4-SneBg",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiQEBxCJF17AiFN1kalcATjk_D2Oz8Q4o4atwgYXFFO4OVSZb2e6tJwGfDPcVfaq4f_R73z_tOLo8l8jOxJePaa2hI6C1L0ZSj3tEo8dUkiKEijDDgrX10xp-CtNwlJBiA9nxjbjaJDQtq3kKOSA3KLUkNQiru7fmIoJih4rvpv-blTRfqnTt6I_fNw&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECDUQAQ&uoh=1",
+      "displayed_link": "https://zh.wikipedia.org › zh-tw › 人工智能史",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png",
+      "snippet": "人工智慧的歷史源遠流長。在古代的神話傳說中，技藝高超的工匠可以製作人造人，並為其賦予智能或意識。 ... 現代意義上的AI始於古典哲學家試圖將人類的思維過程描述為對符號 ...",
+      "snippet_highlighted_words": [
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "人工智慧的歷史源遠流長。在古代的神話傳說中，技藝高超的工匠可以製作人造人，並為其賦予智能或意識。 ...",
+          "source_info_link": "https://www.google.com/goto?url=CAESiQEBxCJF18a__Qwz7T8-ePwqHEBIaTZoBOW7DFRLLnGu89eSR7tPQ445lzwEGaCKFlO9NdXxXV8YMUOt5hZ3ki6hxOxDXc3pBXPWqjQjeB5IlB-xV6bSJdKc8JkCmQLpsJA84l3pqrJ-Ds3u8nmIm9bmDOvJaL3oaNvPOCoIFSnvyTRhV8V4-SneBg",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsgBL2dvdG8_dXJsPUNBRVNpUUVCeENKRjE4YV9fUXd6N1Q4LWVQd3FIRUJJYVRab0JPVzdERlJMTG5HdTg5ZVNSN3RQUTQ0NWx6d0VHYUNLRmxPOU5kWHhYVjhZTVVPdDVoWjNraTZoeE94RFhjM3BCWFBXcWpRamVCNUlsQi14VjZiU0pkS2M4SmtDbVFMcHNKQTg0bDNwcXJKLURzM3U4bm1JbTlibURPdkphTDNvYU52UE9Db0lGU252eVRSaFY4VjQtU25lQmcSBBoCCAAa5gQSAggAGgAiACoAMgYIAxICdHc6AEIECAEQRUoAWgByAHoAgkDABAhFEAAYACAAKhEKBuS6uuW3pRWUMp9AGgJhaSoZCgbmmbrmhacVfLmJQBoCYWkaBuaZuuiDvTLIAS9nb3RvP3VybD1DQUVTaVFFQnhDSkYxOGFfX1F3ejdUOC1lUHdxSEVCSWFUWm9CT1c3REZSTExuR3U4OWVTUjd0UFE0NDVsendFR2FDS0ZsTzlOZFh4WFY4WU1VT3Q1aFoza2k2aHhPeERYYzNwQlhQV3FqUWplQjVJbEIteFY2YlNKZEtjOEprQ21RTHBzSkE4NGwzcHFySi1EczN1OG5tSW05Ym1ET3ZKYUwzb2FOdlBPQ29JRlNudnlUUmhWOFY0LVNuZUJnOjw8Yj7kurrlt6Xmmbrmhac8L2I-5Y-yLSDntq3ln7rnmb7np5HvvIzoh6rnlLHnmoTnmb7np5Hlhajmm7hC_gE8Yj7kurrlt6Xmmbrmhac8L2I-55qE5q235Y-y5rqQ6YGg5rWB6ZW344CC5Zyo5Y-k5Luj55qE56We6Kmx5YKz6Kqq5Lit77yM5oqA6Jed6auY6LaF55qE5bel5Yyg5Y-v5Lul6KO95L2c5Lq66YCg5Lq677yM5Lim54K65YW26LOm5LqI5pm66IO95oiW5oSP6K2Y44CCIC4uLiDnj77ku6PmhI_nvqnkuIrnmoRBSeWni-aWvOWPpOWFuOWTsuWtuOWutuippuWcluWwh-S6uumhnueahOaAnee2remBjueoi-aPj-i_sOeCuuWwjeespuiZnyZuYnNwOy4uLiICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsgBL2dvdG8_dXJsPUNBRVNpUUVCeENKRjE4YV9fUXd6N1Q4LWVQd3FIRUJJYVRab0JPVzdERlJMTG5HdTg5ZVNSN3RQUTQ0NWx6d0VHYUNLRmxPOU5kWHhYVjhZTVVPdDVoWjNraTZoeE94RFhjM3BCWFBXcWpRamVCNUlsQi14VjZiU0pkS2M4SmtDbVFMcHNKQTg0bDNwcXJKLURzM3U4bm1JbTlibURPdkphTDNvYU52UE9Db0lGU252eVRSaFY4VjQtU25lQmcSBBoCCAAa5gQSAggAGgAiACoAMgYIAxICdHc6AEIECAEQRUoAWgByAHoAgkDABAhFEAAYACAAKhEKBuS6uuW3pRWUMp9AGgJhaSoZCgbmmbrmhacVfLmJQBoCYWkaBuaZuuiDvTLIAS9nb3RvP3VybD1DQUVTaVFFQnhDSkYxOGFfX1F3ejdUOC1lUHdxSEVCSWFUWm9CT1c3REZSTExuR3U4OWVTUjd0UFE0NDVsendFR2FDS0ZsTzlOZFh4WFY4WU1VT3Q1aFoza2k2aHhPeERYYzNwQlhQV3FqUWplQjVJbEIteFY2YlNKZEtjOEprQ21RTHBzSkE4NGwzcHFySi1EczN1OG5tSW05Ym1ET3ZKYUwzb2FOdlBPQ29JRlNudnlUUmhWOFY0LVNuZUJnOjw8Yj7kurrlt6Xmmbrmhac8L2I-5Y-yLSDntq3ln7rnmb7np5HvvIzoh6rnlLHnmoTnmb7np5Hlhajmm7hC_gE8Yj7kurrlt6Xmmbrmhac8L2I-55qE5q235Y-y5rqQ6YGg5rWB6ZW344CC5Zyo5Y-k5Luj55qE56We6Kmx5YKz6Kqq5Lit77yM5oqA6Jed6auY6LaF55qE5bel5Yyg5Y-v5Lul6KO95L2c5Lq66YCg5Lq677yM5Lim54K65YW26LOm5LqI5pm66IO95oiW5oSP6K2Y44CCIC4uLiDnj77ku6PmhI_nvqnkuIrnmoRBSeWni-aWvOWPpOWFuOWTsuWtuOWutuippuWcluWwh-S6uumhnueahOaAnee2remBjueoi-aPj-i_sOeCuuWwjeespuiZnyZuYnNwOy4uLiICEAFIAFgAaAA",
+      "source": "维基百科"
+    },
+    {
+      "position": 4,
+      "title": "認識人工智慧",
+      "link": "https://www.junyiacademy.org/topics/v1283-new-topic-287",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHEIkXXdgvoPxgvfmnHTR_RMnarngDekNt3LeyA-3ucZp_vkaw5kIGYHuMTCwfu8pKth09kVQp8UZpu-qAaRGtz847KmzrEkAFiSjBAMGRJuuTWsXO5-0n9k7f-OfSpVRuigu9LZL339jDXt8btQiviz-8o&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECDIQAQ&uoh=1",
+      "displayed_link": "https://www.junyiacademy.org › v1283-new-topic-287",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAV1BMVEVHcExQu0HyRk5SuUJjs0P0T07tV03sWE3yUE1kskNkskPsWE3tWE1js0Njs0Nhs0NsrkPuVk3tV01lskNgtEOblkftV02xh0juVk26gklWuELuVk3UbUvyXUkJAAAAHXRSTlMACgkYkR2dhhH_-f_5o9CzHqm7M79NJzGxQBLLULGJPSsAAAEgSURBVHgBbdIHksUgDANQSiC998D9z7lW9DurKSkvgO2JekVrXo1RSWyWWVydz4vUykpUrG4SbctSVDvf1KLfprtS0g9jjUw_K2fRZfW0TSXarb5JzLbtgMs-gmjbIVWxzhLqPO3UYhNr1mKiV_HYc20zW0w1ajbq6stbzwN2rK10tAfceyOVPDRO2FMeRKPoeNdFrdoYps12JSJ6wKAL9XTsF2s3pxizP3a2cr8uXHvRnB_Ph-rt8FCstbSmHs_7Tb9Lf5_K_g5U1a-Y0Vu1Ksa7dzP3MMQXrEpQxsh52vNoYOgPipGKTgE9Oa47dq2gNP5SmDUyrkuP1xc-YT6NG37G0A6Oo_3BAzY6-x-iZtbZJ9tCRxg0MUlR8Hpx5Mgf4jkX6m1Oz9YAAAAASUVORK5CYII.png",
+      "snippet": "我們將透過一系列由Code.org 與Microsoft 合作的影片，學習人工智慧(Artificial Intelligence) 的重要性、人工智慧是如何運作的，以及倫理對人工智慧的含義。",
+      "snippet_highlighted_words": [
+        "人工智慧",
+        "人工智慧",
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "我們將透過一系列由Code.org 與Microsoft 合作的影片，學習人工智慧(Artificial Intelligence) 的重要性、人工智慧\n是如何運作的，以及倫理對人工智慧的含義。",
+          "source_info_link": "https://www.junyiacademy.org/topics/v1283-new-topic-287",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAV1BMVEVHcExQu0HyRk5SuUJjs0P0T07tV03sWE3yUE1kskNkskPsWE3tWE1js0Njs0Nhs0NsrkPuVk3tV01lskNgtEOblkftV02xh0juVk26gklWuELuVk3UbUvyXUkJAAAAHXRSTlMACgkYkR2dhhH_-f_5o9CzHqm7M79NJzGxQBLLULGJPSsAAAEgSURBVHgBbdIHksUgDANQSiC998D9z7lW9DurKSkvgO2JekVrXo1RSWyWWVydz4vUykpUrG4SbctSVDvf1KLfprtS0g9jjUw_K2fRZfW0TSXarb5JzLbtgMs-gmjbIVWxzhLqPO3UYhNr1mKiV_HYc20zW0w1ajbq6stbzwN2rK10tAfceyOVPDRO2FMeRKPoeNdFrdoYps12JSJ6wKAL9XTsF2s3pxizP3a2cr8uXHvRnB_Ph-rt8FCstbSmHs_7Tb9Lf5_K_g5U1a-Y0Vu1Ksa7dzP3MMQXrEpQxsh52vNoYOgPipGKTgE9Oa47dq2gNP5SmDUyrkuP1xc-YT6NG37G0A6Oo_3BAzY6-x-iZtbZJ9tCRxg0MUlR8Hpx5Mgf4jkX6m1Oz9YAAAAASUVORK5CYII.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqoBL2dvdG8_dXJsPUNBRVNkQUhFSWtYWHEzVGROZ2lHajRaMG1hR2FaeVkyZU9abUxmeXJFeV9EcUZHMklleU03NExwOXpyZlZmZkJ0UTlYS2NFOGRtZUozLUY5N3hQN1h3UXVWWlNZeGh6RkdPMV9EQ0IzZDk2X1Y2cTBLY3JscVZ4d3lpYno1Y1gtSU5fc1JPbElIMXlWWWZhTnBacG5HVVJLTUR5d1lxaDMSBBoCCAAalAQSABoAIgAqADIGCAESAnR3OgBCBAgBEEVKAFoAcgB6AIJA8AMIRRAAGAAgACoRCgbkurrlt6UVsnyxQBoCYWkqGQoG5pm65oWnFbJ8sUAaAmFpGgbmmbrog70yqgEvZ290bz91cmw9Q0FFU2RBSEVJa1hYcTNUZE5naUdqNFowbWFHYVp5WTJlT1ptTGZ5ckV5X0RxRkcySWV5TTc0THA5enJmVmZmQnRROVhLY0U4ZG1lSjMtRjk3eFA3WHdRdVZaU1l4aHpGR08xX0RDQjNkOTZfVjZxMEtjcmxxVnh3eWliejVjWC1JTl9zUk9sSUgxeVZZZmFOcFpwbkdVUktNRHl3WXFoMzot6KqN6K2YPGI-5Lq65bel5pm65oWnPC9iPnwg5Z2H5LiA5pWZ6IKy5bmz5Y-wQtsB5oiR5YCR5bCH6YCP6YGO5LiA57O75YiX55SxQ29kZS5vcmcg6IiHTWljcm9zb2Z0IOWQiOS9nOeahOW9seeJh--8jOWtuOe_kjxiPuS6uuW3peaZuuaFpzwvYj4oQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UpIOeahOmHjeimgeaAp-OAgTxiPuS6uuW3peaZuuaFpzwvYj7mmK_lpoLkvZXpgYvkvZznmoTvvIzku6Xlj4rlgKvnkIblsI08Yj7kurrlt6Xmmbrmhac8L2I-55qE5ZCr576p44CCIgIQAUgAWABoAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqoBL2dvdG8_dXJsPUNBRVNkQUhFSWtYWHEzVGROZ2lHajRaMG1hR2FaeVkyZU9abUxmeXJFeV9EcUZHMklleU03NExwOXpyZlZmZkJ0UTlYS2NFOGRtZUozLUY5N3hQN1h3UXVWWlNZeGh6RkdPMV9EQ0IzZDk2X1Y2cTBLY3JscVZ4d3lpYno1Y1gtSU5fc1JPbElIMXlWWWZhTnBacG5HVVJLTUR5d1lxaDMSBBoCCAAalAQSABoAIgAqADIGCAESAnR3OgBCBAgBEEVKAFoAcgB6AIJA8AMIRRAAGAAgACoRCgbkurrlt6UVsnyxQBoCYWkqGQoG5pm65oWnFbJ8sUAaAmFpGgbmmbrog70yqgEvZ290bz91cmw9Q0FFU2RBSEVJa1hYcTNUZE5naUdqNFowbWFHYVp5WTJlT1ptTGZ5ckV5X0RxRkcySWV5TTc0THA5enJmVmZmQnRROVhLY0U4ZG1lSjMtRjk3eFA3WHdRdVZaU1l4aHpGR08xX0RDQjNkOTZfVjZxMEtjcmxxVnh3eWliejVjWC1JTl9zUk9sSUgxeVZZZmFOcFpwbkdVUktNRHl3WXFoMzot6KqN6K2YPGI-5Lq65bel5pm65oWnPC9iPnwg5Z2H5LiA5pWZ6IKy5bmz5Y-wQtsB5oiR5YCR5bCH6YCP6YGO5LiA57O75YiX55SxQ29kZS5vcmcg6IiHTWljcm9zb2Z0IOWQiOS9nOeahOW9seeJh--8jOWtuOe_kjxiPuS6uuW3peaZuuaFpzwvYj4oQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UpIOeahOmHjeimgeaAp-OAgTxiPuS6uuW3peaZuuaFpzwvYj7mmK_lpoLkvZXpgYvkvZznmoTvvIzku6Xlj4rlgKvnkIblsI08Yj7kurrlt6Xmmbrmhac8L2I-55qE5ZCr576p44CCIgIQAUgAWABoAA",
+      "source": "均一教育平台"
+    },
+    {
+      "position": 5,
+      "title": "什麼是人工智慧？從規則到學習",
+      "link": "https://www.google.com/goto?url=CAESXAHEIkXXeprnMiUI13zfkDJolukl4K2hVeQq2BkYHzNAdXzzV2M0kyI7IKYsrhyBs7Gy-CbmhiIXS0o5vNiW3-_cnh828Omb_EyBcnJaeNSHHLYntOAGyQmwdZQ3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESXAHEIkXXsZ3kMB1su-xuGcWGtrIHLRH1AsA8u_3pBCB3Hj_f925uIr8ubKvNtBEyd822fB2bWilvJD6PlEJp-g-VS4VwWyvsvmhU-QDTIyfwRygar44KOyTcw8iQ&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECDEQAQ&uoh=1",
+      "displayed_link": "https://uedu.tw › what-is-ai",
+      "favicon": "https://serpapi.com/searches/6af5aaf8412f43bfd331b240/images/ju9eU2FNSa-nmj9Og5f0COHPkaJbUh4VaDSOnEUoKbo.png",
+      "snippet": "從直覺到定義. 直覺上，人工智慧（Artificial Intelligence, AI） 是「讓機器做原本需要人類智慧的事」。但這個說法會隨著技術進步而縮水——一旦某件事被機器做到（如光學字 ...",
+      "snippet_highlighted_words": [
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "從直覺到定義. 直覺上，人工智慧（Artificial Intelligence, AI） 是「讓機器做原本需要人類智慧的事」。但這個說法會隨著技術進步而縮水——一旦某件事被機器做到（如光學字 ...",
+          "source_info_link": "https://www.google.com/goto?url=CAESXAHEIkXXeprnMiUI13zfkDJolukl4K2hVeQq2BkYHzNAdXzzV2M0kyI7IKYsrhyBs7Gy-CbmhiIXS0o5vNiW3-_cnh828Omb_EyBcnJaeNSHHLYntOAGyQmwdZQ3",
+          "icon": "https://serpapi.com/searches/6af5aaf8412f43bfd331b240/images/ju9eU2FNSa-nmj9Og5f0CK3eFdki4qHUvXlAmCuGNIZ7WL-zODokfEBp1QaQ9c06.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CooBL2dvdG8_dXJsPUNBRVNYQUhFSWtYWGVwcm5NaVVJMTN6ZmtESm9sdWtsNEsyaFZlUXEyQmtZSHpOQWRYenpWMk0wa3lJN0lLWXNyaHlCczdHeS1DYm1oaUlYUzBvNXZOaVczLV9jbmg4MjhPbWJfRXlCY25KYWVOU0hITFludE9BR3lRbXdkWlEzEgQaAggAGqYEEgAaACIAKgAyBggBEgJ0dzoAQgQIARBFSgBaAHIAegCCQIIECEUQABgAIAAqEQoG5Lq65belFRCxdUAaAmFpKhkKBuaZuuaFpxUueYxAGgJhaRoG5pm66IO9MooBL2dvdG8_dXJsPUNBRVNYQUhFSWtYWGVwcm5NaVVJMTN6ZmtESm9sdWtsNEsyaFZlUXEyQmtZSHpOQWRYenpWMk0wa3lJN0lLWXNyaHlCczdHeS1DYm1oaUlYUzBvNXZOaVczLV9jbmg4MjhPbWJfRXlCY25KYWVOU0hITFludE9BR3lRbXdkWlEzOkbku4DpurzmmK88Yj7kurrlt6Xmmbrmhac8L2I-77yf5b6e6KaP5YmH5Yiw5a2457-S4oCUIFVlZHUgQUkg5YSq5pm65oWnQvQB5b6e55u06Ka65Yiw5a6a576pLiDnm7ToprrkuIrvvIw8Yj7kurrlt6Xmmbrmhac8L2I-77yIQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIEFJ77yJIOaYr-OAjOiuk-apn-WZqOWBmuWOn-acrOmcgOimgeS6uumhnuaZuuaFp-eahOS6i-OAjeOAguS9humAmeWAi-iqquazleacg-maqOiRl-aKgOihk-mAsuatpeiAjOe4ruawtOKAlOKAlOS4gOaXpuafkOS7tuS6i-iiq-apn-WZqOWBmuWIsO-8iOWmguWFieWtuOWtlyZuYnNwOy4uLiICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CooBL2dvdG8_dXJsPUNBRVNYQUhFSWtYWGVwcm5NaVVJMTN6ZmtESm9sdWtsNEsyaFZlUXEyQmtZSHpOQWRYenpWMk0wa3lJN0lLWXNyaHlCczdHeS1DYm1oaUlYUzBvNXZOaVczLV9jbmg4MjhPbWJfRXlCY25KYWVOU0hITFludE9BR3lRbXdkWlEzEgQaAggAGqYEEgAaACIAKgAyBggBEgJ0dzoAQgQIARBFSgBaAHIAegCCQIIECEUQABgAIAAqEQoG5Lq65belFRCxdUAaAmFpKhkKBuaZuuaFpxUueYxAGgJhaRoG5pm66IO9MooBL2dvdG8_dXJsPUNBRVNYQUhFSWtYWGVwcm5NaVVJMTN6ZmtESm9sdWtsNEsyaFZlUXEyQmtZSHpOQWRYenpWMk0wa3lJN0lLWXNyaHlCczdHeS1DYm1oaUlYUzBvNXZOaVczLV9jbmg4MjhPbWJfRXlCY25KYWVOU0hITFludE9BR3lRbXdkWlEzOkbku4DpurzmmK88Yj7kurrlt6Xmmbrmhac8L2I-77yf5b6e6KaP5YmH5Yiw5a2457-S4oCUIFVlZHUgQUkg5YSq5pm65oWnQvQB5b6e55u06Ka65Yiw5a6a576pLiDnm7ToprrkuIrvvIw8Yj7kurrlt6Xmmbrmhac8L2I-77yIQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIEFJ77yJIOaYr-OAjOiuk-apn-WZqOWBmuWOn-acrOmcgOimgeS6uumhnuaZuuaFp-eahOS6i-OAjeOAguS9humAmeWAi-iqquazleacg-maqOiRl-aKgOihk-mAsuatpeiAjOe4ruawtOKAlOKAlOS4gOaXpuafkOS7tuS6i-iiq-apn-WZqOWBmuWIsO-8iOWmguWFieWtuOWtlyZuYnNwOy4uLiICEAFIAFgAaAA",
+      "source": "Uedu"
+    },
+    {
+      "position": 6,
+      "title": "人工智慧（AI）是什麼？",
+      "link": "https://nordvpn.com/zh-tw/blog/rengong-zhihui/?srsltid=AYCX9vIl6El4BiTrKNhppGWi0kIR3dAxkWJoRjcCwITWxOzUk9t1zkfs",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESrAEBxCJF1-FZqGlJ1xvfGPWUitChZta9vJQLzWuO1OgCXvMWdk7lyl8MyXQ2KWtHoiifQ1FIxcGzllxCffCwB6CGrEp9jdC0oxfUitI3nHQARtAv9SQGeINVWFWaTzqx1df0loBvieZOvyPSnFUHIfrrZ_3ZWO2Ek0arm6agCSdztC10Y8Pnlkz590L5xVWPDWBSwtYxrKl0VHYl7hHYfFTVJ4HUUqCg322ubc6x&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECDYQAQ&uoh=1",
+      "displayed_link": "https://nordvpn.com › Homepage › blog",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAALVBMVEVHcEw_YP8-X_8-X_8-X_8-X_8_YP8-X_8-X_8-X_8-YP9CYP8-X_8-X_8-X_-ERyUxAAAAD3RSTlMAGWWUrZUSOsz_SwbheYU2KCYmAAAAoElEQVR4AWMgAgiZuKoheBUzgaALxtsyEwy8ITy2kxDunAQwd89MKDgN5nrCuFNAPK6ZcFAA5HKAGHNvgsgGIDcTxDgANmAikKsJYiwAa5kE5EYCzdBgYGgCmjgZYvBEFgaGWkmgMIR7gV2AgYsXwrWcOQPiupMzp4KNmg7hVoKNkpzpAOGygC3imJkA9QrYGeyTYB7VXAAiH8C4fAz0AwCzMU8XDnYUNQAAAABJRU5ErkJggg.png",
+      "date": "2022年12月23日",
+      "snippet": "人工智慧是是指透過機器，特別是計算機系統來模擬人類的智能過程，可由機器或是其他非生物時體來表現。人工智慧系統的具體應用包含專家系統、自然語言 ...",
+      "snippet_highlighted_words": [
+        "人工智慧",
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "人工智慧是是指透過機器，特別是計算機系統來模擬人類的智能過程，可由機器或是其他非生物時體來表現。人工智慧系統的具體應用包含專家系統、自然語言 ...",
+          "source_info_link": "https://nordvpn.com/zh-tw/blog/rengong-zhihui/?srsltid=AYCX9vIl6El4BiTrKNhppGWi0kIR3dAxkWJoRjcCwITWxOzUk9t1zkfs",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAALVBMVEVHcEw_YP8-X_8-X_8-X_8-X_8_YP8-X_8-X_8-X_8-YP9CYP8-X_8-X_8-X_-ERyUxAAAAD3RSTlMAGWWUrZUSOsz_SwbheYU2KCYmAAAAoElEQVR4AWMgAgiZuKoheBUzgaALxtsyEwy8ITy2kxDunAQwd89MKDgN5nrCuFNAPK6ZcFAA5HKAGHNvgsgGIDcTxDgANmAikKsJYiwAa5kE5EYCzdBgYGgCmjgZYvBEFgaGWkmgMIR7gV2AgYsXwrWcOQPiupMzp4KNmg7hVoKNkpzpAOGygC3imJkA9QrYGeyTYB7VXAAiH8C4fAz0AwCzMU8XDnYUNQAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CvYBL2dvdG8_dXJsPUNBRVNyQUVCeENKRjExLUVRZkRjY2h2Ri1xRDd6Tm5KY3ZHSi1BWXlEcHVGNTFWbjd5QlA0RlJvRXVQcUh0REZ2VnFad05EYlpuNWNpWkg1dms0WWdoQjBYSERraG14eU5za0lYejF5NzBEXzJHQ2Z0QUNFX0V1TFJWamJHblhVSG05X2lMWTR3RGxsazM3eTR6bUFoVTYyU1FsT2tpaUxxQ2huaGhBcDM3MW9NYi1aakhzQTBZRkpLM0JPelAySVpyZGFabktRSmEtbTY1b0pjbWR0eEtyRXZ5cjdwTTljakNybW5TcXB2TGcyEgQaAggAGpoEEgAaACIAKgAyBggDEgJ0dzoAQgQIARBFSgBaAHIAegCCQPYDCEUQABgAIAAqEQoG5Lq65belFSr3iUAaAmFpKhkKBuaZuuaFpxWcBopAGgJhaRoG5pm66IO9Mp4BL2dvdG8_dXJsPUNBRVNhd0hFSWtYWDFpbmNfdmxZRXlhWU5LQ3Jwdm9ST3EwZDNUTGszcmh6U1hid0hfSk1DaXJMV1dmZ1hPaEx3QTBkekVyNzdiajE2d0p3MHBKUzlUWmxzWWlsVGZlR1BCRFRRY3o1b0xtbkl5OHVseW5JeGtIdzVDaUxncXV2SkxDRi1lSmlHUlZQMUllRmt6YUM6MTxiPuS6uuW3peaZuuaFpzwvYj7vvIhBSe-8ieaYr-S7gOm6vO-8nyAtIE5vcmRWUE5C6QE8Yj7kurrlt6Xmmbrmhac8L2I-5piv5piv5oyH6YCP6YGO5qmf5Zmo77yM54m55Yil5piv6KiI566X5qmf57O757Wx5L6G5qih5pOs5Lq66aGe55qE5pm66IO96YGO56iL77yM5Y-v55Sx5qmf5Zmo5oiW5piv5YW25LuW6Z2e55Sf54mp5pmC6auU5L6G6KGo54--44CCPGI-5Lq65bel5pm65oWnPC9iPuezu-e1seeahOWFt-mrlOaHieeUqOWMheWQq-WwiOWutuezu-e1seOAgeiHqueEtuiqnuiogCZuYnNwOy4uLiICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CvYBL2dvdG8_dXJsPUNBRVNyQUVCeENKRjExLUVRZkRjY2h2Ri1xRDd6Tm5KY3ZHSi1BWXlEcHVGNTFWbjd5QlA0RlJvRXVQcUh0REZ2VnFad05EYlpuNWNpWkg1dms0WWdoQjBYSERraG14eU5za0lYejF5NzBEXzJHQ2Z0QUNFX0V1TFJWamJHblhVSG05X2lMWTR3RGxsazM3eTR6bUFoVTYyU1FsT2tpaUxxQ2huaGhBcDM3MW9NYi1aakhzQTBZRkpLM0JPelAySVpyZGFabktRSmEtbTY1b0pjbWR0eEtyRXZ5cjdwTTljakNybW5TcXB2TGcyEgQaAggAGpoEEgAaACIAKgAyBggDEgJ0dzoAQgQIARBFSgBaAHIAegCCQPYDCEUQABgAIAAqEQoG5Lq65belFSr3iUAaAmFpKhkKBuaZuuaFpxWcBopAGgJhaRoG5pm66IO9Mp4BL2dvdG8_dXJsPUNBRVNhd0hFSWtYWDFpbmNfdmxZRXlhWU5LQ3Jwdm9ST3EwZDNUTGszcmh6U1hid0hfSk1DaXJMV1dmZ1hPaEx3QTBkekVyNzdiajE2d0p3MHBKUzlUWmxzWWlsVGZlR1BCRFRRY3o1b0xtbkl5OHVseW5JeGtIdzVDaUxncXV2SkxDRi1lSmlHUlZQMUllRmt6YUM6MTxiPuS6uuW3peaZuuaFpzwvYj7vvIhBSe-8ieaYr-S7gOm6vO-8nyAtIE5vcmRWUE5C6QE8Yj7kurrlt6Xmmbrmhac8L2I-5piv5piv5oyH6YCP6YGO5qmf5Zmo77yM54m55Yil5piv6KiI566X5qmf57O757Wx5L6G5qih5pOs5Lq66aGe55qE5pm66IO96YGO56iL77yM5Y-v55Sx5qmf5Zmo5oiW5piv5YW25LuW6Z2e55Sf54mp5pmC6auU5L6G6KGo54--44CCPGI-5Lq65bel5pm65oWnPC9iPuezu-e1seeahOWFt-mrlOaHieeUqOWMheWQq-WwiOWutuezu-e1seOAgeiHqueEtuiqnuiogCZuYnNwOy4uLiICEAFIAFgAaAA",
+      "source": "NordVPN"
+    },
+    {
+      "position": 7,
+      "title": "什麼是人工智慧(AI)？",
+      "link": "https://www.oracle.com/tw/artificial-intelligence/what-is-ai/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESegHEIkXX-va6CGhG2nnqsFE9LWdx3YI1tYLfiV-PO72IOp1sGwYXNqj47-bvpx19rIyDMbJObLd810_0fpmtxBUrLk6L9W-pjAjP4xlJCCwngkTV44sU1kUA1J2YNEAFyq5C40wJs7nscGsg8ZDkiLDT3gZbNgD3qLBo&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECDQQAQ&uoh=1",
+      "displayed_link": "https://www.oracle.com › Oracle 台灣 › 雲端 › 人工智慧",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAJ1BMVEVHcEzkVkPmV0PlV0PlWEPlV0PlWETlWETlWETlV0TlWETlVkPmV0OApskJAAAADXRSTlMAD3Kluonn__Q01idPskEUtAAAAKhJREFUeAFjoCpgVHYBAyMBMC-sHAIqUkH8WeVwsJKBgXt5eUqQEhCoupWXbGBgLi-eADGD07zcgGF6uSHMTOHySobwKqAkVHp5KQMQwQBQiqG9CMFVr2AoR-Wmoyo2B1oGBdzuxQzHKxRgXKb2Ggap8iQYV618IQNPe4XP7N1AsPNIe8UBoHHl5R1gUF5eA3YLzEMQ9wl5rQKDJYrQ4Ni9ezYQClAYqgDZNkIA8rmNJQAAAABJRU5ErkJggg.png",
+      "date": "2021年5月13日",
+      "snippet": "人工智慧已經成為一個集體的代名詞，是指能執行複雜任務的應用程式，這些複雜任務曾經需要人工輸入，例如與顧客線上溝通或下棋。這個詞常與它的子欄位交換 ...",
+      "snippet_highlighted_words": [
+        "人工智慧"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "人工智慧已經成為一個集體的代名詞，是指能執行複雜任務的應用程式，這些複雜任務曾經需要人工輸入，例如與顧客線上溝通或下棋。這個詞常與它的子欄位交換 ...",
+          "source_info_link": "https://www.oracle.com/tw/artificial-intelligence/what-is-ai/",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAJ1BMVEVHcEzkVkPmV0PlV0PlWEPlV0PlWETlWETlWETlV0TlWETlVkPmV0OApskJAAAADXRSTlMAD3Kluonn__Q01idPskEUtAAAAKhJREFUeAFjoCpgVHYBAyMBMC-sHAIqUkH8WeVwsJKBgXt5eUqQEhCoupWXbGBgLi-eADGD07zcgGF6uSHMTOHySobwKqAkVHp5KQMQwQBQiqG9CMFVr2AoR-Wmoyo2B1oGBdzuxQzHKxRgXKb2Ggap8iQYV618IQNPe4XP7N1AsPNIe8UBoHHl5R1gUF5eA3YLzEMQ9wl5rQKDJYrQ4Ni9ezYQClAYqgDZNkIA8rmNJQAAAABJRU5ErkJggg.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CrIBL2dvdG8_dXJsPUNBRVNlZ0hFSWtYWHY5S3BVYlkyYmxzNmJScU56YUlhM2plQ1BHX2RGanNkdmNaWld4UERhQlZwREdnbkE5Smd6NERWdE5zbmltYlZ5MEY4RjJCYkRDdWZ2RjNPbjhOSGM2TWUzSUJlMWR5NFdBUVJGQzQyM2s3XzdvLXZPd0d3bGRaTktraFE1U2FaVGJmRXBiZlNWLVdFZVFZazRRRDNpQlJRZ1VzZRIEGgIIABqxBBICCAAaACIAKgAyBggDEgJ0dzoAQgQIARBFSgBaAHIAegCCQIsECEUQABgAIAAqEQoG5Lq65belFVDRq0AaAmFpKhkKBuaZuuaFpxUqJKxAGgJhaRoG5pm66IO9MrIBL2dvdG8_dXJsPUNBRVNlZ0hFSWtYWHY5S3BVYlkyYmxzNmJScU56YUlhM2plQ1BHX2RGanNkdmNaWld4UERhQlZwREdnbkE5Smd6NERWdE5zbmltYlZ5MEY4RjJCYkRDdWZ2RjNPbjhOSGM2TWUzSUJlMWR5NFdBUVJGQzQyM2s3XzdvLXZPd0d3bGRaTktraFE1U2FaVGJmRXBiZlNWLVdFZVFZazRRRDNpQlJRZ1VzZToz5LuA6bq85pivPGI-5Lq65bel5pm65oWnPC9iPihBSSnvvJ8gfCBPcmFjbGUg5Y-w54GjQugBPGI-5Lq65bel5pm65oWnPC9iPuW3sue2k-aIkOeCuuS4gOWAi-mbhumrlOeahOS7o-WQjeipnu-8jOaYr-aMh-iDveWft-ihjOikh-mbnOS7u-WLmeeahOaHieeUqOeoi-W8j--8jOmAmeS6m-ikh-mbnOS7u-WLmeabvue2k-mcgOimgeS6uuW3pei8uOWFpe-8jOS-i-WmguiIh-mhp-Wuoue3muS4iua6nemAmuaIluS4i-aji-OAgumAmeWAi-ipnuW4uOiIh-Wug-eahOWtkOashOS9jeS6pOaPmyZuYnNwOy4uLiICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CrIBL2dvdG8_dXJsPUNBRVNlZ0hFSWtYWHY5S3BVYlkyYmxzNmJScU56YUlhM2plQ1BHX2RGanNkdmNaWld4UERhQlZwREdnbkE5Smd6NERWdE5zbmltYlZ5MEY4RjJCYkRDdWZ2RjNPbjhOSGM2TWUzSUJlMWR5NFdBUVJGQzQyM2s3XzdvLXZPd0d3bGRaTktraFE1U2FaVGJmRXBiZlNWLVdFZVFZazRRRDNpQlJRZ1VzZRIEGgIIABqxBBICCAAaACIAKgAyBggDEgJ0dzoAQgQIARBFSgBaAHIAegCCQIsECEUQABgAIAAqEQoG5Lq65belFVDRq0AaAmFpKhkKBuaZuuaFpxUqJKxAGgJhaRoG5pm66IO9MrIBL2dvdG8_dXJsPUNBRVNlZ0hFSWtYWHY5S3BVYlkyYmxzNmJScU56YUlhM2plQ1BHX2RGanNkdmNaWld4UERhQlZwREdnbkE5Smd6NERWdE5zbmltYlZ5MEY4RjJCYkRDdWZ2RjNPbjhOSGM2TWUzSUJlMWR5NFdBUVJGQzQyM2s3XzdvLXZPd0d3bGRaTktraFE1U2FaVGJmRXBiZlNWLVdFZVFZazRRRDNpQlJRZ1VzZToz5LuA6bq85pivPGI-5Lq65bel5pm65oWnPC9iPihBSSnvvJ8gfCBPcmFjbGUg5Y-w54GjQugBPGI-5Lq65bel5pm65oWnPC9iPuW3sue2k-aIkOeCuuS4gOWAi-mbhumrlOeahOS7o-WQjeipnu-8jOaYr-aMh-iDveWft-ihjOikh-mbnOS7u-WLmeeahOaHieeUqOeoi-W8j--8jOmAmeS6m-ikh-mbnOS7u-WLmeabvue2k-mcgOimgeS6uuW3pei8uOWFpe-8jOS-i-WmguiIh-mhp-Wuoue3muS4iua6nemAmuaIluS4i-aji-OAgumAmeWAi-ipnuW4uOiIh-Wug-eahOWtkOashOS9jeS6pOaPmyZuYnNwOy4uLiICEAFIAFgAaAA",
+      "source": "Oracle"
+    },
+    {
+      "position": 8,
+      "title": "甚麼是人工智能（AI）？ | 趨勢科技",
+      "link": "https://www.trendmicro.com/zh_hk/what-is/ai.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbQHEIkXXSGjqPxWK2rSPcDdtHJ476wmKZIoprSZIMKdsRuTdt_ReaCI4drySdWMycyTYrKJw1vaU6sBvfu3b8R8MNlqz7WU0d6300IJu1ohI6GjnL29qWgd_p1LTBNqpXgHhrKkUq93KlDljcIc&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0QFnoECDMQAQ&uoh=1",
+      "displayed_link": "https://www.trendmicro.com › zh_hk › what-is",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAdVBMVEVHcEzPKi_ZJy7cIinbHiXZHCPXGSDoHiXcGB_XGB_GNjzkIiniGSHWDBXTAADXAQriAADrHybeWFvmfYDwq6350dP_____-fnri47wwcLXEhrjcnXgZ2n-8vLaNTrdT1LYJSr74uT88PHRAADyurzrlpj21dYITqT0AAAAJ3RSTlMAIU6g0vb_4___E4z_____4vT_______79If____n_____iZ7__4kr7EzOAAABm0lEQVR4AWxTB2KDMAw0S9gJSBlG7JX1_ycWMZ22l8G449BUBzw_CCOAKAx8T_2FF8RaazAGpkMc_JaczkkCB0ySnE9ffHzQJkUBXRyFf9UHbW53mzHnWVHuzx98Vd3udd3cmqJlbsvNf-MNdP2ARGlKiHZXnJ3whqravHBkfswGBy9J7sA78yjZBptASAdUM7dPpbx4s_xHMF485S8Rpmhfw5cEC-aMfBWIwGCX8RvBBWbMBQUq1IYQ3y0zkstXyNz2aagiA43NmdnemspN4sX8QoiUBDMj59GJk24585ACKGnOyKJGdF_Q8hKUigBni46cKhkp9CiViaYgQQwydAOUAHJMAXSoAmokxAJd3k58I3d0oHx685zQEf8g49AjiMBX3mWy47HbupjibZz4enGMPaWemeOQYi_6dlj4JJBxljv8RiRCHGwrKXcEi2Ceyw8LXvemfosZj3esVv6sZrTswg5bQjpeB7vMd3a0iNXGX4VfFLZd2HoQeuN9Z3EuBBUi0lHtRPzd1dPabfb36rnL-zMgQM28BLM_AOk-K3GRTdVDAAAAAElFTkSuQmCC.png",
+      "date": "2025年9月11日",
+      "snippet": "人工智能是一項能讓電腦和機器學習、理解、建立、解決問題、預測結果及作出決策的技術。 進一步了解. 目錄. 它如何運作？ keyboard_arrow_down.",
+      "snippet_highlighted_words": [
+        "人工"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "人工智能是一項能讓電腦和機器學習、理解、建立、解決問題、預測結果及作出決策的技術。 進一步了解. 目錄. 它如何運作？ keyboard_arrow_down.",
+          "source_info_link": "https://www.trendmicro.com/zh_hk/what-is/ai.html",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAdVBMVEVHcEzPKi_ZJy7cIinbHiXZHCPXGSDoHiXcGB_XGB_GNjzkIiniGSHWDBXTAADXAQriAADrHybeWFvmfYDwq6350dP_____-fnri47wwcLXEhrjcnXgZ2n-8vLaNTrdT1LYJSr74uT88PHRAADyurzrlpj21dYITqT0AAAAJ3RSTlMAIU6g0vb_4___E4z_____4vT_______79If____n_____iZ7__4kr7EzOAAABm0lEQVR4AWxTB2KDMAw0S9gJSBlG7JX1_ycWMZ22l8G449BUBzw_CCOAKAx8T_2FF8RaazAGpkMc_JaczkkCB0ySnE9ffHzQJkUBXRyFf9UHbW53mzHnWVHuzx98Vd3udd3cmqJlbsvNf-MNdP2ARGlKiHZXnJ3whqravHBkfswGBy9J7sA78yjZBptASAdUM7dPpbx4s_xHMF485S8Rpmhfw5cEC-aMfBWIwGCX8RvBBWbMBQUq1IYQ3y0zkstXyNz2aagiA43NmdnemspN4sX8QoiUBDMj59GJk24585ACKGnOyKJGdF_Q8hKUigBni46cKhkp9CiViaYgQQwydAOUAHJMAXSoAmokxAJd3k58I3d0oHx685zQEf8g49AjiMBX3mWy47HbupjibZz4enGMPaWemeOQYi_6dlj4JJBxljv8RiRCHGwrKXcEi2Ceyw8LXvemfosZj3esVv6sZrTswg5bQjpeB7vMd3a0iNXGX4VfFLZd2HoQeuN9Z3EuBBUi0lHtRPzd1dPabfb36rnL-zMgQM28BLM_AOk-K3GRTdVDAAAAAElFTkSuQmCC.png"
+        },
+        "languages": [
+          "zh"
+        ],
+        "regions": [
+          "TW"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqEBL2dvdG8_dXJsPUNBRVNiUUhFSWtYWDNoQWVFdGFqdnFuV0tZdkVuTm5KYVB6WW1BNTBIRUFxS3JqdlhKbDkzVTB3QXExNDBMSFZaNl9aZmpRZlZMN3A5OTgzNVRDaHZhZWM4V3BMZTYzSDQ2UkxOYk1OQ0FFbHg0bEcybzJSOFZDSjVQOUJoZU1Iek13SmVqcGQySV83d3VGdUJMbEg5cGMSBBoCCAAajAQSAggAGgAiACoAMgYIAxICdHc6AEIECAEQRUoAWgByAHoAgkDmAwhFEAAYACAAKhEKBuS6uuW3pRUe9JxAGgJhaSoZCgbmmbrmhacVETQDPxoCYWkaBuaZuuiDvTKhAS9nb3RvP3VybD1DQUVTYlFIRUlrWFgzaEFlRXRhanZxbldLWXZFbk5uSmFQelltQTUwSEVBcUtyanZYSmw5M1Uwd0FxMTQwTEhWWjZfWmZqUWZWTDdwOTk4MzVUQ2h2YWVjOFdwTGU2M0g0NlJMTmJNTkNBRWx4NGxHMm8yUjhWQ0o1UDlCaGVNSHpNd0planBkMklfN3d1RnVCTGxIOXBjOkTnlJrpurzmmK88Yj7kurrlt6U8L2I-5pm66IO977yIQUnvvInvvJ8gfCDotqjli6Lnp5HmioAgLSBUcmVuZCBNaWNyb0LDATxiPuS6uuW3pTwvYj7mmbrog73mmK_kuIDpoIXog73orpPpm7vohablkozmqZ_lmajlrbjnv5LjgIHnkIbop6PjgIHlu7rnq4vjgIHop6PmsbrllY_poYzjgIHpoJDmuKzntZDmnpzlj4rkvZzlh7rmsbrnrZbnmoTmioDooZPjgIIg6YCy5LiA5q2l5LqG6KejLiDnm67pjIQuIOWug-WmguS9lemBi-S9nO-8nyBrZXlib2FyZF9hcnJvd19kb3duLiICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqEBL2dvdG8_dXJsPUNBRVNiUUhFSWtYWDNoQWVFdGFqdnFuV0tZdkVuTm5KYVB6WW1BNTBIRUFxS3JqdlhKbDkzVTB3QXExNDBMSFZaNl9aZmpRZlZMN3A5OTgzNVRDaHZhZWM4V3BMZTYzSDQ2UkxOYk1OQ0FFbHg0bEcybzJSOFZDSjVQOUJoZU1Iek13SmVqcGQySV83d3VGdUJMbEg5cGMSBBoCCAAajAQSAggAGgAiACoAMgYIAxICdHc6AEIECAEQRUoAWgByAHoAgkDmAwhFEAAYACAAKhEKBuS6uuW3pRUe9JxAGgJhaSoZCgbmmbrmhacVETQDPxoCYWkaBuaZuuiDvTKhAS9nb3RvP3VybD1DQUVTYlFIRUlrWFgzaEFlRXRhanZxbldLWXZFbk5uSmFQelltQTUwSEVBcUtyanZYSmw5M1Uwd0FxMTQwTEhWWjZfWmZqUWZWTDdwOTk4MzVUQ2h2YWVjOFdwTGU2M0g0NlJMTmJNTkNBRWx4NGxHMm8yUjhWQ0o1UDlCaGVNSHpNd0planBkMklfN3d1RnVCTGxIOXBjOkTnlJrpurzmmK88Yj7kurrlt6U8L2I-5pm66IO977yIQUnvvInvvJ8gfCDotqjli6Lnp5HmioAgLSBUcmVuZCBNaWNyb0LDATxiPuS6uuW3pTwvYj7mmbrog73mmK_kuIDpoIXog73orpPpm7vohablkozmqZ_lmajlrbjnv5LjgIHnkIbop6PjgIHlu7rnq4vjgIHop6PmsbrllY_poYzjgIHpoJDmuKzntZDmnpzlj4rkvZzlh7rmsbrnrZbnmoTmioDooZPjgIIg6YCy5LiA5q2l5LqG6KejLiDnm67pjIQuIOWug-WmguS9lemBi-S9nO-8nyBrZXlib2FyZF9hcnJvd19kb3duLiICEAFIAFgAaAA",
+      "source": "www.trendmicro.com"
+    },
+    {
+      "position": 9,
+      "title": "1-1. AI 是什麼？｜你的第一堂AI 課",
+      "link": "https://www.youtube.com/watch?v=JKLdpfdhRnc",
+      "displayed_link": "觀看次數超過 17.9萬 次",
+      "date": "2 年前",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK1VOFRM9G82E2Kb4q98j-Bfr-KsG4jBlIZ-lWWR6LCSulJAS0aqT1MA&s",
+      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
+      "snippet": "歡迎來到「全民AI 通識課」！這是由數位發展部和Google 台灣及Hahow 合作推出的系列課程。 AI 正在改變我們的生活、工作以及與周圍世界互動的方式。",
+      "duration": "6:44",
+      "about_this_result": {
+        "source": {
+          "description": "歡迎來到「全民AI 通識課」！這是由數位發展部和Google 台灣及Hahow 合作推出的系列課程。 AI 正在改變我們的生活、工作以及與周圍世界互動的方式。",
+          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png"
+        }
+      },
+      "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpoBL2dvdG8_dXJsPUNBRVNhQUhFSWtYWC12ZlhiaVd1ZTJ5aUcyNnBXUl9EbmRkOFg1eEJ2YU1CVzhvOTRtaWttMkU1Q05BbV8zOE91S1hnRkNLalZnbmxvQmllUFJnR0RFbHNMSndRMUVLVnJYZWhvd3pHQjc3S2FCa196ek54WWZjUHpYcUNJODF2SHFoLUpfYUppUnNxSkNsNhIWChAKBAgwSAIKBAhISAIKAgg_GgIIABoWEgAaACIAKgAyADoAQgBKAFoAcgB6ACICEAFIAFgAaAA",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpoBL2dvdG8_dXJsPUNBRVNhQUhFSWtYWC12ZlhiaVd1ZTJ5aUcyNnBXUl9EbmRkOFg1eEJ2YU1CVzhvOTRtaWttMkU1Q05BbV8zOE91S1hnRkNLalZnbmxvQmllUFJnR0RFbHNMSndRMUVLVnJYZWhvd3pHQjc3S2FCa196ek54WWZjUHpYcUNJODF2SHFoLUpfYUppUnNxSkNsNhIWChAKBAgwSAIKBAhISAIKAgg_GgIIABoWEgAaACIAKgAyADoAQgBKAFoAcgB6ACICEAFIAFgAaAA",
+      "source": "YouTube · Ministry of Digital Affairs - moda"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "人工智慧應用",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%87%89%E7%94%A8&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%87%89%E7%94%A8"
+    },
+    {
+      "block_position": 1,
+      "query": "人工智慧英文",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%8B%B1%E6%96%87&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAhKEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%8B%B1%E6%96%87"
+    },
+    {
+      "block_position": 1,
+      "query": "人工智慧是什麼",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%98%AF%E4%BB%80%E9%BA%BC&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAhJEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%98%AF%E4%BB%80%E9%BA%BC"
+    },
+    {
+      "block_position": 1,
+      "query": "Ai 是 誰 發明 的",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=Ai+%E6%98%AF+%E8%AA%B0+%E7%99%BC%E6%98%8E+%E7%9A%84&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAhIEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=Ai+%E6%98%AF+%E8%AA%B0+%E7%99%BC%E6%98%8E+%E7%9A%84"
+    },
+    {
+      "block_position": 1,
+      "query": "人工智慧發展的四個時期",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%99%BC%E5%B1%95%E7%9A%84%E5%9B%9B%E5%80%8B%E6%99%82%E6%9C%9F&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%99%BC%E5%B1%95%E7%9A%84%E5%9B%9B%E5%80%8B%E6%99%82%E6%9C%9F"
+    },
+    {
+      "block_position": 1,
+      "query": "人工智能vs人工智慧",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BDvs%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAg9EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BDvs%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7"
+    },
+    {
+      "block_position": 1,
+      "query": "人工智慧發展簡史",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%99%BC%E5%B1%95%E7%B0%A1%E5%8F%B2&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%99%BC%E5%B1%95%E7%B0%A1%E5%8F%B2"
+    },
+    {
+      "block_position": 1,
+      "query": "人工智慧發展三階段",
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%99%BC%E5%B1%95%E4%B8%89%E9%9A%8E%E6%AE%B5&sa=X&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%99%BC%E5%B1%95%E4%B8%89%E9%9A%8E%E6%AE%B5"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=10&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8NMDegQITBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=10&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAE",
+      "3": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=20&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAG",
+      "4": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=30&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAI",
+      "5": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=40&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAK",
+      "6": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=50&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAM",
+      "7": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=60&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAO",
+      "8": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=70&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAQ",
+      "9": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=80&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAS",
+      "10": "https://www.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&sca_esv=efdd14fb62dc1e06&gl=tw&hl=zh-TW&sxsrf=AKL5yDgpNT3D3maie1X0SdhTjEeCYoFDQw:1794484984366&ei=-Kr1apLpFbHdptQP1b_b6QM&start=90&sa=N&sstk=AYl2yk_Q9-I1CAu-7uDYlkVVZ9YKv4Lr1va8SJBlAuZg6zBSlFU5kD8k7ex6j-tH-_MWxDyT-AnnD90pIFfyKzXcJOv3A83RkiX4-g&ved=2ahUKEwiSxbDAsYKYAxWxrokEHdXfNj0Q8tMDegQITBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=tw&google_domain=google.com&hl=zh-TW&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&start=90"
+    }
+  }
+}

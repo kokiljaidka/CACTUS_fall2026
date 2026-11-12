@@ -211,20 +211,31 @@ The cell below is the one you are meant to edit. Change **one** value, run it, a
 | `engine` | Which Google product | `"google"` (web), `"google_news"` (news) |
 
 Each new search uses one API credit. Repeating a search you already ran is free, because it is saved.
+
+**No key? You can only run the searches that were saved.** These are the saved ones:
+
+| Place | `q` | `gl` | `hl` | `engine` |
+|---|---|---|---|---|
+| Singapore | `"artificial intelligence"` | `"sg"` | `"en"` | `"google"` or `"google_news"` |
+| Hong Kong | `"人工智能"` | `"hk"` | `"zh-TW"` | `"google"` or `"google_news"` |
+| Taiwan | `"人工智慧"` | `"tw"` | `"zh-TW"` | `"google"` or `"google_news"` |
+
+The one-value change that works for everyone is `engine`: switch between `"google"` and `"google_news"` for the same place. With a key you can change any value, and the other tables above explain what each one does.
 """)
 
 code("""
 # YOUR TURN: change one value at a time, then run.
 MY_SEARCH = dict(
-    q="ChatGPT",
+    q="artificial intelligence",
     gl="sg",
     hl="en",
-    engine="google",
+    engine="google_news",
 )
 
 my_data = search(**MY_SEARCH)
 my_table = results_table(my_data, engine=MY_SEARCH["engine"], place=MY_SEARCH["gl"])
-my_table[["position", "title", "source"]]
+print(len(my_table), "results")
+my_table[["position", "title", "source"]].head(10)
 """)
 
 md("""
