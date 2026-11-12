@@ -35,14 +35,15 @@ See [data/README.md](../data/README.md). Students use a different dataset in eac
 | Rebuild commands | `python3 scripts/build_practice.py` and `python3 scripts/build_week02_notebook.py` |
 <!-- facilitator:end -->
 
-## Reading (optional, no credit)
+## Required reading
 
-From *Computational Analysis of Communication* (van Atteveldt, Trilling & Arcila, open access):
-- **Before the learning session:** Chapter 5, From file to data frame and back.
-- **Before the coding session:** Chapter 6, Data wrangling, and the visualization parts of Chapter 7, Exploratory data analysis.
+From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.net)), the Python version. Required, not graded.
+
+- **Before the learning session:** [Chapter 5, From file to data frame and back](https://cssbook.net/content/chapter05.html), sections 5.1 to 5.2.
+- **Before the coding session:** [Chapter 6, Data wrangling](https://cssbook.net/content/chapter06.html), sections 6.1 to 6.4 (filtering, calculating, grouping, merging), and [Chapter 4, How to write code](https://cssbook.net/content/chapter04.html), section 4.2 (understanding errors and getting help).
 
 <!-- facilitator:start -->
-Skim sections before assigning. The book predates AI assistants: use it for what the operations mean, not as the way to write the code.
+Section titles were checked against the chapter pages on cssbook.net (Nov 2026), but the chapter contents have not been reviewed for this course. Skim them before the week. The book predates AI coding assistants and assumes you type the code yourself.
 <!-- facilitator:end -->
 
 <!-- facilitator:start -->

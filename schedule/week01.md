@@ -25,15 +25,15 @@ By the end of the week, students can:
 | Saved searches (no key needed) | `data/week01/serp_cache.zip` (made by `scripts/cache_week1.py`) |
 <!-- facilitator:end -->
 
-## Reading (optional, no credit)
+## Required reading
 
-From *Computational Analysis of Communication* (van Atteveldt, Trilling & Arcila, open access):
-- **Before Session 1:** Chapter 1, Introduction (skim).
-- **Before Session 2:** Chapter 3, Programming concepts for data analysis. It covers the ideas the puzzle page practices. Skim; you do not need to memorize syntax.
-- **Later, if curious:** Chapter 4, How to write code.
+From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.net)), the Python version. Required, not graded.
+
+- **Before Session 1:** [Chapter 1, Introduction](https://cssbook.net/content/chapter01.html), section 1.1 (the role of computational analysis).
+- **Before Session 2:** [Chapter 3, Programming concepts for data analysis](https://cssbook.net/content/chapter03.html), sections 3.1 to 3.3. Read for the ideas (objects, loops and conditions, functions). You will not type this code yourself: an AI will help, and you use the book to check it.
 
 <!-- facilitator:start -->
-Chapter picks are based on the book's table of contents. Skim the sections before assigning, since the book predates AI coding assistants and assumes you type the code yourself.
+Section titles were checked against the chapter pages on cssbook.net (Nov 2026), but the chapter contents have not been reviewed for this course. Skim them before the week. The book predates AI coding assistants and assumes you type the code yourself.
 <!-- facilitator:end -->
 
 ## Before the first session
