@@ -1,15 +1,4 @@
 {
-  "search_metadata": {
-    "id": "6af5aaf62f0857080b12e4c6",
-    "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/wgKwJeSNExAOBakAEhYSI_qNJgcjs1Xf2NcFi2Cs1Cg/6af5aaf62f0857080b12e4c6.json",
-    "markdown_endpoint": "https://serpapi.com/searches/wgKwJeSNExAOBakAEhYSI_qNJgcjs1Xf2NcFi2Cs1Cg/6af5aaf62f0857080b12e4c6.md",
-    "created_at": "2026-11-12 12:03:02 UTC",
-    "processed_at": "2026-11-12 12:03:02 UTC",
-    "google_news_url": "https://news.google.com/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&hl=zh-TW&gl=HK",
-    "raw_html_file": "https://serpapi.com/searches/wgKwJeSNExAOBakAEhYSI_qNJgcjs1Xf2NcFi2Cs1Cg/6af5aaf62f0857080b12e4c6.html",
-    "total_time_taken": 1.2
-  },
   "search_parameters": {
     "engine": "google_news",
     "gl": "hk",
@@ -25,7 +14,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/%E5%95%86%E6%B9%AF%E4%BA%AE%E7%9B%B8%E6%9D%B1%E4%BA%ACnextech-week%E5%B1%95%E7%A4%BA%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%8F%8A%E4%BC%81%E6%A5%ADai%E6%96%B9%E6%A1%88-040239700.html",
-      "thumbnail": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVFpQTTJKTGRHVjZUbko2VFJDUkF4ajhCU2dLTWdZUm81UkpPUWM",
       "date": "11/12/2026, 04:25 AM, +0000 UTC",
       "iso_date": "2026-11-12T04:25:39Z"
@@ -41,7 +29,6 @@
             "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.rthk.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://news.rthk.hk/rthk/ch/component/k2/1877377-20261111.htm",
-          "thumbnail": "https://newsstatic.rthk.hk/images/mfile_1877377_1_L_20261111142156.jpg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpTbEpITUV4TVEzTmhhakJNVFJEZ0F4aUFCU2dLTWdZNUVJb1V3QVE",
           "date": "11/11/2026, 04:58 AM, +0000 UTC",
           "iso_date": "2026-11-11T04:58:00Z"
@@ -54,7 +41,6 @@
             "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://hk.finance.yahoo.com/news/%E6%94%BF%E5%BA%9C-%E9%A6%99%E6%B8%AF%E5%9C%A8%E6%95%B8%E7%A2%BC%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AB%B6%E7%88%AD%E5%8A%9B%E6%8E%92%E5%90%8D%E5%85%A8%E7%90%83%E7%AC%AC11%E4%BD%8D-%E6%9C%AA%E4%BE%86%E5%B0%87%E5%84%AA%E5%8C%96%E5%89%B5%E7%A7%91%E7%99%BC%E5%B1%95%E9%AB%94%E5%88%B6-031724916.html",
-          "thumbnail": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVFpQTTJKTGRHVjZUbko2VFJDUkF4ajhCU2dLTWdZUm81UkpPUWM",
           "date": "11/11/2026, 03:35 AM, +0000 UTC",
           "iso_date": "2026-11-11T03:35:40Z"
@@ -67,14 +53,11 @@
             "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://www.wenweipo.com/a/202611/12/AP6af4d50ce4b028ec019390ed.html",
-          "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af4d4fee4b0447fce121dcb.jpg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBUelJPVVdsbVNYRk5jMHh5VFJERUF4aW1CU2dLTWdZUkVJYlVsQWs",
           "date": "11/11/2026, 08:50 PM, +0000 UTC",
           "iso_date": "2026-11-11T20:50:06Z"
         }
-      ],
-      "topic_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lqLWFtcUVoRTdLMV9DY0s1TGRpZ0FQAQ",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lqLWFtcUVoRTdLMV9DY0s1TGRpZ0FQAQ"
+      ]
     },
     {
       "position": 3,
@@ -84,7 +67,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.tvb.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.tvb.com/en/1205875-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%82%A1%E4%BB%BD%E5%86%8D%E7%8D%B2%E8%BF%BD%E6%8D%A7%E5%88%A9%E5%A5%BD%E6%8A%95%E8%B3%87%E6%B0%A3%E6%B0%9B%E7%BE%8E%E8%82%A1%E4%B8%89%E5%A4%A7%E6%8C%87%E6%95%B8%E6%89%AD%E8%BD%89%E4%B8%8A%E6%97%A5%E8%B7%8C%E5%8B%A2",
-      "thumbnail": "https://pro-vod-cdn.tvb.com/aeae9d4ec5b74cfe99e248704f4234c4/snapshots/d116502572114cb595fa302218680362-00008.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHpORkpXY2twYU5WZEhWa1pPVFJDZkF4ampCU2dLTWdhTmNvaHJNUWc",
       "date": "11/11/2026, 11:12 PM, +0000 UTC",
       "iso_date": "2026-11-11T23:12:00Z"
@@ -100,7 +82,6 @@
             "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.hkej.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://www.hkej.com/instantnews/china/article/4563826/%E7%99%BE%E5%BA%A6%E4%B8%A8%E6%9D%8E%E5%BD%A5%E5%AE%8F%3A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8B%E4%B8%80%E5%B9%95%E6%98%AF%E6%99%BA%E8%83%BD%E7%B5%84%E7%B9%94",
-          "thumbnail": "https://static.hkej.com/hkej/images/2026/11/12/4563826_dd8b3e56897825542157934a376873d6.jpg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNU9ZV1JUUlRkc2EweHNhbmhwVFJDUkF4ajhCU2dLTWdB",
           "date": "11/12/2026, 08:37 AM, +0000 UTC",
           "iso_date": "2026-11-12T08:37:45Z"
@@ -113,7 +94,6 @@
             "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://www.wenweipo.com/a/202611/12/AP6af522fee4b028ec01939911.html",
-          "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af5216fe4b0447fce1223ff1.jpg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9jR2R6WDI5cFpVMDBjV2RqVFJEQ0FSaURBaWdCTWdhQnNJenFQQVU",
           "date": "11/12/2026, 02:22 AM, +0000 UTC",
           "iso_date": "2026-11-12T02:22:51Z"
@@ -126,7 +106,6 @@
             "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.i-cable.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://www.i-cable.com/%E8%B2%A1%E7%B6%93%E8%B3%87%E8%A8%8A/522878/%E6%9D%8E%E5%BD%A5%E5%AE%8F-ai%E6%98%AF%E4%B8%80%E5%A0%B4%E7%B5%84%E7%B9%94%E9%9D%A9%E5%91%BD-%E4%BC%81%E6%A5%AD%E9%A0%88%E6%8A%8Aai%E5%85%A8%E6%96%B9%E4%BD%8D%E8%9E%8D%E5%85%A5",
-          "thumbnail": "https://icable-prod.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2026/11/12210256/BAIDU-AI-261112-1200_frame_10.jpeg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNHRRV2RsWmpGd1EyRXpVRmRTVFJDZkF4ampCU2dLTWdB",
           "date": "11/12/2026, 05:33 AM, +0000 UTC",
           "iso_date": "2026-11-12T05:33:52Z"
@@ -144,7 +123,6 @@
             "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://inews.hket.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://inews.hket.com/article/4224093/",
-          "thumbnail": "https://static06.hket.com/res/v3/image/content/4220000/4224093/IMG_0003_1_1200.jpeg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVJPVEZ5ZDFCTWJtOTZiRFIzVFJDZkF4ampCU2dLTWdhUlFweVBJUWs",
           "date": "11/12/2026, 07:35 AM, +0000 UTC",
           "iso_date": "2026-11-12T07:35:12Z"
@@ -157,7 +135,6 @@
             "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://m.hkej.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://m.hkej.com/landing/mobarticle2/id/4563801/AIHK%E7%99%BC%E5%B8%83%E4%BC%81%E6%A5%AD%E5%8F%8A%E6%A9%9F%E6%A7%8B%E8%B2%A0%E8%B2%AC%E4%BB%BB%E6%8E%A1%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%87%E5%BC%95",
-          "thumbnail": "https://static.hkej.com/hkej/images/2026/11/12/4563801_a14d50339085eadcfbe9c7c13ab7ae56.jpg",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUNieTE2Vld4M1kxOXlXVmRrVFJDUkF4ajhCU2dLTWdtTlVKaTJJT214U2dJ",
           "date": "11/12/2026, 07:33 AM, +0000 UTC",
           "iso_date": "2026-11-12T07:33:59Z"
@@ -170,7 +147,6 @@
             "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.stheadline.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
           },
           "link": "https://www.stheadline.com/realtime-finance/3636402/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%B8%BD%E6%9C%83%E6%8F%90AI%E4%BB%A3%E7%90%86%E7%AE%A1%E6%B2%BB%E5%BB%BA%E8%AD%B0-%E4%BC%81%E6%A5%AD%E6%B6%89%E4%BB%98%E6%AC%BE%E5%8F%8A%E5%90%88%E7%B4%84%E5%80%A1%E4%BA%BA%E5%B7%A5%E5%AF%A9%E6%89%B9",
-          "thumbnail": "https://image.hkhl.hk/f/1024p0/0x0/100/none/b48ee1633f4f73c36519b0ff9a4c5b8e/2026-11/261112_aiihk.png",
           "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUJUR1ZtZDNsV1duRTRORkUwVFJDZ0F4amlCU2dLTWdhaFU1Yk5wUWc",
           "date": "11/12/2026, 09:32 AM, +0000 UTC",
           "iso_date": "2026-11-12T09:32:34Z"
@@ -185,7 +161,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.stheadline.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.stheadline.com/lifetips/3636289/%E9%95%B7%E8%80%8560%E6%AD%B2%E6%88%96%E4%BB%A5%E4%B8%8A%E5%85%8D%E8%B2%BB%E5%AD%B8AI%E7%90%86%E5%A4%A7%E6%99%BA%E9%BD%A1%E6%96%B0%E7%A8%8B12%E6%9C%88%E9%96%8B%E7%8F%AD-%E5%AD%B8AI%E8%81%8A%E5%A4%A9%E9%98%B2%E9%A8%99%E9%9B%BB%E5%AD%90%E6%94%AF%E4%BB%98%E6%8B%8D%E7%89%87%E5%89%AA%E7%89%87-%E9%99%84%E5%A0%B1%E5%90%8D%E6%95%99%E5%AD%B8",
-      "thumbnail": "https://image.hkhl.hk/f/1024p0/0x0/100/none/639e6139600c18e694ecfb91aa5a882e/2026-11/20261112__lifestyle__AI.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNHdXalJLVW1oVlpEaFNWVGt3VFJDZkF4ampCU2dLTWdzQklZVFRKS200eHFwaVJB",
       "date": "11/12/2026, 05:58 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:58:21Z"
@@ -198,7 +173,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://unwire.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://unwire.hk/2026/11/12/adobe-ai-sight-span-screen-test/ai/",
-      "thumbnail": "https://cdn.unwire.hk/wp-content/uploads/2026/11/adobe-ai-sight-span-screen-test-694x363.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxZMmh4TlRWR1JtMDJRa2w1VFJEckFoaTJCU2dLTWdhQmNvaU9yUWM",
       "date": "11/12/2026, 04:35 AM, +0000 UTC",
       "iso_date": "2026-11-12T04:35:19Z"
@@ -211,7 +185,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://hk.on.cc&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.on.cc/hk/bkn/cnt/news/20261112/bkn-20261112110125922-1112_00822_001.html",
-      "thumbnail": "https://hk.on.cc/cnt/news/20261112/photo/bkn-20261112110125922-1112_00822_001_01s.jpg?20261112110125",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVlZbGh6WWpKcExVNUZVSE5LVFJDLUFSaUtBaWdCTWdZbE5ZeXVuUWs",
       "date": "11/12/2026, 03:18 AM, +0000 UTC",
       "iso_date": "2026-11-12T03:18:13Z"
@@ -224,7 +197,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.bastillepost.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.bastillepost.com/hongkong/article/17164034-%E9%9B%99%E5%8D%81%E4%B8%80%E8%B3%BC%E7%89%A9%E7%AF%80-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%A9%9E%E5%85%83%E7%86%B1%E9%8A%B7-%E5%8F%8D%E6%98%A0ai%E6%99%AE%E5%8F%8A%E5%8C%96",
-      "thumbnail": "https://image.bastillepost.com/1200x/wp-content/uploads/hongkong/2026/11/screenshot_8507845_01_FB.jpeg.webp",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNW5aRzVhTlhWNVZpMTJhRkJWVFJDaUFSaTJBaWdCTWdB",
       "date": "11/11/2026, 12:33 PM, +0000 UTC",
       "iso_date": "2026-11-11T12:33:00Z"
@@ -237,7 +209,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hk01.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60409979/%E4%B8%AD%E5%A4%A7%E7%95%A2%E6%A5%AD%E7%A6%AE-%E7%9B%A7%E7%85%9C%E6%98%8E%E7%A8%B1ai%E6%99%82%E4%BB%A3%E4%BA%BA%E9%A1%9E%E5%88%A4%E6%96%B7%E5%8A%9B%E9%87%8D%E8%A6%81-%E5%AF%84%E8%AA%9E%E7%A7%89%E6%8C%81%E7%9B%AE%E6%A8%99%E5%92%8C%E7%86%B1%E8%AA%A0",
-      "thumbnail": "https://cdn.hk01.com/di/media/images/dw/20261112/1197548262417502208319650.jpeg/gUbu0Q0Dzk6xkmy79ye_sfhX6VvBoxkzGVdJMTxXSTE?v=w1920r16_9",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXNiVTVxZFRsblZuaHVibkYwVFJDZkF4ampCU2dLTWdhQk5JWndtUWs",
       "date": "11/12/2026, 06:05 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:05:18Z"
@@ -250,7 +221,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hkcd.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hkcd.com/hkcdweb/content/2026/11/12/content_8785002.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794472309284_azgi5vty.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDNOMTlLVFZkTlJsTmFORTVHVFJDb0FSaXJBaWdCTWdB",
       "date": "11/12/2026, 08:51 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:51:54Z"
@@ -263,7 +233,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcd.com.hk/hkcdweb/content/2026/11/12/content_8784993.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794470597253_5pbuddq1.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUJNMHA0ZEhWVFJVODBjWE41VFJEQ0FSaURBaWdCTWdB",
       "date": "11/12/2026, 08:06 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:06:00Z"
@@ -276,7 +245,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://finance.mingpao.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://finance.mingpao.com/fin/instantf/20261112/1794472128105/%E9%A6%99%E6%B8%AF%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%B8%BD%E6%9C%83%E7%99%BC%E5%B8%83%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E6%8C%87%E5%BC%95",
-      "thumbnail": "https://fs.mingpao.com/fin/20261112/s00010/4b54e41fc888414499114e73ca63cff8.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVZVRTFqVVZNMVJHNWlYeTFVVFJEZ0F4al9CQ2dLTWdZQmdaUkRMZ2c",
       "date": "11/12/2026, 08:31 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:31:40Z"
@@ -289,7 +257,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af4d46de4b028ec019390d3.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202510/14/68ed64e4e4b0dd0b09a536d3.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTVWREV6ZFZOak4waE9RMFZpVFJDZkF4ampCU2dLTWdtQllveEZwV1pqVkFF",
       "date": "11/11/2026, 08:47 PM, +0000 UTC",
       "iso_date": "2026-11-11T20:47:27Z"
@@ -302,7 +269,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://m.hkej.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://m.hkej.com/landing/mobarticle2/id/4563826/%E7%99%BE%E5%BA%A6%E4%B8%A8%E6%9D%8E%E5%BD%A5%E5%AE%8F:%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8B%E4%B8%80%E5%B9%95%E6%98%AF%E6%99%BA%E8%83%BD%E7%B5%84%E7%B9%94",
-      "thumbnail": "https://static.hkej.com/hkej/images/2026/11/12/4563826_dd8b3e56897825542157934a376873d6.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU9ZV1JUUlRkc2EweHNhbmhwVFJDUkF4ajhCU2dLTWdZeEpZeXVtUWs",
       "date": "11/12/2026, 08:40 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:40:16Z"
@@ -315,7 +281,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.wepro180.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wepro180.com/ai%EF%BD%9C%E4%B8%96%E7%95%8C%E6%95%B8%E7%A2%BC%E5%8F%8Aai%E6%8E%92%E5%90%8D%E5%87%BA%E7%88%90%E3%80%80%E9%A6%99%E6%B8%AF%E6%8E%92%E7%AC%AC11%E4%BD%8D/",
-      "thumbnail": "https://www.wepro180.com/wp-content/uploads/2026/11/WEB_261112_AI.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNXdRMmc0UlVaQlVWaEtWRloyVFJDZkF4ampCU2dLTWdB",
       "date": "11/12/2026, 02:37 AM, +0000 UTC",
       "iso_date": "2026-11-12T02:37:08Z"
@@ -328,7 +293,6 @@
         "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://unwire.pro&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://unwire.pro/2026/11/12/building-comprehensive-ai-regulatory-framework/news/",
-      "thumbnail": "https://cdn.unwire.pro/wp-content/uploads/2026/11/tdka1ntdka1n-600x373.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXFaek5xWTI1UlNrZFJZMEpqVFJEMUFoallCQ2dLTWdrTlVvaG5KaWM5Q2dJ",
       "date": "11/12/2026, 05:14 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:14:56Z"
@@ -341,7 +305,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.techritual.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.techritual.com/2026/11/12/600717/",
-      "thumbnail": "https://www.techritual.com/wp-content/uploads/2026/11/featured-600717.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVpRV1JTVjFkS04zcGhMV1pwVFJDZkF4ampCU2dLTWdZSkFJNVJEUXM",
       "date": "11/12/2026, 05:31 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:31:07Z"
@@ -354,7 +317,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.moomoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.moomoo.com/hant/community/feed/ai-optimism-revives-wall-street-despite-lingering-rate-concerns-117600705380358",
-      "thumbnail": "https://ussnsimg.moomoo.com/sns_client_feed/80001374/20261112/web-1794444324579-CO17CO5dgX.png/big?area=100&is_public=true&imageMogr2/ignore-error/1/format/webp/thumbnail/!75p",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1YMnQ2ZW1wRmFUQTVZWFozVFJEZ0FSamdBU2dCTWdZWlVaRHRwQVk",
       "date": "11/12/2026, 12:45 AM, +0000 UTC",
       "iso_date": "2026-11-12T00:45:57Z"
@@ -367,7 +329,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcd.com.hk/hkcdweb/content/2026/11/12/content_8784952.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794462196851_yihmviyu.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWthSE0wWkUwd2JGVklibE5OVFJDM0FSaVRBaWdCTWdZMUZJcHhsUWs",
       "date": "11/12/2026, 05:56 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:56:00Z"
@@ -380,7 +341,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://finance.mingpao.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://finance.mingpao.com/fin/instantf/20261112/1794472548768/%E7%99%BE%E5%BA%A6%E6%9D%8E%E5%BD%A5%E5%AE%8F-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8B%E4%B8%80%E5%B9%95%E6%98%AF%E3%80%8C%E6%99%BA%E8%83%BD%E7%B5%84%E7%B9%94%E3%80%8D",
-      "thumbnail": "https://fs.mingpao.com/fin/20261112/s00010/9c8e80a143d84b66b845ab313f8b23f9.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW5MWGN5ZGtaclMwZHBVRE5sVFJDZUF4amxCU2dLTWdhQmNZd21PUVk",
       "date": "11/12/2026, 08:36 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:36:40Z"
@@ -393,7 +353,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af54c7be4b028ec01939e3e.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af54c56e4b0447fce1237981.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXdYMGx5UWs1eVlYWkhlbkpSVFJDZkF4ampCU2dLTWdNUmtBWQ",
       "date": "11/12/2026, 05:19 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:19:54Z"
@@ -406,7 +365,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcd.com.hk/hkcdweb/content/2026/11/12/content_8785013.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794474159840_lzofer6o.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUVNa296Wm5neFpHdHdXREl4VFJDb0FSaXJBaWdCTWdZWkVJRFNHQU0",
       "date": "11/12/2026, 09:01 AM, +0000 UTC",
       "iso_date": "2026-11-12T09:01:00Z"
@@ -419,7 +377,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hkcd.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hkcd.com/hkcdweb/content/2026/11/12/content_8784965.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794465848801_ye0tissh.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDRja1pLV0RGa1pWbDJMVkJVVFJDNEFSaVNBaWdCTWdrUkFwVEdDbXM5NHdJ",
       "date": "11/12/2026, 06:57 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:57:57Z"
@@ -432,7 +389,6 @@
         "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://unwire.pro&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://unwire.pro/2026/11/12/robin-li-baidu-world-2026-intelligent-organization-ai-agents/news/",
-      "thumbnail": "https://cdn.unwire.pro/wp-content/uploads/2026/11/original_app_334.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVNNM2RIZVRNeU0ybzBTM2xuVFJDUkF4ajhCU2dLTWdB",
       "date": "11/12/2026, 02:26 AM, +0000 UTC",
       "iso_date": "2026-11-12T02:26:05Z"
@@ -445,7 +401,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hk01.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60410176/%E7%99%BE%E5%BA%A6%E6%9D%8E%E5%BD%A5%E5%AE%8F-ai%E6%99%82%E4%BB%A3%E5%B4%97%E4%BD%8D%E6%94%B6%E6%96%82-%E8%98%BF%E8%94%94%E5%BF%AB%E8%B7%91%E6%94%BB%E6%B8%AF%E5%AE%8C%E6%88%90%E5%8F%B3%E8%88%B5%E7%84%A1%E4%BA%BA%E9%A7%95%E9%A7%9B%E6%B8%AC%E8%A9%A6",
-      "thumbnail": "https://cdn.hk01.com/di/media/images/dw/20261112/1197622193698115584609273.jpeg/HALdKTlNvb14dvLBuIV8oNUSSw0Knsffct-1OUjftTk?v=w1280r16_9",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHljazh4TWt4TGRYcDNXVlIzVFJDZkF4ampCU2dLTWdZZG9vZ3RSUVE",
       "date": "11/12/2026, 11:04 AM, +0000 UTC",
       "iso_date": "2026-11-12T11:04:27Z"
@@ -458,7 +413,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.tkww.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.tkww.hk/a/202611/12/AP6af50bb8e4b0bcb39b18cac2.html",
-      "thumbnail": "https://dw-media.tkww.hk/dams/dwproduct/image/202512/05/69329e73e4b08c07fcb82e5e.jpg?x-oss-process=image/quality,Q_100/resize,w_1200,limit_0",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUZVVlJITFVWblRWVk9ZazlLVFJDZkF4ampCU2dLTWdZSlFwckdvZ2s",
       "date": "11/12/2026, 12:43 AM, +0000 UTC",
       "iso_date": "2026-11-12T00:43:35Z"
@@ -471,7 +425,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af4fa15e4b028ec01939361.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af4d512e4b0447fce121dcf.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUlkRnBGU1RjdGFUaHNVVmRCVFJEbUJCajBBeWdLTWdhRklZVG1JQVk",
       "date": "11/11/2026, 11:28 PM, +0000 UTC",
       "iso_date": "2026-11-11T23:28:19Z"
@@ -484,7 +437,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hkcd.com.hk/hkcdweb/content/2026/11/12/content_8784953.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794463018596_m55xot8s.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTJNME5vT0V0eWRGUnNWRGRQVFJDM0FSaVRBaWdCTWdZRm9ZN0d1QVU",
       "date": "11/12/2026, 05:57 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:57:00Z"
@@ -497,7 +449,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.moomoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.moomoo.com/hant/community/feed/nvidia-faces-leadership-uncertainty-could-the-ai-chip-landscape-change-117602564243466",
-      "thumbnail": "https://ussnsimg.moomoo.com/sns_client_feed/77777019/20261112/web-1794472584576-ohdhztASbg.png/big?area=100&is_public=true&imageMogr2/ignore-error/1/format/webp/thumbnail/!75p",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVVaM2x2VjNVd1NtNVFkVmR3VFJDV0FoakFCeWdLTWdZTmdJNkhQZ1U",
       "date": "11/12/2026, 08:38 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:38:41Z"
@@ -513,7 +464,6 @@
         ]
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af5a690e4b028ec0193a93f.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/share/image/202611/12/6af591eae4b0447fce1262941.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5Vemh2ZFVjdFNWWjJjMmcxVFJDM0FSaVRBaWdCTWdZQmtJeW91UVU",
       "date": "11/12/2026, 11:44 AM, +0000 UTC",
       "iso_date": "2026-11-12T11:44:15Z"
@@ -526,7 +476,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.now.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.now.com/mobile/finance/player?newsId=669297",
-      "thumbnail": "https://news.now.com/nownews/NewsImage/FIN-BAIDU-WORLD-261112-1310.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1Ua3hWZDFrNGVFNVBNVU42VFJDZkF4ampCU2dLTWdZQllZeHNMUWM",
       "date": "11/12/2026, 05:50 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:50:42Z"
@@ -539,7 +488,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.stheadline.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.stheadline.com/realtime-finance/3636424/%E7%99%BE%E5%BA%A6%E6%9D%8E%E5%BD%A5%E5%AE%8F%E9%A0%90%E8%A8%80AI%E4%B8%8B%E4%B8%80%E5%B9%95%E6%98%AF%E6%99%BA%E8%83%BD%E7%B5%84%E7%B9%94-%E7%94%9F%E7%94%A2%E5%8A%9B%E7%9C%9F%E6%AD%A3%E7%99%BC%E7%94%9F%E7%9A%84%E5%9C%B0%E6%96%B9-%E6%9C%AA%E4%BE%86%E5%B4%97%E4%BD%8D%E7%B8%AE%E8%87%B3%E5%85%A9%E9%A1%9E",
-      "thumbnail": "https://image.hkhl.hk/f/1024p0/0x0/100/none/abd688895baffd13c95c7fd5ab094909/2026-11/2_7_11.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWFSM2xVWlZSWWNtdERVbFF5VFJDZkF4ampCU2dLTWdZdE5aQ3VIUWs",
       "date": "11/12/2026, 10:20 AM, +0000 UTC",
       "iso_date": "2026-11-12T10:20:20Z"
@@ -552,7 +500,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af548a2e4b028ec01939de3.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af545e5e4b0447fce1234f91.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNHRValV5WlRoTVJrSnFRa3RyVFJEREFSaURBaWdCTWdrSlVJekpOS1VtN0FF",
       "date": "11/12/2026, 05:03 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:03:28Z"
@@ -565,7 +512,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af58506e4b028ec0193a53d.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af58457e4b0447fce125a471.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVRaemhsVlhKVVJtVlRObGwwVFJEQ0FSaURBaWdCTWdZZEk1UkpFZ3M",
       "date": "11/12/2026, 09:21 AM, +0000 UTC",
       "iso_date": "2026-11-12T09:21:09Z"
@@ -578,7 +524,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.flamingwheels.online&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.flamingwheels.online/news-view.html?_FgID=aKE9AHI3CRc3",
-      "thumbnail": "https://www.flamingwheels.online/upload/image/20261111/1794386105158047677.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWZNMHA1TTI4eVJ6bG9Yek5PVFJDb0FSaXNBaWdCTWdB",
       "date": "11/12/2026, 03:46 AM, +0000 UTC",
       "iso_date": "2026-11-12T03:46:28Z"
@@ -591,7 +536,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.hkej.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkej.com/instantnews/china/article/4563786/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%87%BA%E8%BB%8C%E4%B8%A8%E4%B8%AD%E5%9C%8BAI%E4%BC%81%E6%A5%AD%E6%86%82%E6%94%B6%E7%B7%8A%E9%99%90%E5%88%B6+%E6%90%B6%E8%A8%82%E6%B5%B7%E5%A4%96%E8%BC%9D%E9%81%94%E6%99%B6%E7%89%87%E7%AE%97%E5%8A%9B",
-      "thumbnail": "https://static.hkej.com/hkej/images/2026/11/12/4563786_0c8dc320140cbc0a1fd05f8176cb5b2f.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUpiREU1WVV4YVkzcEZTV3RMVFJDUkF4ajhCU2dLTWdZQkVJamtsZ3M",
       "date": "11/12/2026, 07:07 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:07:57Z"
@@ -604,7 +548,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.tkww.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.tkww.hk/a/202611/12/AP6af58ff0e4b0bcb39b18d822.html",
-      "thumbnail": "https://dw-media.tkww.hk/dams/dwproduct/image/202611/12/6af5898ae4b0447fce125f9b1.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVljamxoTFdGTWJ6TkJlRGR2VFJDM0FSaVRBaWdCTWdB",
       "date": "11/12/2026, 10:07 AM, +0000 UTC",
       "iso_date": "2026-11-12T10:07:42Z"
@@ -617,7 +560,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcna.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcna.hk/hk/content/s6af564e9e4b04d9df119df30.html",
-      "thumbnail": "https://static.hkcna.hk/dams-res/editing/image/202611/12/6af55a46e4b06f03454b6ec9_m.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNHRhSGxVUzFZd2FXWjBPVXg1VFJDZkFSaTlBaWdCTWdrSmNZakZzaWN1RFFJ",
       "date": "11/12/2026, 07:04 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:04:00Z"
@@ -630,7 +572,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hkcd.com.hk/hkcdweb/content/2026/11/12/content_8784948.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794461246672_f6ripe8c.jpeg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWxXVWd3VlRGV01XOTJlRGRYVFJDM0FSaVRBaWdCTWdZVjRJQk5TUU0",
       "date": "11/12/2026, 05:26 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:26:00Z"
@@ -643,7 +584,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://unwire.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://unwire.hk/2026/11/12/grok-bot-1-team-meetings-proactive/ai/",
-      "thumbnail": "https://cdn.unwire.hk/wp-content/uploads/2026/11/2026111240056-694x370.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUpPVmRJU0dabVUzWlNWSFpFVFJEeUFoaTJCU2dLTWdB",
       "date": "11/12/2026, 09:41 AM, +0000 UTC",
       "iso_date": "2026-11-12T09:41:46Z"
@@ -656,7 +596,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af5133fe4b028ec019397a7.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/share/image/202611/11/6af46cefe4b0447fce120eb91.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUhXWE56ZFdOdWNVMUVOMDQxVFJDb0FSaXJBaWdCTWdZQmtJd0x0UVU",
       "date": "11/12/2026, 01:15 AM, +0000 UTC",
       "iso_date": "2026-11-12T01:15:40Z"
@@ -669,7 +608,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.fxstreet.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.fxstreet.hk/news/quan-qiu-gu-piao-ying-wei-da-dong-dang-jia-ju-jing-pian-he-ren-gong-zhi-hui-feng-xian-he-lan-he-zuo-yin-xing-202611120855",
-      "thumbnail": "https://editorial.fxsstatic.com/images/i/nvidia-01_Large.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTZUSFZNT0VWM1RHMUVkVk5sVFJDZkF4amlCU2dLTWdB",
       "date": "11/12/2026, 08:55 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:55:37Z"
@@ -682,7 +620,6 @@
         "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.dotdotnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.dotdotnews.com/a/202611/12/AP6af54e68e4b091a65a2f64ba.html",
-      "thumbnail": "https://dw-media.dotdotnews.com/dams/product/image/202611/12/6af54749e4b0447fce12354c.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWhlVTl2YUZCcmFUQk9VSEpXVFJDb0FSaXNBaWdCTWdB",
       "date": "11/12/2026, 05:28 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:28:06Z"
@@ -698,7 +635,6 @@
         ]
       },
       "link": "https://www.fxstreet.hk/cryptocurrencies/news/yi-tai-fang-jia-ge-yu-ce-ethzai-ren-gong-zhi-neng-gu-piao-fan-dan-hou-xiao-fu-shang-zhang-202611112009",
-      "thumbnail": "https://editorial.fxsstatic.com/images/i/Discover-f-43_XtraLarge.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdhbUZCWVdGa1JGVlFiMmMxVFJDZkF4ampCU2dLTWdZUkFvcExIUWM",
       "date": "11/11/2026, 08:09 PM, +0000 UTC",
       "iso_date": "2026-11-11T20:09:20Z"
@@ -711,7 +647,6 @@
         "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.dotdotnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.dotdotnews.com/a/202611/12/AP6af5a727e4b091a65a2f6d2f.html",
-      "thumbnail": "https://dw-media.dotdotnews.com/dams/product/image/202611/12/6af5a364e4b0447fce1269311.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTRTWEoyTVc5ZlMyVlZOMk15VFJDZkF4ampCU2dLTWdZQk1Zd2l4d1E",
       "date": "11/12/2026, 11:46 AM, +0000 UTC",
       "iso_date": "2026-11-12T11:46:46Z"
@@ -724,7 +659,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.bastillepost.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.bastillepost.com/hongkong/article/17168728-%E8%AE%80%E6%87%82imd%E3%80%8A2026%E5%B9%B4%E4%B8%96%E7%95%8C%E6%95%B8%E7%A2%BC%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8E%92%E5%90%8D%E3%80%8B%EF%BC%9A%E9%A6%99%E6%B8%AF%E9%95%B7%E6%9D%BF",
-      "thumbnail": "https://image.bastillepost.com/1200x/wp-content/uploads/hongkong/2023/08/20230810_BP_blogger704x369.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTRlbWc0WTFvMFZsaExlRFE0VFJDUkF4ajlCU2dLTWdZUlFZNXJ0UVk",
       "date": "11/12/2026, 07:27 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:27:43Z"
@@ -737,7 +671,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://tw.tradingview.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://tw.tradingview.com/news/reuters.com,2026:newsml_L3T46T0YB:0/",
-      "thumbnail": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBjR0phV0haM2FVMUZRMlZ4VFJDUkF4ajhCU2dLTWdhbGRKU3NMUWM",
       "date": "11/12/2026, 10:26 AM, +0000 UTC",
       "iso_date": "2026-11-12T10:26:22Z"
@@ -750,7 +683,6 @@
         "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://epaper.tkww.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://epaper.tkww.hk/a/202611/12/AP6af4ce5be4b0bcb39b18c604.html",
-      "thumbnail": "https://dw-media.tkww.hk/dams/dwproduct/image/202611/12/6af4ce51e4b0447fce121c19.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXFiMEpOTlV0SGFpMHhiVnB1VFJDY0FoaXlBU2dCTWdrQkFZajBrS3E1eFFJ",
       "date": "11/11/2026, 08:21 PM, +0000 UTC",
       "iso_date": "2026-11-11T20:21:35Z"
@@ -763,7 +695,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.tkww.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.tkww.hk/a/202611/12/AP6af50b86e4b0bcb39b18cabf.html",
-      "thumbnail": "https://dw-media.tkww.hk/dams/dwproduct/image/202611/12/6af508a2e4b0447fce1220d9.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXFVV2xEVVRabFVtZEdWWEJxVFJEVUFSanVBU2dCTWdhQk1ZWW1JUVk",
       "date": "11/12/2026, 12:42 AM, +0000 UTC",
       "iso_date": "2026-11-12T00:42:45Z"
@@ -776,7 +707,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://bau.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://bau.com.hk/web/article/1570084074534666240/web/content_1570084074534666240.html",
-      "thumbnail": "https://res.bauhk.com/contentcloud/44/REPRINT/MEDIA/PICTURE/2026/11/11/417b2d88585e4494b2ca9cb382b9fd4b_wh160x160.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW9ZVEJqZFdOcVpuRkRkalEwVFJDZ0FSaWdBU2dLTWdhQndvaUl3UVE",
       "date": "11/11/2026, 08:11 AM, +0000 UTC",
       "iso_date": "2026-11-11T08:11:15Z"
@@ -789,7 +719,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcna.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcna.hk/hk/content/s6af56230e4b04d9df119df18.html",
-      "thumbnail": "https://static.hkcna.hk/dams-res/editing/image/202611/12/6af56172e4b06f03454b7100.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRNamRJT1ZsdGVuTldjMFpqVFJDYUFSaklBaWdCTWdZcE00cHZJUWs",
       "date": "11/12/2026, 06:52 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:52:00Z"
@@ -802,7 +731,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.capital-hk.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.capital-hk.com/column/BloggerChan_12112026",
-      "thumbnail": "https://www.capital-hk.com/_next/image?url=https%3A%2F%2Fprd-cdn.capital-hk.com%2FHKAI_6a48a2520f.jpg&w=3840&q=80",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWlNa1ZETVhkWlNXVXpXVko1VFJDd0FSaWZBaWdCTWdZQllJVFlRQVk",
       "date": "11/12/2026, 08:27 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:27:31Z"
@@ -815,7 +743,6 @@
         "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=http://www.hkcd.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "http://www.hkcd.com/hkcdweb/content/2026/11/12/content_8784884.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/12/1794443684661_p6n8tije.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDFOV3d4TUZwalRIaEdURUZGVFJDb0FSaXJBaWdCTWdtTklJakZNS1E4cGdJ",
       "date": "11/12/2026, 01:06 AM, +0000 UTC",
       "iso_date": "2026-11-12T01:06:22Z"
@@ -828,7 +755,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.techritual.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.techritual.com/2026/11/12/600669/",
-      "thumbnail": "https://www.techritual.com/wp-content/uploads/2026/11/featured-600669.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDFWVGhGZWtOV2JrRkxXRVpSVFJDZkF4ampCU2dLTWdZQjRJcmp6QVE",
       "date": "11/12/2026, 02:00 AM, +0000 UTC",
       "iso_date": "2026-11-12T02:00:33Z"
@@ -841,7 +767,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/12/AP6af55ebfe4b028ec0193a065.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202611/12/6af55e85e4b0447fce12407b1.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTVhbUY1UzFWaFFqVkhWR0l0VFJEaEFSamhBU2dCTWdB",
       "date": "11/12/2026, 06:37 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:37:50Z"
@@ -854,7 +779,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hk01.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hk01.com/%E7%A0%94%E6%95%B8%E6%89%80/60405243/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E6%B8%AFai%E4%BA%BA%E6%89%8D%E6%B5%81%E5%85%A5%E7%8E%87%E8%B6%85%E6%96%B0%E5%8A%A0%E5%9D%A1-%E6%96%99%E6%B2%99%E5%B6%BA%E6%95%B8%E6%93%9A%E5%9C%92%E5%B8%B6%E5%8B%95%E7%AE%97%E5%8A%9B%E5%A2%9E35%E5%80%8D",
-      "thumbnail": "https://cdn.hk01.com/di/media/images/dw/20261030/1192874247047876608012985.jpeg/u3ljY1xnOOWD_xXq6mJti70Lq2bg5tGFcEltIXBJbSE?v=w1920r16_9",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWpjMmxmZFZwck5qUnJSek5EVFJDZkF4ampCU2dLTWdB",
       "date": "11/11/2026, 04:30 AM, +0000 UTC",
       "iso_date": "2026-11-11T04:30:29Z"
@@ -871,7 +795,6 @@
         ]
       },
       "link": "https://hk.news.yahoo.com/%E8%8B%B1%E5%9C%8B%E7%B6%93%E6%BF%9F%E5%89%B5%E5%85%A9%E5%B9%B4%E5%8D%8A%E6%9C%80%E5%BF%AB%E5%A2%9E%E9%80%9F-ai%E6%94%AF%E5%87%BA%E6%8F%90%E4%BE%9B%E5%8A%A9%E5%8A%9B-093546273.html",
-      "thumbnail": "https://s.yimg.com/lo/mysterio/api/7c44559c93717cbbd6de857213026fbab51aa61416506b1295e795a54f6c865e/lightyear_networkapi/resizefill_w640%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fzh-tw%2Fbloomberg_chinese_traditional_757%2F75560efdea729845c87c5b6c96f81689.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVFSV0ZNYmw5S1IxUkxTVWxRVFJDcEF4aUFCU2dLTWdtSkFZU290R003b0FN",
       "date": "11/12/2026, 09:35 AM, +0000 UTC",
       "iso_date": "2026-11-12T09:35:46Z"
@@ -887,7 +810,6 @@
         ]
       },
       "link": "https://itpromag.com/2026/11/12/fujifilm-bi-hk/",
-      "thumbnail": "https://itpromag.com/wp-content/uploads/2026/11/FUJIFILM-BI1.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXJOWEZhTUZobk1GbENVVlJoVFJDaUF4amRCU2dLTWdhQlU1YWtxZ2c",
       "date": "11/12/2026, 07:39 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:39:18Z"
@@ -900,7 +822,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcna.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcna.hk/hk/content/s6af421ece4b089a2db4000b8.html",
-      "thumbnail": "https://static.hkcna.hk/dams-res/editing/image/202611/11/6af421dbe4b06f03454b53e9.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNWliSEpEWTJOWlJHcDRjbXROVFJDb0FSaXNBaWdCTWdNQmdBQQ",
       "date": "11/11/2026, 08:06 AM, +0000 UTC",
       "iso_date": "2026-11-11T08:06:00Z"
@@ -913,7 +834,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://finance.now.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://finance.now.com/analysis/study.php?topicId=3&newsId=993393&c=",
-      "thumbnail": "https://d1x4njjgkw4jf2.cloudfront.net/nowfin/NewsImageBig/FIN-BNC-GEILIA-261112-1300.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUZaRkpJZWtkYWFUVlZZbFZRVFJDb0FSaXNBaWdCTWdB",
       "date": "11/12/2026, 07:56 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:56:18Z"
@@ -926,7 +846,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.tvb.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.tvb.com/tc/1205961-%E9%BB%83%E4%BB%81%E5%8B%B3%E5%A9%9A%E5%A4%96%E6%83%85%E8%BC%9D%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E5%95%86%E8%A8%8E%E9%BB%83%E4%BB%81%E5%8B%B3%E5%8E%BB%E5%90%91%E5%8C%97%E4%BA%AC%E5%8F%8D%E5%B0%8D%E7%BE%8E%E5%9C%8B%E6%B3%9B%E5%8C%96%E5%9C%8B%E5%AE%B6%E5%AE%89%E5%85%A8%E6%A6%82%E5%BF%B5",
-      "thumbnail": "https://pro-vod-cdn.tvb.com/4268ff8d02ae40d1bb3fc37c6666bba0/snapshots/34d7a6c9e2e949a8a654c28c6144fd8c-00008.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRSR3RTV0hSTlVqbEtSRWcxVFJDZkF4ampCU2dLTWdhUkU0VG5rZ3M",
       "date": "11/12/2026, 07:58 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:58:00Z"
@@ -939,7 +858,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.wenweipo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.wenweipo.com/a/202611/11/AP6af3e2abe4b028ec01937b86.html",
-      "thumbnail": "https://dw-media.wenweipo.com/dams/wwpproduct/image/202411/09/672f69a2e4b091a1f3023d1811.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVZSa0pWWDBWUGRERlpRMVJuVFJDLUF4aXdCU2dLTWdNQndBZw",
       "date": "11/11/2026, 03:36 AM, +0000 UTC",
       "iso_date": "2026-11-11T03:36:00Z"
@@ -952,7 +870,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/%E7%A7%91%E6%8A%80-%E6%BE%B3%E6%96%B0%E9%8A%80%E8%A1%8Cceo%E7%A4%BA%E8%AD%A6-ai%E6%AC%A0%E7%9B%A3%E7%AE%A1%E6%81%90%E6%8E%80%E5%85%A8%E7%90%83%E8%A3%81%E5%93%A1%E5%8D%B1%E6%A9%9F-040031266.html",
-      "thumbnail": "https://s.yimg.com/lo/mysterio/api/3cfb8eb0198c05c18ec1f27909ca6a037c330c996381eaf2d6c03c03921e7f30/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fko%2Ffortune_insight_694%2Fdbddec0f78d2a1ab4bc25a6950c04ffb.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNTMTlJZEVNNWRuVmhaRlV3VFJDUUF4ai1CU2dLTWdhaGRKVE51UWM",
       "date": "11/12/2026, 07:55 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:55:06Z"
@@ -965,7 +882,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://finance.now.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://finance.now.com/news/post.php?id=993366",
-      "thumbnail": "https://d1x4njjgkw4jf2.cloudfront.net/nowfin/NewsImageBig/FIN-BAIDU-WORLD-261112-1310.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxjV00xTldaWFdFOWhOMlZsVFJDZkF4ampCU2dLTWdZQllZeHJMUWM",
       "date": "11/12/2026, 05:36 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:36:52Z"
@@ -978,7 +894,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.tvb.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.tvb.com/tc/1205961-%E9%BB%83%E4%BB%81%E5%8B%B3%E5%A9%9A%E5%A4%96%E6%83%85%E6%93%9A%E5%A0%B1%E8%BC%9D%E9%81%94%E6%AD%A3%E5%B0%8B%E6%89%BE%E6%BD%9B%E5%9C%A8%E7%B9%BC%E4%BB%BB%E8%80%85%E5%8C%97%E4%BA%AC%E5%8F%8D%E5%B0%8D%E7%BE%8E%E6%96%B9%E6%B3%9B%E5%8C%96%E5%9C%8B%E5%AE%B6%E5%AE%89%E5%85%A8%E6%A6%82%E5%BF%B5",
-      "thumbnail": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026u8nmK2JhwN1794473609.jpg?x-oss-process=image/resize,w_1200",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXpSSFptVmw5elpEWm1jRGhwVFJDZkF4ampCU2dLTWdhZEpaWUxGZ28",
       "date": "11/12/2026, 07:58 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:58:00Z"
@@ -991,7 +906,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://finance.mingpao.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://finance.mingpao.com/fin/instantf/20261112/1794471973864/%E9%BB%83%E4%BB%81%E5%8B%B3%E9%86%9C%E8%81%9E%E7%99%BC%E9%85%B5-%E4%B8%AD%E5%9C%8Bai%E4%BC%81%E6%A5%AD%E6%93%9A%E5%A0%B1%E6%80%A5%E7%A7%9F%E6%B5%B7%E5%A4%96nvidia%E6%99%B6%E7%89%87%E7%AE%97%E5%8A%9B",
-      "thumbnail": "https://fs.mingpao.com/fin/20261112/s00010/c3e609ee685b4353baa84348e18abde4.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUhjMnN3V21saGEyOHRMWEUxVFJDU0F4ajhCU2dLTWdaRmtZelZ0QVU",
       "date": "11/12/2026, 08:31 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:31:13Z"
@@ -1007,7 +921,6 @@
         ]
       },
       "link": "https://hk.finance.yahoo.com/news/%E8%BC%9D%E9%81%94%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4%E9%B4%BB%E6%B5%B7%E6%B7%A8%E5%88%A9%E6%BD%A4%E8%B6%85%E9%A0%90%E6%9C%9F-%E5%BE%97%E7%9B%8A%E6%96%BCai%E5%A4%A7%E6%BD%AE%E5%8F%8Aiphone-duo%E7%86%B1%E8%B3%A3-064128594.html",
-      "thumbnail": "https://s.yimg.com/lo/mysterio/api/cf611893f2967aa06fe9387519fda4ca94d06b8bb4b8356a2e9948dffda23d8b/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fko%2Fbloomberg_chinese_traditional_757%2F503b5c1caee5c3eace7d29bc63f41d15.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNU5WV0o2UkRkblpuaDFRemwwVFJDZkF4ampCU2dLTWdzQkFZU0R2T003U3lvTDZB",
       "date": "11/12/2026, 07:31 AM, +0000 UTC",
       "iso_date": "2026-11-12T07:31:26Z"
@@ -1020,7 +933,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.stheadline.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.stheadline.com/macroeconomics/3636359/%E9%BB%83%E4%BB%81%E5%8B%B3%E8%88%87%E8%8F%AF%E9%97%9C%E9%80%A3%E7%88%AD%E8%AD%B0%E5%8D%87%E6%BA%AB-%E5%82%B3%E7%BE%8E%E6%94%B6%E7%B7%8A%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6-%E9%98%BB%E4%B8%AD%E8%B3%87%E8%B7%A8%E5%A2%83%E5%AD%98%E5%8F%96%E5%85%88%E9%80%B2AI%E6%99%B6%E7%89%87",
-      "thumbnail": "https://image.hkhl.hk/f/1024p0/0x0/100/none/ff4fa4aa916da57b37ada563e7402d5d/2026-11/PIC_ONLY_0925_8__1.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNka1Z1YUZoU1YwVlhRVVpSVFJDZ0F4amlCU2dLTWdZZFZJaXRNUVU",
       "date": "11/12/2026, 08:11 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:11:09Z"
@@ -1033,7 +945,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkcd.com.hk/hkcdweb/content/2026/11/12/content_8784884.html",
-      "thumbnail": "https://www.hkcd.com.hk/hkcdweb/images2023/shipinghao.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHpUWEZCUkhoM2NIVkhZalZwVFJDcUJCaXFCQ2dLTWdZQkFJb0hHUWc",
       "date": "11/12/2026, 12:18 AM, +0000 UTC",
       "iso_date": "2026-11-12T00:18:38Z"
@@ -1046,7 +957,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hkcd.com.hk/hkcdweb/content/2026/11/10/content_8784685.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/10/1794321451809_i8qwedqs.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdXVWRDUW1OSlEwRkpkbTVFVFJEQ0FSaURBaWdCTWdZSlVJQVNJUWM",
       "date": "11/10/2026, 02:34 PM, +0000 UTC",
       "iso_date": "2026-11-10T14:34:00Z"
@@ -1059,7 +969,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hk01.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60410154/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%87%BA%E8%BB%8C-%E9%A6%AC%E4%BE%86%E8%A5%BF%E4%BA%9E%E6%93%AC%E7%AB%8B%E6%B3%95%E7%9B%A3%E6%8E%A7%E6%95%B8%E6%93%9A%E4%B8%AD%E5%BF%83-%E9%98%B2ai%E6%99%B6%E7%89%87%E8%B5%B0%E7%A7%81%E8%BD%89%E8%87%B3%E4%B8%AD%E5%9C%8B",
-      "thumbnail": "https://cdn.hk01.com/di/media/images/dw/20261112/1197608111997718528869573.png/xMHUK0X7D93rhGjwO01UfOz18ng5Pdh9kLogupC6ILo?v=w1280r16_9",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRTV0ptUkdoTGIweFJNRnBNVFJESUFSamtBaWdLTWdhcFJaYk9KUWc",
       "date": "11/12/2026, 11:15 AM, +0000 UTC",
       "iso_date": "2026-11-12T11:15:47Z"
@@ -1072,7 +981,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.techritual.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.techritual.com/2026/11/12/600648/",
-      "thumbnail": "https://www.techritual.com/wp-content/uploads/2026/11/featured-600648.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXJUMjk0VmpScVdYSm1iVVp1VFJDZkF4ampCU2dLTWdhQmdJb21OZ1E",
       "date": "11/11/2026, 11:30 PM, +0000 UTC",
       "iso_date": "2026-11-11T23:30:33Z"
@@ -1085,7 +993,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.tvb.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.tvb.com/tc/1205868-%E6%93%9A%E5%A0%B1%E5%85%A7%E5%9C%B0%E6%9C%89%E8%BB%8D%E6%96%B9%E8%83%8C%E6%99%AF%E9%AB%98%E7%AD%89%E5%AD%B8%E5%BA%9C%E9%80%8F%E9%81%8E%E4%BE%9B%E6%87%89%E5%95%86%E6%8E%A1%E8%B3%BC%E8%BC%9D%E9%81%94%E6%99%B6%E7%89%87%E7%BE%8E%E6%96%B9%E6%86%82%E4%B8%AD%E6%96%B9%E5%8A%A0%E5%BF%AB%E7%99%BC%E5%B1%95AI",
-      "thumbnail": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026Bnc6TZLIk01794434673.png?x-oss-process=image/resize,w_1200",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtNVmhNYUdGb1lXSkhUWEEyVFJDZkF4ampCU2dLTWdZQmtJZ0pTZ1U",
       "date": "11/11/2026, 07:00 PM, +0000 UTC",
       "iso_date": "2026-11-11T19:00:00Z"
@@ -1098,7 +1005,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://finance.mingpao.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://finance.mingpao.com/fin/daily/20261112/1794417274265/imd-%E9%A6%99%E6%B8%AF%E6%95%B8%E7%A2%BC%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%85%A8%E7%90%83%E6%8E%92%E5%90%8D%E7%AC%AC11",
-      "thumbnail": "https://fs.mingpao.com/fin/20261112/s00002/74de091a3b3b437faef97a5cda202f9f.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUJTM2xXWld4S1NtZEhjRWM1VFJEVEJCakNBeWdLTWdrSkFvNkhpU3RzQ1FJ",
       "date": "11/11/2026, 08:34 PM, +0000 UTC",
       "iso_date": "2026-11-11T20:34:50Z"
@@ -1111,7 +1017,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://bau.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://bau.com.hk/web/article/1570080910439809024/web/content_1570080910439809024.html",
-      "thumbnail": "https://res.bauhk.com/contentcloud/44/REPRINT/MEDIA/PICTURE/2026/11/11/b3aa919c9d7c4ef0b5d47cc270114251_wh2000x2000.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDNRM1Z2TkVoMmVEbExZa3R1VFJEaEFSamhBU2dCTWdhUkFZYXdEQXM",
       "date": "11/11/2026, 06:34 AM, +0000 UTC",
       "iso_date": "2026-11-11T06:34:43Z"
@@ -1124,7 +1029,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.tvb.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.tvb.com/tc/1205690-%E9%BB%83%E4%BB%81%E5%8B%B3%E5%A9%9A%E5%A4%96%E6%83%85%E8%AE%8A%E9%96%93%E8%AB%9C%E6%8C%87%E6%8E%A7%E9%BE%8D%E9%A0%AD%E4%BC%81%E6%A5%AD%E9%9C%87%E7%9B%AA%E5%A6%82%E4%BD%95%E7%89%BD%E5%8B%95%E4%B8%AD%E7%BE%8EAI%E8%A7%92%E5%8A%9B%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90",
-      "thumbnail": "https://pro-vod-cdn.tvb.com/a38b49662ca24cae87fc5fc9eb82849f/snapshots/9b0edc72616a42f8bf9ffde835ab81e9-00006.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUpRV1JhTFhkYU1FMUxRazlMVFJEakJSaWZBeWdLTWdtUlVvS3JMV1p6bHdB",
       "date": "11/11/2026, 11:15 PM, +0000 UTC",
       "iso_date": "2026-11-11T23:15:00Z"
@@ -1137,7 +1041,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://hk.on.cc&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.on.cc/hk/bkn/cnt/finance/20261112/bkn-20261112133018346-1112_00842_001.html",
-      "thumbnail": "https://hk.on.cc/cnt/finance/20261112/photo/bkn-20261112133018346-1112_00842_001_01b.jpg?20261112115038",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVhhM0JaVFhGVFJXazRTWE5RVFJDMkF4aThCU2dLTWdhdFJZak9JUWs",
       "date": "11/12/2026, 05:37 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:37:09Z"
@@ -1150,7 +1053,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/%E6%98%9F%E5%B1%95%E9%A6%99%E6%B8%AF%E8%AA%BF%E6%9F%A5-%E9%80%BE%E5%85%AD%E6%88%90%E4%B8%AD%E5%B0%8F%E4%BC%81%E4%BB%8A%E5%B9%B4%E6%A5%AD%E5%8B%99%E8%A1%A8%E7%8F%BE%E7%AC%A6%E5%90%88%E6%88%96%E8%B6%85%E5%87%BA%E9%A0%90%E6%9C%9F-%E5%86%80%E7%8D%B2%E8%B2%A1%E6%94%BF-ai%E6%87%89%E7%94%A8%E7%AD%89%E6%94%AF%E6%8F%B4-062749554.html",
-      "thumbnail": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVFpQTTJKTGRHVjZUbko2VFJDUkF4ajhCU2dLTWdZUm81UkpPUWM",
       "date": "11/12/2026, 06:52 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:52:18Z"
@@ -1163,7 +1065,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://hkcd.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hkcd.com.hk/hkcdweb/content/2026/11/11/content_8784787.html",
-      "thumbnail": "https://img.hkcd.com/hkcd_images/2026/11/11/1794380170170_svl08zgt.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWtRVlZTZVRoZlFtdEZSVGRVVFJDZkF4ampCU2dLTWdZQlJJYk5xUVE",
       "date": "11/11/2026, 06:59 AM, +0000 UTC",
       "iso_date": "2026-11-11T06:59:00Z"
@@ -1179,7 +1080,6 @@
         ]
       },
       "link": "https://www.orangenews.hk/hongkong/VadDx28/%E9%A6%99%E6%B8%AF%E5%9C%A8%E6%95%B8%E7%A2%BC%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AB%B6%E7%88%AD%E5%8A%9B%E6%8E%92%E5%90%8D%E5%85%A8%E7%90%83%E7%AC%AC11%E4%BD%8D-%E4%BD%8D%E5%B1%85%E4%BA%9E%E6%B4%B2%E7%AC%AC%E5%9B%9B.shtml",
-      "thumbnail": "https://cdn.orangenews.hk/common/2026/11/11/364aaa8736fa4a69908528f1e6450a1b.jpg?imageMogr2/thumbnail/960x",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRhWEZNY0RoWVpqbHVRa1JKVFJDZkF4ampCU2dLTWdZQllJejFNQWc",
       "date": "11/11/2026, 03:38 AM, +0000 UTC",
       "iso_date": "2026-11-11T03:38:00Z"
@@ -1192,7 +1092,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://udn.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://udn.com/news/story/7333/9874232",
-      "thumbnail": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/11/12/35510790.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=852&sl=W&fw=930&exp=3600&w=930",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUlXVnBEWlVJMk9VSmZTa2h6VFJERUF4aW5CU2dLTWdZQllJNWl0QVk",
       "date": "11/12/2026, 06:15 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:15:46Z"
@@ -1205,7 +1104,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://inews.hket.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://inews.hket.com/article/4223288/%E3%80%90AI-%E9%A6%99%E6%B8%AF%E3%80%91%E4%B8%96%E7%95%8C%E6%95%B8%E7%A2%BC%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8E%92%E5%90%8D%E3%80%80%E9%A6%99%E6%B8%AF%E6%8E%92%E5%85%A8%E7%90%83%E7%AC%AC11%E4%BD%8D",
-      "thumbnail": "https://static06.hket.com/res/v3/image/content/4220000/4223288/ai_c3_1200.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDFTV1oyTXpoaVQwTXdVRWd4VFJDZkF4ampCU2dLTWdrWllJdzRHQ2FTTEFF",
       "date": "11/11/2026, 04:10 AM, +0000 UTC",
       "iso_date": "2026-11-11T04:10:30Z"
@@ -1218,7 +1116,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://news.tvb.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://news.tvb.com/tc/1205698-%E6%9C%AC%E6%B8%AF%E5%9C%A8%E6%95%B8%E7%A2%BC%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AB%B6%E7%88%AD%E5%8A%9B%E5%85%A8%E7%90%83%E6%8E%92%E5%90%8D%E7%AC%AC%E5%8D%81%E4%B8%80%E4%BD%8D",
-      "thumbnail": "https://pro-img-cdn.tvb.com/uploads/image/2026/11/2026qAxHUMIeaO1794368528.jpg?x-oss-process=image/resize,w_1200",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVJSVVZrY25SS1ZUUlhkSFl3VFJDZkF4ampCU2dLTWdrQklJak1JV2hxTlFF",
       "date": "11/11/2026, 03:45 AM, +0000 UTC",
       "iso_date": "2026-11-11T03:45:00Z"
@@ -1234,7 +1131,6 @@
         ]
       },
       "link": "https://hk.finance.yahoo.com/news/anthropic%E9%80%B2%E8%BB%8D%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BE%A6%E5%85%AC%E8%BB%9F%E4%BB%B6-ipo%E5%89%8D%E8%88%87%E5%BE%AE%E8%BB%9F%E8%B0%B7%E6%AD%8C%E7%AB%B6%E7%88%AD%E5%8D%87%E6%BA%AB-184620203.html",
-      "thumbnail": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVFpQTTJKTGRHVjZUbko2VFJDUkF4ajhCU2dLTWdZUm81UkpPUWM",
       "date": "11/10/2026, 06:46 PM, +0000 UTC",
       "iso_date": "2026-11-10T18:46:20Z"
@@ -1247,7 +1143,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://lead.hku.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://lead.hku.hk/tc/article/2026/11/hku-researchers-bring-ai-computer-graphics-and-wave-optics-together-towards-more-realistic-holographic-vrar-displays/",
-      "thumbnail": "https://lead.hku.hk/media/r3jphwyd/1.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNVpkekpGVkRSMmJHVnVSVmd4VFJDWEF4anhCU2dLTWdzQmtJaExPS2JBMG5nRmt3",
       "date": "11/10/2026, 04:00 AM, +0000 UTC",
       "iso_date": "2026-11-10T04:00:00Z"
@@ -1260,7 +1155,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/%E7%A7%91%E6%8A%80-imulife%E7%A0%94%E7%99%BCai%E5%85%8D%E7%96%AB%E8%BF%BD%E8%B9%A4%E5%B9%B3%E5%8F%B0-%E9%A6%96%E6%8E%A8%E5%85%A8%E9%9B%99%E6%AD%A7%E6%A1%BF%E8%8F%8C%E7%9B%8A%E7%94%9F%E8%8F%8C-043506711.html",
-      "thumbnail": "https://s.yimg.com/lo/mysterio/api/066bb8a5bc720ae8d003524c38886c55442f2dd757c6242db7f08277e379c729/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ffortune_insight_694%2Fdbddec0f78d2a1ab4bc25a6950c04ffb.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNTMTlJZEVNNWRuVmhaRlV3VFJDUUF4ai1CU2dLTWdhaGRKVE51UWM",
       "date": "11/12/2026, 05:59 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:59:10Z"
@@ -1273,7 +1167,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hk01.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60409994/%E4%B8%AD%E5%A4%A7%E7%95%A2%E6%A5%AD%E7%A6%AE-%E6%9C%83%E8%A8%88%E7%B3%BB%E7%94%9F%E7%A8%B1%E6%84%9Fai%E8%A1%9D%E6%93%8A%E9%A3%AF%E7%A2%97-%E8%AD%B7%E5%A3%AB%E7%94%9F%E7%A8%B1%E8%BA%AB%E9%82%8A%E6%9C%89%E5%90%8C%E5%AD%B8%E6%9C%AA%E7%8D%B2%E8%81%98",
-      "thumbnail": "https://cdn.hk01.com/di/media/images/dw/20261112/1197564013819465728593147.jpeg/CjyvKEMlnT2hXMibwMTqC5u2VJH3kWYt-FCpWfhQqVk?v=w1920r16_9",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNWhUR0ZtYmpBMFNFdFZTMUppVFJDZkF4ampCU2dLTWdB",
       "date": "11/12/2026, 08:59 AM, +0000 UTC",
       "iso_date": "2026-11-12T08:59:05Z"
@@ -1286,7 +1179,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://hk.investing.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.investing.com/news/analyst-ratings/article-93CH-1754522",
-      "thumbnail": "https://content-media.investing.com/news/LYNXMPEDA10AZ_L.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUthVkJFUzJ3emMyUnNlbEIxVFJERUF4aW5CU2dLTWdhbEJJRE5HUVU",
       "date": "11/12/2026, 10:44 AM, +0000 UTC",
       "iso_date": "2026-11-12T10:44:34Z"
@@ -1299,7 +1191,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.hk01.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60410006/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%87%BA%E8%BB%8C-%E7%BE%8E%E5%AA%92-%E7%89%BD%E7%B7%9A%E4%BA%BA%E7%AB%9F%E6%98%AF%E5%BA%B7%E5%81%89-%E9%BB%98%E8%A8%B1%E9%BB%83%E6%A8%82%E5%A9%9A%E5%A4%96%E6%83%85%E5%A5%97%E7%8F%BEai%E6%99%B6%E7%89%87",
-      "thumbnail": "https://cdn.hk01.com/di/media/images/dw/20261112/1197581608186548224874302.jpeg/BTgMRXpxbLyJxriqPPTVkI5xYdVa-bx6dt-p-nbfqfo?v=w1920r16_9",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVJPSGQzV1dKRlQwWTNibFZIVFJDZkF4ampCU2dLTWdB",
       "date": "11/12/2026, 06:45 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:45:31Z"
@@ -1312,7 +1203,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://bau.com.hk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://bau.com.hk/web/article/1570085501281697792/web/content_1570085501281697792.html",
-      "thumbnail": "https://res.bauhk.com/contentcloud/44/REPRINT/MEDIA/PICTURE/2026/11/11/4c4328682875497bad8dd37dd76e544a_wh1920x1080.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDRUMUpQUVdWVFNVeHhXakY1VFJDb0FSaXNBaWdCTWdtUkFZREtFQ3FwR2dB",
       "date": "11/11/2026, 09:50 AM, +0000 UTC",
       "iso_date": "2026-11-11T09:50:08Z"
@@ -1325,7 +1215,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/ai%E8%B3%87%E7%94%A2%E6%B3%A2%E5%8B%95%E5%8A%A0%E5%8A%87%E4%B9%8B%E9%9A%9B-alphabet%E5%95%9F%E5%8B%95%E9%A6%96%E7%AD%86%E6%B8%AF%E5%85%83%E5%8F%8A%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%85%83%E5%82%B5%E5%88%B8%E7%99%BC%E8%A1%8C-030341468.html",
-      "thumbnail": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVFpQTTJKTGRHVjZUbko2VFJDUkF4ajhCU2dLTWdZUm81UkpPUWM",
       "date": "11/12/2026, 03:35 AM, +0000 UTC",
       "iso_date": "2026-11-12T03:35:32Z"
@@ -1338,7 +1227,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://hk.news.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.news.yahoo.com/apec%E6%96%B0%E8%81%9E%E4%B8%AD%E5%BF%83%E7%9B%B4%E6%93%8A-%E8%A8%98%E8%80%85%E8%A9%A6%E6%88%B4%E5%9C%8B%E7%94%A2ai%E7%9C%BC%E9%8F%A1-%E6%9C%89%E6%8B%8D%E7%85%A7-%E9%8C%84%E5%83%8F%E7%AD%89%E5%8A%9F%E8%83%BD-104500542.html",
-      "thumbnail": "https://d29szjachogqwa.cloudfront.net/images/user-uploaded/yahoo-news-banners-1029x360-1029x360-6-1_5312.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRXR1pGV0hKamVWcDRlbXRDVFJESEFoaXBCeWdLTWdhSmdvekdOZ2M",
       "date": "11/12/2026, 10:45 AM, +0000 UTC",
       "iso_date": "2026-11-12T10:45:00Z"
@@ -1351,7 +1239,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/%E5%95%86%E6%B9%AF-00020-hk-%E4%BA%AE%E7%9B%B8%E6%9D%B1%E4%BA%ACnextech-week%E5%B1%95%E7%A4%BA%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%8F%8A%E4%BC%81%E6%A5%ADai%E6%96%B9%E6%A1%88-024852440.html",
-      "thumbnail": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVFpQTTJKTGRHVjZUbko2VFJDUkF4ajhCU2dLTWdZUm81UkpPUWM",
       "date": "11/12/2026, 03:10 AM, +0000 UTC",
       "iso_date": "2026-11-12T03:10:30Z"
@@ -1364,7 +1251,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.hkej.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.hkej.com/instantnews/hkex/article/4563738/%EF%BC%A1%E5%8C%AF%E5%8D%87%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2803413%29+%E4%BA%A4%E6%98%93%E6%89%80%E8%B2%B7%E8%B3%A3%E5%9F%BA%E9%87%91%E7%9A%84%E4%BA%A4%E6%98%93%E8%B3%87%E6%96%99",
-      "thumbnail": "https://static.hkej.com/hkej/backup_img/generic_social.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNTZVblJYUkcwNE1rZHdibloxVFJDUUF4ai1CU2dLTWdPQllRNA",
       "date": "11/12/2026, 06:31 AM, +0000 UTC",
       "iso_date": "2026-11-12T06:31:49Z"
@@ -1377,7 +1263,6 @@
         "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.ejtech.ai&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.ejtech.ai/%E7%A7%91%E6%8A%80%E5%8B%95%E6%85%8B/%E9%A6%99%E6%B8%AF-%E6%95%B8%E7%A2%BC-ai-%E7%AB%B6%E7%88%AD%E5%8A%9B-%E5%85%A8%E7%90%83-%E7%AC%AC11-%E6%8A%80%E8%A1%93%E6%A1%86%E6%9E%B6-%E6%95%99%E8%82%B2%E5%9F%B9%E8%A8%93/",
-      "thumbnail": "https://www.ejtech.ai/wp-content/uploads/2026/11/1112_P02-2.jpg",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNDFSV2hxUzNJM2IwbGFUVnBIVFJDa0F4aWtBeWdLTWdNQjBBbw",
       "date": "11/12/2026, 02:47 AM, +0000 UTC",
       "iso_date": "2026-11-12T02:47:25Z"
@@ -1390,7 +1275,6 @@
         "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://hk.finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://hk.finance.yahoo.com/news/%E7%A7%91%E6%8A%80-%E4%B8%AD%E5%9C%8Bai%E4%BC%81%E6%A5%AD%E6%86%82%E7%BE%8E%E6%94%B6%E7%B7%8A%E9%81%A0%E7%AB%AF%E5%AD%98%E5%8F%96-%E7%B4%9B%E6%90%B6%E7%A7%9F%E6%B5%B7%E5%A4%96%E8%8B%B1%E5%81%89%E9%81%94%E7%AE%97%E5%8A%9B-090031690.html",
-      "thumbnail": "https://s.yimg.com/lo/mysterio/api/066bb8a5bc720ae8d003524c38886c55442f2dd757c6242db7f08277e379c729/lightyear_networkapi/resizefit_w960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ffortune_insight_694%2Fdbddec0f78d2a1ab4bc25a6950c04ffb.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNTMTlJZEVNNWRuVmhaRlV3VFJDUUF4ai1CU2dLTWdhaGRKVE51UWM",
       "date": "11/12/2026, 09:00 AM, +0000 UTC",
       "iso_date": "2026-11-12T09:00:31Z"
@@ -1403,7 +1287,6 @@
         "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.moomoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       "link": "https://www.moomoo.com/hant/news/flash/1004378240/exclusive-chinese-ai-companies-rushing-to-secure-more-nvidia-powered",
-      "thumbnail": "https://cdn.futustatic.com/futunn_news_nuxt/static/img/mm_flash_img.png",
       "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTRTelp4VUY5Uk5tVkRibXBuVFJEZ0F4aUFCU2dLTWdtWk1veExJV1dxaGdJ",
       "date": "11/12/2026, 05:29 AM, +0000 UTC",
       "iso_date": "2026-11-12T05:29:32Z"
@@ -1411,75 +1294,47 @@
   ],
   "menu_links": [
     {
-      "title": "香港",
-      "topic_token": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE5vTmpRU0JYcG9MVWhMS0FBUAE",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE5vTmpRU0JYcG9MVWhMS0FBUAE"
+      "title": "香港"
     },
     {
-      "title": "國際",
-      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JYcG9MVWhMR2dKSVN5Z0FQAQ",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JYcG9MVWhMR2dKSVN5Z0FQAQ"
+      "title": "國際"
     },
     {
-      "title": "您的本地新聞",
-      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+      "title": "您的本地新聞"
     },
     {
-      "title": "商業",
-      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JYcG9MVWhMR2dKSVN5Z0FQAQ",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JYcG9MVWhMR2dKSVN5Z0FQAQ"
+      "title": "商業"
     },
     {
-      "title": "科技",
-      "topic_token": "CAAqLAgKIiZDQkFTRmdvSkwyMHZNR1ptZHpWbUVnVjZhQzFJU3hvQ1NFc29BQVAB",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqLAgKIiZDQkFTRmdvSkwyMHZNR1ptZHpWbUVnVjZhQzFJU3hvQ1NFc29BQVAB"
+      "title": "科技"
     },
     {
-      "title": "娛樂",
-      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JYcG9MVWhMR2dKSVN5Z0FQAQ",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JYcG9MVWhMR2dKSVN5Z0FQAQ"
+      "title": "娛樂"
     },
     {
-      "title": "體育",
-      "topic_token": "CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JYcG9MVWhMR2dKSVN5Z0FQAQ",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp1ZEdvU0JYcG9MVWhMR2dKSVN5Z0FQAQ"
+      "title": "體育"
     }
   ],
   "related_topics": [
     {
-      "topic_token": "CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRmVtZ3RTRXNvQUFQAQ",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRmVtZ3RTRXNvQUFQAQ",
       "title": "人工智能"
     },
     {
-      "topic_token": "CAAqJggKIiBDQkFTRWdvSkwyMHZNREp6Y1dzekVnVjZhQzFJU3lnQVAB",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqJggKIiBDQkFTRWdvSkwyMHZNREp6Y1dzekVnVjZhQzFJU3lnQVAB",
       "title": "通用人工智能"
     },
     {
-      "topic_token": "CAAqJggKIiBDQkFTRWdvSkwyMHZNREV4ZUdjMUVnVjZhQzFJU3lnQVAB",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqJggKIiBDQkFTRWdvSkwyMHZNREV4ZUdjMUVnVjZhQzFJU3lnQVAB",
       "title": "人工智能 (电影)"
     },
     {
-      "topic_token": "CAAqJggKIiBDQkFTRWdvSkwyMHZNREp0YTE4NEVnVjZhQzFJU3lnQVAB",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqJggKIiBDQkFTRWdvSkwyMHZNREp0YTE4NEVnVjZhQzFJU3lnQVAB",
       "title": "美國人工智能協會"
     },
     {
-      "topic_token": "CAAqJggKIiBDQkFTRWdvSkwyMHZNRGR5ZDNvekVnVjZhQzFJU3lnQVAB",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqJggKIiBDQkFTRWdvSkwyMHZNRGR5ZDNvekVnVjZhQzFJU3lnQVAB",
       "title": "國際人工智能聯合會議"
     },
     {
-      "topic_token": "CAAqKAgKIiJDQkFTRXdvS0wyMHZNREkyYURFek1CSUZlbWd0U0Vzb0FBUAE",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqKAgKIiJDQkFTRXdvS0wyMHZNREkyYURFek1CSUZlbWd0U0Vzb0FBUAE",
       "title": "人工智能係統集成"
     },
     {
-      "topic_token": "CAAqLAgKIiZDQkFTRmdvTkwyY3ZNVEZ6TldKMmNHSnFiUklGZW1ndFNFc29BQVAB",
-      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=hk&topic_token=CAAqLAgKIiZDQkFTRmdvTkwyY3ZNVEZ6TldKMmNHSnFiUklGZW1ndFNFc29BQVAB",
       "title": "人工智能殺人屋"
     }
   ]

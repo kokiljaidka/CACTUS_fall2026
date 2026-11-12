@@ -37,6 +37,11 @@ for place, gl, hl, q in PLACES:
         if table.empty:
             print("  WARNING: no results parsed. Check the raw JSON keys.")
 
+import serp_scrub  # noqa: E402
+
+# Drop links and tokens the course does not use (they look like secrets to scanners).
+serp_scrub.scrub_dir(cactus_serp.CACHE_DIR)
+
 week_dir = os.path.join(HERE, "..", "data", "week01")
 shutil.make_archive(os.path.join(week_dir, "serp_cache"), "zip", root_dir=week_dir, base_dir="serp_cache")
 print("Wrote data/week01/serp_cache.zip")

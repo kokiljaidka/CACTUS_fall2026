@@ -1,16 +1,4 @@
 {
-  "search_metadata": {
-    "id": "6af5aaf29ab6f237d557ff24",
-    "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/dcnt9Iz4bLAFQgPNCl1IFfKOfOZyPgEyzyfMF0J7C6c/6af5aaf29ab6f237d557ff24.json",
-    "markdown_endpoint": "https://serpapi.com/searches/dcnt9Iz4bLAFQgPNCl1IFfKOfOZyPgEyzyfMF0J7C6c/6af5aaf29ab6f237d557ff24.md",
-    "pixel_position_endpoint": "https://serpapi.com/searches/dcnt9Iz4bLAFQgPNCl1IFfKOfOZyPgEyzyfMF0J7C6c/6af5aaf29ab6f237d557ff24.json_with_pixel_position",
-    "created_at": "2026-11-12 12:02:58 UTC",
-    "processed_at": "2026-11-12 12:02:58 UTC",
-    "google_url": "https://www.google.com/search?q=artificial+intelligence&oq=artificial+intelligence&hl=en&gl=sg&sourceid=chrome&ie=UTF-8",
-    "raw_html_file": "https://serpapi.com/searches/dcnt9Iz4bLAFQgPNCl1IFfKOfOZyPgEyzyfMF0J7C6c/6af5aaf29ab6f237d557ff24.html",
-    "total_time_taken": 0.62
-  },
   "search_parameters": {
     "engine": "google",
     "q": "artificial intelligence",
@@ -30,7 +18,6 @@
       "position": 1,
       "title": "On Artificial Intelligence",
       "link": "https://www.youtube.com/watch?v=sXCKgEl9hBo",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ILeL3H6OhfdO2_3Dg_xT8QPcOal_Yaqw_b-wWCvNLAFqiG9nrhbJOA&s",
       "channel": "Naval",
       "duration": "52:06",
       "platform": "YouTube",
@@ -123,7 +110,6 @@
       "position": 2,
       "title": "ARTIFICIAL | Official Trailer | 2027 [HD]",
       "link": "https://www.youtube.com/watch?v=-g2sRRWhzes",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeh8ZqNvZR8ZmjoT4J3GSlrjXQOqwID14U49WMMle6tPyw56m3LCb7fQ&s",
       "channel": "Roadshow Films",
       "duration": "1:28",
       "platform": "YouTube",
@@ -134,7 +120,6 @@
       "position": 3,
       "title": "Artificial - Official Teaser Trailer (2026) Andrew Garfield, Yura ...",
       "link": "https://www.youtube.com/watch?v=_Wv9oLUe740",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTv_jg8LmYpJ1QH5YWmcfXYQ6ATWjraKbrB1jmUIW29LQw5puMgWCGg&s",
       "channel": "IGN",
       "duration": "1:17",
       "platform": "YouTube",
@@ -151,9 +136,7 @@
       "extensions": [
         "The Unesco Courier"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "1:06",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlqBRZQ9J5y8LICypdTjRi162xpbp00--_XBz4eh5ySiehXE8l0DBoZ_k&s=10",
       "link": "https://www.facebook.com/unescocourier/videos/artificial-intelligence-is-not-just-another-technological-shiftits-effects-are-u/1521595742999210/"
     },
     {
@@ -164,10 +147,8 @@
       "extensions": [
         "Sehyog Academy UK"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "0:38",
       "clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRnlaLuIqroJktbnLYxCjKcYFRYKCiwgVg1dg",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBsZRiKDWKvaZiTEoCSI7syiqL1w-F5B4kLBqrWHxa9DUKgrXM1JWQsYI&s=10",
       "link": "https://www.facebook.com/sehyogacad/videos/what-is-ai-and-how-does-it-workwhatisai-artificialintelligence-aiexplained-techn/869396756051807/"
     },
     {
@@ -178,9 +159,7 @@
       "extensions": [
         "News 8 WROC Rochester"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "0:46",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQlsgaLJSRAABzWLeCYNL1EFBtlpSQEZaQ1BNWYOVzkO4aIhUDS6-kwA&s=10",
       "link": "https://www.facebook.com/News8WROC/posts/what-exactly-is-artificial-intelligence-what-guiderails-need-to-be-in-place-can-/1516707890491226/"
     },
     {
@@ -191,9 +170,7 @@
       "extensions": [
         "Jamus Lim"
       ],
-      "source_logo": "https://serpapi.com/searches/6af5aaf29ab6f237d557ff24/images/qPUk2Rv5bARxBFeGO-_7tiH6e7HpG2ktfbZYCklsP8w.png",
       "duration": "1:58",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB50U3YgaNgfR9CtJHrgaIrUdCFXFCKAfpjjSY4mBouyO5EUjtn8fEjsY&s=10",
       "link": "https://www.instagram.com/reel/DYN06jszWJf/?hl=en"
     },
     {
@@ -204,10 +181,8 @@
       "extensions": [
         "Stowers Institute for Medical Research"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
       "duration": "2:29",
       "clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTYMcgPYkKN6AFxN2IHDuiEoedSriiEv1WsiA",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ594zhm6Y73KFVgTizakZ1NhgecZQDli-MYVt5fAAScbl9rgOHCTvjgWw&s=10",
       "link": "https://www.youtube.com/watch?v=uqRJFuXbtQM"
     },
     {
@@ -218,9 +193,7 @@
       "extensions": [
         "Academia Mag"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "1:31",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThejyrd2I8nlMQrM_cgdeGJyWYBzpPkXu7lnPt8oR1gVkh0LACV2OsuTc&s=10",
       "link": "https://www.facebook.com/academiamag/videos/the-rise-of-artificial-intelligence-ai-is-one-of-the-most-transformative-develop/1116170383148041/"
     },
     {
@@ -231,9 +204,7 @@
       "extensions": [
         "Learn with Cisco"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "1:16",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdtyFHYvEg2YbUvlFwQHyy3Qx7mq3zWughUu00PhMhXL3kCSt0iF_EWx0&s=10",
       "link": "https://www.facebook.com/learningatcisco/videos/%EF%B8%8F-12-days-of-learning-what-is-ai-%EF%B8%8F/870279348942454/"
     },
     {
@@ -244,9 +215,7 @@
       "extensions": [
         "College of Natural Sciences, UT Austin"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "0:24",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS58E134r5fc8KtrbpPeMEyenjxdIQCWvix4g9Aa62B0Xf_3PZhtKazM&s=10",
       "link": "https://www.facebook.com/texasscience/videos/what-is-ai-anyway/1484728002481820/"
     },
     {
@@ -257,44 +226,26 @@
       "extensions": [
         "FII Institute"
       ],
-      "source_logo": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
       "duration": "1:03",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1VFZlpVF9jUAsCM5uTTfoHhx2YTXyWDtoS_wLV27r34CqGwNl1S4oJ4&s=10",
       "link": "https://www.facebook.com/fiiinstitute/videos/ai-is-everywhere-but-do-you-really-know-how-it-works-from-machines-that-think-an/1892312712163609/"
     }
   ],
   "related_questions": [
     {
       "question": "What jobs will AI not replace?",
-      "type": "ai_overview",
-      "page_token": "OEO9r3icHdBNbqMwGABQzWW6bPhLRo0UVaKYBDSQ2PDZDpvKsUkIGOgknkCy7Fm66mHmAHOMSt23mhM86b2-6WPX_PtxqYx5Oc8nk2EY7g99f9DlvezbiThfOzmRQuudkM189nNmP-7lAv2J_KffkY-BoK1WmmnfZIHGIoy9raMcxinC2p8mLhHcgkFZD2nmjIFckbBAiu7sxsOW57EurAEUV5yuaRcvU4sEGdiMICPWCBvcqgY7nrPj8UW2U57b4OYBun2bkWhMBVAlZZBqddMUWIWKRoVMq5MIw1_lMj6zIEZlnYy4rq7YehhyZK8Yops1J0852DnTNCtrPEKgi2SZ6gSsUVixiyrpSR6NW14YAGmpPBzVKsWSRdciJ37q90cM1TpB4BKujxSqjWqnm6SmqwT0STRpnfFituuqG2mQWwx3e3lZuHf_PxfP-9bMX0794V2eSmFK9SzM3_rz_eMLNfOK0g",
-      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=OEO9r3icHdBNbqMwGABQzWW6bPhLRo0UVaKYBDSQ2PDZDpvKsUkIGOgknkCy7Fm66mHmAHOMSt23mhM86b2-6WPX_PtxqYx5Oc8nk2EY7g99f9DlvezbiThfOzmRQuudkM189nNmP-7lAv2J_KffkY-BoK1WmmnfZIHGIoy9raMcxinC2p8mLhHcgkFZD2nmjIFckbBAiu7sxsOW57EurAEUV5yuaRcvU4sEGdiMICPWCBvcqgY7nrPj8UW2U57b4OYBun2bkWhMBVAlZZBqddMUWIWKRoVMq5MIw1_lMj6zIEZlnYy4rq7YehhyZK8Yops1J0852DnTNCtrPEKgi2SZ6gSsUVixiyrpSR6NW14YAGmpPBzVKsWSRdciJ37q90cM1TpB4BKujxSqjWqnm6SmqwT0STRpnfFituuqG2mQWwx3e3lZuHf_PxfP-9bMX0794V2eSmFK9SzM3_rz_eMLNfOK0g",
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldoYXQgam9icyB3aWxsIEFJIG5vdCByZXBsYWNlPyIsImxrIjoiR2lKcWIySnpJSFJvWVhRZ2QyOXVJSFFnWjJWMElISmxjR3hoWTJWa0lHSjVJR0ZwIiwiYnMiOiJjMzJOdlFyQ01CUkdjYzNrNGc4WjZvZjRBbGFjaXdpQ1Q5RDUxcVJ0YWtna0NRYmYzalRnRHdndWR6bmZPWmVkV0ZIM0ZERFl4aU1xclhFNHc5Z0FKMi1hTHJJcU4zeWRZUmhuMFJvRWRQTE5CWm9IU0xFdG0tZE9zTmttZndXWjFLcktCWl9GWDVLVUhWdld2WVVhMHhJdHBldGcyNC1VR1gyUkpCM1pLdjhoSjdHSFVKN0VuVXlnVHZxWEMxN0VQeE5TMDhrVCIsImlkIjoiZmNfOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTRfNSJ9",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldoYXQgam9icyB3aWxsIEFJIG5vdCByZXBsYWNlPyIsImxrIjoiR2lKcWIySnpJSFJvWVhRZ2QyOXVJSFFnWjJWMElISmxjR3hoWTJWa0lHSjVJR0ZwIiwiYnMiOiJjMzJOdlFyQ01CUkdjYzNrNGc4WjZvZjRBbGFjaXdpQ1Q5RDUxcVJ0YWtna0NRYmYzalRnRHdndWR6bmZPWmVkV0ZIM0ZERFl4aU1xclhFNHc5Z0FKMi1hTHJJcU4zeWRZUmhuMFJvRWRQTE5CWm9IU0xFdG0tZE9zTmttZndXWjFLcktCWl9GWDVLVUhWdld2WVVhMHhJdHBldGcyNC1VR1gyUkpCM1pLdjhoSjdHSFVKN0VuVXlnVHZxWEMxN0VQeE5TMDhrVCIsImlkIjoiZmNfOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTRfNSJ9"
+      "type": "ai_overview"
     },
     {
       "question": "What to not ask an AI?",
-      "type": "ai_overview",
-      "page_token": "JqTscHicHdBRboIwAADQ7DJ-DhBx08QsA1uckzoLbYEfg62K0AJBYh2fO8u-PMwOsGMs2f-SvSO8j095qsrvuzjvuuY8NQyt9f2xro9yf89rZWTn94obPJNyl_FyOn4YW08HPgNn7Xq1djcEg0QKyWLJGGhkEiOVqvw1WKQ-ZTgRJF0RHy53JtCCwmJXCg_TySK28XU9Fy2BkmxKZ4HMyZgWMBRgslwzp-eUBmSRthGgkPjdGJvQD3xEhdXEEYSnsEJvLMoJNiceIs4qVCO9KUVK5sTcMTnc9PkKK0lSpp3EzhvKYCFInrDy0RGVq3HxEsI-v_IC5kJZGPfYCmJocsu9JsVSIgBM_7R0QzDSOBIw7tNEQNxFJb3wYRMiq_FW0fMoCS2bKKfcK-QODvwyswf_Y7PtQXXTpq2PN97us24vtln3Vfzefv4AtDiAQg",
-      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=JqTscHicHdBRboIwAADQ7DJ-DhBx08QsA1uckzoLbYEfg62K0AJBYh2fO8u-PMwOsGMs2f-SvSO8j095qsrvuzjvuuY8NQyt9f2xro9yf89rZWTn94obPJNyl_FyOn4YW08HPgNn7Xq1djcEg0QKyWLJGGhkEiOVqvw1WKQ-ZTgRJF0RHy53JtCCwmJXCg_TySK28XU9Fy2BkmxKZ4HMyZgWMBRgslwzp-eUBmSRthGgkPjdGJvQD3xEhdXEEYSnsEJvLMoJNiceIs4qVCO9KUVK5sTcMTnc9PkKK0lSpp3EzhvKYCFInrDy0RGVq3HxEsI-v_IC5kJZGPfYCmJocsu9JsVSIgBM_7R0QzDSOBIw7tNEQNxFJb3wYRMiq_FW0fMoCS2bKKfcK-QODvwyswf_Y7PtQXXTpq2PN97us24vtln3Vfzefv4AtDiAQg",
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldoYXQgdG8gbm90IGFzayBhbiBBST8iLCJsayI6IkdoVjNhR0YwSUhSdklHNXZkQ0JoYzJzZ1lXNGdZV2siLCJicyI6ImMzMk52UXJDTUJSR2NjM2s0ZzhaNm9mNEFsYWNpd2lDVDlENTFxUnRha2drQ1FiZjNqVGdEd2d1ZHpuZk9aZWRXRkgzRkREWXhpTXFyWEU0dzlnQUoyLWFMcklxTjN5ZFlSaG4wUm9FZFBMTkJab0hTTEV0bS1kT3NOa21md1daMUtyS0JaX0ZYNUtVSFZ2V3ZZVWEweEl0cGV0ZzI0LVVHWDJSSkIzWkt2OGhKN0dIVUo3RW5VeWdUdnFYQzE3RVB4TlMwOGtUIiwiaWQiOiJmY184cXIxYXZtUUc0dTFxdHNQcWIyZTRBNF81In0=",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldoYXQgdG8gbm90IGFzayBhbiBBST8iLCJsayI6IkdoVjNhR0YwSUhSdklHNXZkQ0JoYzJzZ1lXNGdZV2siLCJicyI6ImMzMk52UXJDTUJSR2NjM2s0ZzhaNm9mNEFsYWNpd2lDVDlENTFxUnRha2drQ1FiZjNqVGdEd2d1ZHpuZk9aZWRXRkgzRkREWXhpTXFyWEU0dzlnQUoyLWFMcklxTjN5ZFlSaG4wUm9FZFBMTkJab0hTTEV0bS1kT3NOa21md1daMUtyS0JaX0ZYNUtVSFZ2V3ZZVWEweEl0cGV0ZzI0LVVHWDJSSkIzWkt2OGhKN0dIVUo3RW5VeWdUdnFYQzE3RVB4TlMwOGtUIiwiaWQiOiJmY184cXIxYXZtUUc0dTFxdHNQcWIyZTRBNF81In0%3D"
+      "type": "ai_overview"
     },
     {
       "question": "Who is the father of AI?",
-      "type": "ai_overview",
-      "page_token": "tGdZ63icHdBdboIwAADg7DI-agvOTROzpBsUSexioeXnxWBbRSjQCAr6uLPsycPsADvGkr0v2XeE7-NTH-vy-yHOu860i8mk7_vxoWkOWo1FU02y9lqLici03mWiXMyeZvBlL5ZO26PXpkcbRp1ES52U8JzWiJPSvXCgzwl3OoJLENYEZGUy5QAyxUy485CtcOcKTAFj8zXD_RBEB0sxP0xtFLBKDNw1LdM8ziz_JLFGovAL4skrxR2lbytAyzlUNbIkN0BC3afVehoxrUPLJCx6HkLPj1WV8wzTQt5WduptLBXzNsXJY2Cbioe-y-IycG_5IAo3lxWk9EbhOnaBgGhICl8TxwH46KPAmfY0lKvUJpxE5F04EvObPAaR3nNojGTujHjEC3Vuj_bisrRH_2PL7b7qFubUHO7ipLJOyW3WfRW_958_Xs-BJw",
-      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=tGdZ63icHdBdboIwAADg7DI-agvOTROzpBsUSexioeXnxWBbRSjQCAr6uLPsycPsADvGkr0v2XeE7-NTH-vy-yHOu860i8mk7_vxoWkOWo1FU02y9lqLici03mWiXMyeZvBlL5ZO26PXpkcbRp1ES52U8JzWiJPSvXCgzwl3OoJLENYEZGUy5QAyxUy485CtcOcKTAFj8zXD_RBEB0sxP0xtFLBKDNw1LdM8ziz_JLFGovAL4skrxR2lbytAyzlUNbIkN0BC3afVehoxrUPLJCx6HkLPj1WV8wzTQt5WduptLBXzNsXJY2Cbioe-y-IycG_5IAo3lxWk9EbhOnaBgGhICl8TxwH46KPAmfY0lKvUJpxE5F04EvObPAaR3nNojGTujHjEC3Vuj_bisrRH_2PL7b7qFubUHO7ipLJOyW3WfRW_958_Xs-BJw",
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldobyBpcyB0aGUgZmF0aGVyIG9mIEFJPyIsImxrIjoiR2hWM2FHOGdhWE1nWVNCbVlYUm9aWElnYjJZZ1lXayIsImJzIjoiYzMyTnZRckNNQlJHY2MzazRnOFo2b2Y0QWxhY2l3aUNUOUQ1MXFSdGFrZ2tDUWJmM2pUZ0R3Z3Vkem5mT1plZFdGSDNGRERZeGlNcXJYRTR3OWdBSjItYUxySXFOM3lkWVJobjBSb0VkUExOQlpvSFNMRXRtLWRPc05rbWZ3V1oxS3JLQlpfRlg1S1VIVnZXdllVYTB4SXRwZXRnMjQtVUdYMlJKQjNaS3Y4aEo3R0hVSjdFblV5Z1R2cVhDMTdFUHhOUzA4a1QiLCJpZCI6ImZjXzhxcjFhdm1RRzR1MXF0c1BxYjJlNEE0XzUifQ==",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldobyBpcyB0aGUgZmF0aGVyIG9mIEFJPyIsImxrIjoiR2hWM2FHOGdhWE1nWVNCbVlYUm9aWElnYjJZZ1lXayIsImJzIjoiYzMyTnZRckNNQlJHY2MzazRnOFo2b2Y0QWxhY2l3aUNUOUQ1MXFSdGFrZ2tDUWJmM2pUZ0R3Z3Vkem5mT1plZFdGSDNGRERZeGlNcXJYRTR3OWdBSjItYUxySXFOM3lkWVJobjBSb0VkUExOQlpvSFNMRXRtLWRPc05rbWZ3V1oxS3JLQlpfRlg1S1VIVnZXdllVYTB4SXRwZXRnMjQtVUdYMlJKQjNaS3Y4aEo3R0hVSjdFblV5Z1R2cVhDMTdFUHhOUzA4a1QiLCJpZCI6ImZjXzhxcjFhdm1RRzR1MXF0c1BxYjJlNEE0XzUifQ%3D%3D"
+      "type": "ai_overview"
     },
     {
       "question": "What are 5 disadvantages of AI?",
-      "type": "ai_overview",
-      "page_token": "703l3HicHdDBbpswAABQ7Wd6bDCk3YgUTaWBhEy4tbEd8KVyDAnFBtLEiYFjv2Wnfkw_oJ9RqfdOO77re_2rn1v18eNSGXM4zSYTa-31vuv2uryWXTMRp6GVEym03gqpZrc_b8HvnZyH5zi4f4kDRHGY60Lntb7JR4a4YunD4m7AivfIg4-IrSMJ-FBqXIlV5GZuH5MV18hZnwnBS6aARbSvEob_wNCZlvfglC5Cj9dBLupqhx3_RWjc_HPGRjUgoixzjdkuiyBdFIfUoQCCXyPLqAfVGtKwWvONH9D2MLIInxMSDaiFTaLMDVdTg5lvJcWepMBuau6KtrOwAccU4D7VyG7dvicRbsNKTmUW93nGDaXSKUjUFyuI5CYeOMEBDLpnRKuHJKQepv4RL3lNXN-Viumc5dN0hCZZgjhtGCii4ozQ1U5e5t7V_8_5064xs8Ox27_JYylMWTwJ815_vX1-AyvQjCs",
-      "serpapi_ai_overview_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=703l3HicHdDBbpswAABQ7Wd6bDCk3YgUTaWBhEy4tbEd8KVyDAnFBtLEiYFjv2Wnfkw_oJ9RqfdOO77re_2rn1v18eNSGXM4zSYTa-31vuv2uryWXTMRp6GVEym03gqpZrc_b8HvnZyH5zi4f4kDRHGY60Lntb7JR4a4YunD4m7AivfIg4-IrSMJ-FBqXIlV5GZuH5MV18hZnwnBS6aARbSvEob_wNCZlvfglC5Cj9dBLupqhx3_RWjc_HPGRjUgoixzjdkuiyBdFIfUoQCCXyPLqAfVGtKwWvONH9D2MLIInxMSDaiFTaLMDVdTg5lvJcWepMBuau6KtrOwAccU4D7VyG7dvicRbsNKTmUW93nGDaXSKUjUFyuI5CYeOMEBDLpnRKuHJKQepv4RL3lNXN-Viumc5dN0hCZZgjhtGCii4ozQ1U5e5t7V_8_5064xs8Ox27_JYylMWTwJ815_vX1-AyvQjCs",
-      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIDUgZGlzYWR2YW50YWdlcyBvZiBBST8iLCJsayI6IkdoNTNhR0YwSUdGeVpTQTFJR1JwYzJGa2RtRnVkR0ZuWlhNZ2IyWWdZV2siLCJicyI6ImMzMk52UXJDTUJSR2NjM2s0ZzhaNm9mNEFsYWNpd2lDVDlENTFxUnRha2drQ1FiZjNqVGdEd2d1ZHpuZk9aZWRXRkgzRkREWXhpTXFyWEU0dzlnQUoyLWFMcklxTjN5ZFlSaG4wUm9FZFBMTkJab0hTTEV0bS1kT3NOa21md1daMUtyS0JaX0ZYNUtVSFZ2V3ZZVWEweEl0cGV0ZzI0LVVHWDJSSkIzWkt2OGhKN0dIVUo3RW5VeWdUdnFYQzE3RVB4TlMwOGtUIiwiaWQiOiJmY184cXIxYXZtUUc0dTFxdHNQcWIyZTRBNF81In0=",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJSRVJpVjJWWk9ISjVVMU5pZVRNMmJqVXdRazlrYkRoc1UzUnRaMjVoTkU0d1l6UlNRMWt6V2kwMFQzUjVjRlkwWDAweVRFMU9jVU5pTUdZMWEwTlNTbTQ0ZHpVek1UbEpTRXR3UzJSa1RrVjFXR1kyT1RRelFtbFdPWEJSWVRaTFVSSVhPSEZ5TVdGMmJWRkhOSFV4Y1hSelVIRmlNbVUwUVRRYUlrRklUakJGTjBkc1ozTldiRlpMYzNwTVRFMW5SalF0UTNkeFluWjJXRzlXUVVFIiwiZmN2IjoiMyIsImVpIjoiOHFyMWF2bVFHNHUxcXRzUHFiMmU0QTQiLCJxYyI6IkNoZGhjblJwWm1samFXRnNJR2x1ZEdWc2JHbG5aVzVqWlJBQWZkdlJMVDgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIDUgZGlzYWR2YW50YWdlcyBvZiBBST8iLCJsayI6IkdoNTNhR0YwSUdGeVpTQTFJR1JwYzJGa2RtRnVkR0ZuWlhNZ2IyWWdZV2siLCJicyI6ImMzMk52UXJDTUJSR2NjM2s0ZzhaNm9mNEFsYWNpd2lDVDlENTFxUnRha2drQ1FiZjNqVGdEd2d1ZHpuZk9aZWRXRkgzRkREWXhpTXFyWEU0dzlnQUoyLWFMcklxTjN5ZFlSaG4wUm9FZFBMTkJab0hTTEV0bS1kT3NOa21md1daMUtyS0JaX0ZYNUtVSFZ2V3ZZVWEweEl0cGV0ZzI0LVVHWDJSSkIzWkt2OGhKN0dIVUo3RW5VeWdUdnFYQzE3RVB4TlMwOGtUIiwiaWQiOiJmY184cXIxYXZtUUc0dTFxdHNQcWIyZTRBNF81In0%3D"
+      "type": "ai_overview"
     }
   ],
   "ai_overview": {
@@ -406,18 +357,15 @@
         "snippet_links": [
           {
             "text": "how machine learning works",
-            "link": "https://www.google.com/search?q=how+machine+learning+works&udm=50",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_ai_mode&gl=sg&hl=en&q=how+machine+learning+works"
+            "link": "https://www.google.com/search?q=how+machine+learning+works&udm=50"
           },
           {
             "text": "generative AI tools",
-            "link": "https://www.google.com/search?q=generative+AI+tools&udm=50",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_ai_mode&gl=sg&hl=en&q=generative+AI+tools"
+            "link": "https://www.google.com/search?q=generative+AI+tools&udm=50"
           },
           {
             "text": "AI ethics and risks",
-            "link": "https://www.google.com/search?q=AI+ethics+and+risks&udm=50",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_ai_mode&gl=sg&hl=en&q=AI+ethics+and+risks"
+            "link": "https://www.google.com/search?q=AI+ethics+and+risks&udm=50"
           }
         ]
       }
@@ -429,8 +377,7 @@
         "link": "https://en.wikipedia.org/wiki/Artificial_intelligence",
         "snippet": "Definition: Computational systems performing tasks associated with human intelligence like learning, reasoning, and decision-making; founded as an academic discipl...",
         "source": "Wikipedia",
-        "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://en.wikipedia.org&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPR6hpHZt84_j2Xic1jPH1qMFNsEltvURLuDv_59k9674rHD3L5tqQeUrOZH6uOtXjmxYW-Vf4yJdgps6reuqFq_bE67aonSt4LIg5B2wofqgQGcIBNCSPz9CXyQhhH7E9epohJFlqxXfNPAIfCf_muHc"
+        "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://en.wikipedia.org&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       {
         "index": 1,
@@ -438,8 +385,7 @@
         "link": "https://www.youtube.com/watch?v=y6rz71ZBcrU&t=29",
         "snippet": "What Exactly Is Artificial Intelligence? (And How Does It Really Work?) because what we call artificial intelligence isn't magic it's a system built piece by piece",
         "source": "YouTube",
-        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.youtube.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjKQ3ah6CKXnihyOb7l3qnblU1BY6pcg-BdPZgqGQgDE9mvCL_lmMtkuk489f1QEjxh0vbhCq2rKcCoOWck-c1SaHsNuxAXUEfb7RiAXJP87nGY8R-xaV2AgNTyAQA8qiIjIjq-w29wZGtmznh9Q9EPnw"
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.youtube.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       {
         "index": 2,
@@ -447,8 +393,7 @@
         "link": "https://hai.stanford.edu/ai-definitions/what-is-artificial-intelligence-ai",
         "snippet": "What is Artificial Intelligence (AI)? Artificial Intelligence (AI) is a term coined in 1955 by John McCarthy, Stanford's first faculty member in AI, who described ...",
         "source": "Stanford HAI",
-        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://hai.stanford.edu&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6hyNcS6hJM8Vs1qQHseDcM9FDTqU4lX47X23-YziHALMCcktC689-m0yx3NzNphJRacAtb6028pZ7LKolHRnqcULRqOQXbq366UuerdomUt6Cxq45sEgp99xPX82PGi86oqP2kxsPhK0l1SBL62wIXN4"
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://hai.stanford.edu&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       {
         "index": 3,
@@ -456,17 +401,14 @@
         "link": "https://www.google.com/goto?url=CAESdQHEIkXXwXCNUqVBWzcx7R3SDGqRB6QklZlWy1m13dV41N9ONBQ4WYUEOAIFsMDclBHEAuapaelmVXgXtegigh2wBm5aiy61Rk9teKBV8KJfKbymj-d07exUG_m_QHk_b-Lh0OXbVLxhv_ruiNCk5A1HMoPGwA",
         "snippet": "AI: Technology simulating human learning, reasoning, and autonomy. Machine Learning: Algorithms predicting and deciding from data; includes neural networks and sup...",
         "source": "IBM",
-        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.ibm.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPEJJ0O5LpbwQslb4jY0ElnVwDtqgwiLM5LW-Okwne5UZ_swV9oh73HVEbhc-096aSOnVRvnJtD4YscMDFv6a3zrpYWd2aYaBZdtOn3nNkqRuoPla8XrcZo2ZoT24wg3t3JkvAeqFdGHWsPEnWhkb3Vs"
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.ibm.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       {
         "index": 4,
         "title": "What Is AI and How Does It Work? | Sehyog Academy UK",
         "link": "https://www.google.com/goto?url=CAESygEBxCJF1_1g8bQLLuzpW449yW3t5nftA1xIxjuKw_LU1hP3rTZHmHvxsQd1JSMdMWyBVhJK0AbuLvfXWsRvC_VjgwKiQTI2CGHeu2dhmh3D6B3mf21TlPkNFAsEAnXjM_QNr0yHNc5PFSNzPYLgXjgHh0bqDOLUuYKgI9BnaoSui-614UNSpNvGYAD69yg_MzYcYo-aVseXtYpFQElZ5SyERZZoFuNq3fCi8i1x4vzNnB3U9kp-Cn6egcSa_WDAaQcdvgg-7WjyK7t_",
         "snippet": "What Is AI and How Does It Work? #WhatIsAI #ArtificialIntelligence #AIExplained #TechnologyBasics #FutureTech #ScienceShorts #STEMEducation #LearningTechnology #Di",
-        "source": "Facebook",
-        "source_icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
-        "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNRdpgFCSLTkoMw3n6-u4es4Wk3gtW6LPywey_oUUV3Tagx4frfDk6duxjEvi3DTZ5eG-n2Lp5vUX79E_1CxoXRGS1gHDCAMgJMosS72gfQXPvj1fCBmgx2D9ouQkdAmFdHqDI8xC3_8SQhO2ONybADQ"
+        "source": "Facebook"
       },
       {
         "index": 5,
@@ -474,8 +416,7 @@
         "link": "https://www.youtube.com/shorts/oS4CrKaVc5s",
         "snippet": "Artificial Intelligence (AI), what exactly is it? we have to use it even at work you know you have to get in line with it. and in March this year the Ministry of I",
         "source": "YouTube",
-        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.youtube.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSseXLkUjJnDAeFIYdH42eBLREWL0s2SNbs2GBxMlJ12sQvaHHYxZvc7j9pxd0LZyh46zbz5O40-XY2f5wUv33EUYHLr3ZoLAK7ZGt_3ZbJOTD7VdvDgXGJomWSUaffjJplfugApMoOHC1MQAY9B5fhw9Y"
+        "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.youtube.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       },
       {
         "index": 6,
@@ -490,18 +431,14 @@
         "title": "Everyone's talking about AI… but what actually is it? AI, short for Artificial ...",
         "link": "https://www.facebook.com/SDMFoundation/videos/everyones-talking-about-ai-but-what-actually-is-itai-short-for-artificial-intell/1332942978218043/",
         "snippet": "Everyone’s talking about AI… but what actually is it? AI, short for Artificial Intelligence, is technology designed to do tasks that normally need human thinking.",
-        "source": "Facebook",
-        "source_icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
-        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBgMG3JhbHSqIp2x9iY14Iy2F8tAoJiMNVwPLjA71LrjakUkIcGVbl4SD0iM_N01f79iLyjMGylJsYYOaAXkrzK5UUm72xphCl2s77Oy9gH-c0Mn2oi_NOlxw0RLRItkWS7pKSHjSrUQmhutEXnUFLCxI"
+        "source": "Facebook"
       },
       {
         "index": 8,
         "title": "#BioBasics | What is Artificial Intelligence (AI)?",
         "link": "https://www.youtube.com/watch?v=uqRJFuXbtQM&t=9",
         "snippet": "#BioBasics | What is Artificial Intelligence (AI)? and how is it used in medical research to better understand human health and disease hi I'm Melanie Wert i'm a b",
-        "source": "YouTube",
-        "source_icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
-        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTAgVcKQcpIGVJeTYxdF8POgJxbbo62BKRwEYpitP5hIrcLEnt3SuZzGA-uX_WPAgg8Sw-3tVMkzYRm2Ma2W4lm9I-rTXuJmtTnWHgDvOmGQOqVBx2zBMZTVOHAcNPA_g4KaUQRT93yFMT0uKZTDKmsc"
+        "source": "YouTube"
       },
       {
         "index": 9,
@@ -509,8 +446,7 @@
         "link": "https://www.britannica.com/technology/artificial-intelligence",
         "snippet": "Artificial intelligence (AI) | Definition, Examples, Types, Applications ...",
         "source": "Britannica",
-        "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.britannica.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-        "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQnImmSfvFTJGsAMHHSaqLA_HvaQVv_Q33wXiar7s4K3_NCAMIPUftktenmpZ6bgMsAItbKcoHkruSgW0-cwH1e8_G936cKaumSA_vJH_IdMn_DoNcFisaGdMQuQ5jLLWvteLbWJNZYjynEqAJYXqdamA"
+        "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.britannica.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
       }
     ]
   },
@@ -521,8 +457,6 @@
       "link": "https://en.wikipedia.org/wiki/Artificial_(2026_film)",
       "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScQHEIkXXPEvx_BUpbEOBDs05UcAn8V3tBNA4GB-ggT9Thh9yg3WVEY-0oRz4YMC_IC-3_RwXe7RV9uHbdv-H9ipZgTvM53Vjc6cwQyVc-A3mjXWxsl4braX5xyZmcRu5bPdfmfY93ZiW9b-lMzcjpXUL&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQFnoECCkQAQ&uoh=1",
       "displayed_link": "https://en.wikipedia.org › wiki › Artificial_(2026_film)",
-      "thumbnail": "https://serpapi.com/searches/6af5aaf29ab6f237d557ff24/images/aiEYqZS-VJ8QLFHkuHYtLRpSdcam-h812kIsvEcXozU.jpg",
-      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png",
       "snippet": "Artificial is a 2026 biographical comedy-drama film directed and co-produced by Luca Guadagnino and written by Simon Rich. It stars Andrew Garfield and Yura ...",
       "snippet_highlighted_words": [
         "Artificial"
@@ -530,8 +464,7 @@
       "about_this_result": {
         "source": {
           "description": "Artificial is a 2026 biographical comedy-drama film directed and co-produced by Luca Guadagnino and written by Simon Rich. It stars Andrew Garfield and Yura ...",
-          "source_info_link": "https://en.wikipedia.org/wiki/Artificial_(2026_film)",
-          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png"
+          "source_info_link": "https://en.wikipedia.org/wiki/Artificial_(2026_film)"
         },
         "languages": [
           "en"
@@ -541,7 +474,6 @@
         ]
       },
       "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqYBL2dvdG8_dXJsPUNBRVNjUUhFSWtYWGE0Y0JkMEk4UUFEOG1tcWRjYjVSOEZmcnpQa1VuZHN3azdRWmJlRkhLX05mT2lqdFAxLW9HY1V0ZWY5eEJCVmxIYWo2NlpWc2h5bjZHR1NfX2wxanRoUUp2TkRrbm9fREVSWDdSalV3ZXFyN1hBN241QTU2VGhDWk1EcU83aHVMTlRyWHctRmJfOEwtNFRIYxIEGgIIABr-AxICCAEaAggBIgAqADIGCAISAnNnOgBCBAgBEABKAFoAcgB6AIJA1gMIABAAGAAgACpJCgphcnRpZmljaWFsFduVf0AaDGFydGlmaWNpYWxseRoQbWFjaGluZSBsZWFybmluZxoWYXJ0aWZpY2lhbGludGVsbGlnZW5jZTKmAS9nb3RvP3VybD1DQUVTY1FIRUlrWFhhNGNCZDBJOFFBRDhtbXFkY2I1UjhGZnJ6UGtVbmRzd2s3UVpiZUZIS19OZk9panRQMS1vR2NVdGVmOXhCQlZsSGFqNjZaVnNoeW42R0dTX19sMWp0aFFKdk5Ea25vX0RFUlg3UmpVd2VxcjdYQTduNUE1NlRoQ1pNRHFPN2h1TE5Uclh3LUZiXzhMLTRUSGM6KTxiPkFydGlmaWNpYWw8L2I-ICgyMDI2IGZpbG0pIC0gV2lraXBlZGlhQqwBPGI-QXJ0aWZpY2lhbDwvYj4gaXMgYSAyMDI2IGJpb2dyYXBoaWNhbCBjb21lZHktZHJhbWEgZmlsbSBkaXJlY3RlZCBhbmQgY28tcHJvZHVjZWQgYnkgTHVjYSBHdWFkYWduaW5vIGFuZCB3cml0dGVuIGJ5IFNpbW9uIFJpY2guIEl0IHN0YXJzIEFuZHJldyBHYXJmaWVsZCBhbmQgWXVyYSZuYnNwOy4uLiICEAFIAFgAaAA",
-      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqYBL2dvdG8_dXJsPUNBRVNjUUhFSWtYWGE0Y0JkMEk4UUFEOG1tcWRjYjVSOEZmcnpQa1VuZHN3azdRWmJlRkhLX05mT2lqdFAxLW9HY1V0ZWY5eEJCVmxIYWo2NlpWc2h5bjZHR1NfX2wxanRoUUp2TkRrbm9fREVSWDdSalV3ZXFyN1hBN241QTU2VGhDWk1EcU83aHVMTlRyWHctRmJfOEwtNFRIYxIEGgIIABr-AxICCAEaAggBIgAqADIGCAISAnNnOgBCBAgBEABKAFoAcgB6AIJA1gMIABAAGAAgACpJCgphcnRpZmljaWFsFduVf0AaDGFydGlmaWNpYWxseRoQbWFjaGluZSBsZWFybmluZxoWYXJ0aWZpY2lhbGludGVsbGlnZW5jZTKmAS9nb3RvP3VybD1DQUVTY1FIRUlrWFhhNGNCZDBJOFFBRDhtbXFkY2I1UjhGZnJ6UGtVbmRzd2s3UVpiZUZIS19OZk9panRQMS1vR2NVdGVmOXhCQlZsSGFqNjZaVnNoeW42R0dTX19sMWp0aFFKdk5Ea25vX0RFUlg3UmpVd2VxcjdYQTduNUE1NlRoQ1pNRHFPN2h1TE5Uclh3LUZiXzhMLTRUSGM6KTxiPkFydGlmaWNpYWw8L2I-ICgyMDI2IGZpbG0pIC0gV2lraXBlZGlhQqwBPGI-QXJ0aWZpY2lhbDwvYj4gaXMgYSAyMDI2IGJpb2dyYXBoaWNhbCBjb21lZHktZHJhbWEgZmlsbSBkaXJlY3RlZCBhbmQgY28tcHJvZHVjZWQgYnkgTHVjYSBHdWFkYWduaW5vIGFuZCB3cml0dGVuIGJ5IFNpbW9uIFJpY2guIEl0IHN0YXJzIEFuZHJldyBHYXJmaWVsZCBhbmQgWXVyYSZuYnNwOy4uLiICEAFIAFgAaAA",
       "source": "Wikipedia",
       "read_more_link": "https://www.google.com/goto?url=CAESywEBxCJF1wAnVSnof7Gs7RMR08H1QYf1AZC-T4KIdh2XVWE8YBgdjGN00qYeJgunRKc7nBZeKIU8QmS0_C-7GL7gmKKI_9gjpw-pmbgVHjsBkBi2PmwFq1F7r6Ekf5IzSwzrfsESr4kemjT-FOlDJc5uuuGXOXs902U2zgr_Djrr_CWg-Wu0V30R4yXZ_r8BvsFAjKkLcoe-S86FXTQ-ugQQHWEo991zHZiKi9ZrLcFqOlFvOs-z475UzN7okyjmiTECT6lGsCXkbyWvPg&gsessionid=gW-bJjMax98QnOuEkwqXlWhQuL6JdpXxmJo_SrLiXAOFnnX5K4h8qg"
     },
@@ -551,7 +483,6 @@
       "link": "https://artificialanalysis.ai/",
       "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWwHEIkXXvpapyNVykcaYpGxOjc1RfV6tjUJKH6OMris8CgIF8NQbzgrR-64VTIc49pPnfDkwUiRNv60eEeOvhVXtVHi6d7eUM8APPmqiZzcmiriiWwm6lEh-9QI&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQFnoECCcQAQ&uoh=1",
       "displayed_link": "https://artificialanalysis.ai",
-      "favicon": "https://serpapi.com/searches/6af5aaf29ab6f237d557ff24/images/aiEYqZS-VJ8QLFHkuHYtLTUfYB9rHfEvrhuH5s8yRWM.png",
       "snippet": "Independent analysis of AI. Understand the AI landscape to choose the best model and provider for your use case. Update. API Performance Benchmarking v3.",
       "snippet_highlighted_words": [
         "Independent analysis of AI"
@@ -559,8 +490,7 @@
       "about_this_result": {
         "source": {
           "description": "Independent analysis of AI. Understand the AI landscape to choose the best model and provider for your use case. Update. API Performance Benchmarking v3.",
-          "source_info_link": "https://artificialanalysis.ai/",
-          "icon": "https://serpapi.com/searches/6af5aaf29ab6f237d557ff24/images/aiEYqZS-VJ8QLFHkuHYtLVQtdpT9_jlQR4Z_THj0sEASXRG99hxYtncUo5cjXirC.png"
+          "source_info_link": "https://artificialanalysis.ai/"
         },
         "languages": [
           "en"
@@ -570,7 +500,6 @@
         ]
       },
       "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CokBL2dvdG8_dXJsPUNBRVNXd0hFSWtYWHJvblBhTnpaZWhla2piZHUzQk9SbFBmR3FiLTNPYkZxalJJUEFEczFGZW1GaDBjb1E5X2ZsT0pWeS1LNVVKaDdSTlJGcmRHNkdVQjlHOGtQT0JTcnRjR0pHdldJM3J6LTZ6UmpCRk9qVnhNLWwtU0hQeFESBBoCCAAa6wMSAggBGgAiACoAMgYIAhICc2c6AEIECAEQAEoAWgByAHoAgkDFAwgAEAAYACAAKkkKCmFydGlmaWNpYWwVO3ygQBoMYXJ0aWZpY2lhbGx5GhBtYWNoaW5lIGxlYXJuaW5nGhZhcnRpZmljaWFsaW50ZWxsaWdlbmNlMokBL2dvdG8_dXJsPUNBRVNXd0hFSWtYWHJvblBhTnpaZWhla2piZHUzQk9SbFBmR3FiLTNPYkZxalJJUEFEczFGZW1GaDBjb1E5X2ZsT0pWeS1LNVVKaDdSTlJGcmRHNkdVQjlHOGtQT0JTcnRjR0pHdldJM3J6LTZ6UmpCRk9qVnhNLWwtU0hQeFE6QTxiPkFydGlmaWNpYWw8L2I-IEFuYWx5c2lzOiBBSSBNb2RlbCAmYW1wOyBBUEkgUHJvdmlkZXJzIEFuYWx5c2lzQqABPGI-SW5kZXBlbmRlbnQgYW5hbHlzaXMgb2YgQUk8L2I-LiBVbmRlcnN0YW5kIHRoZSBBSSBsYW5kc2NhcGUgdG8gY2hvb3NlIHRoZSBiZXN0IG1vZGVsIGFuZCBwcm92aWRlciBmb3IgeW91ciB1c2UgY2FzZS4gVXBkYXRlLiBBUEkgUGVyZm9ybWFuY2UgQmVuY2htYXJraW5nIHYzLiICEAFIAFgAaAA",
-      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CokBL2dvdG8_dXJsPUNBRVNXd0hFSWtYWHJvblBhTnpaZWhla2piZHUzQk9SbFBmR3FiLTNPYkZxalJJUEFEczFGZW1GaDBjb1E5X2ZsT0pWeS1LNVVKaDdSTlJGcmRHNkdVQjlHOGtQT0JTcnRjR0pHdldJM3J6LTZ6UmpCRk9qVnhNLWwtU0hQeFESBBoCCAAa6wMSAggBGgAiACoAMgYIAhICc2c6AEIECAEQAEoAWgByAHoAgkDFAwgAEAAYACAAKkkKCmFydGlmaWNpYWwVO3ygQBoMYXJ0aWZpY2lhbGx5GhBtYWNoaW5lIGxlYXJuaW5nGhZhcnRpZmljaWFsaW50ZWxsaWdlbmNlMokBL2dvdG8_dXJsPUNBRVNXd0hFSWtYWHJvblBhTnpaZWhla2piZHUzQk9SbFBmR3FiLTNPYkZxalJJUEFEczFGZW1GaDBjb1E5X2ZsT0pWeS1LNVVKaDdSTlJGcmRHNkdVQjlHOGtQT0JTcnRjR0pHdldJM3J6LTZ6UmpCRk9qVnhNLWwtU0hQeFE6QTxiPkFydGlmaWNpYWw8L2I-IEFuYWx5c2lzOiBBSSBNb2RlbCAmYW1wOyBBUEkgUHJvdmlkZXJzIEFuYWx5c2lzQqABPGI-SW5kZXBlbmRlbnQgYW5hbHlzaXMgb2YgQUk8L2I-LiBVbmRlcnN0YW5kIHRoZSBBSSBsYW5kc2NhcGUgdG8gY2hvb3NlIHRoZSBiZXN0IG1vZGVsIGFuZCBwcm92aWRlciBmb3IgeW91ciB1c2UgY2FzZS4gVXBkYXRlLiBBUEkgUGVyZm9ybWFuY2UgQmVuY2htYXJraW5nIHYzLiICEAFIAFgAaAA",
       "source": "Artificial Analysis",
       "read_more_link": "https://artificialanalysis.ai/#:~:text=Independent%20analysis%20of%20AI,provider%20for%20your%20use%20case"
     },
@@ -580,8 +509,6 @@
       "link": "https://www.imdb.com/title/tt37171180/",
       "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESYwHEIkXXNJKKB_6HdbSIAZJMyZ11F1XrNmpoAzbq2KF5TTNUMMv5K4GMq24flg8Yr4TP2eDga15F2ZSygz9fuWKuk93ZZVFcyUXKNcGKzp7MxjnPhEKB9s0tVO5-egsJYopLYQ&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQFnoECE8QAQ&uoh=1",
       "displayed_link": "https://www.imdb.com › title",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSGAkKRFh8SH3fqIXPDvONuI5r8SpIRK5xyMlw2qIMPY-ydaGsBp_&usqp=CAE&s",
-      "favicon": "https://serpapi.com/images/i/_9j_4AAQSkZJRgABAQAAAQABAAD_2wCEAAkGBwkHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys_RD84QzQ5OisBCgoKDQwNGg8PGjclHyU3Nzc3OC83NzczNzc3Nzc3NzcyLzU3NzA1LTc3Nzc1NzctLzUrNy03LTU1MDU1NTUrK__AABEIABwAHAMBEQACEQEDEQH_xAAZAAEAAwEBAAAAAAAAAAAAAAAABAUGBwL_xAAmEAACAQMDAwQDAAAAAAAAAAABAgMABBEFIUEGEzESUYGRFjJS_8QAGwEAAgMAAwAAAAAAAAAAAAAAAAQBAwUCBgf_xAAkEQACAgEDAwUBAAAAAAAAAAAAAQIRAwQxUQUSoRMhQWHwIv_aAAwDAQACEQMRAD8A3NeaG8KCRQAoAyHXWr32lz2q2FwYg9neSMAqnLJHlTuODWx0vT4s0ZOav3j53FNRklCq-zJ_lfUBS47l60RitUjyIkz3Vnijd_15Dn78Vrvp2kVVDdvnam0Letk5LNOrdT06TuXEhvoLZbvuo_pRnEcyorZC-QD42BpafTtPkjUV2t9vlFizzTtvk6QDkA-9dZf8tofshahpVlqTI19bJMyI8als7K4ww29xV2LU5sPtCVHGUIy3I8_TmlThxNYRsHBDZJ3BYMef6VT8VatfqVVS_VRxeGD-Dw3S-jPEkTabEUQEKuW8FvUed8kc1K6jqk77tyPQx8FxSl8ltCoAUAKAFAH_2Q.jpg",
       "snippet": "Follows the confusing firing and rehiring cycle of Sam Altman at OpenAI where the board gained control of the company and removed him, and Altman still returned ...",
       "snippet_highlighted_words": [
         "Follows the confusing firing and rehiring cycle of Sam Altman at OpenAI"
@@ -600,8 +527,7 @@
       "about_this_result": {
         "source": {
           "description": "Follows the confusing firing and rehiring cycle of Sam Altman at OpenAI where the board gained control of the company and removed him, and Altman still returned ...",
-          "source_info_link": "https://www.imdb.com/title/tt37171180/",
-          "icon": "https://serpapi.com/images/i/_9j_4AAQSkZJRgABAQAAAQABAAD_2wCEAAkGBwkHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys_RD84QzQ5OisBCgoKDQwNGg8PGjclHyU3Nzc3OC83NzczNzc3Nzc3NzcyLzU3NzA1LTc3Nzc1NzctLzUrNy03LTU1MDU1NTUrK__AABEIABwAHAMBEQACEQEDEQH_xAAZAAEAAwEBAAAAAAAAAAAAAAAABAUGBwL_xAAmEAACAQMDAwQDAAAAAAAAAAABAgMABBEFIUEGEzESUYGRFjJS_8QAGwEAAgMAAwAAAAAAAAAAAAAAAAQBAwUCBgf_xAAkEQACAgEDAwUBAAAAAAAAAAAAAQIRAwQxUQUSoRMhQWHwIv_aAAwDAQACEQMRAD8A3NeaG8KCRQAoAyHXWr32lz2q2FwYg9neSMAqnLJHlTuODWx0vT4s0ZOav3j53FNRklCq-zJ_lfUBS47l60RitUjyIkz3Vnijd_15Dn78Vrvp2kVVDdvnam0Letk5LNOrdT06TuXEhvoLZbvuo_pRnEcyorZC-QD42BpafTtPkjUV2t9vlFizzTtvk6QDkA-9dZf8tofshahpVlqTI19bJMyI8als7K4ww29xV2LU5sPtCVHGUIy3I8_TmlThxNYRsHBDZJ3BYMef6VT8VatfqVVS_VRxeGD-Dw3S-jPEkTabEUQEKuW8FvUed8kc1K6jqk77tyPQx8FxSl8ltCoAUAKAFAH_2Q.jpg"
+          "source_info_link": "https://www.imdb.com/title/tt37171180/"
         },
         "languages": [
           "en"
@@ -611,7 +537,6 @@
         ]
       },
       "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpQBL2dvdG8_dXJsPUNBRVNZd0hFSWtYWE1QVGRUaENYQlFSYmZjbWxjZkhQdkx6Z0ZEMGQwV09oaEx3TnF1VWQzNzEwS0hPRkkwbmJYRm9JZ2lJVHI0TUJrcGpxVFdRaG5wa2gzY3VBa3ViUzNIMDAxZXM4dTIwUDVwclpHRjhGQ1ZVZXVqcXRlTUdLaUFiZjdBbFV5QRIEGgIIABrmAxICCAEaAggBIgAqADIGCAISAnNnOgBCBAgBEABKAFoAcgB6AIJAvgMIABAAGAAgACpJCgphcnRpZmljaWFsFTsoeUAaDGFydGlmaWNpYWxseRoQbWFjaGluZSBsZWFybmluZxoWYXJ0aWZpY2lhbGludGVsbGlnZW5jZTKUAS9nb3RvP3VybD1DQUVTWXdIRUlrWFhNUFRkVGhDWEJRUmJmY21sY2ZIUHZMemdGRDBkMFdPaGhMd05xdVVkMzcxMEtIT0ZJMG5iWEZvSWdpSVRyNE1Ca3BqcVRXUWhucGtoM2N1QWt1YlMzSDAwMWVzOHUyMFA1cHJaR0Y4RkNWVWV1anF0ZU1HS2lBYmY3QWxVeUE6HzxiPkFydGlmaWNpYWw8L2I-ICgyMDI2KSAtIElNRGJCsAE8Yj5Gb2xsb3dzIHRoZSBjb25mdXNpbmcgZmlyaW5nIGFuZCByZWhpcmluZyBjeWNsZSBvZiBTYW0gQWx0bWFuIGF0IE9wZW5BSTwvYj4gd2hlcmUgdGhlIGJvYXJkIGdhaW5lZCBjb250cm9sIG9mIHRoZSBjb21wYW55IGFuZCByZW1vdmVkIGhpbSwgYW5kIEFsdG1hbiBzdGlsbCByZXR1cm5lZCZuYnNwOy4uLiICEAFIAFgAaAA",
-      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpQBL2dvdG8_dXJsPUNBRVNZd0hFSWtYWE1QVGRUaENYQlFSYmZjbWxjZkhQdkx6Z0ZEMGQwV09oaEx3TnF1VWQzNzEwS0hPRkkwbmJYRm9JZ2lJVHI0TUJrcGpxVFdRaG5wa2gzY3VBa3ViUzNIMDAxZXM4dTIwUDVwclpHRjhGQ1ZVZXVqcXRlTUdLaUFiZjdBbFV5QRIEGgIIABrmAxICCAEaAggBIgAqADIGCAISAnNnOgBCBAgBEABKAFoAcgB6AIJAvgMIABAAGAAgACpJCgphcnRpZmljaWFsFTsoeUAaDGFydGlmaWNpYWxseRoQbWFjaGluZSBsZWFybmluZxoWYXJ0aWZpY2lhbGludGVsbGlnZW5jZTKUAS9nb3RvP3VybD1DQUVTWXdIRUlrWFhNUFRkVGhDWEJRUmJmY21sY2ZIUHZMemdGRDBkMFdPaGhMd05xdVVkMzcxMEtIT0ZJMG5iWEZvSWdpSVRyNE1Ca3BqcVRXUWhucGtoM2N1QWt1YlMzSDAwMWVzOHUyMFA1cHJaR0Y4RkNWVWV1anF0ZU1HS2lBYmY3QWxVeUE6HzxiPkFydGlmaWNpYWw8L2I-ICgyMDI2KSAtIElNRGJCsAE8Yj5Gb2xsb3dzIHRoZSBjb25mdXNpbmcgZmlyaW5nIGFuZCByZWhpcmluZyBjeWNsZSBvZiBTYW0gQWx0bWFuIGF0IE9wZW5BSTwvYj4gd2hlcmUgdGhlIGJvYXJkIGdhaW5lZCBjb250cm9sIG9mIHRoZSBjb21wYW55IGFuZCByZW1vdmVkIGhpbSwgYW5kIEFsdG1hbiBzdGlsbCByZXR1cm5lZCZuYnNwOy4uLiICEAFIAFgAaAA",
       "source": "IMDb",
       "read_more_link": "https://www.imdb.com/title/tt37171180/#:~:text=7.7%2F10"
     },
@@ -621,8 +546,6 @@
       "link": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
       "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESrQEBxCJF1_Br8vj6IOwwSq-aPFWlcJPH_F5wZfsEHqVX99-4EnYhj84yZf8PhQvQ6zCb2u7UZuG8V_2OWqS0N8CsGQphGMLwGVFnMN3F_ObRyTbVgmdC5Cck4E4PlbU2wIvNMt6o9dLZuHTRUJnh1Zk9R1SusrLXfnz8GKD_VTRHXcOS7orjm-ERvl-cjtvDKoyeaH5SRUptcKqlhXKEW9frBBJym1e4e8qUmOXldA&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQFnoECEsQAQ&uoh=1",
       "displayed_link": "https://www.fsb.org › Publications › Reports to the G20",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk244QpNLjoDKTIIQMx_7vfbTm9bE13pdu7ast_hM3pIEl2SUwu0B6&usqp=CAE&s",
-      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAASFBMVEX6-_3____7_P3o6vDc3-fw8vYAAEAAAEyYnLS7v88AACqMk60AAFjJzNlia5CkqLzV19-tscN9haNweZsVKGVWXoVJUn81QG7nVaxyAAAAA3RSTlP6__6LBBCxAAAAwklEQVR4Ad3QVWKAMBAA0QyyCRJH7n_T7tb9vx2ch8Y5x485N_yC8LdwnDTd2s6M9Xj8hOK1AMsqIhsQ9HiPj-gkxSWPFAm11j1A2-vS_fR0Z8aSA22UmeaBIz3hmcMW4Tr6DDpvew6hjI_od31HhuHwh5KhnjkxnJ8ea_uHl2Ozd0LcL8NRKpY9ZmunRLoiQaY3nNf8uJFC8kCW-Q2JcuVazwPFWJYjovh0izZ5kfWeYdMdKRhSBuCJp_Hz8P3cP8IHDyEJfaxnUx8AAAAASUVORK5CYII.png",
       "date": "15 Oct 2026",
       "snippet": "FSB sets out 12 sound practices to facilitate responsible AI adoption by financial institutions.",
       "snippet_highlighted_words": [
@@ -631,8 +554,7 @@
       "about_this_result": {
         "source": {
           "description": "FSB sets out 12 sound practices to facilitate responsible AI adoption by financial institutions.",
-          "source_info_link": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
-          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAASFBMVEX6-_3____7_P3o6vDc3-fw8vYAAEAAAEyYnLS7v88AACqMk60AAFjJzNlia5CkqLzV19-tscN9haNweZsVKGVWXoVJUn81QG7nVaxyAAAAA3RSTlP6__6LBBCxAAAAwklEQVR4Ad3QVWKAMBAA0QyyCRJH7n_T7tb9vx2ch8Y5x485N_yC8LdwnDTd2s6M9Xj8hOK1AMsqIhsQ9HiPj-gkxSWPFAm11j1A2-vS_fR0Z8aSA22UmeaBIz3hmcMW4Tr6DDpvew6hjI_od31HhuHwh5KhnjkxnJ8ea_uHl2Ozd0LcL8NRKpY9ZmunRLoiQaY3nNf8uJFC8kCW-Q2JcuVazwPFWJYjovh0izZ5kfWeYdMdKRhSBuCJp_Hz8P3cP8IHDyEJfaxnUx8AAAAASUVORK5CYII.png"
+          "source_info_link": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/"
         },
         "languages": [
           "en"
@@ -642,7 +564,6 @@
         ]
       },
       "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CvgBL2dvdG8_dXJsPUNBRVNyUUVCeENKRjE3akNncjRuQUJGb0REak5lWjc2REZJX211bS1iZVFvNFl4MVlXU1ZkTTdEU3d5bkRMeExiei1wM2hZbF9ETWV4SEF3UEpieW81TThaaUxzbGZuYnRRRG1ZTDBMS3U5alRvQ0p6a3ZHMm52UlNzamtGSmZNUDhoeXdxaGxFcFdyNGdVSVJJZW9OYVVGZUY0cnBhcENsZlliOUFQV1otVzlzVlNpeFFNaFJReXl0SlRPU1hpUTlOeVJfVXVCZVpHX20tdS1TLVR3cWNwOWdrNC12MUR0a0U0Tm9KeUxsU1FlWmcSBBoCCAAaogQSAggBGgIIASIAKgAyBggDEgJzZzoAQgQIARAASgBaAHIAegCCQPoDCAAQABgAIAAqSQoKYXJ0aWZpY2lhbBXwzZlAGgxhcnRpZmljaWFsbHkaEG1hY2hpbmUgbGVhcm5pbmcaFmFydGlmaWNpYWxpbnRlbGxpZ2VuY2Uy-AEvZ290bz91cmw9Q0FFU3JRRUJ4Q0pGMTdqQ2dyNG5BQkZvRERqTmVaNzZERklfbXVtLWJlUW80WXgxWVdTVmRNN0RTd3luREx4TGJ6LXAzaFlsX0RNZXhIQXdQSmJ5bzVNOFppTHNsZm5idFFEbVlMMExLdTlqVG9DSnprdkcybnZSU3Nqa0ZKZk1QOGh5d3FobEVwV3I0Z1VJUkllb05hVUZlRjRycGFwQ2xmWWI5QVBXWi1XOXNWU2l4UU1oUlF5eXRKVE9TWGlROU55Ul9VdUJlWkdfbS11LVMtVHdxY3A5Z2s0LXYxRHRrRTROb0p5TGxTUWVaZzpBU291bmQgUHJhY3RpY2VzIGZvciBSZXNwb25zaWJsZSBBZG9wdGlvbiBvZiA8Yj5BcnRpZmljaWFsPC9iPiAuLi5CZ0ZTQiBzZXRzIG91dCA8Yj4xMiBzb3VuZCBwcmFjdGljZXM8L2I-IHRvIGZhY2lsaXRhdGUgcmVzcG9uc2libGUgQUkgYWRvcHRpb24gYnkgZmluYW5jaWFsIGluc3RpdHV0aW9ucy4iAhABSABYAGgA",
-      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CvgBL2dvdG8_dXJsPUNBRVNyUUVCeENKRjE3akNncjRuQUJGb0REak5lWjc2REZJX211bS1iZVFvNFl4MVlXU1ZkTTdEU3d5bkRMeExiei1wM2hZbF9ETWV4SEF3UEpieW81TThaaUxzbGZuYnRRRG1ZTDBMS3U5alRvQ0p6a3ZHMm52UlNzamtGSmZNUDhoeXdxaGxFcFdyNGdVSVJJZW9OYVVGZUY0cnBhcENsZlliOUFQV1otVzlzVlNpeFFNaFJReXl0SlRPU1hpUTlOeVJfVXVCZVpHX20tdS1TLVR3cWNwOWdrNC12MUR0a0U0Tm9KeUxsU1FlWmcSBBoCCAAaogQSAggBGgIIASIAKgAyBggDEgJzZzoAQgQIARAASgBaAHIAegCCQPoDCAAQABgAIAAqSQoKYXJ0aWZpY2lhbBXwzZlAGgxhcnRpZmljaWFsbHkaEG1hY2hpbmUgbGVhcm5pbmcaFmFydGlmaWNpYWxpbnRlbGxpZ2VuY2Uy-AEvZ290bz91cmw9Q0FFU3JRRUJ4Q0pGMTdqQ2dyNG5BQkZvRERqTmVaNzZERklfbXVtLWJlUW80WXgxWVdTVmRNN0RTd3luREx4TGJ6LXAzaFlsX0RNZXhIQXdQSmJ5bzVNOFppTHNsZm5idFFEbVlMMExLdTlqVG9DSnprdkcybnZSU3Nqa0ZKZk1QOGh5d3FobEVwV3I0Z1VJUkllb05hVUZlRjRycGFwQ2xmWWI5QVBXWi1XOXNWU2l4UU1oUlF5eXRKVE9TWGlROU55Ul9VdUJlWkdfbS11LVMtVHdxY3A5Z2s0LXYxRHRrRTROb0p5TGxTUWVaZzpBU291bmQgUHJhY3RpY2VzIGZvciBSZXNwb25zaWJsZSBBZG9wdGlvbiBvZiA8Yj5BcnRpZmljaWFsPC9iPiAuLi5CZ0ZTQiBzZXRzIG91dCA8Yj4xMiBzb3VuZCBwcmFjdGljZXM8L2I-IHRvIGZhY2lsaXRhdGUgcmVzcG9uc2libGUgQUkgYWRvcHRpb24gYnkgZmluYW5jaWFsIGluc3RpdHV0aW9ucy4iAhABSABYAGgA",
       "source": "Financial Stability Board"
     },
     {
@@ -651,18 +572,14 @@
       "link": "https://www.youtube.com/watch?v=rDZplZFnbOk",
       "displayed_link": "7.5M+ views",
       "date": "2 months ago",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0x3lx1s2C8AfiszPpKHrijpzHgVHONbJztli-P_63wiGQQ11HKmXfcw&s",
-      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
       "snippet": "A film by Luca Guadagnino. Starring Andrew Garfield, Yura Borisov, Monica Barbaro, Ike Barinholtz, Cooper Hoffman, Jason Schwartzman, ...",
       "duration": "1:17",
       "about_this_result": {
         "source": {
-          "description": "A film by Luca Guadagnino. Starring Andrew Garfield, Yura Borisov, Monica Barbaro, Ike Barinholtz, Cooper Hoffman, Jason Schwartzman, ...",
-          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png"
+          "description": "A film by Luca Guadagnino. Starring Andrew Garfield, Yura Borisov, Monica Barbaro, Ike Barinholtz, Cooper Hoffman, Jason Schwartzman, ..."
         }
       },
       "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpoBL2dvdG8_dXJsPUNBRVNhQUhFSWtYWE1lT1AyeTNjc3dsSHIzcUg4SzJoRVZ1VXp0d1FIVlJJNVJ6MV9Bbno3V3c5WTBTLWhHNkhuTUdxYlFld0xIQWc2QVktZFhtdl9jOVVUY1hjSDdHa1duZllwWHhtbk9RTURQbzhGSjUwemQ1cGJlT2k4aENIVFFUcTduN0VQZHV0UjZxehIWChAKBAgwSAIKBAhISAIKAgg_GgIIABoWEgAaACIAKgAyADoAQgBKAFoAcgB6ACICEAFIAFgAaAA",
-      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpoBL2dvdG8_dXJsPUNBRVNhQUhFSWtYWE1lT1AyeTNjc3dsSHIzcUg4SzJoRVZ1VXp0d1FIVlJJNVJ6MV9Bbno3V3c5WTBTLWhHNkhuTUdxYlFld0xIQWc2QVktZFhtdl9jOVVUY1hjSDdHa1duZllwWHhtbk9RTURQbzhGSjUwemQ1cGJlT2k4aENIVFFUcTduN0VQZHV0UjZxehIWChAKBAgwSAIKBAhISAIKAgg_GgIIABoWEgAaACIAKgAyADoAQgBKAFoAcgB6ACICEAFIAFgAaAA",
       "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTuza6BPxEBLZRTOpqRqzQjSTZCHPUheMJRFg",
       "source": "YouTube · NEON"
     },
@@ -672,8 +589,6 @@
       "link": "https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine",
       "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShgEBxCJF1zV1ZjEGnK6VVQ45SBr1GFmr2o2lN6u78cKC6HE2oXdHpv3QiVkxIuEgOW5EOUnfwjWEbpq4oRzd_UlCmG6wJBGWJOg2FM7z5J0XWBftqxYJZ016HJFmsnAYYE9Zzd3foss-EHqJu7scgF9eh_UVeGbYZfKsBi_tJYJlAP-aIlBrvg&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQFnoECEwQAQ&uoh=1",
       "displayed_link": "https://www.sciencedirect.com › journal › artificial-intelli...",
-      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjuc7_k4o2ZZr3mcte_7Gz8ncazg2p_vAE8IF519JvjeHFhIKbZsQ&usqp=CAE&s",
-      "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABKElEQVR4AdzXAUQEQRTG8Y8KkThBUnAAAJEAkCIHEECAmH2zKYKIQAAEiCgFkCABBORAAFQoAMIFJMDX8xywaKpbH-Hvwc76GQMPazs9af8fQMMcM1aKAUzoRjXmfXaiGtN_AJwwg-WADLbQjwDH3iUNtz77Ph99vrULKKjgh41YYVYJiGgYqAH3WkDGqRqwScODAFBWawAaZriNRR0g48Cj8gau1YDXFgHl6QHCR_iifgNXasC-FlBhigldGaAJwnqcTehoABln3ofkBriFCRoG3pMGUGM1zhnuRgbgLiaLzxrOh4CLXwF4iPEGoMZy7AwbGGt87zgmLDBjiYY9n59DwNF3gNB6N8zoe8_eu8eRVCHJFpPI0CtezeIKvwbrmqUx8A_b3jEAhZpfRTDQgH4AAAAASUVORK5CYII.png",
       "snippet": "Artificial Intelligence in Medicine publishes original articles from a wide variety of interdisciplinary perspectives concerning the theory and practice of ...",
       "snippet_highlighted_words": [
         "Artificial Intelligence"
@@ -681,8 +596,7 @@
       "about_this_result": {
         "source": {
           "description": "Artificial Intelligence in Medicine publishes original articles from a wide variety of interdisciplinary perspectives concerning the theory and practice of ...",
-          "source_info_link": "https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine",
-          "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABKElEQVR4AdzXAUQEQRTG8Y8KkThBUnAAAJEAkCIHEECAmH2zKYKIQAAEiCgFkCABBORAAFQoAMIFJMDX8xywaKpbH-Hvwc76GQMPazs9af8fQMMcM1aKAUzoRjXmfXaiGtN_AJwwg-WADLbQjwDH3iUNtz77Ph99vrULKKjgh41YYVYJiGgYqAH3WkDGqRqwScODAFBWawAaZriNRR0g48Cj8gau1YDXFgHl6QHCR_iifgNXasC-FlBhigldGaAJwnqcTehoABln3ofkBriFCRoG3pMGUGM1zhnuRgbgLiaLzxrOh4CLXwF4iPEGoMZy7AwbGGt87zgmLDBjiYY9n59DwNF3gNB6N8zoe8_eu8eRVCHJFpPI0CtezeIKvwbrmqUx8A_b3jEAhZpfRTDQgH4AAAAASUVORK5CYII.png"
+          "source_info_link": "https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine"
         },
         "languages": [
           "en"
@@ -692,7 +606,6 @@
         ]
       },
       "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsQBL2dvdG8_dXJsPUNBRVNoZ0VCeENKRjExR1BibER2R2Y0QmM2eld3b2FhdEY0SkhhRTZDNDZEenBkNFJkdU84SWVIb1dOTGZDX1M2SUJMRmRLckxCaWpteVdUMWcydTdEYnJKWFRQT05sWUJ2eXhEemhVcURkeWJvOXY4dHgtaDRVbmZWT251b0lHeW10bkw4M3RYMXcwWDZfYld5WWhpeTlESnNSZWt0N0ctTkkwcElfcFJOSEMtN2xwQndnQTNKZ2o1URIEGgIIABq6BBICCAEaAggBIgAqADIGCAISAnNnOgBCBAgBEABKAFoAcgB6AIJAkgQIABAAGAAgACpJCgphcnRpZmljaWFsFYcXq0AaDGFydGlmaWNpYWxseRoQbWFjaGluZSBsZWFybmluZxoWYXJ0aWZpY2lhbGludGVsbGlnZW5jZTLEAS9nb3RvP3VybD1DQUVTaGdFQnhDSkYxMUdQYmxEdkdmNEJjNnpXd29hYXRGNEpIYUU2QzQ2RHpwZDRSZHVPOEllSG9XTkxmQ19TNklCTEZkS3JMQmlqbXlXVDFnMnU3RGJySlhUUE9ObFlCdnl4RHpoVXFEZHlibzl2OHR4LWg0VW5mVk9udW9JR3ltdG5MODN0WDF3MFg2X2JXeVloaXk5REpzUmVrdDdHLU5JMHBJX3BSTkhDLTdscEJ3Z0EzSmdqNVE6SDxiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlPC9iPiBpbiBNZWRpY2luZSB8IEpvdXJuYWwgLSBTY2llbmNlRGlyZWN0LmNvbUKrATxiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlPC9iPiBpbiBNZWRpY2luZSBwdWJsaXNoZXMgb3JpZ2luYWwgYXJ0aWNsZXMgZnJvbSBhIHdpZGUgdmFyaWV0eSBvZiBpbnRlcmRpc2NpcGxpbmFyeSBwZXJzcGVjdGl2ZXMgY29uY2VybmluZyB0aGUgdGhlb3J5IGFuZCBwcmFjdGljZSBvZiZuYnNwOy4uLiICEAFIAFgAaAA",
-      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsQBL2dvdG8_dXJsPUNBRVNoZ0VCeENKRjExR1BibER2R2Y0QmM2eld3b2FhdEY0SkhhRTZDNDZEenBkNFJkdU84SWVIb1dOTGZDX1M2SUJMRmRLckxCaWpteVdUMWcydTdEYnJKWFRQT05sWUJ2eXhEemhVcURkeWJvOXY4dHgtaDRVbmZWT251b0lHeW10bkw4M3RYMXcwWDZfYld5WWhpeTlESnNSZWt0N0ctTkkwcElfcFJOSEMtN2xwQndnQTNKZ2o1URIEGgIIABq6BBICCAEaAggBIgAqADIGCAISAnNnOgBCBAgBEABKAFoAcgB6AIJAkgQIABAAGAAgACpJCgphcnRpZmljaWFsFYcXq0AaDGFydGlmaWNpYWxseRoQbWFjaGluZSBsZWFybmluZxoWYXJ0aWZpY2lhbGludGVsbGlnZW5jZTLEAS9nb3RvP3VybD1DQUVTaGdFQnhDSkYxMUdQYmxEdkdmNEJjNnpXd29hYXRGNEpIYUU2QzQ2RHpwZDRSZHVPOEllSG9XTkxmQ19TNklCTEZkS3JMQmlqbXlXVDFnMnU3RGJySlhUUE9ObFlCdnl4RHpoVXFEZHlibzl2OHR4LWg0VW5mVk9udW9JR3ltdG5MODN0WDF3MFg2X2JXeVloaXk5REpzUmVrdDdHLU5JMHBJX3BSTkhDLTdscEJ3Z0EzSmdqNVE6SDxiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlPC9iPiBpbiBNZWRpY2luZSB8IEpvdXJuYWwgLSBTY2llbmNlRGlyZWN0LmNvbUKrATxiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlPC9iPiBpbiBNZWRpY2luZSBwdWJsaXNoZXMgb3JpZ2luYWwgYXJ0aWNsZXMgZnJvbSBhIHdpZGUgdmFyaWV0eSBvZiBpbnRlcmRpc2NpcGxpbmFyeSBwZXJzcGVjdGl2ZXMgY29uY2VybmluZyB0aGUgdGhlb3J5IGFuZCBwcmFjdGljZSBvZiZuYnNwOy4uLiICEAFIAFgAaAA",
       "source": "ScienceDirect.com",
       "read_more_link": "https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine#:~:text=Artificial%20Intelligence%20in%20Medicine%20publishes,human%20biology%2C%20and%20health%20care."
     }
@@ -845,67 +758,42 @@
     {
       "block_position": 1,
       "query": "Artificial movie",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+movie&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhCEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+movie"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+movie&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhCEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial Intelligence Analysis AI",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+Intelligence+Analysis+AI&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhKEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+Intelligence+Analysis+AI"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+Intelligence+Analysis+AI&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhKEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial intelligence AI Index",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+intelligence+AI+Index&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhJEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+intelligence+AI+Index"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+intelligence+AI+Index&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhJEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial Intelligence AI benchmark",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+Intelligence+AI+benchmark&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhIEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+Intelligence+AI+benchmark"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+Intelligence+AI+benchmark&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhIEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial movie trailer",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+movie+trailer&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhHEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+movie+trailer"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+movie+trailer&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhHEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial where to watch",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+where+to+watch&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhGEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+where+to+watch"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+where+to+watch&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhGEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial 2026 cast",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+2026+cast&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhFEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+2026+cast"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+2026+cast&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhFEAE"
     },
     {
       "block_position": 1,
       "query": "Artificial Analysis Intelligence Index 2026",
-      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+Analysis+Intelligence+Index+2026&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhDEAE",
-      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=Artificial+Analysis+Intelligence+Index+2026"
+      "link": "https://www.google.com/search?sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&q=Artificial+Analysis+Intelligence+Index+2026&sa=X&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ1QJ6BAhDEAE"
     }
-  ],
-  "pagination": {
-    "current": 1,
-    "next": "https://www.google.com/search?q=artificial+intelligence&sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&ei=8qr1avmQG4u1qtsPqb2e4A4&start=10&sa=N&sstk=AYl2yk9mC9qvzU1HIEbMPMOxiyfC1tyCdhTm-YZKnzYvmZFo9I2Xfj0JRWBVeFPmnGR04Kpf4fpCSX-HTHSqS-2D965dhm0dgnw7WQ&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ8NMDegQIQBAI",
-    "other_pages": {
-      "2": "https://www.google.com/search?q=artificial+intelligence&sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&ei=8qr1avmQG4u1qtsPqb2e4A4&start=10&sa=N&sstk=AYl2yk9mC9qvzU1HIEbMPMOxiyfC1tyCdhTm-YZKnzYvmZFo9I2Xfj0JRWBVeFPmnGR04Kpf4fpCSX-HTHSqS-2D965dhm0dgnw7WQ&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ8tMDegQIQBAE",
-      "3": "https://www.google.com/search?q=artificial+intelligence&sca_esv=efdd14fb62dc1e06&gl=sg&hl=en&sxsrf=AKL5yDj6jqwKeaUdz3cFpvPbgWuzzuVL1g:1794484978451&ei=8qr1avmQG4u1qtsPqb2e4A4&start=20&sa=N&sstk=AYl2yk9mC9qvzU1HIEbMPMOxiyfC1tyCdhTm-YZKnzYvmZFo9I2Xfj0JRWBVeFPmnGR04Kpf4fpCSX-HTHSqS-2D965dhm0dgnw7WQ&ved=2ahUKEwj50ce9sYKYAxWLmmoFHameB-wQ8tMDegQIQBAG"
-    }
-  },
-  "serpapi_pagination": {
-    "current": 1,
-    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=artificial+intelligence&start=10",
-    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=artificial+intelligence&start=10",
-    "other_pages": {
-      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=artificial+intelligence&start=10",
-      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=sg&google_domain=google.com&hl=en&q=artificial+intelligence&start=20"
-    }
-  }
+  ]
 }
