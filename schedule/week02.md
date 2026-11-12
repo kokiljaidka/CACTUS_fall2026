@@ -31,7 +31,7 @@ See [data/README.md](../data/README.md). Students use a different dataset in eac
 | What | Where |
 |---|---|
 | Practice page: Silent Changes | `practice/week02_silent_changes.html` (private Artifact; share its link). Source in `practice/src/week02/` |
-| Lecture slides (13 slides) | `slides/week02_clean_it_chart_it.html` and `.pdf` (source in `slides/src/week02/`, with speaker notes) |
+| Lecture slides (13 slides) | `slides/week02_clean_it_chart_it.html` and `.pdf` for students; `slides/week02_clean_it_chart_it_presenter.html` (press N for the script) and `..._handout.pdf` for the facilitator team. Source and notes: `slides/src/week02/` (`notes.json`) |
 | Notebook | `notebooks/week02_clean_and_chart.ipynb` |
 | Rebuild commands | `python3 scripts/build_practice.py` and `python3 scripts/build_week02_notebook.py` |
 <!-- facilitator:end -->

@@ -8,6 +8,8 @@ the sources and are removed from the published pages.
 Outputs (committed, copied into the site by build_site.py):
     slides/<name>.html   self-contained viewer (arrow keys, swipe, #3 jumps to slide 3)
     slides/<name>.pdf    one slide per page (needs Microsoft Edge; skipped if absent)
+    slides/<name>_presenter.html   viewer with the speaker notes beside the slide (N toggles)
+    slides/<name>_handout.pdf      slides with notes, A4, for the facilitator team
 
 Usage: python scripts/build_slides.py [--no-pdf]
 """
@@ -82,31 +84,107 @@ var m=/^#(\d+)$/.exec(location.hash);show(m?parseInt(m[1],10)-1:0);
 """
 
 
+KNOWN = ("TIME", "SAY", "DO", "IF", "WATCH", "NEXT", "NOTE", "SIGN-OFF", "AT", "CLOSE")
+
+PRESENTER_CSS = """
+#view{right:360px}
+#notes{position:fixed;top:0;right:0;bottom:56px;width:360px;overflow:auto;padding:16px 18px;background:#14241c;border-left:1px solid #2b4036;font-size:15px;line-height:1.5}
+#notes p{margin:0 0 10px}
+#notes b{color:#e8b13a}
+body.nonotes #notes{display:none}
+body.nonotes #view{right:0}
+@media (max-width:900px){#notes{display:none}#view{right:0}}
+@media print{#notes{display:none}}
+"""
+
+HANDOUT_CSS = """
+@page{size:A4;margin:12mm}
+html,body{background:#fff;color:#14241c;height:auto}
+h1{font:600 18pt 'Bricolage Grotesque',Georgia,serif;margin:0 0 4mm}
+.item{display:flex;gap:16px;align-items:flex-start;break-inside:avoid;page-break-inside:avoid;padding:0 0 12px;margin:0 0 12px;border-bottom:1px solid #c6d1c4}
+.thumb{width:300px;height:169px;flex:none;position:relative;overflow:hidden;border:1px solid #c6d1c4}
+.thumb .s{display:block!important;position:static!important;transform:none!important;zoom:.15625}
+.n{flex:1;font-size:10.5pt;line-height:1.45;min-width:0}
+.n p{margin:0 0 6px}
+.n b{color:#237a4b}
+.num{font-weight:700;color:#237a4b;margin:0 0 4px}
+"""
+
+
+def notes_html(text):
+    out = []
+    for line in text.split("\n"):
+        if not line.strip():
+            continue
+        head, sep, rest = line.partition(": ")
+        if sep and head.split()[0].rstrip(":") in KNOWN:
+            out.append("<p><b>" + html.escape(head) + "</b> " + html.escape(rest) + "</p>")
+        else:
+            out.append("<p>" + html.escape(line) + "</p>")
+    return "".join(out)
+
+
 def build(key, name, pdf):
     src = os.path.join(SLIDES, "src", key)
     deck = json.load(open(os.path.join(src, "deck.json"), encoding="utf-8"))
-    parts = []
+    notes_path = os.path.join(src, "notes.json")
+    notes = json.load(open(notes_path, encoding="utf-8")) if os.path.exists(notes_path) else {}
+    parts, own = [], []
     for sid in deck["order"]:
         text = open(os.path.join(src, "slides", sid + ".html"), encoding="utf-8").read()
+        m = re.search(r"<aside>(.*?)</aside>", text, flags=re.S)
+        own.append(html.unescape(m.group(1)).strip() if m else "")
         text = re.sub(r"<aside>.*?</aside>", "", text, flags=re.S)
         parts.append('<div class="s">' + text.strip() + "</div>")
+    note_texts = [notes.get(sid) or own[k] for k, sid in enumerate(deck["order"])]
     title = html.escape(deck["title"])
-    page = (
+    head = (
         "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
-        f"<title>{title}</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">"
-        f"<link rel=\"stylesheet\" href=\"{FONTS}\"><style>{CSS}</style></head><body>"
-        f"<div id=\"view\">{''.join(parts)}</div>"
-        "<div id=\"bar\"><button id=\"pv\" type=\"button\">Previous</button><span id=\"ct\"></span>"
-        "<button id=\"nx\" type=\"button\">Next</button>"
-        f"<a href=\"{name}.pdf\">PDF</a></div><script>{JS}</script></body></html>\n"
+        f"<title>{{t}}</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">"
+        f"<link rel=\"stylesheet\" href=\"{FONTS}\"><style>{{css}}</style></head><body>"
     )
-    out = os.path.join(SLIDES, name + ".html")
-    with open(out, "w", encoding="utf-8", newline="\n") as f:
-        f.write(page)
-    print("wrote", os.path.relpath(out, ROOT), f"({len(deck['order'])} slides)")
+    bar = ("<div id=\"bar\"><button id=\"pv\" type=\"button\">Previous</button><span id=\"ct\"></span>"
+           "<button id=\"nx\" type=\"button\">Next</button>{extra}</div>")
+
+    # 1. student viewer (no notes)
+    page = (head.format(t=title, css=CSS) + f"<div id=\"view\">{''.join(parts)}</div>"
+            + bar.format(extra=f"<a href=\"{name}.pdf\">PDF</a>") + f"<script>{JS}</script></body></html>\n")
+    write(os.path.join(SLIDES, name + ".html"), page)
+
+    # 2. presenter view (with notes, N toggles the panel)
+    hook = ("window.__onshow=function(i){document.getElementById('notes').innerHTML=NOTES[i]||''};"
+            "document.addEventListener('keydown',function(e){if(e.key==='n'||e.key==='N')document.body.classList.toggle('nonotes')});")
+    pjs = JS.replace("ct.textContent=", "if(window.__onshow)window.__onshow(i);ct.textContent=", 1)
+    notes_js = "var NOTES=" + json.dumps([notes_html(t) for t in note_texts]).replace("</", "<" + chr(92) + "/") + ";" + hook
+    ppage = (head.format(t=title + " (presenter)", css=CSS + PRESENTER_CSS)
+             + f"<div id=\"view\">{''.join(parts)}</div><div id=\"notes\"></div>"
+             + bar.format(extra="<span>Press N to hide or show notes</span>")
+             + f"<script>{notes_js}{pjs}</script></body></html>\n")
+    write(os.path.join(SLIDES, name + "_presenter.html"), ppage)
+
+    # 3. handout (slides with notes, A4), printed to PDF
+    items = []
+    for k, t in enumerate(note_texts):
+        items.append(f"<div class=\"item\"><div class=\"thumb\">{parts[k]}</div>"
+                     f"<div class=\"n\"><p class=\"num\">Slide {k + 1}</p>{notes_html(t)}</div></div>")
+    base = CSS.split("@page")[0]
+    hpage = (head.format(t=title + " (handout)", css=base + HANDOUT_CSS)
+             + f"<h1>{title}</h1>{''.join(items)}</body></html>\n")
+    print(f"built {name} ({len(deck['order'])} slides)")
     if pdf:
-        make_pdf(out, os.path.join(SLIDES, name + ".pdf"))
+        tmp = os.path.join(SLIDES, "_handout_tmp.html")
+        write(tmp, hpage, quiet=True)
+        make_pdf(os.path.join(SLIDES, name + ".html"), os.path.join(SLIDES, name + ".pdf"))
+        make_pdf(tmp, os.path.join(SLIDES, name + "_handout.pdf"))
+        os.remove(tmp)
+
+
+def write(path, text, quiet=False):
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(text)
+    if not quiet:
+        print("wrote", os.path.relpath(path, ROOT))
 
 
 def make_pdf(html_path, pdf_path):

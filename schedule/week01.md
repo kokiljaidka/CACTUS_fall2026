@@ -21,7 +21,7 @@ By the end of the week, students can:
 |---|---|
 | Project guide and card | [project/designing_your_project.md](../project/designing_your_project.md) |
 | Puzzle page: Cactus Code Garden (16 puzzles, then a Colab task) | `practice/week01_cactus_code_garden.html` (published as a private Artifact; share the link from its Share menu). Source in `practice/src/week01/` |
-| Lecture slides (Session 1, 14 slides) | `slides/week01_define_your_problem.html` and `.pdf` (source in `slides/src/week01/`, with speaker notes). The same deck is also kept as a private Artifact for presenting |
+| Lecture slides (Session 1, 14 slides) | `slides/week01_define_your_problem.html` and `.pdf` for students; `slides/week01_define_your_problem_presenter.html` (press N for the script) and `..._handout.pdf` for the facilitator team. Source and notes: `slides/src/week01/` (`notes.json`). A copy of the deck is also kept as a private Artifact |
 | Notebook | `notebooks/week01_first_api_calls.ipynb` |
 | Saved searches (no key needed) | `data/week01/serp_cache.zip` (made by `scripts/cache_week1.py`) |
 <!-- facilitator:end -->
