@@ -30,6 +30,7 @@ PAGES = {
     "data/README.md": "data.md",
     "schedule/week01.md": "weeks/week01.md",
     "schedule/week02.md": "weeks/week02.md",
+    "schedule/week03.md": "weeks/week03.md",
 }
 
 # per-week links added to each week page
@@ -39,6 +40,15 @@ WEEKS = {
         "slides": ("Lecture slides (Session 1)", "week01_define_your_problem"),
         "practice": ("Cactus Code Garden (puzzle page)", "week01_cactus_code_garden.html"),
         "downloads": [("Saved searches (serp_cache.zip)", "data/week01/serp_cache.zip")],
+    },
+    "weeks/week03.md": {
+        "notebook": "week03_verify_and_analyze.ipynb",
+        "slides": ("Lecture slides (learning session)", "week03_verify_and_analyze"),
+        "practice": ("Planted-Effect Lab (practice page)", "week03_planted_effect_lab.html"),
+        "downloads": [
+            ("Experiment data (week03_experiment.csv)", "data/week03_experiment.csv"),
+            ("Survey data (week03_survey.csv)", "data/week03_survey.csv"),
+        ],
     },
     "weeks/week02.md": {
         "notebook": "week02_clean_and_chart.ipynb",
@@ -52,6 +62,7 @@ WEEKS = {
 }
 COPY_FILES = [  # published as downloads
     "data/starbucks_sea_comments.csv", "data/lululemon_instagram.csv", "data/week02_toy_cafe.csv",
+    "data/week03_experiment.csv", "data/week03_survey.csv",
     "data/week01/serp_cache.zip",
 ]
 

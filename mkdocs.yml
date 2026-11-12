@@ -27,6 +27,7 @@ nav:
   - Weeks:
       - "Week 1: Define your problem, how code thinks": weeks/week01.md
       - "Week 2: Clean it, chart it": weeks/week02.md
+      - "Week 3: Verify and analyze": weeks/week03.md
   - Project guide: project.md
   - Getting data access: access.md
   - Data: data.md
