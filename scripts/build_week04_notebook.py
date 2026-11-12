@@ -1,7 +1,7 @@
 """Build notebooks/week04_collect_your_own_data.ipynb. Re-run after editing.
 
 Route B uses the invented sample made by scripts/make_week04_sample.py.
-Route A cells for real platforms are added by the platform owners (see project/getting_data_access.md).
+Route A cells for real platforms are added by the facilitators (see project/getting_data_access.md).
 """
 import os
 
@@ -131,7 +131,7 @@ md("""
 ---
 ## Exercise 1: Collect, and save the raw data (required, about 30 min)
 
-**Route A.** Add your platform's collection cell below. Your platform owner can show you one that works. Keep to the limits you wrote in the access guide. Collect **at least 3 pages** (or about 100 items), save each response untouched in `raw/`, and write the log as in the warm-up.
+**Route A.** Add your platform's collection cell below. Ask the facilitators; they can show you one that works. Keep to the limits you wrote in the access guide. Collect **at least 3 pages** (or about 100 items), save each response untouched in `raw/`, and write the log as in the warm-up.
 
 **Route B.** Run the cell below to collect all 4 pages of the sample.
 

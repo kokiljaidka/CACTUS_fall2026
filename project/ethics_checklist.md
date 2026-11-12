@@ -3,7 +3,7 @@
 This is a list of questions, not a set of rules. It does not tell you what is allowed. The answers depend on the platform, your project, and your university. Answer each question for your own data, write the answers in your data card, and **ask when you are not sure**.
 
 <!-- facilitator:start -->
-> **Status: draft for review.** This page deliberately contains questions and no policy. Please read it against your university's actual ethics process and add the contact details and the name of the process. Do not add legal claims here that you have not checked.
+> **Status: contact added.** This page deliberately contains questions and no policy. Still to do: name the formal ethics process at your university in question 3. Do not add legal claims here that you have not checked.
 <!-- facilitator:end -->
 
 ## 1. What am I collecting, and from whom?
@@ -53,7 +53,8 @@ This is a list of questions, not a set of rules. It does not tell you what is al
 ## Who to ask
 
 - Your supervisor.
-- Your university's ethics or research integrity office: **[add name and contact]**.
+- The CACTUS ethics contact: **Kokil Jaidka**. Ask before you collect, in the group channel or in a session.
+- The NUS ethics review process (the Institutional Review Board), if your project needs formal approval.
 - The platform's developer terms or support pages.
 
 When in doubt, **ask before you collect.**

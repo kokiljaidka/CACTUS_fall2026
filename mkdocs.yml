@@ -28,6 +28,8 @@ nav:
       - "Week 1: Define your problem, how code thinks": weeks/week01.md
       - "Week 2: Clean it, chart it": weeks/week02.md
       - "Week 3: Verify and analyze": weeks/week03.md
+      - "Week 4: Collect your own data": weeks/week04.md
   - Project guide: project.md
   - Getting data access: access.md
+  - Ethics checklist: ethics.md
   - Data: data.md

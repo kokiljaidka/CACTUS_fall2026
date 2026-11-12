@@ -4,7 +4,7 @@
 **Format:** Zoom. A 1-hour learning session (lecture with live demos), a 20-minute practice page, then a 2-hour coding session in breakout rooms with no lecture. About 3 hours live.
 
 <!-- facilitator:start -->
-> **Status: draft for review.** Not on the student site yet. The biggest risk is **platform access**, which students sort out themselves and which changes often. See the plan and decisions at the end of this file.
+> **Status: built and on the site.** The biggest risk is **platform access**, which students sort out themselves and which changes often. See the plan and decisions at the end of this file.
 <!-- facilitator:end -->
 
 ## Objectives
@@ -20,7 +20,7 @@ By the end of the week, students can:
 
 ## Get access before the session
 
-**Start in Week 2 or 3, not Week 4.** Some platforms take days to approve. See [Getting data access](../project/getting_data_access.md) for the questions to answer and a shared table of what works.
+**Start in Week 2 or 3, not Week 4.** Some platforms take days to approve. See [Getting data access](../project/getting_data_access.md) for the questions to answer and a shared table of what works, and the [Ethics checklist](../project/ethics_checklist.md) for the questions to answer before you collect.
 
 - Week 2 homework: choose where your project's data will come from, and start applying.
 - Week 3: an optional **access clinic** (30 minutes) for anyone stuck.
@@ -49,14 +49,14 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 | Lecture slides (11 slides) | `slides/week04_collect_your_own_data.html` and `.pdf` for students; `..._presenter.html` (press N for the script) and `..._handout.pdf` for the facilitator team. Source and notes: `slides/src/week04/` (built) |
 | Access guide | `project/getting_data_access.md` (drafted; the platform table must be verified) |
 | Practice page: Before you collect | `practice/week04_before_you_collect.html` (built; source in `practice/src/week04/`) |
-| Notebook | `notebooks/week04_collect_your_own_data.ipynb` (built; run top to bottom with a correct solution on Route B; Route A cells are added by the platform owners) |
+| Notebook | `notebooks/week04_collect_your_own_data.ipynb` (built; run top to bottom with a correct solution on Route B; Route A cells are added by the facilitators) |
 | Saved sample (Route B) | `data/week04/sample/` (built by `scripts/make_week04_sample.py`: invented, in the shape of a real API response, safe for the public repo. No real data and no key needed) |
-| Ethics checklist | `project/ethics_checklist.md` (drafted as questions only; Kokil or an ethics-aware facilitator should review it and add the contact) |
+| Ethics checklist | `project/ethics_checklist.md` (questions only; Kokil is the named contact) |
 
 ## Prep
 
-- **Assign each facilitator a platform to own** (for example YouTube, Bluesky, Reddit). Each owner gets access themselves, writes down exactly what worked, and fills in that row of the access table with the date. Do this before Week 2 ends.
-- Run the access clinic in Week 3 with the platform owners.
+- **Assign each facilitator a platform to look after** (for example YouTube, Bluesky, Reddit). Each owner gets access themselves, writes down exactly what worked, and fills in that row of the access table with the date. Do this before Week 2 ends.
+- Run the access clinic in Week 3 with the facilitators.
 - Make the small saved sample (about 100 items, a few pages) from one owner's access, for a topic about AI in Singapore, Hong Kong or Taiwan. Check the terms allow sharing a small sample with students.
 - Do each route yourself before the session, including saving and anonymizing.
 - Check what your university's ethics process requires for collecting public social media data, and write one honest paragraph for students. Do not give legal advice.
@@ -153,7 +153,7 @@ Every route ends in the same tidy table, so Weeks 5 to 7 work on anyone's data. 
 
 ### Notebook outline (`notebooks/week04_collect_your_own_data.ipynb`)
 - **Warm-up (15 min):** the collection stub: save raw first, write a log (query, date, tool, limits), count.
-- **Ex 1, collect (30 min):** a short cell per platform (written by each platform owner once access is verified), or load the saved sample (Route B), or load your export (Route C). Raw data is saved untouched.
+- **Ex 1, collect (30 min):** a short cell per platform (written by the facilitators once access is verified), or load the saved sample (Route B), or load your export (Route C). Raw data is saved untouched.
 - **Ex 2, parse (30 min):** parse the raw data into the standard table. **Check:** items collected = items saved = rows parsed, or explain each difference. `item_id` must be unique.
 - **Ex 3, anonymize (25 min):** replace usernames with `author_id`, remove handles and links from `text`, coarsen timestamps if the time of day is not needed. **Check:** an `assert` that no username column, `@`, or `http` remains.
 - **Ex 4, data card (15 min):** a short template: what, when, how, which terms, which ethics process, known gaps.
@@ -167,7 +167,7 @@ Every route ends in the same tidy table, so Weeks 5 to 7 work on anyone's data. 
 5. **Colab bridge:** the collection stub, with an `assert` that counts match.
 
 ### Slides (11, in `slides/src/week04/`)
-As in the lecture plan above. Notes include a live request with a facilitator's access, so the platform owner must prepare one working example.
+As in the lecture plan above. Notes include a live request with a facilitator's access, so a facilitator must prepare one working example.
 
 ### Ethics checklist (`project/ethics_checklist.md`)
 One page the practice page points to: public or private, terms of use, ethics approval, personal and sensitive data, anonymization, storage, sharing, and who to ask. Written by Kokil or the ethics-aware facilitator, not by the AI.
@@ -175,14 +175,14 @@ One page the practice page points to: public or private, terms of use, ethics ap
 ### Timeline (assuming Week 4 is on 8 December)
 | By | What |
 |---|---|
-| Nov 24 (Week 2) | Students told to start access (Week 2 homework). Platform owners start verifying their platform |
+| Nov 24 (Week 2) | Students told to start access (Week 2 homework). Facilitators start verifying their platform |
 | Dec 1 (Week 3) | Optional access clinic. Platform rows of the access table verified. Small saved sample made |
 | Dec 1 | Notebook, practice page, and slides ready, so the facilitators can rehearse |
 | Dec 8 | Week 4 sessions |
 
 ## Decisions and open items (Week 4)
 
-1. **Platform owners.** Who owns which platform, and by when must each have verified access and updated the table?
+1. **Facilitator platforms.** Who looks after which platform, and by when must each have verified access and updated the table?
 2. **Saved sample.** Decided: an invented sample (no real data), so no terms check is needed. A real one from a platform owner is optional.
 3. **Ethics paragraph.** Who writes it, and what does your university require? Students need one clear paragraph, not a debate.
 4. **Access clinic.** Is a Week 3 clinic worth the extra 30 minutes for facilitators? It is optional for students.

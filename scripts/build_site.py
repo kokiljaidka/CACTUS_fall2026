@@ -31,6 +31,8 @@ PAGES = {
     "schedule/week01.md": "weeks/week01.md",
     "schedule/week02.md": "weeks/week02.md",
     "schedule/week03.md": "weeks/week03.md",
+    "schedule/week04.md": "weeks/week04.md",
+    "project/ethics_checklist.md": "ethics.md",
 }
 
 # per-week links added to each week page
@@ -49,6 +51,12 @@ WEEKS = {
             ("Experiment data (week03_experiment.csv)", "data/week03_experiment.csv"),
             ("Survey data (week03_survey.csv)", "data/week03_survey.csv"),
         ],
+    },
+    "weeks/week04.md": {
+        "notebook": "week04_collect_your_own_data.ipynb",
+        "slides": ("Lecture slides (learning session)", "week04_collect_your_own_data"),
+        "practice": ("Before You Collect (practice page)", "week04_before_you_collect.html"),
+        "downloads": [],
     },
     "weeks/week02.md": {
         "notebook": "week02_clean_and_chart.ipynb",

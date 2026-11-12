@@ -25,7 +25,7 @@ If you are still waiting for access by the Week 4 coding session, you can use a 
 | What are the limits (requests per day or per minute, items per page, how far back)? | Decides how much you can collect and how you must pause |
 | Do the terms allow collection for research, and for storing and sharing data? | Decides what you may keep and what you may share |
 | Is there a cost? | Some access is paid |
-| Does my ethics process need to approve this data? | Check before you collect, not after |
+| Does my ethics process need to approve this data? | Check before you collect, not after. See the [Ethics checklist](ethics_checklist.md) |
 
 ## Platform notes (shared: please add what you learn)
 
