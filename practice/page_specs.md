@@ -79,7 +79,7 @@ Pages cannot run real Python: a browser page can't load Python tooling under its
 
 **Notebook link:** Exercise 2 (bug hunt) and Exercise 1 (cleaning).
 
-**Spoiler rule:** the notebook's planted bugs are (a) deduplicating on the wrong column, (b) day and month swapped in the date format, (c) filtering out zeros before averaging. The page must use **different** bug types so it doesn't give away the live exercise.
+**Spoiler rule:** the page must use bug types **different** from the notebook's Exercise 2 (the list of those bugs is in `instructor/`, not here), so it doesn't give away the live exercise.
 
 **Page: "Silent changes"** (two parts)
 

@@ -14,6 +14,7 @@ By the end of the week, students can:
 6. Ask an AI assistant to explain code, and test one of its claims.
 7. Keep an API key secret (Colab Secrets, never in a chat, notebook, or repo).
 
+<!-- facilitator:start -->
 ## Materials
 
 | What | Where |
@@ -22,6 +23,7 @@ By the end of the week, students can:
 | Puzzle page: Cactus Code Garden (16 puzzles, then a Colab task) | `practice/week01_cactus_code_garden.html` (published as a private Artifact; share the link from its Share menu). Source in `practice/src/week01/` |
 | Notebook | `notebooks/week01_first_api_calls.ipynb` |
 | Saved searches (no key needed) | `data/week01/serp_cache.zip` (made by `scripts/cache_week1.py`) |
+<!-- facilitator:end -->
 
 ## Reading (optional, no credit)
 
@@ -30,14 +32,17 @@ From *Computational Analysis of Communication* (van Atteveldt, Trilling & Arcila
 - **Before Session 2:** Chapter 3, Programming concepts for data analysis. It covers the ideas the puzzle page practices. Skim; you do not need to memorize syntax.
 - **Later, if curious:** Chapter 4, How to write code.
 
+<!-- facilitator:start -->
 Chapter picks are based on the book's table of contents. Skim the sections before assigning, since the book predates AI coding assistants and assumes you type the code yourself.
+<!-- facilitator:end -->
 
-## Before the first session (send with the schedule email)
+## Before the first session
 
 - Create a Google account (for Colab) and have a chat AI assistant ready.
 - **Optional:** create a free SerpAPI account and add the key to Colab Secrets as `SERPAPI_KEY`. Everyone can finish Week 1 with the saved searches, so this is not required.
 - Bring a topic you care about. A rough idea is enough.
 
+<!-- facilitator:start -->
 ## Prep (Kokil and facilitators)
 
 - Run `python3 scripts/cache_week1.py` with a key (6 API calls) and give students `data/week01/serp_cache.zip`. Everyone uses it for Step 3 and Step 3b.
@@ -45,6 +50,7 @@ Chapter picks are based on the book's table of contents. Skim the sections befor
 - Do the puzzle page once, including the Colab task, so you know where students will pause. Levels 6, 11 and 12 to 14 are the ones most students find tricky.
 - Decide the fallback data for students with no dataset: `data/starbucks_sea_comments.csv` or `data/lululemon_instagram.csv`.
 - Facilitators: read `instructor/facilitator_guide.md` (Week 1 section).
+<!-- facilitator:end -->
 
 ---
 
@@ -61,6 +67,7 @@ Kokil leads. Facilitators watch the chat and, in the pair activity, visit rooms.
 | 1:40 | **Sign-off and share-out.** Facilitators check each card against the criteria below. Two or three volunteers read theirs. |
 | 1:50 | **What is an API?** Ten minutes: the restaurant analogy (order, kitchen, dish). Preview Session 2. |
 
+<!-- facilitator:start -->
 ### Lecture plan (slides)
 
 | # | Slide | Notes |
@@ -78,6 +85,7 @@ Kokil leads. Facilitators watch the chat and, in the pair activity, visit rooms.
 | 11 | Your task now | The card template; what "finalized" means; time (35 min) |
 | 12 | What is an API? | Restaurant analogy; parameters, response, JSON. One slide, no code |
 | 13 | Next session | Puzzle page, then the notebook. Optional: SerpAPI key. Bring your card |
+<!-- facilitator:end -->
 
 ### Sign-off criteria ("finalized")
 

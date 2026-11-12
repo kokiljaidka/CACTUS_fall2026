@@ -90,6 +90,7 @@ The book predates AI coding assistants. Use it to understand what the operations
 
 This workshop is not for credit. There are no grades, but the weekly work builds on itself, so keeping up matters.
 
+<!-- facilitator:start -->
 ## Repository layout
 
 ```
@@ -97,11 +98,13 @@ README.md            this file
 schedule/            weekly plans (learning session and coding session)
 project/             guide and template for designing your project
 practice/            interactive practice pages (source in src/, shared parts in shared/)
+mkdocs.yml, .github/   the student site: build_site.py makes docs/, mkdocs builds site/, an Action publishes it
 notebooks/           Colab-ready notebooks for each week
 data/                shared datasets (see data/README.md)
 scripts/             helpers that build the notebooks and datasets
 CACTUS_fall_2026_clean.qsf   planning survey (Qualtrics export)
 ```
+<!-- facilitator:end -->
 
 ## Credits
 

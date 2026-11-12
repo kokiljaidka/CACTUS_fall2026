@@ -21,8 +21,11 @@ By the end of the week, students can:
 | Practice page and notebook warm-up | `data/week02_toy_cafe.csv` (30 invented rows; also embedded in the notebook) | Small enough to count by hand. Planted: 3 duplicates, 2 rows with no text, 2 dates in another format, scores stored as text |
 | Coding (exercises) | `data/starbucks_sea_comments.csv` | Multilingual comments from 7 SE/East Asian places. Has duplicates, missing text, text stored as dates, uneven group sizes |
 
+<!-- facilitator:start -->
 See [data/README.md](../data/README.md). Students use a different dataset in each part so they can't pattern-match. The toy table is rebuilt by `python3 scripts/week02_toy_data.py`.
+<!-- facilitator:end -->
 
+<!-- facilitator:start -->
 ## Materials
 
 | What | Where |
@@ -30,6 +33,7 @@ See [data/README.md](../data/README.md). Students use a different dataset in eac
 | Practice page: Silent Changes | `practice/week02_silent_changes.html` (private Artifact; share its link). Source in `practice/src/week02/` |
 | Notebook | `notebooks/week02_clean_and_chart.ipynb` |
 | Rebuild commands | `python3 scripts/build_practice.py` and `python3 scripts/build_week02_notebook.py` |
+<!-- facilitator:end -->
 
 ## Reading (optional, no credit)
 
@@ -37,8 +41,11 @@ From *Computational Analysis of Communication* (van Atteveldt, Trilling & Arcila
 - **Before the learning session:** Chapter 5, From file to data frame and back.
 - **Before the coding session:** Chapter 6, Data wrangling, and the visualization parts of Chapter 7, Exploratory data analysis.
 
+<!-- facilitator:start -->
 Skim sections before assigning. The book predates AI assistants: use it for what the operations mean, not as the way to write the code.
+<!-- facilitator:end -->
 
+<!-- facilitator:start -->
 ## Prep
 
 - Share `data/starbucks_sea_comments.csv` with students (a shared Drive link, so they can upload it to Colab in seconds).
@@ -47,6 +54,7 @@ Skim sections before assigning. The book predates AI assistants: use it for what
 - Do the practice page and the notebook warm-up yourself. Try a trap card (drop rows with missing tone) to see what students see.
 - Facilitators: read `instructor/facilitator_guide.md` (Week 2 section), `instructor/week02_answer_key.md`, and `instructor/week02_practice_key.md`. All are local only.
 - Facilitators should do Exercise 2 themselves beforehand, without the key.
+<!-- facilitator:end -->
 
 ---
 
@@ -62,6 +70,7 @@ Kokil leads; facilitators watch the chat and help anyone who falls behind.
 | 1:30 | **Walk-through: reading an error.** Trigger a real error, read the last line aloud, paste to the AI, and explain why the fix works. |
 | 1:50 | **Preview:** the Silent Changes page (do it before the coding session), the stuck protocol, and the exercises. |
 
+<!-- facilitator:start -->
 ### Lecture plan (slides)
 
 | # | Slide | Notes |
@@ -78,6 +87,7 @@ Kokil leads; facilitators watch the chat and help anyone who falls behind.
 | 10 | Reading an error | Last line first. Say it in your own words, then fix |
 | 11 | Silent changes | The idea behind the practice page: steps that remove or change rows without an error |
 | 12 | Next steps | The practice page (20 min), then the coding session. Stuck protocol |
+<!-- facilitator:end -->
 
 ---
 
