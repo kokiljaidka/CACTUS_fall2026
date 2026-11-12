@@ -46,12 +46,12 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 
 | What | Where |
 |---|---|
-| Lecture slides (about 11 slides) | `slides/week04_*` (to build) |
+| Lecture slides (11 slides) | `slides/week04_collect_your_own_data.html` and `.pdf` for students; `..._presenter.html` (press N for the script) and `..._handout.pdf` for the facilitator team. Source and notes: `slides/src/week04/` (built) |
 | Access guide | `project/getting_data_access.md` (drafted; the platform table must be verified) |
-| Practice page: Before you collect | `practice/week04_before_you_collect.html` (to build; spec in `practice/page_specs.md`) |
-| Notebook | `notebooks/week04_collect_your_own_data.ipynb` (to build) |
-| Small saved sample (Route B) | `data/week04/sample/` (one facilitator makes it from their own access) |
-| Ethics checklist | `project/ethics_checklist.md` (to write; the practice page points to it) |
+| Practice page: Before you collect | `practice/week04_before_you_collect.html` (built; source in `practice/src/week04/`) |
+| Notebook | `notebooks/week04_collect_your_own_data.ipynb` (built; run top to bottom with a correct solution on Route B; Route A cells are added by the platform owners) |
+| Saved sample (Route B) | `data/week04/sample/` (built by `scripts/make_week04_sample.py`: invented, in the shape of a real API response, safe for the public repo. No real data and no key needed) |
+| Ethics checklist | `project/ethics_checklist.md` (drafted as questions only; Kokil or an ethics-aware facilitator should review it and add the contact) |
 
 ## Prep
 
@@ -183,7 +183,7 @@ One page the practice page points to: public or private, terms of use, ethics ap
 ## Decisions and open items (Week 4)
 
 1. **Platform owners.** Who owns which platform, and by when must each have verified access and updated the table?
-2. **Saved sample.** Which owner makes the small sample, and for what query? Confirm the terms before putting it in a public repository.
+2. **Saved sample.** Decided: an invented sample (no real data), so no terms check is needed. A real one from a platform owner is optional.
 3. **Ethics paragraph.** Who writes it, and what does your university require? Students need one clear paragraph, not a debate.
 4. **Access clinic.** Is a Week 3 clinic worth the extra 30 minutes for facilitators? It is optional for students.
 5. **Route C students.** Some will bring an export. Decide how facilitators help without seeing private data.

@@ -17,6 +17,7 @@ PAGES = {
     "week01": "week01_cactus_code_garden.html",
     "week02": "week02_silent_changes.html",
     "week03": "week03_planted_effect_lab.html",
+    "week04": "week04_before_you_collect.html",
 }
 
 

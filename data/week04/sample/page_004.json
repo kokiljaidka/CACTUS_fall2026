@@ -1,0 +1,355 @@
+{
+  "query": "AI",
+  "page": 4,
+  "page_size": 25,
+  "next_cursor": null,
+  "retrieved": "2026-11-01T09:00:00Z",
+  "items": [
+    {
+      "id": "c0073",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-23T17:09:43Z",
+      "author": {
+        "handle": "@zhi_wei_w",
+        "display_name": "Zhi Wei",
+        "profile_url": "https://example.com/u/zhi_wei_w"
+      },
+      "text": "My kid asked it to explain fractions and it did a better job than me.",
+      "likes": 2,
+      "lang": "en"
+    },
+    {
+      "id": "c0074",
+      "parent_id": "c0006",
+      "thread_id": "t03",
+      "created": "2026-10-23T19:42:34Z",
+      "author": {
+        "handle": "@lena_l",
+        "display_name": "Lena",
+        "profile_url": "https://example.com/u/lena_l"
+      },
+      "text": "The poster looks nice but the words are garbled. Please proofread!",
+      "likes": 1,
+      "lang": "en"
+    },
+    {
+      "id": "c0075",
+      "parent_id": "c0073",
+      "thread_id": "t04",
+      "created": "2026-10-23T21:36:30Z",
+      "author": {
+        "handle": "@kelvin_k",
+        "display_name": "Kelvin",
+        "profile_url": "https://example.com/u/kelvin_k"
+      },
+      "text": "My kid asked it to explain fractions and it did a better job than me.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0076",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-24T17:01:20Z",
+      "author": {
+        "handle": "@kopi_and_code",
+        "display_name": "Kopi & Code",
+        "profile_url": "https://example.com/u/kopi_and_code"
+      },
+      "text": "孩子用AI寫功課，老師看得出來嗎？",
+      "likes": 3,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0077",
+      "parent_id": null,
+      "thread_id": "t02",
+      "created": "2026-10-24T17:40:35Z",
+      "author": {
+        "handle": "@amy_in_hk",
+        "display_name": "Amy",
+        "profile_url": "https://example.com/u/amy_in_hk"
+      },
+      "text": "Can someone explain how it decides what to say? Genuinely curious.",
+      "likes": 2,
+      "lang": "en"
+    },
+    {
+      "id": "c0078",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-24T18:10:10Z",
+      "author": {
+        "handle": "@sunrise_studio",
+        "display_name": "Sunrise Studio",
+        "profile_url": "https://example.com/u/sunrise_studio"
+      },
+      "text": "@clara_codes My kid asked it to explain fractions and it did a better job than me.",
+      "likes": 2,
+      "lang": "en"
+    },
+    {
+      "id": "c0079",
+      "parent_id": null,
+      "thread_id": "t03",
+      "created": "2026-10-24T20:13:07Z",
+      "author": {
+        "handle": "@mrt_commuter",
+        "display_name": "MRT Commuter",
+        "profile_url": "https://example.com/u/mrt_commuter"
+      },
+      "text": "有時候很方便，有時候亂講，要小心。",
+      "likes": 5,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0080",
+      "parent_id": null,
+      "thread_id": "t02",
+      "created": "2026-10-25T10:11:41Z",
+      "author": {
+        "handle": "@grace_g",
+        "display_name": "Grace",
+        "profile_url": "https://example.com/u/grace_g"
+      },
+      "text": "It should help teachers, not replace them.",
+      "likes": 12,
+      "lang": "en"
+    },
+    {
+      "id": "c0081",
+      "parent_id": "c0073",
+      "thread_id": "t01",
+      "created": "2026-10-25T15:30:14Z",
+      "author": null,
+      "text": null,
+      "likes": 12,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0082",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-25T20:20:25Z",
+      "author": {
+        "handle": "@old_school_ong",
+        "display_name": "Ong",
+        "profile_url": "https://example.com/u/old_school_ong"
+      },
+      "text": "Great idea, but who is responsible when it makes a mistake?",
+      "likes": 3,
+      "lang": "en"
+    },
+    {
+      "id": "c0083",
+      "parent_id": "c0025",
+      "thread_id": "t01",
+      "created": "2026-10-25T22:54:25Z",
+      "author": {
+        "handle": "@student_of_life",
+        "display_name": "Student",
+        "profile_url": "https://example.com/u/student_of_life"
+      },
+      "text": "I would rather pay a local artist than a machine.",
+      "likes": 0,
+      "lang": "en"
+    },
+    {
+      "id": "c0084",
+      "parent_id": "c0050",
+      "thread_id": "t01",
+      "created": "2026-10-25T23:20:32Z",
+      "author": {
+        "handle": "@lena_l",
+        "display_name": "Lena",
+        "profile_url": "https://example.com/u/lena_l"
+      },
+      "text": "有時候很方便，有時候亂講，要小心。",
+      "likes": 5,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0085",
+      "parent_id": "c0024",
+      "thread_id": "t01",
+      "created": "2026-10-26T19:10:08Z",
+      "author": {
+        "handle": "@lena_l",
+        "display_name": "Lena",
+        "profile_url": "https://example.com/u/lena_l"
+      },
+      "text": "It helped me practice for my interview. Very useful.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0086",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-26T19:32:25Z",
+      "author": {
+        "handle": "@taipei_tom",
+        "display_name": "Tom Lin",
+        "profile_url": "https://example.com/u/taipei_tom"
+      },
+      "text": "It helped me practice for my interview. Very useful.",
+      "likes": 5,
+      "lang": "en"
+    },
+    {
+      "id": "c0087",
+      "parent_id": null,
+      "thread_id": "t05",
+      "created": "2026-10-26T20:50:58Z",
+      "author": {
+        "handle": "@daily_dim_sum",
+        "display_name": "Dim Sum Daily",
+        "profile_url": "https://example.com/u/daily_dim_sum"
+      },
+      "text": "@night_owl_nina 這個海報的字有錯，要請人校對。",
+      "likes": 0,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0088",
+      "parent_id": null,
+      "thread_id": "t03",
+      "created": "2026-10-26T21:39:39Z",
+      "author": {
+        "handle": "@zhi_wei_w",
+        "display_name": "Zhi Wei",
+        "profile_url": "https://example.com/u/zhi_wei_w"
+      },
+      "text": "Not impressed. It gave me a confident wrong answer yesterday.",
+      "likes": 12,
+      "lang": "en"
+    },
+    {
+      "id": "c0089",
+      "parent_id": null,
+      "thread_id": "t03",
+      "created": "2026-10-27T07:14:14Z",
+      "author": {
+        "handle": "@papaya_pete",
+        "display_name": "Pete",
+        "profile_url": "https://example.com/u/papaya_pete"
+      },
+      "text": "@noodle_notes 有時候很方便，有時候亂講，要小心。",
+      "likes": 20,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0090",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-27T09:45:31Z",
+      "author": {
+        "handle": "@min_the_maker",
+        "display_name": "Min",
+        "profile_url": "https://example.com/u/min_the_maker"
+      },
+      "text": "We tried it at the stall for a week. Fewer wrong orders, more confused customers.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0091",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-27T16:00:58Z",
+      "author": {
+        "handle": "@bao_and_books",
+        "display_name": "Bao",
+        "profile_url": "https://example.com/u/bao_and_books"
+      },
+      "text": "The poster looks nice but the words are garbled. Please proofread!",
+      "likes": null,
+      "lang": "en"
+    },
+    {
+      "id": "c0092",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-28T13:39:43Z",
+      "author": {
+        "handle": "@sunrise_studio",
+        "display_name": "Sunrise Studio",
+        "profile_url": "https://example.com/u/sunrise_studio"
+      },
+      "text": "As long as we label it clearly, I do not mind.",
+      "likes": 5,
+      "lang": "en"
+    },
+    {
+      "id": "c0093",
+      "parent_id": "c0025",
+      "thread_id": "t03",
+      "created": "2026-10-28T17:57:45Z",
+      "author": {
+        "handle": "@papaya_pete",
+        "display_name": "Pete",
+        "profile_url": "https://example.com/u/papaya_pete"
+      },
+      "text": "It got the dish names wrong again. Humans still needed.",
+      "likes": 0,
+      "lang": "en"
+    },
+    {
+      "id": "c0094",
+      "parent_id": null,
+      "thread_id": "t02",
+      "created": "2026-10-28T18:05:54Z",
+      "author": {
+        "handle": "@sunrise_studio",
+        "display_name": "Sunrise Studio",
+        "profile_url": "https://example.com/u/sunrise_studio"
+      },
+      "text": "Cheaper than hiring someone, but that is also the problem.",
+      "likes": 41,
+      "lang": "en"
+    },
+    {
+      "id": "c0095",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-28T19:40:38Z",
+      "author": {
+        "handle": "@taipei_tom",
+        "display_name": "Tom Lin",
+        "profile_url": "https://example.com/u/taipei_tom"
+      },
+      "text": "Everyone is talking about it but few people have read the terms.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0096",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-28T21:04:40Z",
+      "author": {
+        "handle": "@kelvin_k",
+        "display_name": "Kelvin",
+        "profile_url": "https://example.com/u/kelvin_k"
+      },
+      "text": "Headlines written by AI all sound the same after a while.",
+      "likes": 2,
+      "lang": "en"
+    },
+    {
+      "id": "c0097",
+      "parent_id": null,
+      "thread_id": "t05",
+      "created": "2026-10-28T23:19:35Z",
+      "author": {
+        "handle": "@night_owl_nina",
+        "display_name": "Nina",
+        "profile_url": "https://example.com/u/night_owl_nina"
+      },
+      "text": "如果標示清楚，我可以接受。",
+      "likes": 3,
+      "lang": "zh-Hant"
+    }
+  ]
+}

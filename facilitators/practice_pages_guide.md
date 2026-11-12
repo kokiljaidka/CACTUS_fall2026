@@ -81,3 +81,20 @@ Students do this between the learning session and the coding session. The number
 - Students who treat the "right" answer to a prediction as the point. The point is that results vary.
 - The confounding level uses a tutoring story, not the notebook's label story, so the notebook's Exercise 3 still has something to discover. Do not tell students what the notebook's naive estimate will look like.
 - A very small sample (10 to 20) can occasionally give an odd run in the bridge. Rerun before concluding there is a bug.
+
+## Week 4: Before You Collect (4 levels and a bridge, about 20 minutes)
+
+Students do this between the learning session and the coding session. It is mostly judgment, so expect disagreement, and welcome it.
+
+| Level | Teaches | Common stall | Ask this |
+|---|---|---|---|
+| 1 Keep, change, or drop | Collect only what the question needs; change what identifies people | "Keep everything, just in case" | "Does the question need this field? If it does, can it be changed so it does not identify someone?" |
+| 2 Who could be found? | Removing the username is not enough; details combine | Stopping when the username is gone | "What could someone learn by combining the time, the place and the text?" |
+| 3 Plan the pull | A limit is a plan: page size and pause; save raw first | Using a tiny page size, or no pause | "How many requests does that need? How many are you allowed?" |
+| 4 Should you collect it? | Public versus private, consent, terms, sensitivity | Wanting a yes or no; arguing about the law | "Is it public? Did people agree to this use? Do the terms allow it? When unsure, who do you ask?" |
+| 5 Colab bridge | A collection stub that saves raw first, with a log | A `NotImplementedError`: they have not changed the one function that talks to the platform | "Which function needs your platform's request? For Route B use `sample_api`." |
+
+**Watch for:**
+- Facilitators giving legal or ethical rulings. Say you do not know and ask Kokil or the ethics office.
+- Students quoting real people from their own data in the breakout room. Ask them to describe it without names.
+- The limits on the page are invented. Students need their platform's real limits from the access guide.

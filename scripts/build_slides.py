@@ -27,6 +27,7 @@ DECKS = {
     "week01": "week01_define_your_problem",
     "week02": "week02_clean_it_chart_it",
     "week03": "week03_verify_and_analyze",
+    "week04": "week04_collect_your_own_data",
 }
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700"

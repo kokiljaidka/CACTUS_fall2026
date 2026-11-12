@@ -1,0 +1,355 @@
+{
+  "query": "AI",
+  "page": 2,
+  "page_size": 25,
+  "next_cursor": "cur_3",
+  "retrieved": "2026-11-01T09:00:00Z",
+  "items": [
+    {
+      "id": "c0025",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-08T10:21:59Z",
+      "author": {
+        "handle": "@mei_reads",
+        "display_name": "Mei",
+        "profile_url": "https://example.com/u/mei_reads"
+      },
+      "text": "My kid asked it to explain fractions and it did a better job than me.",
+      "likes": 1,
+      "lang": "en"
+    },
+    {
+      "id": "c0026",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-08T11:39:02Z",
+      "author": {
+        "handle": "@clara_codes",
+        "display_name": "Clara",
+        "profile_url": "https://example.com/u/clara_codes"
+      },
+      "text": "Everyone is talking about it but few people have read the terms.",
+      "likes": 1,
+      "lang": "en"
+    },
+    {
+      "id": "c0027",
+      "parent_id": null,
+      "thread_id": "t03",
+      "created": "2026-10-08T21:10:30Z",
+      "author": {
+        "handle": "@grace_g",
+        "display_name": "Grace",
+        "profile_url": "https://example.com/u/grace_g"
+      },
+      "text": "Great idea, but who is responsible when it makes a mistake?",
+      "likes": 41,
+      "lang": "en"
+    },
+    {
+      "id": "c0028",
+      "parent_id": null,
+      "thread_id": "t03",
+      "created": "2026-10-09T08:42:04Z",
+      "author": {
+        "handle": "@ravi_builds",
+        "display_name": "Ravi",
+        "profile_url": "https://example.com/u/ravi_builds"
+      },
+      "text": "We tried it at the stall for a week. Fewer wrong orders, more confused customers.",
+      "likes": 0,
+      "lang": "en"
+    },
+    {
+      "id": "c0029",
+      "parent_id": "c0003",
+      "thread_id": "t01",
+      "created": "2026-10-09T13:59:01Z",
+      "author": {
+        "handle": "@taipei_tom",
+        "display_name": "Tom Lin",
+        "profile_url": "https://example.com/u/taipei_tom"
+      },
+      "text": "Headlines written by AI all sound the same after a while.",
+      "likes": 3,
+      "lang": "en"
+    },
+    {
+      "id": "c0030",
+      "parent_id": "c0019",
+      "thread_id": "t05",
+      "created": "2026-10-09T14:33:13Z",
+      "author": {
+        "handle": "@night_owl_nina",
+        "display_name": "Nina",
+        "profile_url": "https://example.com/u/night_owl_nina"
+      },
+      "text": "我比較相信真人的判斷。",
+      "likes": 2,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0031",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-09T17:48:58Z",
+      "author": {
+        "handle": "@clara_codes",
+        "display_name": "Clara",
+        "profile_url": "https://example.com/u/clara_codes"
+      },
+      "text": "I use it to check my grammar, not to write my essays.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0032",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-09T19:44:36Z",
+      "author": {
+        "handle": "@grace_g",
+        "display_name": "Grace",
+        "profile_url": "https://example.com/u/grace_g"
+      },
+      "text": "Cheaper than hiring someone, but that is also the problem.",
+      "likes": 5,
+      "lang": "en"
+    },
+    {
+      "id": "c0033",
+      "parent_id": null,
+      "thread_id": "t02",
+      "created": "2026-10-10T15:23:55Z",
+      "author": {
+        "handle": "@old_school_ong",
+        "display_name": "Ong",
+        "profile_url": "https://example.com/u/old_school_ong"
+      },
+      "text": "I tried it for translation and it made up a word.",
+      "likes": 1,
+      "lang": "en"
+    },
+    {
+      "id": "c0034",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-10T22:40:53Z",
+      "author": null,
+      "text": null,
+      "likes": 5,
+      "lang": "en"
+    },
+    {
+      "id": "c0035",
+      "parent_id": "c0025",
+      "thread_id": "t01",
+      "created": "2026-10-10T22:56:55Z",
+      "author": {
+        "handle": "@lena_l",
+        "display_name": "Lena",
+        "profile_url": "https://example.com/u/lena_l"
+      },
+      "text": "Good discussion. Thanks for sharing your experience. More here: https://example.com/post/3883",
+      "likes": 3,
+      "lang": "en"
+    },
+    {
+      "id": "c0036",
+      "parent_id": null,
+      "thread_id": "t01",
+      "created": "2026-10-11T12:24:03Z",
+      "author": {
+        "handle": "@lah_but_why",
+        "display_name": "Lah But Why",
+        "profile_url": "https://example.com/u/lah_but_why"
+      },
+      "text": "It helped me practice for my interview. Very useful.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0037",
+      "parent_id": null,
+      "thread_id": "t02",
+      "created": "2026-10-11T16:42:30Z",
+      "author": {
+        "handle": "@tan_the_teacher",
+        "display_name": "Mr Tan",
+        "profile_url": "https://example.com/u/tan_the_teacher"
+      },
+      "text": "Not impressed. It gave me a confident wrong answer yesterday.",
+      "likes": 5,
+      "lang": "en"
+    },
+    {
+      "id": "c0038",
+      "parent_id": null,
+      "thread_id": "t05",
+      "created": "2026-10-11T18:16:36Z",
+      "author": {
+        "handle": "@amy_in_hk",
+        "display_name": "Amy",
+        "profile_url": "https://example.com/u/amy_in_hk"
+      },
+      "text": "我比較相信真人的判斷。",
+      "likes": 8,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0039",
+      "parent_id": "c0019",
+      "thread_id": "t04",
+      "created": "2026-10-11T22:55:21Z",
+      "author": {
+        "handle": "@night_owl_nina",
+        "display_name": "Nina",
+        "profile_url": "https://example.com/u/night_owl_nina"
+      },
+      "text": "It helped me practice for my interview. Very useful. More here: https://example.com/post/3667",
+      "likes": 3,
+      "lang": "en"
+    },
+    {
+      "id": "c0040",
+      "parent_id": "c0003",
+      "thread_id": "t03",
+      "created": "2026-10-12T08:29:10Z",
+      "author": {
+        "handle": "@ravi_builds",
+        "display_name": "Ravi",
+        "profile_url": "https://example.com/u/ravi_builds"
+      },
+      "text": "Good discussion. Thanks for sharing your experience.",
+      "likes": 5,
+      "lang": "en"
+    },
+    {
+      "id": "c0041",
+      "parent_id": "c9999",
+      "thread_id": "t04",
+      "created": "2026-10-12T11:16:34Z",
+      "author": {
+        "handle": "@mrt_commuter",
+        "display_name": "MRT Commuter",
+        "profile_url": "https://example.com/u/mrt_commuter"
+      },
+      "text": "Everyone is talking about it but few people have read the terms.",
+      "likes": 41,
+      "lang": "en"
+    },
+    {
+      "id": "c0042",
+      "parent_id": null,
+      "thread_id": "t05",
+      "created": "2026-10-12T16:59:41Z",
+      "author": {
+        "handle": "@amy_in_hk",
+        "display_name": "Amy",
+        "profile_url": "https://example.com/u/amy_in_hk"
+      },
+      "text": "孩子用AI寫功課，老師看得出來嗎？",
+      "likes": 8,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0043",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-12T19:24:15Z",
+      "author": {
+        "handle": "@kopi_and_code",
+        "display_name": "Kopi & Code",
+        "profile_url": "https://example.com/u/kopi_and_code"
+      },
+      "text": "It should help teachers, not replace them.",
+      "likes": 12,
+      "lang": "en"
+    },
+    {
+      "id": "c0044",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-12T23:52:48Z",
+      "author": {
+        "handle": "@kelvin_k",
+        "display_name": "Kelvin",
+        "profile_url": "https://example.com/u/kelvin_k"
+      },
+      "text": "This is the future, like it or not.",
+      "likes": 0,
+      "lang": "en"
+    },
+    {
+      "id": "c0045",
+      "parent_id": null,
+      "thread_id": "t02",
+      "created": "2026-10-13T14:57:31Z",
+      "author": {
+        "handle": "@kelvin_k",
+        "display_name": "Kelvin",
+        "profile_url": "https://example.com/u/kelvin_k"
+      },
+      "text": "It should help teachers, not replace them.",
+      "likes": null,
+      "lang": "en"
+    },
+    {
+      "id": "c0046",
+      "parent_id": "c0025",
+      "thread_id": "t04",
+      "created": "2026-10-14T07:25:10Z",
+      "author": {
+        "handle": "@old_school_ong",
+        "display_name": "Ong",
+        "profile_url": "https://example.com/u/old_school_ong"
+      },
+      "text": "We tried it at the stall for a week. Fewer wrong orders, more confused customers.",
+      "likes": 8,
+      "lang": "en"
+    },
+    {
+      "id": "c0047",
+      "parent_id": null,
+      "thread_id": "t04",
+      "created": "2026-10-15T16:08:02Z",
+      "author": {
+        "handle": "@lah_but_why",
+        "display_name": "Lah But Why",
+        "profile_url": "https://example.com/u/lah_but_why"
+      },
+      "text": "I tried it for translation and it made up a word. More here: https://example.com/post/9781",
+      "likes": 0,
+      "lang": "en"
+    },
+    {
+      "id": "c0048",
+      "parent_id": null,
+      "thread_id": "t05",
+      "created": "2026-10-15T18:25:24Z",
+      "author": {
+        "handle": "@night_owl_nina",
+        "display_name": "Nina",
+        "profile_url": "https://example.com/u/night_owl_nina"
+      },
+      "text": "我覺得可以用，但是一定要自己檢查。",
+      "likes": 41,
+      "lang": "zh-Hant"
+    },
+    {
+      "id": "c0049",
+      "parent_id": "c0001",
+      "thread_id": "t04",
+      "created": "2026-10-15T23:30:54Z",
+      "author": {
+        "handle": "@daily_dim_sum",
+        "display_name": "Dim Sum Daily",
+        "profile_url": "https://example.com/u/daily_dim_sum"
+      },
+      "text": "@ravi_builds I tried it for translation and it made up a word.",
+      "likes": 12,
+      "lang": "en"
+    }
+  ]
+}
