@@ -17,6 +17,10 @@ Shared datasets for CACTUS Fall 2026. Raw exports stay in `data/raw/` (local onl
 
 **lululemon_instagram.csv:** `account_id` (pseudonymous), `Post Created`, `Type` (Photo, Album, Video), `Followers at Posting`, `Likes`, `Comments`, `Views`, `Description`, and similar word-percent columns.
 
+## Shared privately (not in this repository)
+
+The Week 5 text corpora are shared with the class through a private drive. They contain posts written by real people, so they are not published here. See the Week 5 page when it is released.
+
 ## Known quirks
 
 These datasets are real and messy on purpose, and the problems are not listed here: finding them is part of the exercises. Teaching staff have notes in the private instructor folder.

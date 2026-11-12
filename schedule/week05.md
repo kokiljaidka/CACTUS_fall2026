@@ -23,7 +23,7 @@ By the end of the week, students can:
 |---|---|---|
 | Learning (walk-through) | A few short texts in English and Chinese | Easy to follow token by token |
 | Practice page | Precomputed tokenizations and scores in the page | Shows the effect of choices without running code |
-| Coding (exercises) | **Guided exercises on a shared corpus:** news results about AI from Singapore, Hong Kong and Taiwan (from the Week 1 saved searches, about 300 short texts in English and Chinese), so facilitators can help everyone with the same data. **Then your own text** from Week 4, if you have it. Stretch: the Starbucks comments | The shared corpus makes the first steps supportable. Your own data is what you will use for your project |
+| Coding (exercises) | **Guided exercises on a shared corpus:** 657 Reddit posts from r/jobs, r/personalfinance and r/mildlyinfuriating (English, with subreddit, month, score and comments), so facilitators can help everyone with the same data. **Chinese tokenization** on 202 Chinese news and web texts about AI from Hong Kong and Taiwan. **Then your own text** from Week 4, if you have it | Reddit gives long, informal, sarcastic text that shows where counting and dictionary sentiment fail. The news texts are mostly headlines, so they suit tokenization but not counting or sentiment. Your own data is what you will use for your project |
 
 ## Required reading
 
@@ -40,7 +40,7 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 | Lecture slides (about 11 slides) | `slides/week05_*` (to build) |
 | Practice page: What counts as a word? | `practice/week05_what_counts_as_a_word.html` (to build; tokenizations precomputed by a script) |
 | Notebook | `notebooks/week05_analyze_text.ipynb` (to build) |
-| Corpus | `data/week05_corpus.csv` (to build from the Week 1 saved searches) |
+| Corpus | `data/private/week05_corpus.zip` (built by `scripts/prepare_week05_corpus.py`; **shared privately through the class drive, not in the public repository**) |
 
 ## Prep
 
@@ -121,11 +121,15 @@ Students leave with counts, a sentiment score, and a list of where the methods f
 <!-- facilitator:start -->
 ## Decisions and open items (Week 5)
 
-1. **The shared corpus.** Draft: the Week 1 news results about AI from Singapore, Hong Kong and Taiwan (298 short texts). Pros: already collected, on topic, two scripts. Cons: short texts (titles and snippets). It is only for the guided exercises; students then apply the methods to their own Week 4 text. You do not need to collect anything new.
-2. **Redistribution.** The saved search results include publisher snippets. Check SerpAPI's terms and the publishers' terms before keeping them in a public repository.
-3. **Students without their own text yet.** They can stay on the shared corpus or the Starbucks comments. Decide whether that is acceptable.
-4. **Chinese tokenizer.** Confirm the choice and the install time in Colab.
-5. **English sentiment tool.** Choose one dictionary-based tool. Say plainly that none covers Chinese well; students should notice and report it.
-6. **Week 6 dependency.** Week 6 uses a small human-labeled set from the shared corpus (about 60 texts) for the common examples, and students label about 40 to 50 texts of their own. Facilitators could label the 60 as a first community task, with a short codebook.
-7. **Bugs for Exercise 3.** Candidates: whitespace tokenizing Chinese; removing a stopword list that deletes "AI"; counting without lowercasing; averaging sentiment across languages; scoring translated text and calling it the original. Choose three and keep them in the private key.
+**Decided**
+1. **Shared corpus:** the Reddit sample (657 posts from three less-personal subreddits) for counting, sentiment and clustering, plus the Chinese news texts from the Week 1 searches for tokenization. Students then apply the methods to their own Week 4 text.
+2. **Reddit data rights:** Kokil confirmed the HAPS Reddit data may be shared with students. The posts are public, but some discuss personal and financial situations. The files are scrubbed (links, handles and phone-like numbers replaced; post URLs removed; dates reduced to year-month), kept **out of the public repository**, and shared with the class only, with a handling note.
+3. **Week 6 human labels:** use Kokil's published CLAPTON data, which has human labels (constructiveness, justification, empathy and respect, uncivil abuse) and ready-made LLM outputs on Twitter and Reddit messages. Student-labeled samples of their own text are an extra.
+
+**Still to do**
+4. **Share the files.** Upload `week05_corpus.zip` to the class drive and put the link in the Week 5 materials (not on the public site).
+5. **Chinese tokenizer.** Confirm the choice and the install time in Colab.
+6. **English sentiment tool.** Choose one dictionary-based tool. Say plainly that none covers Chinese well; students should notice and report it.
+7. **Students without their own text yet.** They can stay on the shared corpora. Decide whether that is acceptable.
+8. **Bugs for Exercise 3.** Candidates: whitespace tokenizing Chinese; removing a stopword list that deletes "AI"; counting without lowercasing; averaging sentiment across languages; scoring translated text and calling it the original; treating sarcasm as positive. Choose three and keep them in the private key.
 <!-- facilitator:end -->
