@@ -35,11 +35,13 @@ PAGES = {
 WEEKS = {
     "weeks/week01.md": {
         "notebook": "week01_first_api_calls.ipynb",
+        "slides": ("Lecture slides (Session 1)", "week01_define_your_problem"),
         "practice": ("Cactus Code Garden (puzzle page)", "week01_cactus_code_garden.html"),
         "downloads": [("Saved searches (serp_cache.zip)", "data/week01/serp_cache.zip")],
     },
     "weeks/week02.md": {
         "notebook": "week02_clean_and_chart.ipynb",
+        "slides": ("Lecture slides (learning session)", "week02_clean_it_chart_it"),
         "practice": ("Silent Changes (practice page)", "week02_silent_changes.html"),
         "downloads": [
             ("Starbucks comments (starbucks_sea_comments.csv)", "data/starbucks_sea_comments.csv"),
@@ -97,6 +99,11 @@ def links_block(dest, cfg):
     lines.append(f"[Open the notebook in Colab]({COLAB}{cfg['notebook']}){{ .md-button .md-button--primary target=_blank }}")
     title, fname = cfg["practice"]
     lines.append(f"[{title}]({posixpath.relpath('practice/' + fname, posixpath.dirname(dest))}){{ .md-button target=_blank }}")
+    if cfg.get("slides") and os.path.exists(os.path.join(ROOT, "slides", cfg["slides"][1] + ".html")):
+        stitle, sname = cfg["slides"]
+        base = posixpath.relpath("slides/" + sname, posixpath.dirname(dest))
+        lines.append(f"[{stitle}]({base}.html){{ .md-button target=_blank }}")
+        lines.append(f"[Slides as PDF]({base}.pdf){{ .md-button target=_blank }}")
     lines.append("")
     for label, rel in cfg["downloads"]:
         if os.path.exists(os.path.join(ROOT, rel)):
@@ -130,6 +137,11 @@ def main():
     for f in os.listdir(pdir):
         if f.endswith(".html"):
             shutil.copy(os.path.join(pdir, f), os.path.join(DOCS, "practice", f))
+    sdir = os.path.join(ROOT, "slides")
+    os.makedirs(os.path.join(DOCS, "slides"), exist_ok=True)
+    for f in os.listdir(sdir):
+        if f.endswith((".html", ".pdf")):
+            shutil.copy(os.path.join(sdir, f), os.path.join(DOCS, "slides", f))
     print("docs/ ready")
 
 

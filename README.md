@@ -101,6 +101,7 @@ README.md            this file
 schedule/            weekly plans (learning session and coding session)
 project/             guide and template for designing your project
 practice/            interactive practice pages (source in src/, shared parts in shared/)
+slides/             lecture slides: web pages and PDFs, built from src/ (build_slides.py)
 mkdocs.yml, .github/   the student site: build_site.py makes docs/, mkdocs builds site/, an Action publishes it
 notebooks/           Colab-ready notebooks for each week
 data/                shared datasets (see data/README.md)

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CACTUS Week 1: Define Your Problem</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#0e1814;color:#e4efe6;font-family:'Figtree',Arial,sans-serif}
+#view{position:fixed;inset:0 0 56px 0;overflow:hidden}
+.s{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform:translate(-50%,-50%) scale(var(--k,.5));transform-origin:center;display:none;overflow:hidden;background:#fff}
+.s.on{display:block}
+.s section{width:1920px;height:1080px;position:relative;overflow:hidden}
+.s section *{margin:0}
+.s h1{font-size:96px;font-weight:600;line-height:1.1}
+.s h2{font-size:64px;font-weight:600;line-height:1.15}
+.s h3{font-size:44px;font-weight:600;line-height:1.2}
+.s p{font-size:32px;line-height:1.4}
+.s ul,.s ol{padding-left:1.2em}
+.s table{border-collapse:collapse;width:100%}
+.s th,.s td{padding:.35em .6em;text-align:left;border-bottom:1px solid #c6d1c4;vertical-align:top}
+.s th{font-weight:600}
+.s aside{display:none}
+#bar{position:fixed;left:0;right:0;bottom:0;height:56px;display:flex;align-items:center;justify-content:center;gap:16px;background:#14241c;border-top:1px solid #2b4036;font-size:16px}
+#bar button{font:inherit;color:#e4efe6;background:#23382e;border:1px solid #2b4036;border-radius:8px;padding:6px 16px;cursor:pointer}
+#bar button:disabled{opacity:.4;cursor:default}
+#bar a{color:#9fd0b0}
+#ct{min-width:70px;text-align:center;font-variant-numeric:tabular-nums}
+@page{size:1920px 1080px;margin:0}
+@media print{
+ html,body{background:#fff;height:auto}
+ #view{position:static;overflow:visible}
+ #bar{display:none}
+ .s{display:block!important;position:relative;left:0;top:0;transform:none;break-after:page;page-break-after:always}
+}
+</style></head><body><div id="view"><div class="s"><section id="cover" data-transition="fade" style="background:#14241C;color:#E4EFE6;font-family:'Figtree', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-size:28px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#E8B13A">CACTUS Fall 2026 · Week 1 · Session 1</p>
+<div style="display:flex;flex-direction:column;gap:32px">
+<h1 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:132px;font-weight:700;line-height:1.05;color:#F2F7F3">Define your problem</h1>
+<p style="font-size:40px;line-height:1.35;color:#B9CCBF;width:1300px">By the end of today you will have a project card: a case study, one main question, and a plan for the data.</p>
+</div>
+<p style="font-size:28px;color:#B9CCBF">Kokil Jaidka · National University of Singapore</p>
+
+</section></div><div class="s"><section id="arc" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">The next eight weeks</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">From a rough idea to working code</h2>
+<table style="font-size:30px;color:#15251D">
+<tr><th style="width:12%;text-align:left">Week</th><th style="width:88%;text-align:left">Focus</th></tr>
+<tr style="background:#CFE3D5"><td>1</td><td>Define your problem, and how code thinks (today)</td></tr>
+<tr><td>2</td><td>Clean it, chart it, check what the AI wrote</td></tr>
+<tr><td>3</td><td>Verify and analyze: statistics you can test</td></tr>
+<tr><td>4</td><td>Collect your own data, and the ethics of doing so</td></tr>
+<tr><td>5</td><td>Analyze text, including Chinese</td></tr>
+<tr><td>6</td><td>AI as annotator: compare it with human labels</td></tr>
+<tr><td>7</td><td>Choose a track: networks, images, or a mock feed</td></tr>
+<tr><td>8</td><td>Reproduce your pipeline and present it</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="ai" data-transition="fade" style="background:#14241C;color:#E4EFE6;font-family:'Figtree', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:56px">
+<p style="font-size:28px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#E8B13A">How we work</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:116px;font-weight:700;line-height:1.05;color:#F2F7F3">AI writes. You decide.</h2>
+<div style="display:flex;gap:24px">
+<p style="font-size:40px;font-weight:600;background:#23382E;padding:24px 36px;border-radius:14px">Describe the task</p>
+<p style="font-size:40px;font-weight:600;background:#23382E;padding:24px 36px;border-radius:14px">Read what it wrote</p>
+<p style="font-size:40px;font-weight:600;background:#23382E;padding:24px 36px;border-radius:14px">Test it</p>
+<p style="font-size:40px;font-weight:600;background:#23382E;padding:24px 36px;border-radius:14px">Record the check</p>
+</div>
+
+</section></div><div class="s"><section id="fails" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Why checking matters</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Four ways AI code goes wrong</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Silent data loss</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">The code runs, but rows or values quietly disappear or change.</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Invented names</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Columns, functions, or packages that do not exist.</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Does something else</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">The code answers a different question from the one you asked.</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Confident, wrong explanations</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">It sounds sure of itself. That is not evidence.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="week" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">How a week works</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Two sessions, plus a little in between</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:14px">
+<h3 style="font-size:40px;font-weight:600">Learning session</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">About 2 hours. Lecture, worked examples, and a guided activity.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:14px">
+<h3 style="font-size:40px;font-weight:600">Coding session</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">About 2 hours. Breakout rooms and a notebook. No lecture.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:14px">
+<h3 style="font-size:40px;font-weight:600">In between</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Required reading, a short practice page, and your verification log.</p>
+</div>
+</div>
+<p style="font-size:30px;line-height:1.4;color:#15251D;width:1500px">All sessions are on Zoom. Bring a laptop. No grades, but each week builds on the last.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="case" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Step 1</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Pick a case study</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:14px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#B0402E">Too broad</p>
+<p style="font-size:44px;font-weight:600;line-height:1.2">“Social media”</p>
+</div>
+<div style="flex:2;background:#F8FAF7;border:2px solid #237A4B;border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:14px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">A case study</p>
+<p style="font-size:44px;font-weight:600;line-height:1.2">How Singapore, Hong Kong, and Taiwan users talk about AI chatbots on Reddit</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;color:#4F6057;width:1500px">A case study is a specific topic in a specific context: who it is about, where, and in what period.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="question" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Step 2</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">One main question, two or three sub-questions</h2>
+<div style="background:#14241C;color:#F2F7F3;border-radius:16px;padding:32px 40px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#E8B13A">Main question</p>
+<p style="font-size:38px;font-weight:600;line-height:1.25">Can we gauge mental health through social media behavior?</p>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;color:#237A4B">Sub-question 1</p>
+<p style="font-size:30px;line-height:1.3">What are the main reasons people use social media?</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;color:#237A4B">Sub-question 2</p>
+<p style="font-size:30px;line-height:1.3">Which language behaviors predict low mental health?</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;color:#237A4B">Sub-question 3</p>
+<p style="font-size:30px;line-height:1.3">Do motives change the link between use and mental health?</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="structures" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Step 3</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Pick a structure to start from</h2>
+<table style="font-size:30px;color:#15251D">
+<tr><th style="width:34%;text-align:left">Structure</th><th style="width:66%;text-align:left">Best for</th></tr>
+<tr><td>Predictors, consequences, moderators</td><td>A behavior with a clear downstream outcome</td></tr>
+<tr><td>Mechanism or mediation</td><td>How or why an effect happens</td></tr>
+<tr><td>Comparative</td><td>Two platforms, places, groups, or periods</td></tr>
+<tr><td>Debate</td><td>Findings that are visibly mixed</td></tr>
+<tr><td>Multi-level</td><td>Individual, platform, and policy angles</td></tr>
+<tr><td>Problem, cause, intervention</td><td>A specific harm and what might fix it</td></tr>
+</table>
+<p style="font-size:30px;color:#4F6057;width:1500px">These are starting points, not a checklist. Mix them, or use your own.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="example" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">A comparative example</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Starbucks comments across Asia</h2>
+<div style="background:#14241C;color:#F2F7F3;border-radius:16px;padding:32px 40px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#E8B13A">Main question</p>
+<p style="font-size:36px;font-weight:600;line-height:1.25">How do online comments about Starbucks differ across Southeast and East Asian countries during a boycott period?</p>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:30px;line-height:1.3">How much do comments in each country mention the boycott?</p>
+<p style="font-size:26px;font-weight:600;color:#237A4B">Counting</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:30px;line-height:1.3">How does tone differ between countries?</p>
+<p style="font-size:26px;font-weight:600;color:#237A4B">Sentiment</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:30px;line-height:1.3">Do the differences hold in every language?</p>
+<p style="font-size:26px;font-weight:600;color:#237A4B">Comparing groups</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="doable" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Step 4</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Is it doable in eight weeks?</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:600">Data</h3>
+<p style="font-size:28px;line-height:1.3;color:#4F6057">Do I have it, or can I get it by Week 4? What is one row?</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:600">Size</h3>
+<p style="font-size:28px;line-height:1.3;color:#4F6057">Big enough to say something, small enough for a laptop?</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:600">Measure</h3>
+<p style="font-size:28px;line-height:1.3;color:#4F6057">For each sub-question, what would I count, label, or compute?</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:600">Method</h3>
+<p style="font-size:28px;line-height:1.3;color:#4F6057">Which week of this series teaches the tool I need?</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:600">Ethics</h3>
+<p style="font-size:28px;line-height:1.3;color:#4F6057">Public data or consent? Could anyone be identified?</p>
+</div>
+<div style="background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:36px;font-weight:600">Scope</h3>
+<p style="font-size:28px;line-height:1.3;color:#4F6057">Could I answer it in a few weeks of part-time coding?</p>
+</div>
+</div>
+<p style="font-size:30px;line-height:1.4;width:1500px"><b>Too big:</b> How does social media affect society? <b>Better:</b> How do Singapore and Taiwan Reddit users talk about AI-generated art?</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="sharpen" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Step 5</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Use AI to sharpen, not to decide</h2>
+<div style="background:#14241C;color:#E4EFE6;border-radius:16px;padding:36px 44px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5">
+Here is my main question and sub-questions: (paste). Which structure fits best, and why? What is missing? What could I not answer with the data I described?
+</div>
+<p style="font-size:34px;line-height:1.4;width:1500px"><b>Then check it.</b> Does the suggestion fit your data? Is the match real, or just plausible-sounding? Write down what you accepted and what you rejected.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="task" data-transition="fade" style="background:#14241C;color:#E4EFE6;font-family:'Figtree', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:44px">
+<p style="font-size:28px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#E8B13A">Your task now · 35 minutes</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:80px;font-weight:700;line-height:1.1;color:#F2F7F3">Draft your project card</h2>
+<div style="display:flex;gap:48px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#B9CCBF">You finish when you have</p>
+<ul style="font-size:34px;line-height:1.45;color:#E4EFE6">
+<li>A case study (topic, place, period)</li>
+<li>One main question and two or three sub-questions</li>
+<li>What one row of your data is, and where it comes from</li>
+<li>One thing to measure for each sub-question</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#B9CCBF">How it runs</p>
+<ul style="font-size:34px;line-height:1.45;color:#E4EFE6">
+<li>Pairs in breakout rooms</li>
+<li>Use AI to sharpen, and log what you accept and reject</li>
+<li>No data yet? Use the Starbucks or Lululemon file</li>
+<li>Facilitators visit and sign off</li>
+</ul>
+</div>
+</div>
+
+</section></div><div class="s"><section id="api" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">A first look at code</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">What is an API?</h2>
+<div style="display:flex;gap:28px;align-items:stretch">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">Your order</p>
+<h3 style="font-size:40px;font-weight:600">Parameters</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">What to search for, which country, which language.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">The kitchen</p>
+<h3 style="font-size:40px;font-weight:600">The service</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">SerpAPI, which asks Google for you.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">The dish</p>
+<h3 style="font-size:40px;font-weight:600">The response</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Labeled, nested data, usually called JSON.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px">You do not walk into the kitchen. You send an order in a fixed format, and the dish comes back.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div><div class="s"><section id="next" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Next session</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">How code thinks</h2>
+<div style="display:flex;gap:28px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">In the session</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">A drag-and-drop puzzle page, then the Colab notebook. No lecture, breakout rooms.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Before then</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Read Chapter 3 of the textbook (sections 3.1 to 3.3). Finish your project card.</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:10px">
+<h3 style="font-size:38px;font-weight:600">Optional</h3>
+<p style="font-size:30px;line-height:1.35;color:#4F6057">Create a free SerpAPI account. Saved searches work for everyone, so this is not required.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;width:1500px">Textbook: Computational Analysis of Communication, free at cssbook.net</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 1</p>
+
+</section></div></div><div id="bar"><button id="pv" type="button">Previous</button><span id="ct"></span><button id="nx" type="button">Next</button><a href="week01_define_your_problem.pdf">PDF</a></div><script>
+(function(){
+var slides=[].slice.call(document.querySelectorAll('.s')),i=0,view=document.getElementById('view');
+var ct=document.getElementById('ct'),pv=document.getElementById('pv'),nx=document.getElementById('nx');
+function fit(){var k=Math.min(view.clientWidth/1920,view.clientHeight/1080);slides.forEach(function(s){s.style.setProperty('--k',k)});}
+function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach(function(s,j){s.classList.toggle('on',j===i)});
+ ct.textContent=(i+1)+' / '+slides.length;pv.disabled=i===0;nx.disabled=i===slides.length-1;
+ try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+pv.onclick=function(){show(i-1)};nx.onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){
+ if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1)}
+ else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1)}
+ else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1)});
+var x0=null;view.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+view.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)show(i+(d<0?1:-1));x0=null});
+view.addEventListener('click',function(e){if(e.target.closest('a'))return;show(i+(e.clientX>view.clientWidth/2?1:-1))});
+window.addEventListener('resize',fit);fit();
+var m=/^#(\d+)$/.exec(location.hash);show(m?parseInt(m[1],10)-1:0);
+})();
+</script></body></html>

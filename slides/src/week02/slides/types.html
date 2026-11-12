@@ -1,0 +1,25 @@
+<section id="types" data-transition="fade" style="background:#EDF1EC;color:#15251D;font-family:'Figtree', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#237A4B">Concept</p>
+<h2 style="font-family:'Bricolage Grotesque', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1">Types: the same-looking value can behave differently</h2>
+<div style="display:flex;gap:24px">
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">Number</p>
+<p style="font-size:44px;font-weight:600;font-family:'JetBrains Mono', 'Courier New', monospace">12</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">Text</p>
+<p style="font-size:44px;font-weight:600;font-family:'JetBrains Mono', 'Courier New', monospace">"12"</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">Date</p>
+<p style="font-size:44px;font-weight:600;font-family:'JetBrains Mono', 'Courier New', monospace">2024-10-05</p>
+</div>
+<div style="flex:1;background:#F8FAF7;border:1px solid #C6D1C4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#237A4B">True / false</p>
+<p style="font-size:44px;font-weight:600;font-family:'JetBrains Mono', 'Courier New', monospace">True</p>
+</div>
+</div>
+<p style="font-size:34px;line-height:1.4;width:1500px">A number stored as text looks the same and behaves differently. <b>"1" + "2" makes "12".</b> A date stored as text cannot be sorted by time.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4F6057">CACTUS Fall 2026 · Week 2</p>
+<aside>Callback to the puzzle page from last week: quotes made a value text. In real data the same thing happens silently when one bad cell, like "unknown", forces a whole column to be read as text. Then averages fail or mislead. Check types early: df.info() shows them.</aside>
+</section>

@@ -25,7 +25,7 @@ A screenshot helps for anything visual. **Never paste an API key into an issue.*
 - [ ] Have one AI chat assistant ready (ChatGPT, Claude, or Gemini).
 - [ ] Pick a device: Windows laptop, Mac laptop, or phone/tablet. Each task below says which devices matter most. Please note which you used.
 - [ ] Course site: https://kokiljaidka.github.io/CACTUS_fall2026/ (all course links should work from here)
-- [ ] Ask Kokil for the links to the two practice pages and two slide decks if they are not yet public. They are private until shared.
+- [ ] The two practice pages and two slide decks are published on the course site. If a link is missing, tell Kokil.
 
 ---
 
@@ -127,6 +127,8 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 ---
 
 ## F. Slide decks (1 hour; Week 1 and Week 2 decks)
+
+- [ ] Open each deck from its Week page on the site, both the web version and the PDF. Do both match? Do arrow keys, the Previous/Next buttons, and swiping on a phone all work? Does the PDF have one slide per page, with fonts intact?
 
 - [ ] Present each deck aloud to a partner at normal speed. Time it. Does it fit the plan in the schedule (Week 1 session 1; Week 2 learning session)?
 - [ ] Read the **speaker notes** for every slide. Are they complete, accurate, and not contradictory?
