@@ -2,7 +2,7 @@
 
 Over 8 weeks you will turn a rough idea into working code on your own data. This guide helps you shape that idea. Your question decides what data you need and what you will do with it, so it is worth spending time on now. It does not have to be polished. We will revise it together.
 
-**What to hand in:** a one-page project card (template at the end). A first draft is due after Week 1, and you will update it as you go.
+**What to hand in:** a one-page project card (template at the end). You finish a first version during Week 1, Session 1, and update it as you go.
 
 ---
 
@@ -108,7 +108,7 @@ How I'll use AI on this project (and how I'll check it):
 
 | When | What |
 |---|---|
-| After Week 1 | First draft: main question and sub-questions |
+| Week 1, Session 1 | Finished first version: case study, main question, sub-questions, what one row is, one measure each |
 | After Week 2 | Add: what could go wrong in my data, and how I'd check |
 | Week 3 | Revise with feedback; settle what you will measure |
 | Week 4 | Data in hand (or a clear plan to get it) |

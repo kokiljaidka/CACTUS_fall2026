@@ -6,6 +6,7 @@ Shared datasets for CACTUS Fall 2026. Raw exports stay in `data/raw/` (local onl
 |---|---|---|---|
 | `starbucks_sea_comments.csv` | Week 2 exercises | 4,174 | Public comments mentioning Starbucks, 5–14 Oct 2024, from TH, VN, MY, PH, SG, ID, HK. Many languages. Column `Translated` is machine translation |
 | `lululemon_instagram.csv` | Week 2 demo | 11,019 | Instagram posts mentioning Lululemon, Nov 2022 to Apr 2023. Accounts appear mostly North American |
+| `week02_toy_cafe.csv` | Week 2 practice page and notebook warm-up | 30 | Invented café comments (Brew Lane) with planted problems: 3 duplicates, 2 rows with no text, 2 dates in another format, scores stored as text. Clean result: 25 rows. Rebuild with `python3 scripts/week02_toy_data.py` |
 | `week01/serp_cache/` and `serp_cache.zip` | Week 1 | 6 files | Saved SerpAPI responses for students without a key (create with `scripts/cache_week1.py`) |
 
 ## Columns worth knowing

@@ -1,0 +1,28 @@
+.toywrap { overflow: auto; max-height: 340px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.toytable { border-collapse: collapse; width: 100%; font-size: 13px; }
+.toytable th, .toytable td { padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.toytable th { position: sticky; top: 0; background: var(--surface2); font-size: 12px; letter-spacing: .04em; }
+.toytable td.num { font-variant-numeric: tabular-nums; font-family: var(--font-mono); }
+.card { display: flex; align-items: center; gap: 8px; border: 2px solid var(--accent); background: var(--surface); border-radius: 9px; padding: 7px 10px; font-weight: 600; font-size: 14px; }
+.card.trap { border-color: var(--sun); }
+.card .x { margin-left: auto; width: 24px; height: 24px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); padding: 0; }
+.card small { display: block; font-family: var(--font-mono); font-size: 11.5px; font-weight: 400; color: var(--muted); overflow-wrap: anywhere; }
+.cardtext { min-width: 0; }
+.waterfall { width: 100%; border-collapse: collapse; font-size: 14px; }
+.waterfall th, .waterfall td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.waterfall td.n { font-variant-numeric: tabular-nums; font-family: var(--font-mono); white-space: nowrap; }
+.waterfall .lost { color: var(--bad); font-weight: 700; }
+.waterfall .note { color: var(--muted); font-size: 13px; display: block; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14px; display: grid; gap: 4px; }
+.numin { width: 100px; font: inherit; font-family: var(--font-mono); border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 6px 8px; }
+.codelines { background: var(--code-bg); border-radius: 10px; padding: 8px 6px; display: flex; flex-direction: column; font-family: var(--font-mono); font-size: 13.5px; }
+.cl { display: grid; grid-template-columns: 28px 1fr; text-align: left; gap: 6px; background: none; border: 0; border-radius: 6px; padding: 5px 8px; color: var(--code-ink); font-family: inherit; font-size: inherit; line-height: 1.5; cursor: pointer; white-space: pre-wrap; overflow-wrap: anywhere; font-variant-ligatures: none; }
+.cl:hover { background: rgba(255,255,255,.08); }
+.cl.picked { background: rgba(240,186,69,.22); outline: 1px solid var(--sun); }
+.cl.right { background: rgba(95,213,150,.2); outline: 1px solid var(--good); }
+.cl .no { color: var(--code-dim); text-align: right; }
+.opts { display: flex; flex-direction: column; gap: 8px; }
+.opt { text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 9px; padding: 9px 12px; font-weight: 500; }
+.opt.picked { border-color: var(--ink); }
+.opt.right { border-color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--surface)); }
+.opt.wrong { border-color: var(--bad); }

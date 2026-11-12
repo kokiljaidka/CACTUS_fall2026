@@ -1,34 +1,56 @@
 # Week 2: Clean it, chart it, check what the AI wrote
 
 **Theme:** AI as pair programmer. Students read, test, and distrust AI code.
-**Format:** Zoom. Learning session is a supervised walk-through; coding session is breakout rooms with no lecture.
+**Format:** Zoom. Learning session is a lecture with live demos; coding session is breakout rooms with no lecture. Between them, students do a 20-minute practice page.
 
 ## Objectives
 
 By the end of the week, students can:
 1. Load and clean a table (column names, dates, duplicates) and explain each step.
-2. Prompt with context: column names, sample rows, desired output.
-3. Run at least three kinds of checks: row counts before and after, a hand count of a few rows, and comparing a result with a second method.
-4. Find mistakes in AI-written code without being told where they are.
-5. Read an error message, explain it in their own words, then fix it.
+2. Say what each cleaning step does to the row count, and why each removed row was removed.
+3. Prompt with context: column names, sample rows, desired output.
+4. Run at least three kinds of checks: row counts before and after, a hand count of a few rows, and comparing a result with a second method.
+5. Find mistakes in AI-written code without being told where they are.
+6. Read an error message, explain it in their own words, then fix it.
 
 ## Data
 
 | Session | Dataset | Why |
 |---|---|---|
 | Learning (walk-through) | `data/lululemon_instagram.csv` | Real engagement data with a natural trap: 91% of posts have 0 views |
+| Practice page and notebook warm-up | `data/week02_toy_cafe.csv` (30 invented rows; also embedded in the notebook) | Small enough to count by hand. Planted: 3 duplicates, 2 rows with no text, 2 dates in another format, scores stored as text |
 | Coding (exercises) | `data/starbucks_sea_comments.csv` | Multilingual comments from 7 SE/East Asian places. Has duplicates, missing text, text stored as dates, uneven group sizes |
 
-See [data/README.md](../data/README.md). Students use a different dataset in the exercises than in the walk-through so they can't pattern-match.
+See [data/README.md](../data/README.md). Students use a different dataset in each part so they can't pattern-match. The toy table is rebuilt by `python3 scripts/week02_toy_data.py`.
+
+## Materials
+
+| What | Where |
+|---|---|
+| Practice page: Silent Changes | `practice/week02_silent_changes.html` (private Artifact; share its link). Source in `practice/src/week02/` |
+| Notebook | `notebooks/week02_clean_and_chart.ipynb` |
+| Rebuild commands | `python3 scripts/build_practice.py` and `python3 scripts/build_week02_notebook.py` |
+
+## Reading (optional, no credit)
+
+From *Computational Analysis of Communication* (van Atteveldt, Trilling & Arcila, open access):
+- **Before the learning session:** Chapter 5, From file to data frame and back.
+- **Before the coding session:** Chapter 6, Data wrangling, and the visualization parts of Chapter 7, Exploratory data analysis.
+
+Skim sections before assigning. The book predates AI assistants: use it for what the operations mean, not as the way to write the code.
 
 ## Prep
 
 - Share `data/starbucks_sea_comments.csv` with students (a shared Drive link, so they can upload it to Colab in seconds).
+- Share the Silent Changes link after the learning session.
 - Kokil runs the walk-through once, including the Lululemon check.
-- Facilitators: read `instructor/facilitator_guide.md` (Week 2 section) and `instructor/week02_answer_key.md`. Both are local only.
+- Do the practice page and the notebook warm-up yourself. Try a trap card (drop rows with missing tone) to see what students see.
+- Facilitators: read `instructor/facilitator_guide.md` (Week 2 section), `instructor/week02_answer_key.md`, and `instructor/week02_practice_key.md`. All are local only.
 - Facilitators should do Exercise 2 themselves beforehand, without the key.
 
-## Learning session (about 2 h): supervised walk-through
+---
+
+## Learning session (about 2 h): lecture with live demos
 
 Kokil leads; facilitators watch the chat and help anyone who falls behind.
 
@@ -38,7 +60,38 @@ Kokil leads; facilitators watch the chat and help anyone who falls behind.
 | 0:20 | **Walk-through: good vs bad prompt** (Lululemon). Ask for "the average views per post" first with no context, then again after pasting column names and a sample. Read the code line by line. |
 | 1:00 | **Walk-through: verification.** Run the AI's average views (2,506). Then check: how many posts have 0 views? Show that the code is correct but the question was wrong. Show `len()` before and after, `.head()`, and a hand count. |
 | 1:30 | **Walk-through: reading an error.** Trigger a real error, read the last line aloud, paste to the AI, and explain why the fix works. |
-| 1:50 | **Preview the exercises** and the stuck protocol. |
+| 1:50 | **Preview:** the Silent Changes page (do it before the coding session), the stuck protocol, and the exercises. |
+
+### Lecture plan (slides)
+
+| # | Slide | Notes |
+|---|---|---|
+| 1 | Recap of Week 1 | The project card, dictionaries and lists, the key habit: predict before you run |
+| 2 | What is a table? | Rows are things, columns are facts about them. One row of your project is what you wrote on your card |
+| 3 | Types | Number, text, date, true/false. A number stored as text looks the same and behaves differently |
+| 4 | Missing and messy | Empty cells, "N/A", duplicates. Messy is normal, not a failure |
+| 5 | Demo: the prompt with no context | Lululemon: "average views per post". Show what the AI guesses |
+| 6 | Demo: the prompt with context | Paste column names and sample rows. Read each line of the answer |
+| 7 | Demo: a right answer to the wrong question | 2,506 average, but 91% of posts have 0 views. Code correct, question wrong |
+| 8 | Three checks | Row count before and after; hand count of a few rows; compare with a second method |
+| 9 | Demo: `len()` and `.head()` | Show how a step changes the row count |
+| 10 | Reading an error | Last line first. Say it in your own words, then fix |
+| 11 | Silent changes | The idea behind the practice page: steps that remove or change rows without an error |
+| 12 | Next steps | The practice page (20 min), then the coding session. Stuck protocol |
+
+---
+
+## Between sessions (about 20 min): practice page
+
+Students open **Silent Changes** after the learning session and before the coding session.
+
+- **Level 1:** build a cleaning pipeline from cards and watch the row-count waterfall. Some cards quietly damage the data.
+- **Levels 2 to 4:** click the buggy line in AI-written code that runs without any error, then pick the check that proves it.
+- **Level 5:** the Colab bridge, which hands them the code for their pipeline.
+
+This page uses bug types **different** from the live Exercise 2, so it does not give that exercise away.
+
+---
 
 ## Coding session (about 2 h): breakout rooms, no lecture
 
@@ -46,8 +99,9 @@ Notebook: `notebooks/week02_clean_and_chart.ipynb`. Pairs in breakout rooms; mix
 
 | Time | Exercise |
 |---|---|
-| 0:00–0:10 | Load data and predict the shape. Note one surprise. |
-| 0:10–0:40 | **Ex 1:** pair prompting (rename, parse dates, deduplicate, count). One prompts, one reviews; swap each task. |
+| 0:00–0:10 | **Warm-up:** write the pipeline from the practice page as real code on the small café table. The notebook's check cell tells you if it is clean. |
+| 0:10–0:15 | Load the Starbucks data and predict the shape. Note one surprise. |
+| 0:15–0:40 | **Ex 1:** pair prompting (rename, parse dates, deduplicate, count). One prompts, one reviews; swap each task. Task 1d is optional if time is short. |
 | 0:40–1:00 | **Ex 2:** bug hunt. Three planted bugs in an "AI-written" analysis. |
 | 1:00–1:15 | **Ex 3:** read three errors, guess the cause, then fix with AI help. |
 | 1:15–1:30 | **Ex 4 (stretch):** a paper-ready chart, checked against the numbers. |

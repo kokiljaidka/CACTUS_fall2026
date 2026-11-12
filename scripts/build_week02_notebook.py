@@ -4,6 +4,9 @@ import os
 import nbformat as nbf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+import sys
+sys.path.insert(0, HERE)
+import week02_toy_data  # noqa: E402
 OUT = os.path.join(HERE, "..", "notebooks", "week02_clean_and_chart.ipynb")
 cells = []
 
@@ -30,7 +33,8 @@ md("""
 - check your own data for problems
 
 **Order**
-1. Exercises 1–3 are required.
+0. The warm-up (10 minutes) comes first. Do it after the puzzle page.
+1. Exercises 1–3 are required. Task 1d is optional if time is short.
 2. Exercises 4–5 are stretch. Do them if you finish early; Exercise 5 can be homework.
 
 **Rules**
@@ -87,7 +91,52 @@ raw.info()
 
 md("""
 ---
-## Exercise 1: Pair prompting (required, about 30 min)
+## Warm-up: the pipeline from the puzzle page (about 10 min)
+
+On the Silent Changes puzzle page you built a cleaning pipeline and watched the row count change. Now write it as real code on the same small table. You can write it yourself, paste the code the page generated, or ask your AI assistant. Whichever you choose, **read every line before you run it**.
+
+The table is 30 invented café comments with planted problems. The cell below loads it.
+""")
+
+code("""
+import io
+
+TOY_CSV = """ + '"""' + week02_toy_data.to_csv_text() + '"""' + """
+toy = pd.read_csv(io.StringIO(TOY_CSV))
+print(toy.shape)
+toy.head(8)
+""")
+
+md("""
+**Predict:** how many rows will be left after you remove duplicates and rows with no comment text? Write your guess, then build the pipeline in the next cell.
+
+> My prediction:
+""")
+
+code("""
+# Paste your pipeline here. Start from a fresh copy of the table, and print len(df) after each step.
+df = toy.copy()
+counts = {"start": len(df)}
+
+""")
+
+code("""
+# Check. A cell that prints only the last line means every check passed.
+assert not df.duplicated().any(), "Duplicate rows are still there"
+assert df["comment"].notna().all(), "Rows with no comment text are still there"
+assert str(df["date"].dtype).startswith("datetime"), "date is still text"
+assert pd.api.types.is_float_dtype(df["tone_pos"]), "tone_pos is still text"
+assert len(df) == 25, f"Expected 25 rows but found {len(df)}. Which step removed rows it should not have, or missed some?"
+print("Clean:", len(df), "rows")
+""")
+
+md("""
+> **Log (warm-up):** which check caught a mistake, or confirmed your code was right? Did the AI's code match what you built on the page?
+""")
+
+md("""
+---
+## Exercise 1: Pair prompting (required, about 25 min)
 
 Work in pairs. **One person prompts, the other reviews and decides whether to accept the code.** Swap roles after each task.
 

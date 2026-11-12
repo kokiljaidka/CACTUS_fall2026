@@ -37,6 +37,7 @@ An **API** lets your code ask a service a question and get structured data back.
 
 **By the end of this session you can:**
 - run a notebook cell by cell
+- turn what you practiced in the puzzle page (dictionaries, paths into a response) into real code
 - call an API and change the query, country, and language
 - turn the raw response into a table
 - ask an AI assistant to explain code, and predict output before you run it
@@ -51,6 +52,7 @@ md("""
 ## How this session runs
 
 - There is **no lecture** in the coding session. You will be in a breakout room with a partner, and the facilitators visit the rooms.
+- **Start with the puzzle page**, Cactus Code Garden (about 30 minutes; your facilitator will post the link). Come back here for Step 3b when you reach the last level.
 - **Stuck?** Try these, in order, for no more than 5 minutes:
   1. Read the last line of any error message. What is it telling you?
   2. Re-read the instructions for the step. Did you skip a part?
@@ -147,6 +149,56 @@ md("""
 """)
 
 md("""
+## Step 3b: Your puzzle skills in real code (about 20 min)
+
+You practiced these ideas in the Cactus Code Garden. Now do three short tasks. Each ends with a check (`assert`) that stops with a message if something is wrong. **A cell that prints nothing after the print lines means the check passed.**
+
+**Task 1: your project row.** Replace the example with the row you built in level 16 of the puzzle page (use its Copy button), then run it.
+""")
+
+code("""
+# Task 1: replace this example with your own row from the puzzle page
+row = {
+    "text": "Love the new cups",
+    "country": "Vietnam",
+    "likes": 12,
+}
+print(list(row.keys()))
+print(row[list(row.keys())[0]])
+assert len(row) >= 3, "Add at least three fields"
+""")
+
+md("""
+**Task 2: read the response.** `data` is the Singapore search from Step 3. **Predict** what the next cell prints, then run it. The path is the kind you built in world 6 of the puzzle page.
+""")
+
+code("""
+first_title = data["organic_results"][0]["title"]
+print(first_title)
+assert first_title == table.loc[0, "title"], "Not the same as the table: check your path"
+""")
+
+md("""
+**Task 3: ask an AI, then check it.** First write down your own path to the **link of the second result**. Then paste this prompt into your AI assistant:
+
+> I have a Python dictionary called `data` from a SerpAPI Google search. Write one line of Python that gets the link of the second organic result. Explain each `[ ]` in plain English.
+
+Paste the AI's line in place of `None`, run it, and compare with your own guess.
+
+> My own path (before asking the AI):
+""")
+
+code("""
+second_link = None   # paste the AI's line here, e.g. second_link = data[...]...
+print(second_link)
+assert second_link == table.loc[1, "link"], "Not the same as the table: check the path"
+""")
+
+md("""
+**Log it** in the verification log (row 3b): your prediction, what the AI wrote, and the check you ran.
+""")
+
+md("""
 ## Step 4: Your turn. Change one thing at a time
 
 The cell below is the one you are meant to edit. Change **one** value, run it, and note what changed.
@@ -182,7 +234,7 @@ md("""
 """)
 
 md("""
-## Step 5: Compare three places
+## Step 5: Compare three places (homework if you run short on time)
 
 Now run the same topic across Singapore, Hong Kong, and Taiwan, using each place's own language and wording. Note that "artificial intelligence" is written differently: 人工智能 in Hong Kong and mainland China, 人工智慧 in Taiwan.
 
@@ -250,7 +302,7 @@ You have run code you did not write. Now use an AI assistant to understand it. *
 """)
 
 md("""
-## Step 7: Save your results
+## Step 7: Save your results (homework, after Step 5)
 
 This file is your starting data for Week 2, where you will clean and chart it.
 """)
@@ -275,6 +327,7 @@ Fill in at the end of the session.
 | Step | What I predicted | What happened | One thing I checked |
 |---|---|---|---|
 | 3 | | | |
+| 3b | | | |
 | 4 | | | |
 | 5 | | | |
 | 6 | | | |

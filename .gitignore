@@ -9,3 +9,4 @@
 /data/raw/
 # Answer keys. Do not publish before students finish the exercises.
 /instructor/
+__pycache__/
