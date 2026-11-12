@@ -25,7 +25,7 @@ For each week there is a ready-to-run kit, so you do not prepare from scratch:
 | Run of show | `schedule/weekNN.md` | Minute-by-minute plan for both sessions |
 | Slides and script | `slides/weekNN_*_presenter.html` (press N for notes) and `..._handout.pdf` | Every slide has: time, what to say, what to do, what to watch for, and what to say if asked |
 | Presenter view (script beside each slide) | https://kokiljaidka.github.io/CACTUS_fall2026/slides/week01_define_your_problem_presenter.html and `.../week02_clean_it_chart_it_presenter.html`. Handouts: same names ending `_handout.pdf` | No need to clone the repo. Not linked from the student pages, but not private either |
-| Practice page and notebook | Course site | Do them yourself once beforehand |
+| Practice page and notebook | Course site. A facilitator guide for the practice pages is in `facilitators/practice_pages_guide.md` | Do them yourself once beforehand |
 | Answer keys | [private folder: link to come] | So you are never guessing |
 | Testing checklist | `testing/ra_checklist.md` | Includes a full dress rehearsal |
 
