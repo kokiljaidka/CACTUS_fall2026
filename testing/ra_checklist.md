@@ -1,4 +1,4 @@
-# RA testing checklist: Weeks 1 to 6
+# RA testing checklist: Weeks 1 to 7
 
 Thank you for testing. Please try everything the way a student would, on a device and account like theirs, and write down anything that is confusing, broken, slow, or wrong. **You are testing the materials, not yourself.** If something confuses you, it will confuse students, so that is a finding.
 
@@ -25,7 +25,7 @@ A screenshot helps for anything visual. **Never paste an API key into an issue.*
 - [ ] Have one AI chat assistant ready (ChatGPT, Claude, or Gemini).
 - [ ] Pick a device: Windows laptop, Mac laptop, or phone/tablet. Each task below says which devices matter most. Please note which you used.
 - [ ] Course site: https://kokiljaidka.github.io/CACTUS_fall2026/ (all course links should work from here)
-- [ ] The six practice pages and six slide decks are published on the course site. If a link is missing, tell Kokil.
+- [ ] The seven practice pages and seven slide decks are published on the course site. If a link is missing, tell Kokil.
 
 ---
 
@@ -217,7 +217,30 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## J. Slide decks (3 hours; Weeks 1 to 6)
+## J. Week 7: Plant It, Find It and the shared notebook (3 hours; two RAs)
+
+**Practice page** (`week07_plant_it_find_it.html`, 30 minutes; one RA on a phone):
+- [ ] Level 1: run 100 studies at the defaults, then plant 1.0 and find a setting that reaches 80 of 100. Do the sliders work with touch? Is it clear what "found" means?
+- [ ] Level 2: decide the six variables. Is any answer one you would argue with? Write it down.
+- [ ] Level 3: switch between raw counts and per 1,000 followers. Is the table clear?
+- [ ] Level 4: decide the six cases. Is any ambiguous?
+- [ ] Level 5: copy the code into a new cell in the Week 7 notebook. Does it run in Colab?
+- [ ] Refresh, reset progress, phone portrait, dark mode.
+
+**Notebook** (`week07_core_nested_data.ipynb`, 2 hours; the data load from the repository, so push `data/week07_*.csv` first):
+- [ ] The data load in a fresh Colab runtime with no upload. What does the error say if they do not?
+- [ ] Warm-up: do the naive and clustered counts look as predicted? Does the check pass?
+- [ ] Exercise 1: does Check 1 give a clear message if you cluster by `comment_id`?
+- [ ] Exercise 2: does Check 2 give a clear message if you leave out the offset or use `followers` instead of `log(followers)`?
+- [ ] Exercise 3: find the three mistakes **without help** and without opening `instructor/`. Record how long it takes, and which you found last.
+- [ ] Exercise 4: does the permutation take a reasonable time in Colab? Does shuffling comments instead of posts give a clearly narrower spread?
+- [ ] Time each section against `schedule/week07.md`.
+
+**Done when:** every exercise is done, with times, and you have listed the mistakes you found and any you missed.
+
+---
+
+## K. Slide decks (3 hours; Weeks 1 to 7)
 
 - [ ] Weeks 3 to 6 have 11 main slides each. Weeks 3 to 6 notes include TIME / SAY / DO / WATCH FOR lines. Are they usable by someone who did not write the slides?
 - [ ] Week 4 slide 4 needs one real raw API response from a facilitator. Is it clear what to prepare?
@@ -232,7 +255,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## K. Full dress rehearsal (2 sessions, as a group)
+## L. Full dress rehearsal (2 sessions, as a group)
 
 Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 
@@ -246,7 +269,7 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 
 ---
 
-## L. Data checks (30 minutes, one RA)
+## M. Data checks (30 minutes, one RA)
 
 - [ ] `starbucks_sea_comments.csv`: opens without error, Chinese, Thai and other scripts display correctly, and no usernames or links remain in any column.
 - [ ] `lululemon_instagram.csv`, `week02_toy_cafe.csv`, and the Week 3 CSVs: same checks. Confirm the Week 4 sample JSON in `data/week04/sample/` has only invented names.
@@ -268,8 +291,9 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 | G. Week 4 page and notebook | | | | | | |
 | H. Week 5 page and notebook | | | | | | |
 | I. Week 6 page and notebook | | | | | | |
-| J. Slide decks | | | | | | |
-| K. Rehearsal | | | | | | |
-| L. Data | | | | | | |
+| J. Week 7 page and shared notebook | | | | | | |
+| K. Slide decks | | | | | | |
+| L. Rehearsal | | | | | | |
+| M. Data | | | | | | |
 
-**Suggested order:** A and L first (quick), then B and D in parallel, then C and E, then F, G, H and I, then J, then K.
+**Suggested order:** A and M first (quick), then B and D in parallel, then C and E, then F to J, then K, then L.

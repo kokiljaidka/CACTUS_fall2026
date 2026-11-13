@@ -51,7 +51,7 @@ Suggested weekly rhythm for the team:
 
 | When | What happens | Your role |
 |---|---|---|
-| Rehearsal (before Week 1) | The team runs Session 1 and 2 of Week 1 on Zoom, with RAs playing students (`testing/ra_checklist.md`, section K). | Everyone plays every role once |
+| Rehearsal (before Week 1) | The team runs Session 1 and 2 of Week 1 on Zoom, with RAs playing students (`testing/ra_checklist.md`, section L). | Everyone plays every role once |
 | Week 1 | Facilitator A leads, with Kokil in the room [Kokil to confirm]. | Rooms or Desk |
 | Week 2 onward | Rotating lead (see the facilitator hub). Kokil on call. | Rotate each week |
 

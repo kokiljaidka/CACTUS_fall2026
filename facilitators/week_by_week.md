@@ -158,6 +158,31 @@ One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck p
 
 ---
 
-## Week 7: Choose a track, and Week 8: Reproduce and present
+## Week 7: Applying statistics to social media data (two sessions)
 
-To be added. Week 7 lets each student pick a track (networks, images and memes, a mock feed or experiment, and possibly models for nested data). Week 8 is "run it from scratch": rerun the whole pipeline, document it, and present results with limits.
+**Goal:** Session 1 (everyone): students plant an answer, see why ignoring groups makes results look too certain, fix it with clustered standard errors, model counts with an exposure, and check a result by permutation. Session 2 (tracks): each student applies the core to networks, images and memes, or a mock feed or experiment.
+
+**Before (Session 1):** run the practice page, the shared notebook, and its bug hunt (do not open the key first). The data are invented and public, so no class drive. Push the data files so Colab can load them.
+
+**Learning session (1 h):** the idea (0:00); known-answer tests (0:05); what they cannot tell you (0:10); rows that come in groups, with a prediction first (0:15); standard errors that notice groups (0:23); counts and exposure (0:30); permutation (0:35); the three tracks (0:40); preview (0:46); questions (0:50).
+
+**Coding session (2 h, everyone)**
+
+| Time | What |
+|---|---|
+| 0:00 to 0:15 | Warm-up: plant an effect and run 200 studies, naive versus clustered |
+| 0:15 to 0:45 | Ex 1: naive versus clustered on 3,000 comments in 80 posts; the post-level and comment-level variables |
+| 0:45 to 1:10 | Ex 2: counts with an exposure (comments per follower) |
+| 1:10 to 1:35 | Ex 3: bug hunt in AI-written code |
+| 1:35 to 1:50 | Ex 4: permutation, shuffling posts versus shuffling comments |
+| 1:50 to 2:00 | Choose a track; log |
+
+**Watch for:** students shuffling comments instead of posts in Ex 4 (that is the lesson; do not rescue them early); anyone who thinks clustering changes the estimate (it changes the standard error); people unsure which track (ask what their data look like: edges, images, or conditions).
+
+**Session 2 (tracks, 2 h):** still to be written, with the three track notebooks. Placeholder: recap and rooms (0:00), warm-up (0:10), run (0:25), check and break (0:55), bug hunt (1:15), own data (1:40), log (1:55). One facilitator per room.
+
+---
+
+## Week 8: Reproduce and present
+
+To be added. "Run it from scratch": rerun the whole pipeline, document it, and present results with limits.

@@ -127,3 +127,17 @@ Page: `practice/week06_trust_the_labeler.html` (about 20 minutes). All messages 
 
 - The page's answers are in `instructor/week06_answer_key.md`.
 - Do not say what happens with the real messages in the notebook. Students find the surprises themselves.
+
+## Week 7: Plant It, Find It (4 levels and a bridge, about 20 minutes)
+
+**What it teaches:** a known-answer test, why rows that come in groups look too certain, why counts need a denominator, and which assumption breaks which method.
+
+| Level | What students do | Where they stall | What to ask |
+|---|---|---|---|
+| 1. Plant it, then find it | Plant an effect of 1.0 and find a setting that finds it in 80 of 100 studies | They push comments per post and see little change; some think the page is broken | "Which slider moved the number more, and why?" |
+| 2. Which variables are hurt? | Say what happens to each variable's standard error when posts are ignored | They guess by feel instead of asking whether the variable is a property of the post | "Is it the same for every comment under a post?" |
+| 3. Counts need a denominator | Compare labeled and unlabeled posts raw, then per 1,000 followers | They stop at the raw table | "Which view would you report, and why?" |
+| 4. What breaks which method? | Match six problems to an assumption | They confuse "not independent" with "counted many times" | "Is it one thing counted again, or many things that are alike?" |
+| 5. Colab bridge | Plant an answer in code and compare naive and clustered intervals | Forgetting to cluster by the right column | "Which column are you clustering on?" |
+
+All posts, comments and numbers on the page are invented. Do not tell students the numbers the notebook will find.
