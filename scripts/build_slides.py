@@ -31,6 +31,7 @@ DECKS = {
     "week05": "week05_analyze_text",
     "week06": "week06_ai_as_annotator",
     "week07": "week07_applying_statistics",
+    "week08": "week08_reproduce_and_present",
 }
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700"

@@ -226,11 +226,11 @@ One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck p
 
 ---
 
-## Week 8: Reproduce and present
+## Week 8: Reproduce and present (Kokil leads)
 
 **Goal:** everyone reruns a notebook from a clean start (their own and a partner's), documents the project, and presents it in six minutes with its limits.
 
-**Before:** make pairs the day before; share the rerun-report template; collect repository links in the chat; make the order and the feedback sheet. Partners rerun on the shared or de-identified sample only, never on private raw data. The slides and practice page are not built yet.
+**Before:** make pairs the day before; share the rerun-report template; collect repository links in the chat; make the order and the feedback sheet. Partners rerun on the shared or de-identified sample only, never on private raw data. The slides and the practice page (Run It from Scratch, optional before the session) are built.
 
 **Session (about 3 h)**
 

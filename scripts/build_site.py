@@ -105,6 +105,7 @@ WEEKS = {
         "s1_title": "Learning session (first 20 minutes)",
         "s2_title": "Rerun and present",
         "slides": ("Lecture slides", "week08_reproduce_and_present"),
+        "practice": ("Run It from Scratch (practice page, before the session)", "week08_run_it_from_scratch.html"),
         "extra": [("Rerun report (template for your partner)", "rerun-report.md", "s2")],
     },
     "weeks/week02.md": {

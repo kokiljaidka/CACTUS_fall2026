@@ -4,7 +4,7 @@
 **Format:** Zoom, Tuesday, Jan 19. A short learning session (about 20 minutes), then a swap-and-rerun session in pairs (about 1 hour), then presentations (about 1.5 hours). About 3 hours live.
 
 <!-- facilitator:start -->
-> **Status: planned.** No slides, notebook, or practice page is built yet. The plan follows the decisions made so far: a short learning session, a swap-and-rerun hour, and about 9 presentations of 6 to 8 minutes each. See the build plan and open items at the end.
+> **Status: built.** The 20-minute slides and the practice page are built and tested; the rerun report template is on the site. There is no notebook or answer key this week. The plan: a short learning session, a swap-and-rerun hour, and about 9 presentations of 6 to 8 minutes each. See the materials and open items at the end.
 <!-- facilitator:end -->
 
 ## Objectives
@@ -60,23 +60,29 @@ Your repository is the record of what you did. Keep your verification log: it is
 <!-- facilitator:start -->
 ## Build plan (Week 8)
 
-### Short learning session (about 20 minutes)
-Four to five slides, with notes in the same format: the cost of a result nobody can rerun; the reproducibility checklist (fresh runtime, no keys, relative paths, data card, log, README); what a result supports (sample, checks, limits); how to present in six minutes. Invented examples only. **To build.**
+## Materials (Week 8)
 
-### Practice page (optional)
-A "Run it from scratch" page was sketched in `practice/page_specs.md`: a simulated notebook the student restarts and runs to see failures (a deleted variable, cells out of order, a local path, a key pasted into a cell), and fixes each one. **To build, if wanted.** It would be the 20-minute page before the session. Without it, the checklist above is enough.
+| What | Where | Status |
+|---|---|---|
+| Lecture slides (8, about 20 minutes) | `slides/week08_reproduce_and_present.html` and `.pdf`; `..._presenter.html` (press N for the script) and `..._handout.pdf`. Source: `slides/src/week08/` | Built |
+| Practice page: Run It from Scratch | `practice/week08_run_it_from_scratch.html` (source `practice/src/week08/`; all notebooks, paths and keys invented). Four levels and a bridge: put cells in order, the cell you deleted, paths that only work for you, keys and private data | Built and tested. Optional: students do it before the session |
+| Rerun report template | `project/rerun_report.md` (on the site) | Built |
+| Notebook / answer key | None this week | |
+
+### Short learning session (about 20 minutes)
+Eight slides with notes: why a result nobody can rerun is a claim; restart and run all; the checklist (runs, safe, documented); what you can claim; the six-minute talk; what happens next. Invented examples only.
 
 ### Swap and rerun
 No new notebook. Pairs are made by the Lead the day before, so that nobody reruns a notebook on data they may not see: **the partner runs it on the shared or de-identified sample only**, never on private raw data. The [rerun report template](../project/rerun_report.md) (what I did, what broke, what I could not follow) is on the site.
 
 ### Presentations
-About 9 presenters at 6 plus 2 minutes is about 72 minutes in one room. Order by volunteers. Facilitators fill in the feedback sheet (question, data, check, claims, rerun). Who leads: to decide.
+About 9 presenters at 6 plus 2 minutes is about 72 minutes in one room. Order by volunteers. Facilitators fill in the feedback sheet (question, data, check, claims, rerun). Kokil leads.
 
 ## Run sheet
 
 | Time | What | Who |
 |---|---|---|
-| Before | Make pairs; share the rerun-report template; collect repository links; make the order and the feedback sheet | Lead |
+| Before | Make pairs; share the rerun-report template; collect repository links; make the order and the feedback sheet | Lead (Kokil) |
 | 0:00 to 0:20 | Short learning session | Lead |
 | 0:20 to 1:20 | Swap and rerun. Rooms visit pairs. Stuck pairs: check the runtime first, then the install cell, then paths | Everyone |
 | 1:20 to 1:30 | Break | |
@@ -90,5 +96,5 @@ About 9 presenters at 6 plus 2 minutes is about 72 minutes in one room. Order by
 1. **Presenters.** About 8 to 9. If more, use two rooms.
 2. **What participants get at the end** (a certificate, a letter, a recognition list): **[Kokil to confirm]**.
 3. **Follow-up.** Whether there is a community channel or a showcase after the course: **[Kokil to confirm]**.
-4. **Slides and the practice page** for Week 8: to build.
+4. **Rerunning each other's notebooks** needs a repository link from everyone before the day. Collect them in the chat the day before.
 <!-- facilitator:end -->

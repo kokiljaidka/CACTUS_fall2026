@@ -1,4 +1,4 @@
-# RA testing checklist: Weeks 1 to 7
+# RA testing checklist: Weeks 1 to 8
 
 Thank you for testing. Please try everything the way a student would, on a device and account like theirs, and write down anything that is confusing, broken, slow, or wrong. **You are testing the materials, not yourself.** If something confuses you, it will confuse students, so that is a finding.
 
@@ -25,7 +25,7 @@ A screenshot helps for anything visual. **Never paste an API key into an issue.*
 - [ ] Have one AI chat assistant ready (ChatGPT, Claude, or Gemini).
 - [ ] Pick a device: Windows laptop, Mac laptop, or phone/tablet. Each task below says which devices matter most. Please note which you used.
 - [ ] Course site: https://kokiljaidka.github.io/CACTUS_fall2026/ (all course links should work from here)
-- [ ] The seven practice pages and seven slide decks are published on the course site. If a link is missing, tell Kokil.
+- [ ] The eight practice pages and eight slide decks are published on the course site. If a link is missing, tell Kokil.
 
 ---
 
@@ -240,7 +240,23 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## K. Slide decks (3 hours; Weeks 1 to 7)
+## K. Week 8: Run It from Scratch and the rerun report (1 hour; one RA)
+
+**Practice page** (`week08_run_it_from_scratch.html`, 30 minutes; one RA on a phone):
+- [ ] Level 1: try Restart and run all in the starting order. Does the error name the right cell? Do the arrows work with touch? Reach the goal.
+- [ ] Level 2: try each fix. Is each wrong pick explained fairly?
+- [ ] Level 3: decide the six lines. Is any answer one you would argue with? Write it down.
+- [ ] Level 4: sort the six lines and answer the leak question. Is any line ambiguous?
+- [ ] Level 5: do the three tasks on a notebook of your own. Do the steps match what Colab's menu says?
+- [ ] Refresh, reset progress, phone portrait, dark mode.
+
+**Rerun report** (the site page `rerun-report.html`): fill it in for a notebook you did not write. Is every field clear? Does it say to use only shared or de-identified data?
+
+**Done when:** every level is done and the rerun report has been filled in once.
+
+---
+
+## L. Slide decks (3 hours; Weeks 1 to 8)
 
 - [ ] Weeks 3 to 6 have 11 main slides each. Weeks 3 to 6 notes include TIME / SAY / DO / WATCH FOR lines. Are they usable by someone who did not write the slides?
 - [ ] Week 4 slide 4 needs one real raw API response from a facilitator. Is it clear what to prepare?
@@ -255,7 +271,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## L. Full dress rehearsal (2 sessions, as a group)
+## M. Full dress rehearsal (2 sessions, as a group)
 
 Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 
@@ -269,7 +285,7 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 
 ---
 
-## M. Data checks (30 minutes, one RA)
+## N. Data checks (30 minutes, one RA)
 
 - [ ] `starbucks_sea_comments.csv`: opens without error, Chinese, Thai and other scripts display correctly, and no usernames or links remain in any column.
 - [ ] `lululemon_instagram.csv`, `week02_toy_cafe.csv`, and the Week 3 CSVs: same checks. Confirm the Week 4 sample JSON in `data/week04/sample/` has only invented names.
@@ -292,8 +308,9 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 | H. Week 5 page and notebook | | | | | | |
 | I. Week 6 page and notebook | | | | | | |
 | J. Week 7 page and shared notebook | | | | | | |
-| K. Slide decks | | | | | | |
-| L. Rehearsal | | | | | | |
-| M. Data | | | | | | |
+| K. Week 8 page and rerun report | | | | | | |
+| L. Slide decks | | | | | | |
+| M. Rehearsal | | | | | | |
+| N. Data | | | | | | |
 
-**Suggested order:** A and M first (quick), then B and D in parallel, then C and E, then F to J, then K, then L.
+**Suggested order:** A and N first (quick), then B and D in parallel, then C and E, then F to K, then L, then M.

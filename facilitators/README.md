@@ -33,7 +33,7 @@ There is no lecture in the coding session, so the Lead is a Rooms person too.
 
 ## Who does what each week
 
-**Kokil leads Week 1 (Nov 17), Week 5 (Dec 15) and the Dec 22 show-and-tell.** For the other weeks, take turns. Each week one of you leads the learning session, one holds the Desk, and the rest visit rooms. Settle the order and the swaps among yourselves, and tell the team chat at least two days ahead if you change. Facilitator D is also a participant, so D does not hold the Desk and leads only if they want to. Anyone leading for the first time should ask another facilitator to back them up.
+**Kokil leads Week 1 (Nov 17), Week 5 (Dec 15), the Dec 22 show-and-tell and Week 8 (Jan 19).** For the other weeks, take turns. Each week one of you leads the learning session, one holds the Desk, and the rest visit rooms. Settle the order and the swaps among yourselves, and tell the team chat at least two days ahead if you change. Facilitator D is also a participant, so D does not hold the Desk and leads only if they want to. Anyone leading for the first time should ask another facilitator to back them up.
 
 | Date | Session | Lead |
 |---|---|---|
@@ -46,7 +46,7 @@ There is no lecture in the coding session, so the Lead is a Rooms person too.
 | (Dec 29) | Break | |
 | Tue Jan 5 | Week 6: AI as annotator | Facilitators |
 | Tue Jan 12 and Thu Jan 14 (tentative) | Week 7: Applying statistics (two sessions) | Facilitators |
-| Tue Jan 19 | Week 8: Reproduce and present | To decide |
+| Tue Jan 19 | Week 8: Reproduce and present | **Kokil** |
 
 ## A week at a glance
 
@@ -131,7 +131,7 @@ Slides open in the **presenter view**: press **N** for the script. Notebooks ope
 | 5 | [Analyze text](https://kokiljaidka.github.io/CACTUS_fall2026/slides/week05_analyze_text_presenter.html) | [What Counts as a Word?](https://kokiljaidka.github.io/CACTUS_fall2026/practice/week05_what_counts_as_a_word.html) | [Analyze text](https://colab.research.google.com/github/kokiljaidka/CACTUS_fall2026/blob/main/notebooks/week05_analyze_text.ipynb) | Private: Week 5 answer key |
 | 6 | [AI as annotator](https://kokiljaidka.github.io/CACTUS_fall2026/slides/week06_ai_as_annotator_presenter.html) | [Can You Trust the Labeler?](https://kokiljaidka.github.io/CACTUS_fall2026/practice/week06_trust_the_labeler.html) | [AI as annotator](https://colab.research.google.com/github/kokiljaidka/CACTUS_fall2026/blob/main/notebooks/week06_ai_as_annotator.ipynb) | Private: Week 6 answer key |
 | 7 | [Applying statistics](https://kokiljaidka.github.io/CACTUS_fall2026/slides/week07_applying_statistics_presenter.html) | [Plant It, Find It](https://kokiljaidka.github.io/CACTUS_fall2026/practice/week07_plant_it_find_it.html) | [Core: nested data](https://colab.research.google.com/github/kokiljaidka/CACTUS_fall2026/blob/main/notebooks/week07_core_nested_data.ipynb) (Session 1); [Track C: experiment](https://colab.research.google.com/github/kokiljaidka/CACTUS_fall2026/blob/main/notebooks/week07_track_c_experiment.ipynb) (Session 2); [Track A: networks](https://colab.research.google.com/github/kokiljaidka/CACTUS_fall2026/blob/main/notebooks/week07_track_a_networks.ipynb) (Session 2) ; [Track B: images](https://colab.research.google.com/github/kokiljaidka/CACTUS_fall2026/blob/main/notebooks/week07_track_b_images.ipynb) (Session 2) | Private: Week 7 answer key (core and Tracks A, B, C) |
-| 8 | To build | To build | To build | To build |
+| 8 | [Reproduce and present](https://kokiljaidka.github.io/CACTUS_fall2026/slides/week08_reproduce_and_present_presenter.html) | [Run It from Scratch](https://kokiljaidka.github.io/CACTUS_fall2026/practice/week08_run_it_from_scratch.html) | No notebook (students rerun their own); [rerun report](https://kokiljaidka.github.io/CACTUS_fall2026/rerun-report.html) | None (no bug hunt) |
 
 Weeks 5 and 6 use class data that is shared privately (the class drive). Ask Kokil for the link.
 

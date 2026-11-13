@@ -141,3 +141,17 @@ Page: `practice/week06_trust_the_labeler.html` (about 20 minutes). All messages 
 | 5. Colab bridge | Plant an answer in code and compare naive and clustered intervals | Forgetting to cluster by the right column | "Which column are you clustering on?" |
 
 All posts, comments and numbers on the page are invented. Do not tell students the numbers the notebook will find.
+
+## Week 8: Run It from Scratch (4 levels and a bridge, about 20 minutes, optional)
+
+**What it teaches:** a notebook remembers what you ran, not what is written; a deleted cell can leave a variable that only exists in your session; paths and keys that only work on your computer; what to do when a key leaks.
+
+| Level | What students do | Where they stall | What to ask |
+|---|---|---|---|
+| 1. Restart and run all | Put five cells in an order that runs from a fresh runtime | They reorder by guessing | "Which cell makes `pd`? Which makes `df`?" |
+| 2. The cell you deleted | Choose the fix for a notebook that works on one laptop only | They like "type the number in by hand" | "Who else has that variable?" |
+| 3. Paths that only work for you | Decide which of six data-loading lines work for a partner | Drive paths: they say it works | "Does your partner have your Drive folder?" |
+| 4. Keys and private data | Sort six lines, then decide what to do about a leaked key | They forget saved outputs; they say "delete the file" | "Is the secret written there, or only reachable? What does the history keep?" |
+| 5. Colab bridge | Restart and run all on their own notebook, ask an AI to look for problems, write the README | Pasting keys or data into the AI | "What are you sending to the AI?" |
+
+All notebooks, paths and keys on the page are invented.

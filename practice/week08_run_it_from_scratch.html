@@ -1,0 +1,591 @@
+<title>Run It from Scratch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* Layout: header + level map on top, then one puzzle at a time: idea and task on the left, board or code beside a tray of draggable pieces. */
+:root {
+  --bg: #edf1ec;
+  --surface: #f8faf7;
+  --surface2: #e0e8df;
+  --ink: #15251d;
+  --muted: #4f6057;
+  --line: #c6d1c4;
+  --accent: #237a4b;
+  --accent-ink: #ffffff;
+  --sun: #d99a1c;
+  --water: #2379c4;
+  --bad: #b0402e;
+  --good: #1d7443;
+  --code-bg: #14241c;
+  --code-ink: #e4efe6;
+  --code-dim: #8fa89a;
+  --slot: #d3e3d6;
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1814; --surface: #15231d; --surface2: #1e3028; --ink: #e3eee6; --muted: #98ab9f;
+    --line: #2b4036; --accent: #4cc080; --accent-ink: #06130c; --sun: #f0ba45; --water: #5bb0f2;
+    --bad: #f28d78; --good: #5fd596; --code-bg: #0a120f; --code-ink: #dcebdf; --code-dim: #7f9a8c; --slot: #23382e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1814; --surface: #15231d; --surface2: #1e3028; --ink: #e3eee6; --muted: #98ab9f;
+  --line: #2b4036; --accent: #4cc080; --accent-ink: #06130c; --sun: #f0ba45; --water: #5bb0f2;
+  --bad: #f28d78; --good: #5fd596; --code-bg: #0a120f; --code-ink: #dcebdf; --code-dim: #7f9a8c; --slot: #23382e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+  padding-block: 20px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+p { margin: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--water); outline-offset: 2px; }
+.top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.kicker { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+h1 { font-size: clamp(30px, 6vw, 44px); margin-top: 4px; }
+.sub { color: var(--muted); max-width: 52ch; margin-top: 6px; }
+.meta { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--muted); }
+.meta b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.linkbtn { background: none; border: 0; padding: 0; text-decoration: underline; color: var(--muted); font-size: 14px; }
+
+/* level map */
+#map { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.world { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0; }
+.world h3 { font-size: 14px; }
+.world small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.world ol { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; flex-wrap: wrap; }
+.dot { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--line); background: var(--bg); font-weight: 600; font-size: 14px; font-variant-numeric: tabular-nums; }
+.dot.done { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.dot.cur { border-color: var(--ink); box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--ink); }
+
+/* level */
+.lvl { display: flex; flex-direction: column; gap: 14px; }
+.eyebrow { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.lvl h2 { font-size: clamp(24px, 4vw, 32px); }
+.idea { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 4px; max-width: 78ch; }
+.idea .where { color: var(--muted); font-size: 14px; }
+.task { font-size: 18px; font-weight: 500; max-width: 62ch; }
+.play { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 820px) { .play { grid-template-columns: minmax(0, 1fr); } }
+.col { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.tray, .prog, .predict, .outbox, .fb, .rowzone { border-radius: 10px; }
+.tray { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.tray .items { display: flex; flex-wrap: wrap; gap: 8px; }
+.tipline { font-size: 13px; color: var(--muted); }
+
+/* draggable things */
+[data-dragitem] { touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; }
+.ghost { position: fixed; left: 0; top: 0; z-index: 100; pointer-events: none; opacity: .92; box-shadow: 0 10px 24px rgba(0,0,0,.28); cursor: grabbing; }
+body.dragging { cursor: grabbing; }
+.over { outline: 3px dashed var(--water); outline-offset: 2px; }
+.tok { display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 14px; font-weight: 500; background: var(--surface2); border: 1px solid var(--line); border-radius: 7px; padding: 5px 10px; white-space: nowrap; color: var(--ink); }
+.tok.small { padding: 1px 7px; font-size: 13px; background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.blk { border-radius: 9px; border: 2px solid var(--accent); background: var(--surface); font-weight: 600; font-size: 15px; display: flex; flex-direction: column; }
+.blk.mv { flex-direction: row; align-items: center; gap: 8px; padding: 7px 10px; }
+.blk.mv .arr { font-family: var(--font-mono); font-size: 18px; width: 20px; text-align: center; color: var(--accent); }
+.blk .x { margin-left: auto; width: 24px; height: 24px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); line-height: 1; font-size: 15px; padding: 0; }
+.blk.rep { border-color: var(--sun); }
+.rep-head { display: flex; align-items: center; gap: 8px; padding: 7px 10px; }
+.rep-head .x { margin-left: auto; }
+.step { width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface2); padding: 0; font-weight: 700; }
+.blk.rep > .zone { margin: 0 8px 8px 20px; min-height: 40px; }
+.blk.running { outline: 3px solid var(--sun); outline-offset: 1px; }
+.zone { display: flex; flex-direction: column; gap: 6px; padding: 8px; border: 2px dashed var(--line); border-radius: 9px; min-height: 64px; background: var(--bg); }
+.zone:empty::before { content: attr(data-hint); color: var(--muted); font-size: 14px; margin: auto; padding: 8px; text-align: center; }
+.prog { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.prog .zone { min-height: 110px; }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.count.full { color: var(--bad); font-weight: 600; }
+
+/* grid board */
+.board { position: relative; width: 100%; max-width: 520px; border-radius: 12px; overflow: hidden; border: 2px solid var(--line); background: var(--surface2); }
+.cells { position: absolute; inset: 0; display: grid; }
+.cell { position: relative; border: 1px solid var(--line); background: transparent; padding: 0; margin: 0; display: grid; place-items: center; }
+.cell:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.cell > span { width: 100%; height: 100%; display: grid; place-items: center; }
+.cell svg, .sprite svg { width: 78%; height: 78%; }
+.sprite { position: absolute; left: 0; top: 0; display: grid; place-items: center; pointer-events: none; transition: transform .32s ease; }
+.sprite.pred { transition: none; }
+.qmark { width: 70%; height: 70%; border: 3px dashed var(--sun); border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: var(--sun); font-size: 18px; }
+
+/* code */
+.code { background: var(--code-bg); color: var(--code-ink); border-radius: 10px; padding: 14px 14px; font-family: var(--font-mono); font-size: 14px; line-height: 2.1; overflow-x: auto; margin: 0; }
+.code .line { white-space: pre; }
+.code .dim { color: var(--code-dim); }
+.slot { display: inline-flex; align-items: center; justify-content: center; min-width: 74px; min-height: 28px; vertical-align: middle; padding: 0 3px; border: 2px dashed var(--code-dim); border-radius: 7px; color: var(--code-dim); font-size: 12px; line-height: 1.2; }
+.slot.filled { border-style: solid; border-color: transparent; padding: 0; min-width: 0; }
+.pathzone { display: inline-flex; flex-wrap: wrap; gap: 4px; align-items: center; min-width: 120px; min-height: 30px; padding: 2px 4px; border: 2px dashed var(--code-dim); border-radius: 7px; vertical-align: middle; }
+.pathzone:empty::before { content: "drop keys and numbers"; color: var(--code-dim); font-size: 12px; padding: 0 4px; }
+.datapre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.55; overflow: auto; max-height: 260px; }
+
+/* controls, feedback */
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.btn { border-radius: 9px; border: 1px solid var(--line); background: var(--surface); padding: 9px 16px; font-weight: 600; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn:hover { filter: brightness(1.06); }
+.predict { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: grid; gap: 6px; }
+.predict textarea { font-family: var(--font-mono); font-size: 14px; width: 100%; resize: vertical; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 8px; }
+.outbox { background: var(--code-bg); color: var(--code-ink); padding: 10px 14px; font-family: var(--font-mono); font-size: 14px; white-space: pre-wrap; min-height: 44px; overflow-wrap: anywhere; }
+.outbox.err { color: #ffb4a4; }
+.fb { padding: 10px 14px; border: 1px solid var(--line); background: var(--surface); display: grid; gap: 10px; justify-items: start; }
+.fb:empty { display: none; }
+.fb.good { border-color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--surface)); }
+.fb.warn { border-color: var(--sun); }
+.fb.bad { border-color: var(--bad); }
+.lvlnav { display: flex; justify-content: space-between; gap: 8px; padding-top: 6px; }
+
+/* row builder */
+.rowzone { border: 2px dashed var(--line); background: var(--bg); padding: 8px; display: flex; flex-direction: column; gap: 6px; min-height: 90px; }
+.rowzone:empty::before { content: "Drag fields here, or tap a field above"; color: var(--muted); font-size: 14px; margin: auto; padding: 10px; text-align: center; }
+.field { display: grid; grid-template-columns: minmax(80px, 130px) 1fr auto; gap: 8px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+.field code { font-family: var(--font-mono); font-size: 13px; overflow-wrap: anywhere; }
+.field input, .addfield input { font: inherit; font-size: 14px; min-width: 0; border-radius: 7px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 5px 8px; width: 100%; }
+.field .x { width: 26px; height: 26px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); padding: 0; }
+.addfield { display: flex; gap: 8px; }
+footer { color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { .sprite { transition: none; } }
+.code.tight { line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.code, .tok, .datapre, .outbox, .field code { font-variant-ligatures: none; }
+.choice { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 4px 12px; font-weight: 600; font-size: 13px; }
+.pill.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.givens { background: var(--surface2); border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+.tcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.tcard.right { border-color: var(--good); }
+.tcard.wrong { border-color: var(--bad); }
+.tcard .src { font-size: 16px; font-weight: 600; }
+.tcard .why { font-size: 13px; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { font-family: var(--font-mono); font-size: 13px; background: var(--surface2); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+.ncount { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.togs { display: grid; gap: 8px; }
+.tog { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.tog input { width: 18px; height: 18px; accent-color: var(--accent); }
+.tog small { color: var(--muted); display: block; font-size: 12px; }
+table.top { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.top td, table.top th { border-bottom: 1px solid var(--line); padding: 4px 8px; text-align: left; }
+table.top td.n { font-family: var(--font-mono); text-align: right; width: 60px; }
+table.top tr.hit td { color: var(--good); font-weight: 700; }
+table.top tr.fn td:first-child { color: var(--muted); }
+ul.heads { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+.sc { display: grid; grid-template-columns: minmax(120px, 1fr) auto; gap: 4px 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.sc.right { border-color: var(--good); }
+.sc.wrong { border-color: var(--bad); }
+.sc .t { font-size: 14px; }
+.sc .r { font-family: var(--font-mono); font-size: 12px; color: var(--muted); text-align: right; }
+.sc .s { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+.clu { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.clu.right { border-color: var(--good); }
+.clu.wrong { border-color: var(--bad); }
+.clu .words { font-family: var(--font-mono); font-size: 13px; font-weight: 700; }
+.clu .why { font-size: 13px; color: var(--muted); }
+.lab { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 6px; }
+.lab.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.lab h4 { margin: 0; font-size: 15px; }
+table.mx { border-collapse: collapse; font-size: 13px; }
+table.mx td, table.mx th { border: 1px solid var(--line); padding: 3px 8px; text-align: center; }
+table.mx th { background: var(--surface2); font-weight: 600; }
+.mets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 13px; }
+.mets b { display: block; font-family: var(--font-mono); font-size: 16px; }
+.mets small { color: var(--muted); text-transform: uppercase; letter-spacing: .04em; font-weight: 700; font-size: 11px; }
+.ctrl { display: grid; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.ctrl .row2 { display: flex; justify-content: space-between; font-size: 14px; }
+.ctrl .row2 b { font-family: var(--font-mono); }
+.ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.stat small { display: block; color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; }
+.stat b { font-family: var(--font-mono); font-size: 20px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; }
+.case { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.case.right { border-color: var(--good); }
+.case.wrong { border-color: var(--bad); }
+.case blockquote { margin: 0; font-weight: 500; }
+.case .why { font-size: 13px; color: var(--muted); }
+.case .lbl { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.nbcell { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; }
+.nbcell.err { border-color: var(--bad); }
+.nbcell.ok { border-color: var(--good); }
+.nbcell.gone { opacity: .55; border-style: dashed; }
+.nbcell code { font-family: var(--font-mono); font-size: 13px; white-space: pre-wrap; word-break: break-all; }
+.nbcell .idx { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.nbcell .mv { display: flex; flex-direction: column; gap: 2px; }
+.nbcell .mv button { padding: 0 8px; line-height: 1.2; }
+.out { font-family: var(--font-mono); font-size: 12px; color: var(--muted); grid-column: 2 / -1; }
+.out.bad { color: var(--bad); font-weight: 700; }
+</style>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="kicker">CACTUS Fall 2026 · Week 8</p>
+      <h1>Run It from Scratch</h1>
+      <p class="sub">A notebook remembers what you ran, not what is written. Put cells in order, find a variable that only exists in your session, spot paths that only work on your computer, and keep keys out of what you share. Then do it on your own notebook.</p>
+    </div>
+    <div class="meta"><span><b id="count">0</b> of <span id="total">4</span> solved</span><button class="linkbtn" id="resetProg" type="button">Reset progress</button></div>
+  </header>
+  <nav id="map" aria-label="Levels"></nav>
+  <main id="stage"></main>
+  <footer>All notebooks, paths and keys on this page are invented. Nothing on this page is sent anywhere.</footer>
+</div>
+<script>
+"use strict";
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let _id = 0; const uid = () => "b" + (++_id);
+function h(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (v === true) e.setAttribute(k, "");
+    else if (v !== false && v != null) e.setAttribute(k, v);
+  }
+  for (const kid of kids.flat()) { if (kid == null || kid === false) continue; e.append(kid.nodeType ? kid : document.createTextNode(kid)); }
+  return e;
+}
+const svgEl = (cls, html) => { const s = h("span", { class: cls }); s.innerHTML = html; return s; };
+/* ---------- drag engine (pointer events: mouse, touch and pen) ---------- */
+const dragReg = new WeakMap(), dropReg = new WeakMap();
+let drag = null;
+function makeDraggable(el, info) {
+  el.setAttribute("data-dragitem", ""); el.setAttribute("role", "button"); el.tabIndex = 0;
+  dragReg.set(el, info);
+  el.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && !e.target.closest("[data-nodrag]")) { e.preventDefault(); info.tap && info.tap(); } });
+  return el;
+}
+const makeDrop = (el, drop) => { dropReg.set(el, { drop }); return el; };
+const dropTargetAt = (x, y) => { let el = document.elementFromPoint(x, y); while (el) { if (dropReg.has(el)) return el; el = el.parentElement; } return null; };
+let lastOver = null;
+function setOver(t) { if (lastOver === t) return; if (lastOver) lastOver.classList.remove("over"); lastOver = t; if (t) t.classList.add("over"); }
+document.addEventListener("pointerdown", e => {
+  if (e.button > 0 || e.target.closest("[data-nodrag]")) return;
+  const el = e.target.closest("[data-dragitem]"); if (!el) return;
+  const info = dragReg.get(el); if (!info) return;
+  drag = { el, info, x0: e.clientX, y0: e.clientY, active: false, ghost: null };
+});
+window.addEventListener("pointermove", e => {
+  if (!drag) return;
+  if (!drag.active) {
+    if (Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) < 6) return;
+    drag.active = true;
+    const r = drag.el.getBoundingClientRect();
+    drag.ox = drag.x0 - r.left; drag.oy = drag.y0 - r.top;
+    const g = drag.el.cloneNode(true); g.removeAttribute("data-dragitem"); g.classList.add("ghost"); g.style.width = r.width + "px";
+    document.body.append(g); drag.ghost = g; document.body.classList.add("dragging");
+    if (drag.info.pickup) drag.info.pickup();
+  }
+  drag.ghost.style.transform = `translate(${e.clientX - drag.ox}px, ${e.clientY - drag.oy}px)`;
+  setOver(dropTargetAt(e.clientX, e.clientY));
+  e.preventDefault();
+}, { passive: false });
+function endDrag(e, cancelled) {
+  if (!drag) return;
+  const d = drag; drag = null; setOver(null); document.body.classList.remove("dragging");
+  if (d.ghost) d.ghost.remove();
+  if (!d.active) { if (!cancelled && d.info.tap) d.info.tap(); return; }
+  const t = cancelled ? null : dropTargetAt(e.clientX, e.clientY);
+  if (t) dropReg.get(t).drop(d.info.payload, { x: e.clientX, y: e.clientY });
+  else if (d.info.discard) d.info.discard();
+}
+window.addEventListener("pointerup", e => endDrag(e, false));
+window.addEventListener("pointercancel", e => endDrag(e, true));
+
+
+/* ---------- level framework (pages define WORLDS, LEVELS, BUILDERS, then call boot) ---------- */
+const S = { i: 0, done: new Set(), rowCode: null };
+let L = null;
+const BUILDERS = {};
+let STORE_KEY = "cactus-practice";
+const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify([...S.done])); } catch (e) {} };
+const puzzleCount = () => LEVELS.filter(l => !l.bridge).length;
+
+function renderMap() {
+  const m = $("#map"); m.replaceChildren();
+  WORLDS.forEach((w, wi) => {
+    const ol = h("ol");
+    LEVELS.forEach((lv, i) => { if (lv.w === wi) ol.append(h("li", {}, h("button", { class: "dot", "data-i": i, "aria-label": `Level ${i + 1}: ${lv.title}`, title: lv.title, onclick: () => go(i) }, String(i + 1)))); });
+    m.append(h("div", { class: "world" }, h("h3", {}, w.name), h("small", {}, w.blurb), ol));
+  });
+  updateMap();
+}
+function updateMap() {
+  $$(".dot").forEach(b => { const i = +b.dataset.i; b.classList.toggle("done", S.done.has(i)); b.classList.toggle("cur", i === S.i); });
+  $("#count").textContent = String([...S.done].filter(i => LEVELS[i] && !LEVELS[i].bridge).length);
+  $("#total").textContent = String(puzzleCount());
+}
+function go(i) {
+  if (L) L.token = (L.token || 0) + 1;
+  S.i = Math.max(0, Math.min(LEVELS.length - 1, i));
+  try { history.replaceState(null, "", "#l-" + (S.i + 1)); } catch (e) {}
+  renderLevel(); updateMap();
+}
+function setFb(type, msg, next) {
+  const box = $("#fb"); if (!box) return;
+  box.className = "fb " + type; box.replaceChildren(h("p", {}, msg));
+  if (next && S.i < LEVELS.length - 1) box.append(h("button", { class: "btn primary", type: "button", onclick: () => go(S.i + 1) }, "Next level"));
+}
+function solved() { S.done.add(S.i); save(); updateMap(); }
+function renderLevel() {
+  const def = LEVELS[S.i], wd = WORLDS[def.w];
+  const { left, right } = BUILDERS[def.kind](def);
+  const nav = h("div", { class: "lvlnav" },
+    h("button", { class: "btn", type: "button", disabled: S.i === 0, onclick: () => go(S.i - 1) }, "Previous"),
+    h("button", { class: "btn", type: "button", disabled: S.i === LEVELS.length - 1, onclick: () => go(S.i + 1) }, "Next"));
+  $("#stage").replaceChildren(h("section", { class: "lvl" },
+    h("p", { class: "eyebrow" }, `World ${def.w + 1} · ${wd.name} · Level ${S.i + 1}`),
+    h("h2", {}, def.title),
+    h("div", { class: "idea" }, h("p", {}, h("b", {}, "The idea. "), wd.idea), h("p", { class: "where" }, wd.where)),
+    h("p", { class: "task" }, def.task),
+    h("div", { class: "play" }, h("div", { class: "col" }, left), h("div", { class: "col" }, right)),
+    nav));
+}
+const hintBtn = def => h("button", { class: "btn", type: "button", onclick: () => setFb("info", "Hint: " + def.hint) }, "Hint");
+
+/* A block of code with a Copy button. Used by the Colab bridge screens. */
+function codeCard(title, text, note) {
+  const msg = h("span", { class: "tipline", "aria-live": "polite" });
+  const pre = h("pre", { class: "code tight" }, text);
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(text); msg.textContent = "Copied."; }
+    catch (e) { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent = "Selected. Press Ctrl+C or Cmd+C to copy."; }
+  };
+  return h("div", { class: "col" }, h("p", { class: "label" }, title), note ? h("p", {}, note) : null, pre,
+    h("div", { class: "row" }, h("button", { class: "btn", type: "button", onclick: copy }, "Copy code"), msg));
+}
+
+function boot(storeKey) {
+  STORE_KEY = storeKey;
+  try { JSON.parse(localStorage.getItem(STORE_KEY) || "[]").forEach(n => S.done.add(n)); } catch (e) {}
+  $("#resetProg").addEventListener("click", () => { S.done.clear(); save(); updateMap(); });
+  renderMap();
+  const m = /^#l-(\d+)$/.exec(location.hash || "");
+  go(m ? +m[1] - 1 : 0);
+  window.addEventListener("hashchange", () => { const m2 = /^#l-(\d+)$/.exec(location.hash || ""); if (m2 && +m2[1] - 1 !== S.i) go(+m2[1] - 1); });
+}
+/* Week 8: Run It from Scratch. Uses the shared engine (practice/shared/engine.js). All notebooks, paths and keys on this page are invented. */
+
+const WORLDS = [
+  { name: "Order", blurb: "Top to bottom",
+    idea: "A notebook remembers what you ran, in the order you ran it. A fresh runtime runs only what is written, top to bottom. If the order is wrong, it fails.",
+    where: "In your own notebook: Runtime, then Restart session and run all." },
+  { name: "Hidden state", blurb: "What the session remembers",
+    idea: "A variable can exist in your session after you delete the cell that made it. Your notebook still seems to work, but nobody else can run it.",
+    where: "In your own notebook: the first error after a restart is the finding." },
+  { name: "Paths", blurb: "Where the data lives",
+    idea: "A path that only exists on your computer breaks for everyone else. Say where the data comes from, and use a path that works after they put it in the same place.",
+    where: "In your README: where to get the data, and where to put it." },
+  { name: "Secrets", blurb: "Keys and private data",
+    idea: "A key or private data in a shared notebook is already shared. Keep keys in Colab Secrets. If one leaks, replace it. Deleting the file does not undo it.",
+    where: "In your repository: search it before you share the link." },
+  { name: "Take it to Colab", blurb: "Your notebook",
+    idea: "You have fixed made-up notebooks. Now rerun your own from scratch and write down how to rerun it.",
+    where: "Do this before Week 8, so your partner can rerun it." }
+];
+
+const choose = (opts, onpick) => {
+  const wrap = h("div", { class: "choice", role: "group" }); let cur = null; const btns = [];
+  opts.forEach(o => {
+    const b = h("button", { class: "pill", type: "button", onclick: () => { cur = o.v; btns.forEach(x => x.classList.toggle("on", x === b)); onpick && onpick(cur); } }, o.t);
+    btns.push(b); wrap.append(b);
+  });
+  wrap.get = () => cur; return wrap;
+};
+
+/* ---------- level 1: order ---------- */
+const CELLS = [
+  { id: "A", code: "import pandas as pd", needs: [], defs: ["pd"], out: "" },
+  { id: "B", code: "df = pd.read_csv(\"data/posts.csv\")", needs: ["pd"], defs: ["df"], out: "" },
+  { id: "C", code: "clean = df.drop_duplicates()", needs: ["df"], defs: ["clean"], out: "" },
+  { id: "D", code: "print(len(clean))", needs: ["clean"], defs: [], out: "812" },
+  { id: "E", code: "clean.to_csv(\"data/posts_clean.csv\")", needs: ["clean"], defs: [], out: "" }
+];
+function buildOrder(def) {
+  L = { def, token: 0 };
+  let order = ["B", "D", "A", "C", "E"];
+  const list = h("div", { class: "togs" }), result = h("p", { class: "tipline", "aria-live": "polite" });
+  const byId = id => CELLS.find(c => c.id === id);
+  function run() {
+    const have = new Set(); const rows = [];
+    for (let i = 0; i < order.length; i++) {
+      const c = byId(order[i]); const miss = c.needs.find(n => !have.has(n));
+      if (miss) { rows.push({ i, err: `NameError: name '${miss}' is not defined` }); return rows; }
+      c.defs.forEach(d => have.add(d)); rows.push({ i, out: c.out });
+    }
+    return rows;
+  }
+  function draw(rows) {
+    list.replaceChildren(...order.map((id, i) => {
+      const c = byId(id), r = rows && rows.find(x => x.i === i);
+      const cls = "nbcell" + (r ? (r.err ? " err" : " ok") : "");
+      return h("div", { class: cls },
+        h("span", { class: "idx" }, `[${i + 1}]`), h("code", {}, c.code),
+        h("span", { class: "mv" },
+          h("button", { class: "btn", type: "button", "aria-label": "Move up", disabled: i === 0, onclick: () => { [order[i - 1], order[i]] = [order[i], order[i - 1]]; draw(null); } }, "↑"),
+          h("button", { class: "btn", type: "button", "aria-label": "Move down", disabled: i === order.length - 1, onclick: () => { [order[i + 1], order[i]] = [order[i], order[i + 1]]; draw(null); } }, "↓")),
+        r ? h("span", { class: "out" + (r.err ? " bad" : "") }, r.err || (r.out ? "→ " + r.out : "ran")) : null);
+    }));
+  }
+  const restart = () => {
+    const rows = run(); draw(rows);
+    const bad = rows.find(r => r.err);
+    if (bad) setFb("bad", `Restart and run all stopped at cell ${bad.i + 1}: ${bad.err}. The cells above it have not made that name yet. Which cell does?`);
+    else { solved(); setFb("good", def.win, true); }
+  };
+  draw(null);
+  const left = [h("div", { class: "givens" }, "A student's five-cell notebook, saved in a mixed-up order. It worked on her laptop because she ran the cells in a good order by hand. A fresh runtime runs them top to bottom. Use the arrows to put them in an order that runs."), list, result];
+  const right = [h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: restart }, "Restart and run all"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+/* ---------- level 2: hidden state ---------- */
+const FIX_OPTS = [
+  { v: "put", t: "Put the line back in a cell above, and restart and run all" },
+  { v: "hope", t: "Leave it. It works on my laptop" },
+  { v: "paste", t: "Type the number 812 into the next cell by hand" }
+];
+function buildHidden(def) {
+  L = { def, token: 0 };
+  const pick = choose(FIX_OPTS);
+  const left = [h("div", { class: "givens" }, "Last week this notebook worked. This week she tidied it up and deleted the middle cell. On her laptop it still prints 812. On her partner's laptop it fails."),
+    h("div", { class: "togs" },
+      h("div", { class: "nbcell" }, h("span", { class: "idx" }, "[1]"), h("code", {}, "df = pd.read_csv(\"data/posts.csv\")")),
+      h("div", { class: "nbcell gone" }, h("span", { class: "idx" }, "[ ]"), h("code", {}, "# deleted: clean = df.drop_duplicates()")),
+      h("div", { class: "nbcell" }, h("span", { class: "idx" }, "[3]"), h("code", {}, "print(len(clean))"), h("span", { class: "out" }, "→ 812 on her laptop (the session still remembers `clean`)")),
+      h("div", { class: "nbcell err" }, h("span", { class: "idx" }, "[3]"), h("code", {}, "print(len(clean))"), h("span", { class: "out bad" }, "NameError: name 'clean' is not defined   (fresh runtime)")))];
+  const check = () => {
+    const v = pick.get();
+    if (!v) { setFb("warn", "Pick a fix first."); return; }
+    if (v === "put") { solved(); setFb("good", def.win, true); }
+    else if (v === "hope") setFb("bad", "A notebook that only works in your own session cannot be rerun by anyone else, and may not rerun for you tomorrow. Restart and run all is the honest test.");
+    else setFb("bad", "A number typed in by hand is a result nobody can check. If the data changes, it will be silently wrong.");
+  };
+  const right = [pick, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my fix"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+/* ---------- level 3: paths ---------- */
+const PATHS = [
+  { q: "pd.read_csv(\"/Users/aisha/Documents/cactus/posts.csv\")", a: "me", why: "A folder on one person's computer." },
+  { q: "pd.read_csv(\"data/posts.csv\")   # README: put posts.csv in a folder called data", a: "all", why: "A relative path, and the README says where the file comes from and where to put it." },
+  { q: "pd.read_csv(\"C:\\\\Users\\\\raj\\\\Downloads\\\\posts.csv\")", a: "me", why: "A Windows folder on one person's computer." },
+  { q: "pd.read_csv(\"/content/drive/MyDrive/cactus/posts.csv\")", a: "me", why: "Only works if the partner has the same Drive folder, which they do not. Use a shared link or a README." },
+  { q: "pd.read_csv(\"https://example.org/cactus/posts.csv\")   # a public link", a: "all", why: "Works for anyone, as long as the data is allowed to be public." },
+  { q: "os.chdir(\"/home/raj/project\")", a: "me", why: "Changes to a folder that exists only on one machine." }
+];
+const PATH_OPTS = [{ v: "all", t: "Works for a partner" }, { v: "me", t: "Only works for me" }];
+function buildPaths(def) {
+  L = { def, token: 0 };
+  const picks = PATHS.map(() => choose(PATH_OPTS));
+  const cards = PATHS.map((c, i) => h("div", { class: "case", id: "p" + i }, h("blockquote", {}, h("code", {}, c.q)), picks[i]));
+  const check = () => {
+    if (picks.some(p => !p.get())) { setFb("warn", "Decide on every line."); return; }
+    let n = 0;
+    PATHS.forEach((c, i) => { const ok = picks[i].get() === c.a; if (ok) n++; cards[i].className = "case " + (ok ? "right" : "wrong"); cards[i].querySelector(".why")?.remove(); cards[i].append(h("p", { class: "why" }, (ok ? "Right. " : "Not quite. ") + c.why)); });
+    if (n === 6) { solved(); setFb("good", def.win, true); } else setFb("bad", `${n} of 6. Ask of each line: if my partner has only the notebook and the README, will this line find the file?`);
+  };
+  const left = [h("div", { class: "givens" }, "Six lines that load data. Your partner will rerun your notebook on their own computer, with only your notebook and your README. Which lines will work for them?")];
+  const right = [...cards, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my answers"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+/* ---------- level 4: secrets ---------- */
+const SECRETS = [
+  { q: "API_KEY = \"sk-live-83hd9s0a7x2k\"", a: "no", why: "A key written into the notebook. Anyone with the link has it." },
+  { q: "key = userdata.get(\"SERPAPI_KEY\")", a: "ok", why: "Reads the key from Colab Secrets. The key itself is not in the notebook." },
+  { q: "df.head()   # the output shows ten rows with full names and handles", a: "no", why: "Saved outputs travel with the notebook. Personal data in an output is shared too." },
+  { q: "# the key is stored in Colab Secrets under the name SERPAPI_KEY", a: "ok", why: "A note that says where the key lives, not the key." },
+  { q: "print(os.environ)   # the saved output lists every environment variable", a: "no", why: "Environment variables can include tokens. Do not print them into a shared notebook." },
+  { q: "requests.get(url, params={\"api_key\": key})", a: "ok", why: "Uses the variable. The key is not written here." }
+];
+const SECRET_OPTS = [{ v: "ok", t: "Fine to share" }, { v: "no", t: "Must not be shared" }];
+const LEAK_OPTS = [
+  { v: "delete", t: "Delete the file and push again" },
+  { v: "revoke", t: "Revoke the key and make a new one" },
+  { v: "hope", t: "Nothing. Nobody has looked" }
+];
+function buildSecrets(def) {
+  L = { def, token: 0 };
+  const picks = SECRETS.map(() => choose(SECRET_OPTS));
+  const cards = SECRETS.map((c, i) => h("div", { class: "case", id: "s" + i }, h("blockquote", {}, h("code", {}, c.q)), picks[i]));
+  const leak = choose(LEAK_OPTS);
+  const leakCard = h("div", { class: "case", id: "leak" }, h("p", { class: "label" }, "A key was in a notebook you already pushed to GitHub. What do you do first?"), leak);
+  const check = () => {
+    if (picks.some(p => !p.get()) || !leak.get()) { setFb("warn", "Decide on every line and the last question."); return; }
+    let n = 0;
+    SECRETS.forEach((c, i) => { const ok = picks[i].get() === c.a; if (ok) n++; cards[i].className = "case " + (ok ? "right" : "wrong"); cards[i].querySelector(".why")?.remove(); cards[i].append(h("p", { class: "why" }, (ok ? "Right. " : "Not quite. ") + c.why)); });
+    const lk = leak.get() === "revoke"; leakCard.className = "case " + (lk ? "right" : "wrong"); leakCard.querySelector(".why")?.remove();
+    leakCard.append(h("p", { class: "why" }, lk ? "Right. A pushed key stays in the history, and may already have been copied. Replace the key first; then clean up." : "Deleting the file does not remove it from the history, and the key may already have been copied. Revoke it and make a new one."));
+    if (n === 6 && lk) { solved(); setFb("good", def.win, true); } else setFb("bad", `${n} of 6 lines${lk ? "" : ", and the last question needs another look"}. Is the secret itself in the notebook, or only a way to reach it?`);
+  };
+  const left = [h("div", { class: "givens" }, "Six lines or outputs from notebooks about to be shared. Which are safe to share, and which are not? Then one question about a leak.")];
+  const right = [...cards, leakCard, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my answers"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+const LEVELS = [
+  { w: 0, kind: "order", title: "Restart and run all",
+    task: "Put the five cells in an order that runs from a fresh runtime. Press Restart and run all to see where it stops.",
+    hint: "A cell can only use names that a cell above it has made. Which cell makes `pd`? Which makes `df`?",
+    win: "Top to bottom works. The first error after a restart tells you which cell used a name too early." },
+  { w: 1, kind: "hidden", title: "The cell you deleted",
+    task: "Her notebook works on her laptop and fails on her partner's. Choose the fix.",
+    hint: "Where did `clean` come from? Who else has it?",
+    win: "The session remembered `clean` after the cell was gone. The fix is to put the line back and to test with a restart, so it fails for you first." },
+  { w: 2, kind: "paths", title: "Paths that only work for you",
+    task: "Six lines that load data. Decide which will work on a partner's computer.",
+    hint: "Think of a partner with only your notebook and your README. Does the line find the file?",
+    win: "Relative paths and public links travel. Folders on your computer do not. Say in the README where the data comes from and where to put it." },
+  { w: 3, kind: "secrets", title: "Keys and private data",
+    task: "Sort six lines, then decide what to do about a leaked key.",
+    hint: "Is the secret itself written in the line or the output, or does the line only read it from somewhere safe?",
+    win: "Keys live in Colab Secrets. Outputs travel with the notebook. If a key leaks, replace it first." },
+  { w: 4, kind: "bridge", bridge: true, title: "Rerun your own notebook",
+    task: "Do this on your own notebook before Week 8." }
+];
+
+/* ---------- bridge ---------- */
+const BRIDGE_STEPS = [
+  "1. In Colab: Runtime, then Restart session and run all.",
+  "2. Note the first error: the cell number, the last line of the message, and why it happened.",
+  "3. Fix it and restart again. Repeat until it runs top to bottom.",
+  "4. Check the outputs: do the numbers and charts match what you meant to show?",
+  "5. Search the notebook and the outputs for keys, names, handles and local paths."
+].join("\n");
+const README_TEXT = [
+  "# How to rerun this project", "",
+  "1. Get the data: <where it comes from, and the file name>.",
+  "2. Put it in a folder called data/ next to the notebook.",
+  "3. Open the notebook in Colab. Runtime, then Restart session and run all.",
+  "4. It takes about <N> minutes. It needs these packages: <list>.",
+  "5. The keys it needs are named <NAME> in Colab Secrets. They are not in this repository.",
+  "6. Model and date for any AI step: <model, date>."
+].join("\n");
+function buildBridge(def) {
+  const prompt = "Here is the list of cells in my notebook (code only, no data, no keys, no real names). Tell me what would stop it from running top to bottom in a fresh runtime for someone else: names used before they are made, absolute paths, packages not installed, and anything that looks like a key. Do not guess at data you have not seen.";
+  const left = [codeCard("Task 1: restart and run all", BRIDGE_STEPS, "Do this on your own notebook, in Colab."), codeCard("Task 3: write the README", README_TEXT, "Fill in the blanks for your own project.")];
+  const right = [
+    codeCard("Task 2: ask an AI to look for problems", prompt, "Paste this with your cells' code only (no data, no keys). Check what it says against what you found in Task 1."),
+    h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: () => { solved(); setFb("good", "Done. In Week 8 a partner reruns your notebook with only the notebook and your README, then you present."); } }, "I did all three")),
+    h("div", { id: "fb", class: "fb", "aria-live": "polite" })
+  ];
+  return { left, right };
+}
+
+BUILDERS.order = buildOrder; BUILDERS.hidden = buildHidden; BUILDERS.paths = buildPaths; BUILDERS.secrets = buildSecrets; BUILDERS.bridge = buildBridge;
+boot("cactus-run-it-from-scratch-done");
+</script>
