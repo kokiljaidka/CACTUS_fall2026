@@ -25,6 +25,8 @@ By the end of the week, students can:
 | Practice page | Precomputed tokenizations and scores in the page | Shows the effect of choices without running code |
 | Coding (exercises) | **Guided exercises on a shared corpus:** 657 Reddit posts from r/jobs, r/personalfinance and r/mildlyinfuriating (English, with subreddit, month, score and comments), so facilitators can help everyone with the same data. **Chinese tokenization** on 202 Chinese news and web texts about AI from Hong Kong and Taiwan. **Then your own text** from Week 4, if you have it | Reddit gives long, informal, sarcastic text that shows where counting and dictionary sentiment fail. The news texts are mostly headlines, so they suit tokenization but not counting or sentiment. Your own data is what you will use for your project |
 
+**Getting the data.** The class data (a zip file) is shared by your facilitators through the class drive. Download it before the coding session. It is for this course only: do not post it, do not upload it to a public place, and do not paste posts from it into an AI chat. Some posts discuss personal and financial situations, so read them with care.
+
 ## Required reading
 
 From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.net)), the Python version. Required, not graded.
