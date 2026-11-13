@@ -228,18 +228,16 @@ One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck p
 
 ## Week 8: Reproduce and present (Kokil leads)
 
-**Goal:** everyone reruns a notebook from a clean start (their own and a partner's), documents the project, and presents it in six minutes with its limits.
+**Goal:** everyone reruns a notebook from a clean start (their own and a partner's) **before** presentation day, and fixes what broke. On Jan 19 there are only presentations, and presenting is **opt-in: five places, first come first served**.
 
-**Before:** make pairs the day before; share the rerun-report template; collect repository links in the chat; make the order and the feedback sheet. Partners rerun on the shared or de-identified sample only, never on private raw data. The slides and the practice page (Run It from Scratch, optional before the session) are built.
+**Before (Jan 12 to 18):** announce the exercise and show the slides (about 20 minutes) at the end of Week 7 Session 2, or send them; open a sign-up sheet with five presentation slots (first come first served); collect repository links by Jan 15 and make the pairs; the Desk watches the chat for stuck pairs; collect the rerun reports by Jan 18; make the order and the feedback sheet. Partners rerun on the shared or de-identified sample only, never on private raw data. The slides and the practice page (Run It from Scratch, optional) are built.
 
-**Session (about 3 h)**
+**Presentation day (about 1 h)**
 
 | Time | What |
 |---|---|
-| 0:00 to 0:20 | Short learning session: the reproducibility checklist, and what a result supports |
-| 0:20 to 1:20 | Swap and rerun in pairs: restart and run all, write down what broke and what could not be followed, fix it |
-| 1:20 to 1:30 | Break |
-| 1:30 to 3:00 | Presentations: 6 minutes each plus 2 for questions (about 9 people). The Desk keeps time |
-| About 3:00 | Close |
+| 0:00 to 0:05 | Welcome, the order, the rules |
+| 0:05 to 0:50 | Presentations: 6 minutes each plus 2 for questions (up to 5 people, in sign-up order). The Desk keeps time |
+| About 0:50 | Close |
 
-**Watch for:** notebooks that only run because of leftover variables; a key or private file in a repository (stop and fix it before the presentation); people with no data (present the plan and the checks); long talks.
+**Watch for:** a key or private file in a repository (stop and fix it before the presentation); people with no data (present the plan and the checks); long talks; pairs that did not exchange reports.

@@ -114,6 +114,7 @@ How I'll use AI on this project (and how I'll check it):
 | Week 4 | Data in hand (or a clear plan to get it) |
 | Week 5 and Dec 22 | Show where your project stands (Dec 22: the question, the data, one result and its check) |
 | Weeks 6–7 | Run your methods; revise the card when your plans change |
-| Week 8 | Rerun it from scratch and present your project |
+| Before Week 8 | Rerun it from scratch, with a partner, and fix what breaks |
+| Week 8 | Present your project (optional: five places, first come first served) |
 
 Revising the question is normal. If the data can't answer it, change the question rather than forcing the data.

@@ -46,7 +46,7 @@ There is no lecture in the coding session, so the Lead is a Rooms person too.
 | (Dec 29) | Break | |
 | Tue Jan 5 | Week 6: AI as annotator | Facilitators |
 | Tue Jan 12 and Thu Jan 14 (tentative) | Week 7: Applying statistics (two sessions) | Facilitators |
-| Tue Jan 19 | Week 8: Reproduce and present | **Kokil** |
+| Tue Jan 19 | Week 8: presentations (opt-in, five places; the reproducibility exercise is done before, by Jan 18) | **Kokil** |
 
 ## A week at a glance
 
