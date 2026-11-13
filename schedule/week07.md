@@ -1,10 +1,10 @@
 # Week 7: Applying statistics to social media data
 
 **Theme:** Social media rows are not independent: replies sit inside threads, posts inside accounts, images inside templates, people inside groups. An analysis that ignores this looks more certain than it is. **Session 1** teaches the shared core for everyone, using data where the answer is planted. **Session 2** splits into three tracks (networks, images and memes, a mock feed or experiment), and each student applies the core to the kind of data in their project.
-**Format:** Two sessions, like Week 1. **Session 1 (Tue Jan 12):** a 1-hour learning session, a 20-minute practice page, then a 2-hour coding session. **Session 2 (Thu Jan 14, to be confirmed):** a 2-hour coding session in breakout rooms by track, one facilitator per room. About 5 hours live.
+**Format:** Two sessions, like Week 1. **Session 1 (Tue Jan 12):** a 1-hour learning session, a 20-minute practice page, then a 2-hour coding session. **Session 2 (Thu Jan 14):** a 2-hour coding session in breakout rooms by track, one facilitator per room. About 5 hours live.
 
 <!-- facilitator:start -->
-> **Status: Session 1 is built (data, notebook, practice page, slides, private key), and All three track notebooks are built (Session 2); AI image annotation for Track B is not built (see the decisions).** The Session 2 date is a placeholder. See the materials, build plan and decisions at the end.
+> **Status: Session 1 is built (data, notebook, practice page, slides, private key), and all three track notebooks are built (Session 2); AI image annotation for Track B is not built (see the decisions).** Session 2 is confirmed for Thu Jan 14. See the materials, build plan and decisions at the end.
 <!-- facilitator:end -->
 
 ## Objectives
@@ -178,7 +178,7 @@ Networks: the addressee and mention networks in the Twitter data, a digital-acti
 
 ## Decisions and open items (Week 7)
 
-1. **Session 2 date.** Thursday Jan 14 is a placeholder. Confirm, and add it to the rota (a Lead and a room host per track).
+1. **Session 2 date.** Confirmed: Thursday Jan 14. Still to do: agree a Lead and a room host per track.
 2. **Rooms.** Three tracks, four facilitators: one hosts each room and the fourth is the Desk. Facilitator D (student-facilitator) joins a room as a participant if they prefer.
 3. **Missed Session 1.** A student who misses it can use the shared notebook as a catch-up before Session 2.
 4. **Statistics level.** Keep it to intuition: simulate first, no formulas on the slides. Cluster-robust errors first; the mixed model as one line.

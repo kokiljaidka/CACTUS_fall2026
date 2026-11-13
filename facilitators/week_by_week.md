@@ -198,7 +198,7 @@ One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck p
 
 **Watch for:** students shuffling comments instead of posts in Ex 4 (that is the lesson; do not rescue them early); anyone who thinks clustering changes the estimate (it changes the standard error); people unsure which track (ask what their data look like: edges, images, or conditions).
 
-**Session 2 (tracks, 2 h, Thu Jan 14, tentative)**
+**Session 2 (tracks, 2 h, Thu Jan 14)**
 
 **Before:** each facilitator does their room's notebook, **including the bug hunt**, before the session. Push the data files so Colab loads them. Collect track choices at the end of Session 1 and match rooms to facilitators. The Desk keeps the main room.
 

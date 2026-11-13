@@ -84,7 +84,7 @@ WEEKS = {
     },
     "weeks/week07.md": {
         "s1_title": "Session 1 (Tue Jan 12): the shared core",
-        "s2_title": "Session 2 (Thu Jan 14, tentative): your track",
+        "s2_title": "Session 2 (Thu Jan 14): your track",
         "notebooks": [
             ("Session 1 notebook: the shared core", "week07_core_nested_data.ipynb", "s1"),
             ("Track A: networks", "week07_track_a_networks.ipynb", "s2"),
