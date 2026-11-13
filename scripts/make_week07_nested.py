@@ -39,7 +39,7 @@ COMMENT_SD = 2.0
 RATE_RATIO = 0.8
 BASE_RATE = 0.004          # comments per follower for an unlabeled post
 N_POSTS = 80
-SEED = 7
+SEED = 3
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")
