@@ -135,6 +135,25 @@ One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck p
 
 ---
 
+## Dec 22: Midpoint show-and-tell (Kokil leads)
+
+**Goal:** everyone shows where their project stands, so problems (no data, a question that is too broad) show up before January.
+
+**Before:** send the order two days ahead; make a shared feedback sheet (three lines each: question, data, check); remind everyone about the data rules (public or de-identified, no names or raw posts on screen). The Desk keeps time.
+
+**Session (about 2 h)**
+
+| Time | What |
+|---|---|
+| 0:00 | Welcome, format, order |
+| 0:10 | Presentations: 5 minutes each plus 3 for questions (one from a peer, one from a facilitator) |
+| About 1:30 | What we heard: three to five common themes |
+| About 1:45 | Look ahead to Weeks 6 to 8 |
+
+**Watch for:** anyone with no data (agree a plan with a data helper, so there is data before Week 6); long talks (a warning at 4 minutes, a stop at 5); results shown without a check (ask "what check would you add?"). Send each person their feedback within two days.
+
+---
+
 ## Week 6: AI as annotator
 
 **Goal:** students compare an AI's labels with people's labels (accuracy, the always-no baseline, precision, recall, kappa), read the disagreements, and say what a result does and does not support.
@@ -179,10 +198,48 @@ One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck p
 
 **Watch for:** students shuffling comments instead of posts in Ex 4 (that is the lesson; do not rescue them early); anyone who thinks clustering changes the estimate (it changes the standard error); people unsure which track (ask what their data look like: edges, images, or conditions).
 
-**Session 2 (tracks, 2 h):** still to be written, with the three track notebooks. Placeholder: recap and rooms (0:00), warm-up (0:10), run (0:25), check and break (0:55), bug hunt (1:15), own data (1:40), log (1:55). One facilitator per room.
+**Session 2 (tracks, 2 h, Thu Jan 14, tentative)**
+
+**Before:** each facilitator does their room's notebook, **including the bug hunt**, before the session. Push the data files so Colab loads them. Collect track choices at the end of Session 1 and match rooms to facilitators. The Desk keeps the main room.
+
+| Time | What |
+|---|---|
+| 0:00 to 0:10 | Main room: a two-minute recap of Session 1 (plant, compare, check). Send people to their track rooms. Anyone who has not chosen goes to the Desk |
+| 0:10 to 0:25 | Warm-up: plant a known answer for the track and predict |
+| 0:25 to 0:55 | Ex 1: run the method on the planted data |
+| 0:55 to 1:15 | Ex 2: check against the planted answer, then break it on purpose |
+| 1:15 to 1:40 | Ex 3: bug hunt (three planted mistakes) |
+| 1:40 to 1:55 | Ex 4: own data (write down what to check first; run a first step on a small sample) |
+| 1:55 to 2:00 | Log; optional share-out |
+
+**By room** (the keys are private; ask Kokil)
+
+| Room | What the exercises find | Where students stall | What to ask |
+|---|---|---|---|
+| **A. Networks** | Who gets the most replies, who sends the most, the communities (a small one is the bots), and whether the structure beats shuffled networks | They count rows instead of different accounts; they call a bot "influential"; they are surprised by three communities | "What is this number a count of? Who is in the small community?" |
+| **B. Images and memes** | Fingerprints, groups at a threshold, a collapse at a loose threshold, posts versus different images versus different accounts | A loose threshold gives one giant group and they think everything is the same meme; they count reposts as new memes | "Which pair joined two different templates? How do the chains form?" |
+| **C. Mock feed or experiment** | The manipulation check by device, the label effect for each source, the interaction, and what dropping non-noticers does | They read the `label` coefficient as the overall effect; they call mobile "a weaker label" when the label was not delivered; they run the interaction on a tiny sample | "Who saw the label? Who did you drop, and why?" |
+
+**Watch for:** Ex 2 in Room A is the longest (20 shuffled networks): if time runs out, say to skip the shuffle and return to it as homework; students who finish early can try the stretch or help a neighbour; anyone alone in a track joins the nearest room; do not rescue the bug hunt early; images are invented, but remind everyone that real images of people need ethics approval before they are collected or shared.
+
+**Not built:** AI image annotation for Room B (waiting on Niranjan's DeepInfra code). If it is added, facilitators run it ahead and share the labels; no student gets a key.
 
 ---
 
 ## Week 8: Reproduce and present
 
-To be added. "Run it from scratch": rerun the whole pipeline, document it, and present results with limits.
+**Goal:** everyone reruns a notebook from a clean start (their own and a partner's), documents the project, and presents it in six minutes with its limits.
+
+**Before:** make pairs the day before; share the rerun-report template; collect repository links in the chat; make the order and the feedback sheet. Partners rerun on the shared or de-identified sample only, never on private raw data. The slides and practice page are not built yet.
+
+**Session (about 3 h)**
+
+| Time | What |
+|---|---|
+| 0:00 to 0:20 | Short learning session: the reproducibility checklist, and what a result supports |
+| 0:20 to 1:20 | Swap and rerun in pairs: restart and run all, write down what broke and what could not be followed, fix it |
+| 1:20 to 1:30 | Break |
+| 1:30 to 3:00 | Presentations: 6 minutes each plus 2 for questions (about 9 people). The Desk keeps time |
+| About 3:00 | Close |
+
+**Watch for:** notebooks that only run because of leftover variables; a key or private file in a repository (stop and fix it before the presentation); people with no data (present the plan and the checks); long talks.

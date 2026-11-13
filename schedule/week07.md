@@ -4,7 +4,7 @@
 **Format:** Two sessions, like Week 1. **Session 1 (Tue Jan 12):** a 1-hour learning session, a 20-minute practice page, then a 2-hour coding session. **Session 2 (Thu Jan 14, to be confirmed):** a 2-hour coding session in breakout rooms by track, one facilitator per room. About 5 hours live.
 
 <!-- facilitator:start -->
-> **Status: Session 1 is built (data, notebook, practice page, slides, private key); the three track notebooks (Session 2) are still to build.** The Session 2 date is a placeholder. See the materials, build plan and decisions at the end.
+> **Status: Session 1 is built (data, notebook, practice page, slides, private key), and All three track notebooks are built (Session 2); AI image annotation for Track B is not built (see the decisions).** The Session 2 date is a placeholder. See the materials, build plan and decisions at the end.
 <!-- facilitator:end -->
 
 ## Objectives
@@ -137,7 +137,9 @@ Students leave with a method that passed a known-answer check, standard errors t
 | Practice page: Plant It, Find It | `practice/week07_plant_it_find_it.html` (source `practice/src/week07/`; all invented) | Built and tested |
 | Shared notebook | `notebooks/week07_core_nested_data.ipynb` (built by `scripts/build_week07_notebook.py`; data from `scripts/make_week07_nested.py`, in `data/week07_comments.csv` and `data/week07_posts.csv`) | Built; run end to end with correct solutions; the three planted mistakes fail the check. **Push the data files before testing in Colab** |
 | Answer key | `instructor/week07_answer_key.md` (private) | Shared core only |
-| Track notebooks A, B, C | `notebooks/week07_track_*.ipynb` | To build |
+| Track C notebook (mock feed or experiment) | `notebooks/week07_track_c_experiment.ipynb` (built by `scripts/build_week07_track_c_notebook.py`; data `data/week07_experiment.csv` from `scripts/make_week07_experiment.py`) | Built; run end to end with correct solutions; the buggy Exercise 3 code is rejected. Key: private |
+| Track A notebook (networks) | `notebooks/week07_track_a_networks.ipynb` (built by `scripts/build_week07_track_a_notebook.py`; data `data/week07_edges.csv` and `data/week07_accounts.csv` from `scripts/make_week07_network.py`) | Built; run end to end with correct solutions; the buggy Exercise 3 code is rejected. Key: private |
+| Track B notebook (images and memes) | `notebooks/week07_track_b_images.ipynb` (built by `scripts/build_week07_track_b_notebook.py`; images from `scripts/make_week07_memes.py`: `data/week07_memes.zip`, `.csv`, `_truth.csv`; the fingerprint is written in the notebook, so nothing to install) | Built; run end to end with correct solutions; the buggy Exercise 3 code is rejected. Key: private |
 
 ## Build plan (Week 7)
 
@@ -181,6 +183,6 @@ Networks: the addressee and mention networks in the Twitter data, a digital-acti
 3. **Missed Session 1.** A student who misses it can use the shared notebook as a catch-up before Session 2.
 4. **Statistics level.** Keep it to intuition: simulate first, no formulas on the slides. Cluster-robust errors first; the mixed model as one line.
 5. **Reading.** Check the book's coverage of grouped data (see above).
-6. **Image libraries.** `imagehash` is not preinstalled in Colab (a short `pip install`). Confirm the install time.
+6. **Image libraries.** Resolved: the fingerprint (a difference hash) is written with Pillow and numpy in the notebook, so nothing needs installing. **AI image annotation** (Niranjan's DeepInfra code) is not built: if we add it, facilitators run it ahead and share pre-run labels, so no student needs a key.
 7. **Real data.** None in the exercises; all invented. Students bring their own for Exercise 4 of Session 2 and the homework.
 <!-- facilitator:end -->

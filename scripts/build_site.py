@@ -33,7 +33,11 @@ PAGES = {
     "schedule/week03.md": "weeks/week03.md",
     "schedule/week04.md": "weeks/week04.md",
     "schedule/week05.md": "weeks/week05.md",
+    "schedule/midpoint.md": "weeks/midpoint.md",
     "schedule/week06.md": "weeks/week06.md",
+    "schedule/week07.md": "weeks/week07.md",
+    "schedule/week08.md": "weeks/week08.md",
+    "project/rerun_report.md": "rerun-report.md",
     "project/ethics_checklist.md": "ethics.md",
     "facilitators/README.md": "facilitators/index.md",
     "facilitators/week_by_week.md": "facilitators/weeks.md",
@@ -46,13 +50,14 @@ PAGES = {
 WEEKS = {
     "weeks/week01.md": {
         "notebook": "week01_first_api_calls.ipynb",
-        "slides": ("Lecture slides (Session 1)", "week01_define_your_problem"),
+        "slides": ("Lecture slides", "week01_define_your_problem"),
         "practice": ("Cactus Code Garden (puzzle page)", "week01_cactus_code_garden.html"),
+        "practice_in": "s2",
         "downloads": [("Saved searches (serp_cache.zip)", "data/week01/serp_cache.zip")],
     },
     "weeks/week03.md": {
         "notebook": "week03_verify_and_analyze.ipynb",
-        "slides": ("Lecture slides (learning session)", "week03_verify_and_analyze"),
+        "slides": ("Lecture slides", "week03_verify_and_analyze"),
         "practice": ("Planted-Effect Lab (practice page)", "week03_planted_effect_lab.html"),
         "downloads": [
             ("Experiment data (week03_experiment.csv)", "data/week03_experiment.csv"),
@@ -61,25 +66,50 @@ WEEKS = {
     },
     "weeks/week04.md": {
         "notebook": "week04_collect_your_own_data.ipynb",
-        "slides": ("Lecture slides (learning session)", "week04_collect_your_own_data"),
+        "slides": ("Lecture slides", "week04_collect_your_own_data"),
         "practice": ("Before You Collect (practice page)", "week04_before_you_collect.html"),
         "downloads": [],
     },
     "weeks/week05.md": {
         "notebook": "week05_analyze_text.ipynb",
-        "slides": ("Lecture slides (learning session)", "week05_analyze_text"),
+        "slides": ("Lecture slides", "week05_analyze_text"),
         "practice": ("What Counts as a Word? (practice page)", "week05_what_counts_as_a_word.html"),
         "downloads": [],
     },
     "weeks/week06.md": {
         "notebook": "week06_ai_as_annotator.ipynb",
-        "slides": ("Lecture slides (learning session)", "week06_ai_as_annotator"),
+        "slides": ("Lecture slides", "week06_ai_as_annotator"),
         "practice": ("Can You Trust the Labeler? (practice page)", "week06_trust_the_labeler.html"),
         "downloads": [],
     },
+    "weeks/week07.md": {
+        "s1_title": "Session 1 (Tue Jan 12): the shared core",
+        "s2_title": "Session 2 (Thu Jan 14, tentative): your track",
+        "notebooks": [
+            ("Session 1 notebook: the shared core", "week07_core_nested_data.ipynb", "s1"),
+            ("Track A: networks", "week07_track_a_networks.ipynb", "s2"),
+            ("Track B: images and memes", "week07_track_b_images.ipynb", "s2"),
+            ("Track C: mock feed or experiment", "week07_track_c_experiment.ipynb", "s2"),
+        ],
+        "slides": ("Lecture slides", "week07_applying_statistics"),
+        "practice": ("Plant It, Find It (practice page)", "week07_plant_it_find_it.html"),
+        "downloads": [
+            ("Comments in posts (week07_comments.csv)", "data/week07_comments.csv", "s1"),
+            ("Posts (week07_posts.csv)", "data/week07_posts.csv", "s1"),
+            ("Track C: experiment (week07_experiment.csv)", "data/week07_experiment.csv", "s2"),
+            ("Track A: network edges (week07_edges.csv)", "data/week07_edges.csv", "s2"),
+            ("Track B: memes (week07_memes.zip)", "data/week07_memes.zip", "s2"),
+        ],
+    },
+    "weeks/week08.md": {
+        "s1_title": "Learning session (first 20 minutes)",
+        "s2_title": "Rerun and present",
+        "slides": ("Lecture slides", "week08_reproduce_and_present"),
+        "extra": [("Rerun report (template for your partner)", "rerun-report.md", "s2")],
+    },
     "weeks/week02.md": {
         "notebook": "week02_clean_and_chart.ipynb",
-        "slides": ("Lecture slides (learning session)", "week02_clean_it_chart_it"),
+        "slides": ("Lecture slides", "week02_clean_it_chart_it"),
         "practice": ("Silent Changes (practice page)", "week02_silent_changes.html"),
         "downloads": [
             ("Starbucks comments (starbucks_sea_comments.csv)", "data/starbucks_sea_comments.csv"),
@@ -91,6 +121,8 @@ COPY_FILES = [  # published as downloads
     "data/starbucks_sea_comments.csv", "data/lululemon_instagram.csv", "data/week02_toy_cafe.csv",
     "data/week03_experiment.csv", "data/week03_survey.csv",
     "data/week01/serp_cache.zip",
+    "data/week07_comments.csv", "data/week07_posts.csv", "data/week07_experiment.csv",
+    "data/week07_edges.csv", "data/week07_memes.zip",
 ]
 
 
@@ -134,22 +166,56 @@ def write(dest, text):
 
 
 def links_block(dest, cfg):
-    lines = ["## Your links", ""]
-    lines.append(f"[Open the notebook in Colab]({COLAB}{cfg['notebook']}){{ .md-button .md-button--primary target=_blank }}")
-    title, fname = cfg["practice"]
-    lines.append(f"[{title}]({posixpath.relpath('practice/' + fname, posixpath.dirname(dest))}){{ .md-button target=_blank }}")
+    """Links for each week, grouped by session: Session 1 (learning) and Session 2 (coding).
+
+    Default: slides and the practice page go with Session 1; notebooks and data with Session 2.
+    A week can set cfg["practice_in"] = "s2", and tag a notebook or download with "s1" or "s2".
+    """
+    here = posixpath.dirname(dest)
+    s1, s2 = [], []
+
+    def add(group, line):
+        (s1 if group == "s1" else s2).append(line)
+
     if cfg.get("slides") and os.path.exists(os.path.join(ROOT, "slides", cfg["slides"][1] + ".html")):
         stitle, sname = cfg["slides"]
-        base = posixpath.relpath("slides/" + sname, posixpath.dirname(dest))
-        lines.append(f"[{stitle}]({base}.html){{ .md-button target=_blank }}")
-        lines.append(f"[Slides as PDF]({base}.pdf){{ .md-button target=_blank }}")
-    lines.append("")
-    for label, rel in cfg["downloads"]:
+        base = posixpath.relpath("slides/" + sname, here)
+        add("s1", f"[{stitle}]({base}.html){{ .md-button target=_blank }}")
+        add("s1", f"[Slides as PDF]({base}.pdf){{ .md-button target=_blank }}")
+    if cfg.get("practice"):
+        ptitle, pfile = cfg["practice"]
+        add(cfg.get("practice_in", "s1"), f"[{ptitle}]({posixpath.relpath('practice/' + pfile, here)}){{ .md-button target=_blank }}")
+    notebooks = cfg.get("notebooks") or ([(None, cfg["notebook"], "s2")] if cfg.get("notebook") else [])
+    first = True
+    for item in notebooks:
+        label, nb = item[0], item[1]
+        group = item[2] if len(item) > 2 else "s2"
+        style = " .md-button--primary" if first else ""
+        first = False
+        add(group, f"[{label or 'Open the notebook in Colab'}]({COLAB}{nb}){{ .md-button{style} target=_blank }}")
+    for label, page, group in cfg.get("extra", []):
+        add(group, f"[{label}]({posixpath.relpath(page, here)}){{ .md-button target=_blank }}")
+    d1, d2 = [], []
+    for item in cfg.get("downloads", []):
+        label, rel = item[0], item[1]
+        group = item[2] if len(item) > 2 else "s2"
         if os.path.exists(os.path.join(ROOT, rel)):
-            lines.append(f"- [{label}]({posixpath.relpath('downloads/' + posixpath.basename(rel), posixpath.dirname(dest))})")
+            line = f"- [{label}]({posixpath.relpath('downloads/' + posixpath.basename(rel), here)})"
         else:
-            lines.append(f"- {label}: your facilitator will share this")
-    return "\n".join(lines) + "\n\n"
+            line = f"- {label}: your facilitator will share this"
+        (d1 if group == "s1" else d2).append(line)
+    out = ["## Your links", ""]
+    for title, buttons, downloads in ((cfg.get("s1_title", "Session 1: learning session"), s1, d1), (cfg.get("s2_title", "Session 2: coding session"), s2, d2)):
+        if not buttons and not downloads:
+            continue
+        out.append(f"### {title}")
+        out.append("")
+        out.extend(buttons)
+        out.append("")
+        out.extend(downloads)
+        if downloads:
+            out.append("")
+    return "\n".join(out) + "\n"
 
 
 def main():

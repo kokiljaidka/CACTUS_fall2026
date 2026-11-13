@@ -30,10 +30,14 @@ nav:
       - "Week 3: Verify and analyze": weeks/week03.md
       - "Week 4: Collect your own data": weeks/week04.md
       - "Week 5: Analyze text": weeks/week05.md
+      - "Dec 22: Midpoint show-and-tell": weeks/midpoint.md
       - "Week 6: AI as annotator": weeks/week06.md
+      - "Week 7: Applying statistics to social media data": weeks/week07.md
+      - "Week 8: Reproduce and present": weeks/week08.md
   - Project guide: project.md
   - Getting data access: access.md
   - Ethics checklist: ethics.md
+  - Rerun report template: rerun-report.md
   - For facilitators:
       - Facilitator hub: facilitators/index.md
       - Week-by-week run sheets: facilitators/weeks.md
