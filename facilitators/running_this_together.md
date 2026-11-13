@@ -38,7 +38,7 @@ Each session has a team, not one presenter. Roles rotate so everyone does each o
 | **Lead** | Runs the one-hour learning session using the slides and script. In coding sessions, opens and closes and posts time checks. | About 1 hour of session plus about 1 hour of prep |
 | **Host** | Zoom host: breakout rooms, chat, timekeeping, recordings, late joiners. | Session plus 15 minutes |
 | **Floaters (2 or more)** | Visit breakout rooms. Ask guiding questions before giving answers. Use the hint ladder in the answer key. | Session only |
-| **Platform owner** (Weeks 2 to 4) | Gets access to one platform (YouTube, Bluesky, Reddit, or another), writes down exactly what worked, fills in that row of the access guide with the date, and helps students at the optional access clinic. | About 1 to 2 hours in total |
+| **Data helper** (Weeks 1 to 4) | Helps students who do not have data yet get an export from Twitter/X, Instagram, Facebook, Reddit, or Bluesky (talk offline in Week 1), writes down what worked in that row of the access guide with the date, and helps at the optional access clinic. | About 1 to 2 hours in total |
 | **On call** | Kokil, reachable during every session for anything the team cannot resolve. | [Kokil to confirm availability] |
 
 Suggested weekly rhythm for the team:

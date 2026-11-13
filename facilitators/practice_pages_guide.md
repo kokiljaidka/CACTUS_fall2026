@@ -92,9 +92,9 @@ Students do this between the learning session and the coding session. It is most
 | 2 Who could be found? | Removing the username is not enough; details combine | Stopping when the username is gone | "What could someone learn by combining the time, the place and the text?" |
 | 3 Plan the pull | A limit is a plan: page size and pause; save raw first | Using a tiny page size, or no pause | "How many requests does that need? How many are you allowed?" |
 | 4 Should you collect it? | Public versus private, consent, terms, sensitivity | Wanting a yes or no; arguing about the law | "Is it public? Did people agree to this use? Do the terms allow it? When unsure, who do you ask?" |
-| 5 Colab bridge | A collection stub that saves raw first, with a log | A `NotImplementedError`: they have not changed the one function that talks to the platform | "Which function needs your platform's request? For Route B use `sample_api`." |
+| 5 Colab bridge | A collection stub that saves raw first, with a log | A `NotImplementedError`: they have not changed the one function that talks to the platform | "Which function talks to the platform? In the example that is `sample_api`. With an export, the habit is the same: keep the original untouched, and write a log." |
 
 **Watch for:**
 - Facilitators giving legal or ethical rulings. Say you do not know and ask Kokil or the ethics office.
 - Students quoting real people from their own data in the breakout room. Ask them to describe it without names.
-- The limits on the page are invented. Students need their platform's real limits from the access guide.
+- The limits on the page are invented. If a student collects through an API, they need that platform's real limits from its own documentation.

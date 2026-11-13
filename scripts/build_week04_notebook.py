@@ -1,7 +1,7 @@
 """Build notebooks/week04_collect_your_own_data.ipynb. Re-run after editing.
 
-Route B uses the invented sample made by scripts/make_week04_sample.py.
-Route A cells for real platforms are added by the facilitators (see project/getting_data_access.md).
+Route A: an export the student already has (Twitter/X, Instagram, Facebook, Reddit, Bluesky, or another source).
+Route B: the invented sample made by scripts/make_week04_sample.py. Needs no key.
 """
 import os
 
@@ -28,16 +28,15 @@ md("""
 You decide what data exists. Today you collect posts, **save the raw response first**, turn it into a table, **check that nothing was lost without a reason**, remove what identifies people, and write down what you did.
 
 **Goals today**
-- collect through an API or an export, and save the raw data untouched
+- start from data you collected or exported, and save the raw data untouched
 - log what you collected, when, and how
 - parse it into one standard table, and compare counts at every step
 - anonymize, and check that it worked
 - write a data card for your own project
 
 **Choose a route at the start (pairs can use different routes)**
-- **Route A: your own access.** Use the platform you got access to. Add your collection cell where marked.
-- **Route B: the saved sample.** An invented sample that looks like a real API response. No key needed. Use it if you are still waiting for access, or to practice first.
-- **Route C: an export you already have.** Load it and work from there.
+- **Route A: an export you already have.** Data you collected or downloaded for your own project (for example from Twitter/X, Instagram, Facebook, Reddit, or Bluesky). The facilitators can help you with each of these. Aim to be on this route.
+- **Route B: the saved example.** An invented example that looks like a real API response. No key needed. Use it if you do not have data yet, and talk to the facilitators about getting some.
 
 **Rules**
 - Predict before you run. Never accept AI code you have not read.
@@ -96,9 +95,9 @@ md("""
 ---
 ## Warm-up: a collection stub (about 15 min)
 
-The practice page gave you a stub that **saves the raw response before anything else** and writes a log. Paste it below, then change the one function that talks to the platform.
+**Everyone does this warm-up on the saved example**, whichever route you are on. The practice page gave you a stub that **saves the raw response before anything else** and writes a log. Paste it below, then change the one function that talks to the platform. For the example, that function is `sample_api`.
 
-For Route B, use `sample_api` as the function. For Route A, replace it with your platform's request.
+On a real platform you would replace `sample_api` with that platform's request. The habit is the same for an export: keep the original untouched, and write a log.
 
 **Predict:** if you collect 3 pages, how many files will be in `raw/`, and what will the log say?
 
@@ -131,18 +130,39 @@ md("""
 ---
 ## Exercise 1: Collect, and save the raw data (required, about 30 min)
 
-**Route A.** Add your platform's collection cell below. Ask the facilitators; they can show you one that works. Keep to the limits you wrote in the access guide. Collect **at least 3 pages** (or about 100 items), save each response untouched in `raw/`, and write the log as in the warm-up.
+**Route A (your export).** Upload your export file to Colab (the folder icon on the left). Use the first cell below. It copies the file into `raw/` **untouched** (never open and re-save the original in Excel) and writes a log. Fill in the log by hand: what it is, where it came from, when you collected it, and how.
 
-**Route B.** Run the cell below to collect all 4 pages of the sample.
+**Route B (the example).** Use the second cell below. It collects all 4 pages of the example.
 
-**Route C.** Save your export file in `raw/` and write a short log by hand: what it is, where it came from, when, and what it contains.
+If you do not have data yet, use Route B today and talk to the facilitators about getting some. Plan to have your own data before Week 6.
 
 **How you check it:** count the files in `raw/`, add up the items on each page, and compare with what your log says.
 """)
 
 code("""
-# ROUTE A: your platform's collection cell goes here (replace the sample_api call with your own request).
-# ROUTE B: run this to collect all 4 pages of the sample.
+ROUTE = "B"          # change to "A" if you are using your own export
+""")
+
+code("""
+# ROUTE A ONLY: your export. Skip this cell on Route B.
+EXPORT = "my_export.csv"      # the name of the file you uploaded (.csv or .json)
+SOURCE = "Reddit"             # where it came from
+QUERY = "my topic"            # what you searched for or how you chose the posts
+HOW = "export from the platform's download tool"   # how you got it
+
+import shutil
+shutil.copy(EXPORT, f"{RAW_DIR}/{os.path.basename(EXPORT)}")      # an untouched copy
+raw_df = pd.read_csv(EXPORT) if EXPORT.endswith(".csv") else pd.read_json(EXPORT)
+RAW_ENTRIES = len(raw_df)
+log = {"source": SOURCE, "query": QUERY, "tool": HOW, "collected_on": str(datetime.date.today()), "items": RAW_ENTRIES}
+with open(f"{RAW_DIR}/collection_log.json", "w", encoding="utf-8") as f:
+    json.dump(log, f, indent=2)
+print(log)
+print(raw_df.head(3))
+""")
+
+code("""
+# ROUTE B ONLY: collect all 4 pages of the example. Skip this cell on Route A.
 for f in glob.glob(f"{RAW_DIR}/page_*.json"):
     os.remove(f)
 
@@ -168,9 +188,11 @@ print(log)
 
 code("""
 # Check 1. Do the files, the items, and the log agree?
-pages = [json.load(open(p, encoding="utf-8")) for p in sorted(glob.glob(f"{RAW_DIR}/page_*.json"))]
-RAW_ENTRIES = sum(len(p["items"]) for p in pages)        # Route A and C: adapt this line to your raw format
-print("files:", len(pages), "  entries in the files:", RAW_ENTRIES, "  log says:", log["items"])
+if ROUTE == "B":
+    pages = [json.load(open(p, encoding="utf-8")) for p in sorted(glob.glob(f"{RAW_DIR}/page_*.json"))]
+    RAW_ENTRIES = sum(len(p["items"]) for p in pages)
+    print("files:", len(pages), end="  ")
+print("entries in the files:", RAW_ENTRIES, "  log says:", log["items"])
 assert RAW_ENTRIES == log["items"], "The log does not match what is saved. Which one is wrong?"
 """)
 
@@ -182,11 +204,11 @@ md("""
 ---
 ## Exercise 2: Parse it, and compare the counts (required, about 30 min)
 
-Turn the raw responses into **one table with these columns** (the same for every platform, so later weeks work on anyone's data):
+Turn your raw data into **one table with these columns** (the same for every platform, so later weeks work on anyone's data):
 
 | Column | What it holds |
 |---|---|
-| `item_id` | The platform's ID for the post or comment |
+| `item_id` | The platform's ID for the post or comment (if your export has none, make one) |
 | `parent_id` | The item it replies to; empty if top-level |
 | `thread_id` | The post or video it sits under |
 | `created_at` | When it was written |
@@ -197,7 +219,11 @@ Turn the raw responses into **one table with these columns** (the same for every
 
 **How to prompt well.** Give the AI the context it cannot see, and **only invented or de-identified examples**:
 
-> Here is the structure of one item in a JSON response: *(paste one item, with any real names removed)*. Write a function `parse_page(page)` that returns a list of rows with these columns: *(paste the list)*. Then write code that reads all the files in `raw/` into one pandas DataFrame. Explain each line in one sentence.
+> Here is the structure of one item in my data (a JSON item, or the column names of a CSV): *(paste the structure with invented values; remove any real names)*. Write a function `parse_page(page)` that returns a list of rows with these columns: *(paste the list)*. Then write code that reads all the files in `raw/` into one pandas DataFrame. Explain each line in one sentence.
+
+**Route A:** read your export into a table, rename your columns to the names above, and fill any column you do not have with empty values (for example `df["parent_id"] = None`). Set `platform`, `source`, `query`, and `collected_on` yourself. Ask an AI to help, but give it only the **column names and invented example rows**, never real people's data.
+
+**Route B:** the raw files are JSON pages. Write `parse_page(page)` and read all the files in `raw/`.
 
 **Predict:** you saved some number of entries. How many rows will your table have? Will they be equal? Why might they differ?
 
@@ -205,10 +231,11 @@ Turn the raw responses into **one table with these columns** (the same for every
 """)
 
 code("""
-# Task 2a: paste the AI's parse_page function here, then run it on one page and look at the result.
+# Task 2a: Route B: paste the AI's parse_page function here, then run it on one page and look at the result.
+# Route A: look at raw_df.columns and decide which of your columns becomes which standard column.
 """)
 code("""
-# Task 2b: build the full table df from every file in raw/.
+# Task 2b: build the full table df (Route B: from every file in raw/; Route A: from raw_df).
 """)
 
 code("""
@@ -229,7 +256,7 @@ md("""
 | Difference | | |
 | Items with no text | | What are they? Keep or drop? |
 
-*Hint for Route B:* look at how the pages begin and end, and at the item IDs. If your table has duplicate IDs, find out where they come from before you drop anything.
+*Hint:* if your table has duplicate IDs, find out where they come from before you drop anything. On Route B, look at how the pages begin and end. On Route A, look for posts exported twice, or deleted posts with no text.
 
 > Log (Exercise 2): which count did you not expect? What check did you use to find out why?
 """)
@@ -300,9 +327,9 @@ md("""
 ---
 ## Stretch (about 15 min)
 
-- **Pagination with a pause:** collect with a loop that stops when there is no `next_cursor`, waits between requests, and writes the log. (The cell in Exercise 1 does this for the sample; adapt it to your platform.)
-- **A second query** or a **second platform**. How does the standard table change?
-- **Survive a limit:** what would your code do if the platform said "too many requests"? Write what you would do, and test it if you can.
+- **Pagination with a pause:** read the Route B cell in Exercise 1. It loops until there is no `next_cursor`, waits between requests, and writes the log. Explain why each part is there.
+- **A second dataset** (the example, or a second export). Does the standard table work for it? What changes?
+- **Survive a limit:** if you collected from an API, what would your code do if the platform said "too many requests"? Write what you would do.
 """)
 
 md("""
@@ -313,7 +340,7 @@ md("""
 - One thing I removed to protect people, and one thing that could still identify someone:
 - One question I still have:
 
-**Homework (45 min or less):** finish your data card and add it to your project card. Add what you learned about access to the shared table in the access guide. If your collection is small or still pending, plan how you will get enough by Week 6 or 7.
+**Homework (45 min or less):** finish your data card and add it to your project card. If you do not have your own data yet, talk to the facilitators now and agree how you will get enough before Week 6.
 """)
 
 nb = nbf.v4.new_notebook(cells=cells)

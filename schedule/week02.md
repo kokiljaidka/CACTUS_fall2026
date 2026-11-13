@@ -129,7 +129,7 @@ Post a time check in the main chat at each boundary. Hints for Exercise 2 come f
 
 - Finish Exercise 5 on your own data.
 - Add to your project card (`project/designing_your_project.md`): what could go wrong in my data, and how would I check?
-- **Start getting data access now.** Choose where your project's data will come from and begin applying. Some platforms take days. See [Getting data access](../project/getting_data_access.md).
+- **Get your data now.** Choose where your project's data will come from. If you do not have it yet, talk to the facilitators. You need it by Week 3. See [Getting data access](../project/getting_data_access.md).
 
 ## Hand-off to Week 3
 

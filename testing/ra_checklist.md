@@ -169,17 +169,18 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 - [ ] Copy the bridge code into the Week 4 notebook. Does it run?
 - [ ] Refresh, reset progress, phone portrait, dark mode.
 
-**Notebook** (`week04_collect_your_own_data.ipynb`, 2 hours): use **Route B** (the saved sample), which needs no key.
+**Notebook** (`week04_collect_your_own_data.ipynb`, 2 hours): test **both routes**. Route B is the saved example, which needs no key. For Route A, make a small fake export (a CSV with about a dozen invented rows and a repeated row), upload it, and follow the notebook as a student with an export would.
 - [ ] Warm-up and Check 1: do they pass? Is the message clear if you forgot to save the raw files or the log?
 - [ ] Exercise 2: do your counts show 100 entries saved, 97 rows after parsing? Can you explain the 3 missing rows without being told?
 - [ ] Exercise 3 (anonymize): does Check 3 catch a leftover `@handle`, a link, or a profile column? Try each on purpose.
 - [ ] Exercise 4: can you write the data card from the template?
-- [ ] Route A: is the note about asking the facilitators clear? Is it clear where your own collection code would go?
+- [ ] Route A: can you tell which cell to run and which to skip? Does the notebook explain how to rename your columns to the standard table? Do the counts and checks still make sense for an export?
+- [ ] Do the Route A and Route B instructions each say what to do when you have no data yet?
 - [ ] Time each section against `schedule/week04.md`.
 
 **Ethics checklist** (site page): read it as a student. Is every question clear? Does anything read like a rule or legal advice rather than a question? Does it say who to ask?
 
-**Done when:** every exercise is done on Route B, with times, and the 100 to 97 difference has been explained in your own words.
+**Done when:** every exercise is done on both routes, with times, and the 100 to 97 difference (Route B) has been explained in your own words.
 
 ---
 

@@ -37,11 +37,29 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 Section titles were checked against the chapter pages on cssbook.net (Nov 2026), but the chapter contents have not been reviewed for this course. Skim them before the week. The book predates AI coding assistants and assumes you type the code yourself.
 <!-- facilitator:end -->
 
+## Optional video lectures (for Session 2)
+
+If the Python ideas are new to you, these short videos cover the same topics as the puzzle page. **Optional**, not graded. Watch the ones you need, before Session 2.
+
+| Topic | Video |
+|---|---|
+| Variables and data types | [Watch](https://www.youtube.com/watch?v=7IoQ5BGkTJo) |
+| Dictionaries | [Watch](https://www.youtube.com/watch?v=MZZSMaEAC2g) |
+| Functions | [Watch](https://www.youtube.com/watch?v=89cGQjB5R4M) |
+| For loops | [Watch](https://www.youtube.com/watch?v=KWgYha0clzw) |
+| While loops | [Watch](https://www.youtube.com/watch?v=rRTjPnVooxE) |
+| Reading nested data | [Watch](https://www.youtube.com/watch?v=ygDNNF1LEhI) |
+
+<!-- facilitator:start -->
+Video list supplied by Kokil (Nov 2026). Not yet watched or checked by the build team: please watch each, and confirm it matches the topic and the Python used in this course. The videos assume you type the code yourself, which this course does not, so students use them for the ideas only.
+<!-- facilitator:end -->
+
 ## Before the first session
 
 - Create a Google account (for Colab) and have a chat AI assistant ready.
 - **Optional:** create a free SerpAPI account and add the key to Colab Secrets as `SERPAPI_KEY`. Everyone can finish Week 1 with the saved searches, so this is not required.
 - Bring a topic you care about. A rough idea is enough.
+- **Data for your project:** do you already have data (for example an export from Twitter/X, Instagram, Facebook, Reddit, or Bluesky)? If not, **talk to the facilitators offline this week**. They can help with each of these platforms. You should have your data by Week 3.
 
 <!-- facilitator:start -->
 ## Prep (Kokil and facilitators)
