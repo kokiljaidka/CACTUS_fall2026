@@ -413,7 +413,7 @@ const mets = m => h("div", { class: "mets" },
 const LABELERS = [
   { k: "A", name: "Labeler A", tp: 0, fn: 6, fp: 0, tn: 94, note: "Says \"not abusive\" every time." },
   { k: "B", name: "Labeler B", tp: 5, fn: 1, fp: 24, tn: 70, note: "Flags a lot." },
-  { k: "C", name: "Labeler C", tp: 4, fn: 2, fp: 4, tn: 90, note: "Flags fewer, and mostly right." }
+  { k: "C", name: "Labeler C", tp: 4, fn: 2, fp: 4, tn: 90, note: "Flags fewer, and about half are right." }
 ];
 function buildAcc(def) {
   L = { def, token: 0 };
@@ -536,7 +536,7 @@ const LEVELS = [
   { w: 0, kind: "acc", title: "Which labeler would you use?",
     task: "Three labelers, one sample of 100 invented messages, 6 truly abusive. Compare their tables and pick the one you would use to find abuse.",
     hint: "Look at \"Finds\" and \"Flags right\" as well as accuracy. What does each labeler miss, and what does it flag by mistake?",
-    win: "Labeler C. It has the same accuracy as A, but it actually finds abusive messages and most of what it flags is right. Accuracy alone could not tell A from C." },
+    win: "Labeler C. It has the same accuracy as A, but it finds 4 of the 6 abusive messages and half of what it flags is right. Accuracy alone could not tell A from C." },
   { w: 1, kind: "kappa", title: "High accuracy, no agreement",
     task: "Set the sliders so the labeler has at least 90% accuracy but a kappa under 0.20.",
     hint: "When abuse is rare, a labeler that misses most of it still scores high on accuracy. Lower the sensitivity.",

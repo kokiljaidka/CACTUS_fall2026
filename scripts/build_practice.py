@@ -21,6 +21,7 @@ PAGES = {
     "week04": "week04_before_you_collect.html",
     "week05": "week05_what_counts_as_a_word.html",
     "week06": "week06_trust_the_labeler.html",
+    "week07": "week07_plant_it_find_it.html",
 }
 
 
