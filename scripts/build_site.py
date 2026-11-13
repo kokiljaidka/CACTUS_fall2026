@@ -33,6 +33,11 @@ PAGES = {
     "schedule/week03.md": "weeks/week03.md",
     "schedule/week04.md": "weeks/week04.md",
     "project/ethics_checklist.md": "ethics.md",
+    "facilitators/README.md": "facilitators/index.md",
+    "facilitators/week_by_week.md": "facilitators/weeks.md",
+    "facilitators/practice_pages_guide.md": "facilitators/practice-pages.md",
+    "facilitators/running_this_together.md": "facilitators/community.md",
+    "testing/ra_checklist.md": "facilitators/testing.md",
 }
 
 # per-week links added to each week page

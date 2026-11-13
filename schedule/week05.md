@@ -4,7 +4,7 @@
 **Format:** Zoom. A 1-hour learning session (lecture with live demos), a 20-minute practice page, then a 2-hour coding session in breakout rooms with no lecture. About 3 hours live.
 
 <!-- facilitator:start -->
-> **Status: draft for review.** Not on the student site yet. The shared corpus is built from data you already have; students bring their own text from Week 4. See the decisions at the end.
+> **Status: built, not yet on the site.** Slides, practice page and notebook are built and tested (the notebook was run end to end on the real corpus with a correct solution; the buggy Exercise 3 function is rejected by its check). The shared corpus is private (class drive). Students bring their own text from Week 4. See the decisions at the end.
 <!-- facilitator:end -->
 
 ## Objectives
@@ -37,17 +37,17 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 
 | What | Where |
 |---|---|
-| Lecture slides (about 11 slides) | `slides/week05_*` (to build) |
-| Practice page: What counts as a word? | `practice/week05_what_counts_as_a_word.html` (to build; tokenizations precomputed by a script) |
-| Notebook | `notebooks/week05_analyze_text.ipynb` (to build) |
+| Lecture slides (11 slides) | `slides/week05_analyze_text.html` and `.pdf` for students; `..._presenter.html` (press N for the script) and `..._handout.pdf` for the facilitator team. Source and notes: `slides/src/week05/` (built). The slides use invented text only |
+| Practice page: What counts as a word? | `practice/week05_what_counts_as_a_word.html` (built; source in `practice/src/week05/`; tokenizations precomputed by `scripts/make_week05_practice_data.py`; all texts invented) |
+| Notebook | `notebooks/week05_analyze_text.ipynb` (built by `scripts/build_week05_notebook.py`; installs jieba and vaderSentiment; asks Colab users to upload the corpus zip) |
+| Answer key | `instructor/week05_answer_key.md` (private: the three planted mistakes, expected numbers, practice page answers) |
 | Corpus | `data/private/week05_corpus.zip` (built by `scripts/prepare_week05_corpus.py`; **shared privately through the class drive, not in the public repository**) |
 
 ## Prep
 
-- Build the corpus from `data/week01/serp_cache/` (news titles and snippets, with place, language, and source). Check how many rows have usable text, and which language each is in.
-- Check that a Chinese tokenizer installs in Colab quickly (`jieba` is not preinstalled). Write the install cell and time it.
-- Decide the sentiment tool for English, and be honest that no single dictionary covers both languages. Part of the week is noticing that.
-- Do the notebook yourself first. Note what breaks and how long installs take.
+- The corpus is built (`scripts/prepare_week05_corpus.py`). Put `data/private/week05_corpus.zip` on the class drive and give students the link. **Never put the files in the public repository.**
+- In a fresh Colab runtime, run the install cell (`%pip install -q jieba vaderSentiment`) and time it. If it fails, the notebook tells students to use character pairs instead.
+- Do the notebook yourself first. Note what breaks and how long installs take. Run the Exercise 3 mistakes without looking at the key, to see how long they take to find.
 - Facilitators: read `facilitators/practice_pages_guide.md` and the private key for the planted bugs.
 <!-- facilitator:end -->
 
@@ -72,14 +72,14 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 | 1 | Title | 1 | The plan for the week |
 | 2 | Recap and the idea | 4 | Every step is a choice |
 | 3 | What is a token? | 6 | Words, characters, subwords |
-| 4 | Demo: one sentence, four tokenizers | 6 | Include one Chinese sentence |
-| 5 | Counting, and why raw counts mislead | 5 | Common words; stopwords |
-| 6 | Distinctive terms | 5 | Weighting; compare places |
-| 7 | Dictionary sentiment | 5 | What it measures |
-| 8 | Where it fails | 6 | A small gallery |
-| 9 | Read before you name | 6 | Examples inside a cluster |
-| 10 | Before the coding session | 4 | Practice page, reading |
-| 11 | Questions | 3 | |
+| 4 | Demo: one sentence, different tokenizers | 6 | English, Chinese, and mixed; jieba is not perfect |
+| 5 | Counting, and why raw counts mislead | 6 | Common words; stopwords; "US" becomes "us" |
+| 6 | Distinctive terms | 7 | Weighting; compare groups (invented numbers) |
+| 7 | Dictionary sentiment | 5 | A toy dictionary; negation |
+| 8 | Where it fails | 7 | Gallery. Do **not** say that Chinese scores zero: students find it in Exercise 2d |
+| 9 | Read before you name | 10 | Coherent, too mixed, boilerplate: the main point |
+| 10 | Before the coding session | 4 | Practice page, reading, the data rules |
+| 11 | Questions | 4 | |
 <!-- facilitator:end -->
 
 ---
@@ -88,8 +88,10 @@ From *Computational Analysis of Communication* ([cssbook.net](https://cssbook.ne
 
 Students open **What counts as a word?** after the learning session and before the coding session.
 
-- **Tokenizer picker:** about eight short texts in English and Chinese; choose a tokenizer and see the tokens and the count change.
-- **Lexicon sentiment:** drag words in and out of a small dictionary and watch the scores on tricky texts.
+- **Pick a tokenizer:** five invented texts (English, Chinese, mixed); choose a tokenizer and see the tokens and the count change.
+- **Same headlines, different counts:** switch lowercasing, stopwords, and a short-word filter on and off. One setting deletes "AI", and one deletes the country "US".
+- **Fix the dictionary:** a toy sentiment dictionary on eight texts. Some can be fixed, and three cannot.
+- **Read before you name:** three clusters; decide to name it, call it too mixed, or say it is boilerplate.
 - **Colab task:** tokenize five texts two ways and print the counts.
 
 ---
@@ -101,10 +103,10 @@ Notebook: `notebooks/week05_analyze_text.ipynb`. Pairs in breakout rooms. Exerci
 | Time | Exercise |
 |---|---|
 | 0:00–0:15 | **Warm-up:** tokenize five texts two ways. Install and test the Chinese tokenizer. |
-| 0:15–0:45 | **Ex 1:** count and compare. Top words per place, raw versus weighted. What changes, and what do you not trust? |
-| 0:45–1:15 | **Ex 2:** dictionary sentiment on a sample. Read ten texts by hand and compare with the score. Where does it fail? |
-| 1:15–1:40 | **Ex 3:** bug hunt. AI-written text-analysis code with planted mistakes. Find them. |
-| 1:40–1:55 | **Ex 4 (stretch):** find a cluster or topic, read its examples, and name it. |
+| 0:15–0:45 | **Ex 1:** count and compare. Top words per subreddit, raw, cleaned, and distinctive. Then Chinese tokens per text, by spaces versus jieba. What changes, and what do you not trust? |
+| 0:45–1:15 | **Ex 2:** VADER sentiment on the Reddit posts. Read ten texts by hand and compare with the score. Then run VADER on the Chinese news texts. Where does it fail? |
+| 1:15–1:40 | **Ex 3:** bug hunt. An AI-written function that runs without errors and has three planted mistakes. Find them. |
+| 1:40–1:55 | **Ex 4 (stretch):** cluster the Reddit posts, read examples from each cluster, and name it (or say it is too mixed). |
 | 1:55–2:00 | Log; optional share-out. |
 
 Post a time check in the main chat at each boundary. Hints for Exercise 3 come from facilitators only.
@@ -128,8 +130,10 @@ Students leave with counts, a sentiment score, and a list of where the methods f
 
 **Still to do**
 4. **Share the files.** Upload `week05_corpus.zip` to the class drive and put the link in the Week 5 materials (not on the public site).
-5. **Chinese tokenizer.** Confirm the choice and the install time in Colab.
-6. **English sentiment tool.** Choose one dictionary-based tool. Say plainly that none covers Chinese well; students should notice and report it.
+5. **Chinese tokenizer.** Chosen: jieba (`%pip install -q jieba`). Still to do: time the install in a fresh Colab runtime.
+6. **English sentiment tool.** Chosen: VADER (`vaderSentiment`), an English dictionary made for social media. The notebook has students run it on the Chinese texts to see that it does not cover them.
 7. **Students without their own text yet.** They can stay on the shared corpora. Decide whether that is acceptable.
-8. **Bugs for Exercise 3.** Candidates: whitespace tokenizing Chinese; removing a stopword list that deletes "AI"; counting without lowercasing; averaging sentiment across languages; scoring translated text and calling it the original; treating sarcasm as positive. Choose three and keep them in the private key.
+8. **Bugs for Exercise 3.** Chosen (in `instructor/week05_answer_key.md`): whitespace tokenizing Chinese; averaging English-dictionary sentiment over Chinese texts; scoring only the post titles. A fourth candidate (`>= 0` for positive) was dropped because it changed only one number.
+9. **Redistribution of the news snippets.** The news texts are search-result titles and snippets from the Week 1 searches. Check that sharing them with the class (privately) is acceptable.
+10. **Add Week 5 to the site** (`build_site.py` and `mkdocs.yml`) when you want it released. Not done yet.
 <!-- facilitator:end -->

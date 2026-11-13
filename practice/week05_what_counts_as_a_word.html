@@ -1,0 +1,916 @@
+<title>What Counts as a Word?</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* Layout: header + level map on top, then one puzzle at a time: idea and task on the left, board or code beside a tray of draggable pieces. */
+:root {
+  --bg: #edf1ec;
+  --surface: #f8faf7;
+  --surface2: #e0e8df;
+  --ink: #15251d;
+  --muted: #4f6057;
+  --line: #c6d1c4;
+  --accent: #237a4b;
+  --accent-ink: #ffffff;
+  --sun: #d99a1c;
+  --water: #2379c4;
+  --bad: #b0402e;
+  --good: #1d7443;
+  --code-bg: #14241c;
+  --code-ink: #e4efe6;
+  --code-dim: #8fa89a;
+  --slot: #d3e3d6;
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1814; --surface: #15231d; --surface2: #1e3028; --ink: #e3eee6; --muted: #98ab9f;
+    --line: #2b4036; --accent: #4cc080; --accent-ink: #06130c; --sun: #f0ba45; --water: #5bb0f2;
+    --bad: #f28d78; --good: #5fd596; --code-bg: #0a120f; --code-ink: #dcebdf; --code-dim: #7f9a8c; --slot: #23382e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1814; --surface: #15231d; --surface2: #1e3028; --ink: #e3eee6; --muted: #98ab9f;
+  --line: #2b4036; --accent: #4cc080; --accent-ink: #06130c; --sun: #f0ba45; --water: #5bb0f2;
+  --bad: #f28d78; --good: #5fd596; --code-bg: #0a120f; --code-ink: #dcebdf; --code-dim: #7f9a8c; --slot: #23382e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+  padding-block: 20px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+p { margin: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--water); outline-offset: 2px; }
+.top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.kicker { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+h1 { font-size: clamp(30px, 6vw, 44px); margin-top: 4px; }
+.sub { color: var(--muted); max-width: 52ch; margin-top: 6px; }
+.meta { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--muted); }
+.meta b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.linkbtn { background: none; border: 0; padding: 0; text-decoration: underline; color: var(--muted); font-size: 14px; }
+
+/* level map */
+#map { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.world { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0; }
+.world h3 { font-size: 14px; }
+.world small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.world ol { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; flex-wrap: wrap; }
+.dot { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--line); background: var(--bg); font-weight: 600; font-size: 14px; font-variant-numeric: tabular-nums; }
+.dot.done { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.dot.cur { border-color: var(--ink); box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--ink); }
+
+/* level */
+.lvl { display: flex; flex-direction: column; gap: 14px; }
+.eyebrow { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.lvl h2 { font-size: clamp(24px, 4vw, 32px); }
+.idea { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 4px; max-width: 78ch; }
+.idea .where { color: var(--muted); font-size: 14px; }
+.task { font-size: 18px; font-weight: 500; max-width: 62ch; }
+.play { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 820px) { .play { grid-template-columns: minmax(0, 1fr); } }
+.col { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.tray, .prog, .predict, .outbox, .fb, .rowzone { border-radius: 10px; }
+.tray { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.tray .items { display: flex; flex-wrap: wrap; gap: 8px; }
+.tipline { font-size: 13px; color: var(--muted); }
+
+/* draggable things */
+[data-dragitem] { touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; }
+.ghost { position: fixed; left: 0; top: 0; z-index: 100; pointer-events: none; opacity: .92; box-shadow: 0 10px 24px rgba(0,0,0,.28); cursor: grabbing; }
+body.dragging { cursor: grabbing; }
+.over { outline: 3px dashed var(--water); outline-offset: 2px; }
+.tok { display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 14px; font-weight: 500; background: var(--surface2); border: 1px solid var(--line); border-radius: 7px; padding: 5px 10px; white-space: nowrap; color: var(--ink); }
+.tok.small { padding: 1px 7px; font-size: 13px; background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.blk { border-radius: 9px; border: 2px solid var(--accent); background: var(--surface); font-weight: 600; font-size: 15px; display: flex; flex-direction: column; }
+.blk.mv { flex-direction: row; align-items: center; gap: 8px; padding: 7px 10px; }
+.blk.mv .arr { font-family: var(--font-mono); font-size: 18px; width: 20px; text-align: center; color: var(--accent); }
+.blk .x { margin-left: auto; width: 24px; height: 24px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); line-height: 1; font-size: 15px; padding: 0; }
+.blk.rep { border-color: var(--sun); }
+.rep-head { display: flex; align-items: center; gap: 8px; padding: 7px 10px; }
+.rep-head .x { margin-left: auto; }
+.step { width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface2); padding: 0; font-weight: 700; }
+.blk.rep > .zone { margin: 0 8px 8px 20px; min-height: 40px; }
+.blk.running { outline: 3px solid var(--sun); outline-offset: 1px; }
+.zone { display: flex; flex-direction: column; gap: 6px; padding: 8px; border: 2px dashed var(--line); border-radius: 9px; min-height: 64px; background: var(--bg); }
+.zone:empty::before { content: attr(data-hint); color: var(--muted); font-size: 14px; margin: auto; padding: 8px; text-align: center; }
+.prog { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.prog .zone { min-height: 110px; }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.count.full { color: var(--bad); font-weight: 600; }
+
+/* grid board */
+.board { position: relative; width: 100%; max-width: 520px; border-radius: 12px; overflow: hidden; border: 2px solid var(--line); background: var(--surface2); }
+.cells { position: absolute; inset: 0; display: grid; }
+.cell { position: relative; border: 1px solid var(--line); background: transparent; padding: 0; margin: 0; display: grid; place-items: center; }
+.cell:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.cell > span { width: 100%; height: 100%; display: grid; place-items: center; }
+.cell svg, .sprite svg { width: 78%; height: 78%; }
+.sprite { position: absolute; left: 0; top: 0; display: grid; place-items: center; pointer-events: none; transition: transform .32s ease; }
+.sprite.pred { transition: none; }
+.qmark { width: 70%; height: 70%; border: 3px dashed var(--sun); border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: var(--sun); font-size: 18px; }
+
+/* code */
+.code { background: var(--code-bg); color: var(--code-ink); border-radius: 10px; padding: 14px 14px; font-family: var(--font-mono); font-size: 14px; line-height: 2.1; overflow-x: auto; margin: 0; }
+.code .line { white-space: pre; }
+.code .dim { color: var(--code-dim); }
+.slot { display: inline-flex; align-items: center; justify-content: center; min-width: 74px; min-height: 28px; vertical-align: middle; padding: 0 3px; border: 2px dashed var(--code-dim); border-radius: 7px; color: var(--code-dim); font-size: 12px; line-height: 1.2; }
+.slot.filled { border-style: solid; border-color: transparent; padding: 0; min-width: 0; }
+.pathzone { display: inline-flex; flex-wrap: wrap; gap: 4px; align-items: center; min-width: 120px; min-height: 30px; padding: 2px 4px; border: 2px dashed var(--code-dim); border-radius: 7px; vertical-align: middle; }
+.pathzone:empty::before { content: "drop keys and numbers"; color: var(--code-dim); font-size: 12px; padding: 0 4px; }
+.datapre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.55; overflow: auto; max-height: 260px; }
+
+/* controls, feedback */
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.btn { border-radius: 9px; border: 1px solid var(--line); background: var(--surface); padding: 9px 16px; font-weight: 600; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn:hover { filter: brightness(1.06); }
+.predict { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: grid; gap: 6px; }
+.predict textarea { font-family: var(--font-mono); font-size: 14px; width: 100%; resize: vertical; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 8px; }
+.outbox { background: var(--code-bg); color: var(--code-ink); padding: 10px 14px; font-family: var(--font-mono); font-size: 14px; white-space: pre-wrap; min-height: 44px; overflow-wrap: anywhere; }
+.outbox.err { color: #ffb4a4; }
+.fb { padding: 10px 14px; border: 1px solid var(--line); background: var(--surface); display: grid; gap: 10px; justify-items: start; }
+.fb:empty { display: none; }
+.fb.good { border-color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--surface)); }
+.fb.warn { border-color: var(--sun); }
+.fb.bad { border-color: var(--bad); }
+.lvlnav { display: flex; justify-content: space-between; gap: 8px; padding-top: 6px; }
+
+/* row builder */
+.rowzone { border: 2px dashed var(--line); background: var(--bg); padding: 8px; display: flex; flex-direction: column; gap: 6px; min-height: 90px; }
+.rowzone:empty::before { content: "Drag fields here, or tap a field above"; color: var(--muted); font-size: 14px; margin: auto; padding: 10px; text-align: center; }
+.field { display: grid; grid-template-columns: minmax(80px, 130px) 1fr auto; gap: 8px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+.field code { font-family: var(--font-mono); font-size: 13px; overflow-wrap: anywhere; }
+.field input, .addfield input { font: inherit; font-size: 14px; min-width: 0; border-radius: 7px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 5px 8px; width: 100%; }
+.field .x { width: 26px; height: 26px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); padding: 0; }
+.addfield { display: flex; gap: 8px; }
+footer { color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { .sprite { transition: none; } }
+.code.tight { line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.code, .tok, .datapre, .outbox, .field code { font-variant-ligatures: none; }
+.choice { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 4px 12px; font-weight: 600; font-size: 13px; }
+.pill.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.givens { background: var(--surface2); border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+.tcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.tcard.right { border-color: var(--good); }
+.tcard.wrong { border-color: var(--bad); }
+.tcard .src { font-size: 16px; font-weight: 600; }
+.tcard .why { font-size: 13px; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { font-family: var(--font-mono); font-size: 13px; background: var(--surface2); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+.ncount { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.togs { display: grid; gap: 8px; }
+.tog { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.tog input { width: 18px; height: 18px; accent-color: var(--accent); }
+.tog small { color: var(--muted); display: block; font-size: 12px; }
+table.top { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.top td, table.top th { border-bottom: 1px solid var(--line); padding: 4px 8px; text-align: left; }
+table.top td.n { font-family: var(--font-mono); text-align: right; width: 60px; }
+table.top tr.hit td { color: var(--good); font-weight: 700; }
+table.top tr.fn td:first-child { color: var(--muted); }
+ul.heads { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+.sc { display: grid; grid-template-columns: minmax(120px, 1fr) auto; gap: 4px 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.sc.right { border-color: var(--good); }
+.sc.wrong { border-color: var(--bad); }
+.sc .t { font-size: 14px; }
+.sc .r { font-family: var(--font-mono); font-size: 12px; color: var(--muted); text-align: right; }
+.sc .s { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+.clu { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.clu.right { border-color: var(--good); }
+.clu.wrong { border-color: var(--bad); }
+.clu .words { font-family: var(--font-mono); font-size: 13px; font-weight: 700; }
+.clu .why { font-size: 13px; color: var(--muted); }
+</style>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="kicker">CACTUS Fall 2026 · Week 5</p>
+      <h1>What Counts as a Word?</h1>
+      <p class="sub">Split text into tokens, watch counts change with each choice, try to fix a sentiment dictionary, and read before you name a cluster. Then take a tokenizing stub into Colab.</p>
+    </div>
+    <div class="meta"><span><b id="count">0</b> of <span id="total">4</span> solved</span><button class="linkbtn" id="resetProg" type="button">Reset progress</button></div>
+  </header>
+  <nav id="map" aria-label="Levels"></nav>
+  <main id="stage"></main>
+  <footer>All texts on this page are invented. The tokens were computed ahead of time, so nothing is run in your browser. Nothing on this page is sent anywhere.</footer>
+</div>
+<script>
+"use strict";
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let _id = 0; const uid = () => "b" + (++_id);
+function h(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (v === true) e.setAttribute(k, "");
+    else if (v !== false && v != null) e.setAttribute(k, v);
+  }
+  for (const kid of kids.flat()) { if (kid == null || kid === false) continue; e.append(kid.nodeType ? kid : document.createTextNode(kid)); }
+  return e;
+}
+const svgEl = (cls, html) => { const s = h("span", { class: cls }); s.innerHTML = html; return s; };
+/* ---------- drag engine (pointer events: mouse, touch and pen) ---------- */
+const dragReg = new WeakMap(), dropReg = new WeakMap();
+let drag = null;
+function makeDraggable(el, info) {
+  el.setAttribute("data-dragitem", ""); el.setAttribute("role", "button"); el.tabIndex = 0;
+  dragReg.set(el, info);
+  el.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && !e.target.closest("[data-nodrag]")) { e.preventDefault(); info.tap && info.tap(); } });
+  return el;
+}
+const makeDrop = (el, drop) => { dropReg.set(el, { drop }); return el; };
+const dropTargetAt = (x, y) => { let el = document.elementFromPoint(x, y); while (el) { if (dropReg.has(el)) return el; el = el.parentElement; } return null; };
+let lastOver = null;
+function setOver(t) { if (lastOver === t) return; if (lastOver) lastOver.classList.remove("over"); lastOver = t; if (t) t.classList.add("over"); }
+document.addEventListener("pointerdown", e => {
+  if (e.button > 0 || e.target.closest("[data-nodrag]")) return;
+  const el = e.target.closest("[data-dragitem]"); if (!el) return;
+  const info = dragReg.get(el); if (!info) return;
+  drag = { el, info, x0: e.clientX, y0: e.clientY, active: false, ghost: null };
+});
+window.addEventListener("pointermove", e => {
+  if (!drag) return;
+  if (!drag.active) {
+    if (Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) < 6) return;
+    drag.active = true;
+    const r = drag.el.getBoundingClientRect();
+    drag.ox = drag.x0 - r.left; drag.oy = drag.y0 - r.top;
+    const g = drag.el.cloneNode(true); g.removeAttribute("data-dragitem"); g.classList.add("ghost"); g.style.width = r.width + "px";
+    document.body.append(g); drag.ghost = g; document.body.classList.add("dragging");
+    if (drag.info.pickup) drag.info.pickup();
+  }
+  drag.ghost.style.transform = `translate(${e.clientX - drag.ox}px, ${e.clientY - drag.oy}px)`;
+  setOver(dropTargetAt(e.clientX, e.clientY));
+  e.preventDefault();
+}, { passive: false });
+function endDrag(e, cancelled) {
+  if (!drag) return;
+  const d = drag; drag = null; setOver(null); document.body.classList.remove("dragging");
+  if (d.ghost) d.ghost.remove();
+  if (!d.active) { if (!cancelled && d.info.tap) d.info.tap(); return; }
+  const t = cancelled ? null : dropTargetAt(e.clientX, e.clientY);
+  if (t) dropReg.get(t).drop(d.info.payload, { x: e.clientX, y: e.clientY });
+  else if (d.info.discard) d.info.discard();
+}
+window.addEventListener("pointerup", e => endDrag(e, false));
+window.addEventListener("pointercancel", e => endDrag(e, true));
+
+
+/* ---------- level framework (pages define WORLDS, LEVELS, BUILDERS, then call boot) ---------- */
+const S = { i: 0, done: new Set(), rowCode: null };
+let L = null;
+const BUILDERS = {};
+let STORE_KEY = "cactus-practice";
+const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify([...S.done])); } catch (e) {} };
+const puzzleCount = () => LEVELS.filter(l => !l.bridge).length;
+
+function renderMap() {
+  const m = $("#map"); m.replaceChildren();
+  WORLDS.forEach((w, wi) => {
+    const ol = h("ol");
+    LEVELS.forEach((lv, i) => { if (lv.w === wi) ol.append(h("li", {}, h("button", { class: "dot", "data-i": i, "aria-label": `Level ${i + 1}: ${lv.title}`, title: lv.title, onclick: () => go(i) }, String(i + 1)))); });
+    m.append(h("div", { class: "world" }, h("h3", {}, w.name), h("small", {}, w.blurb), ol));
+  });
+  updateMap();
+}
+function updateMap() {
+  $$(".dot").forEach(b => { const i = +b.dataset.i; b.classList.toggle("done", S.done.has(i)); b.classList.toggle("cur", i === S.i); });
+  $("#count").textContent = String([...S.done].filter(i => LEVELS[i] && !LEVELS[i].bridge).length);
+  $("#total").textContent = String(puzzleCount());
+}
+function go(i) {
+  if (L) L.token = (L.token || 0) + 1;
+  S.i = Math.max(0, Math.min(LEVELS.length - 1, i));
+  try { history.replaceState(null, "", "#l-" + (S.i + 1)); } catch (e) {}
+  renderLevel(); updateMap();
+}
+function setFb(type, msg, next) {
+  const box = $("#fb"); if (!box) return;
+  box.className = "fb " + type; box.replaceChildren(h("p", {}, msg));
+  if (next && S.i < LEVELS.length - 1) box.append(h("button", { class: "btn primary", type: "button", onclick: () => go(S.i + 1) }, "Next level"));
+}
+function solved() { S.done.add(S.i); save(); updateMap(); }
+function renderLevel() {
+  const def = LEVELS[S.i], wd = WORLDS[def.w];
+  const { left, right } = BUILDERS[def.kind](def);
+  const nav = h("div", { class: "lvlnav" },
+    h("button", { class: "btn", type: "button", disabled: S.i === 0, onclick: () => go(S.i - 1) }, "Previous"),
+    h("button", { class: "btn", type: "button", disabled: S.i === LEVELS.length - 1, onclick: () => go(S.i + 1) }, "Next"));
+  $("#stage").replaceChildren(h("section", { class: "lvl" },
+    h("p", { class: "eyebrow" }, `World ${def.w + 1} · ${wd.name} · Level ${S.i + 1}`),
+    h("h2", {}, def.title),
+    h("div", { class: "idea" }, h("p", {}, h("b", {}, "The idea. "), wd.idea), h("p", { class: "where" }, wd.where)),
+    h("p", { class: "task" }, def.task),
+    h("div", { class: "play" }, h("div", { class: "col" }, left), h("div", { class: "col" }, right)),
+    nav));
+}
+const hintBtn = def => h("button", { class: "btn", type: "button", onclick: () => setFb("info", "Hint: " + def.hint) }, "Hint");
+
+/* A block of code with a Copy button. Used by the Colab bridge screens. */
+function codeCard(title, text, note) {
+  const msg = h("span", { class: "tipline", "aria-live": "polite" });
+  const pre = h("pre", { class: "code tight" }, text);
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(text); msg.textContent = "Copied."; }
+    catch (e) { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent = "Selected. Press Ctrl+C or Cmd+C to copy."; }
+  };
+  return h("div", { class: "col" }, h("p", { class: "label" }, title), note ? h("p", {}, note) : null, pre,
+    h("div", { class: "row" }, h("button", { class: "btn", type: "button", onclick: copy }, "Copy code"), msg));
+}
+
+function boot(storeKey) {
+  STORE_KEY = storeKey;
+  try { JSON.parse(localStorage.getItem(STORE_KEY) || "[]").forEach(n => S.done.add(n)); } catch (e) {}
+  $("#resetProg").addEventListener("click", () => { S.done.clear(); save(); updateMap(); });
+  renderMap();
+  const m = /^#l-(\d+)$/.exec(location.hash || "");
+  go(m ? +m[1] - 1 : 0);
+  window.addEventListener("hashchange", () => { const m2 = /^#l-(\d+)$/.exec(location.hash || ""); if (m2 && +m2[1] - 1 !== S.i) go(+m2[1] - 1); });
+}
+/* Week 5: What Counts as a Word? Uses the shared engine (practice/shared/engine.js). All texts are invented. */
+
+const TOKENS = [
+ {
+  "id": "t1",
+  "lang": "en",
+  "text": "AI isn't replacing teachers, it's changing homework.",
+  "tokens": {
+   "spaces": [
+    "AI",
+    "isn't",
+    "replacing",
+    "teachers,",
+    "it's",
+    "changing",
+    "homework."
+   ],
+   "words": [
+    "ai",
+    "isn",
+    "t",
+    "replacing",
+    "teachers",
+    "it",
+    "s",
+    "changing",
+    "homework"
+   ],
+   "chars": [
+    "A",
+    "I",
+    "i",
+    "s",
+    "n",
+    "'",
+    "t",
+    "r",
+    "e",
+    "p",
+    "l",
+    "a",
+    "c",
+    "i",
+    "n",
+    "g",
+    "t",
+    "e",
+    "a",
+    "c",
+    "h",
+    "e",
+    "r",
+    "s",
+    ",",
+    "i",
+    "t",
+    "'",
+    "s",
+    "c",
+    "h",
+    "a",
+    "n",
+    "g",
+    "i",
+    "n",
+    "g",
+    "h",
+    "o",
+    "m",
+    "e",
+    "w",
+    "o",
+    "r",
+    "k",
+    "."
+   ],
+   "jieba": [
+    "AI",
+    "isn",
+    "'",
+    "t",
+    "replacing",
+    "teachers",
+    ",",
+    "it",
+    "'",
+    "s",
+    "changing",
+    "homework",
+    "."
+   ]
+  }
+ },
+ {
+  "id": "t2",
+  "lang": "en",
+  "text": "New York-based startup launches #AI tutor for $5/month",
+  "tokens": {
+   "spaces": [
+    "New",
+    "York-based",
+    "startup",
+    "launches",
+    "#AI",
+    "tutor",
+    "for",
+    "$5/month"
+   ],
+   "words": [
+    "new",
+    "york",
+    "based",
+    "startup",
+    "launches",
+    "ai",
+    "tutor",
+    "for",
+    "5",
+    "month"
+   ],
+   "chars": [
+    "N",
+    "e",
+    "w",
+    "Y",
+    "o",
+    "r",
+    "k",
+    "-",
+    "b",
+    "a",
+    "s",
+    "e",
+    "d",
+    "s",
+    "t",
+    "a",
+    "r",
+    "t",
+    "u",
+    "p",
+    "l",
+    "a",
+    "u",
+    "n",
+    "c",
+    "h",
+    "e",
+    "s",
+    "#",
+    "A",
+    "I",
+    "t",
+    "u",
+    "t",
+    "o",
+    "r",
+    "f",
+    "o",
+    "r",
+    "$",
+    "5",
+    "/",
+    "m",
+    "o",
+    "n",
+    "t",
+    "h"
+   ],
+   "jieba": [
+    "New",
+    "York",
+    "-",
+    "based",
+    "startup",
+    "launches",
+    "#",
+    "AI",
+    "tutor",
+    "for",
+    "$",
+    "5",
+    "/",
+    "month"
+   ]
+  }
+ },
+ {
+  "id": "t3",
+  "lang": "zh",
+  "text": "新加坡推出人工智能學習計劃",
+  "tokens": {
+   "spaces": [
+    "新加坡推出人工智能學習計劃"
+   ],
+   "words": [
+    "新加坡推出人工智能學習計劃"
+   ],
+   "chars": [
+    "新",
+    "加",
+    "坡",
+    "推",
+    "出",
+    "人",
+    "工",
+    "智",
+    "能",
+    "學",
+    "習",
+    "計",
+    "劃"
+   ],
+   "jieba": [
+    "新加坡",
+    "推出",
+    "人工智能",
+    "學習",
+    "計劃"
+   ]
+  }
+ },
+ {
+  "id": "t4",
+  "lang": "zh",
+  "text": "香港大學生如何使用生成式人工智慧",
+  "tokens": {
+   "spaces": [
+    "香港大學生如何使用生成式人工智慧"
+   ],
+   "words": [
+    "香港大學生如何使用生成式人工智慧"
+   ],
+   "chars": [
+    "香",
+    "港",
+    "大",
+    "學",
+    "生",
+    "如",
+    "何",
+    "使",
+    "用",
+    "生",
+    "成",
+    "式",
+    "人",
+    "工",
+    "智",
+    "慧"
+   ],
+   "jieba": [
+    "香港",
+    "大學生",
+    "如何",
+    "使用",
+    "生成式",
+    "人工智慧"
+   ]
+  }
+ },
+ {
+  "id": "t5",
+  "lang": "mixed",
+  "text": "Singapore 學生 use ChatGPT 寫功課",
+  "tokens": {
+   "spaces": [
+    "Singapore",
+    "學生",
+    "use",
+    "ChatGPT",
+    "寫功課"
+   ],
+   "words": [
+    "singapore",
+    "學生",
+    "use",
+    "chatgpt",
+    "寫功課"
+   ],
+   "chars": [
+    "S",
+    "i",
+    "n",
+    "g",
+    "a",
+    "p",
+    "o",
+    "r",
+    "e",
+    "學",
+    "生",
+    "u",
+    "s",
+    "e",
+    "C",
+    "h",
+    "a",
+    "t",
+    "G",
+    "P",
+    "T",
+    "寫",
+    "功",
+    "課"
+   ],
+   "jieba": [
+    "Singapore",
+    "學生",
+    "use",
+    "ChatGPT",
+    "寫功",
+    "課"
+   ]
+  }
+ }
+];
+
+const WORLDS = [
+  { name: "What is a token?", blurb: "Tokenizing",
+    idea: "A token is the unit you count. The computer needs a rule for where one token ends and the next begins, and the rule changes your numbers. English has spaces. Chinese does not.",
+    where: "In the notebook: the warm-up tokenizes five texts two ways, and Exercise 1 counts words." },
+  { name: "Counting", blurb: "Counts and settings",
+    idea: "Raw counts are dominated by little words. Each cleaning step (lowercasing, removing stopwords, dropping short words) changes the list, and some steps delete things you wanted.",
+    where: "In the notebook: Exercise 1 compares raw and cleaned counts, and says what you do not trust." },
+  { name: "Dictionaries", blurb: "Sentiment",
+    idea: "A sentiment dictionary adds up word scores. It cannot tell a name from a word, sarcasm from praise, or slang from its dictionary meaning.",
+    where: "In the notebook: Exercise 2 reads ten texts by hand and compares them with the score." },
+  { name: "Read before you name", blurb: "Clusters",
+    idea: "A cluster or topic is a list of top words. Before you give it a name, read the examples inside it. Sometimes the cluster is not about content at all.",
+    where: "In the notebook: Exercise 4 clusters the Reddit posts, and you read three examples from each cluster before naming it." },
+  { name: "Take it to Colab", blurb: "Real code",
+    idea: "You have seen what a tokenizer does. Now run two of them on five texts.",
+    where: "The Week 5 notebook warm-up has the same five texts." }
+];
+
+const choose = (opts, onpick) => {
+  const wrap = h("div", { class: "choice", role: "group" }); let cur = null; const btns = [];
+  opts.forEach(o => {
+    const b = h("button", { class: "pill", type: "button", onclick: () => { cur = o.v; btns.forEach(x => x.classList.toggle("on", x === b)); onpick && onpick(cur); } }, o.t);
+    btns.push(b); wrap.append(b);
+  });
+  wrap.get = () => cur; return wrap;
+};
+const chips = arr => h("div", { class: "chips" }, arr.map(t => h("span", { class: "chip" }, t)));
+
+/* ---------- level 1: tokenizers ---------- */
+const TOK_OPTS = [{ v: "spaces", t: "Split on spaces" }, { v: "words", t: "Regex words" }, { v: "chars", t: "Characters" }, { v: "jieba", t: "jieba (a segmenter)" }];
+const TOK_OK = { t1: ["spaces", "words"], t2: ["spaces", "words"], t3: ["jieba"], t4: ["jieba"], t5: ["spaces", "jieba"] };
+const TOK_WHY = {
+  t1: "Splitting on spaces keeps \"isn't\" whole but leaves punctuation stuck to words (\"teachers,\"). The regex splits \"isn't\" into \"isn\" and \"t\". Neither is perfect, so choose by what you need to count. Characters are never the answer for English.",
+  t2: "Hyphens, \"#AI\" and \"$5/month\" are all judgement calls. The regex gives clean lowercase words but loses the hashtag. Spaces keep the odd shapes (\"York-based\"). A segmenter is built for Chinese, not for this.",
+  t3: "Chinese has no spaces between words, so splitting on spaces gives one giant token, and the regex does the same, because Chinese characters count as word characters. A segmenter like jieba looks up where words end.",
+  t4: "Same problem: one giant token without a segmenter, or sixteen single characters (which are not words). jieba finds 大學生, 使用, 人工智慧.",
+  t5: "A mix. Splitting on spaces works here only because someone typed spaces. jieba splits 寫功課 as 寫功 + 課, which is wrong. Even a segmenter makes mistakes, especially on Traditional Chinese. None of these is perfect."
+};
+function buildTok(def) {
+  L = { def, token: 0 };
+  const picks = {}, cards = {};
+  const render = d => {
+    const p = picks[d.id].get(), box = cards[d.id].querySelector(".out");
+    box.replaceChildren();
+    if (p) box.append(chips(d.tokens[p]), h("p", { class: "ncount" }, d.tokens[p].length + " token" + (d.tokens[p].length === 1 ? "" : "s")));
+  };
+  const left = TOKENS.map((d, i) => {
+    picks[d.id] = choose(TOK_OPTS, () => render(d));
+    cards[d.id] = h("div", { class: "tcard", id: "tk-" + d.id }, h("p", { class: "label" }, "Text " + (i + 1)), h("p", { class: "src" }, d.text), picks[d.id], h("div", { class: "out" }));
+    return cards[d.id];
+  });
+  const check = () => {
+    if (TOKENS.some(d => !picks[d.id].get())) { setFb("warn", "Pick a tokenizer for every text."); return; }
+    let all = true, n = 0;
+    TOKENS.forEach(d => {
+      const ok = TOK_OK[d.id].includes(picks[d.id].get()); all = all && ok; if (!ok) n++;
+      cards[d.id].className = "tcard " + (ok ? "right" : "wrong");
+      cards[d.id].querySelector(".why")?.remove();
+      cards[d.id].append(h("p", { class: "why" }, (ok ? "Fine. " : "Look at the tokens again. ") + TOK_WHY[d.id]));
+    });
+    if (all) { solved(); setFb("good", def.win, true); } else setFb("bad", `${n} text${n === 1 ? "" : "s"} to rethink. Read the notes under each one.`);
+  };
+  const right = [h("div", { class: "givens" }, "Pick the tokenizer that gives you the most usable words for each text. Look at the tokens and the count it gives."),
+    h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my choices"), hintBtn(def)),
+    h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+/* ---------- level 2: counting ---------- */
+const HEADS = [
+  "AI tools in schools: what parents need to know",
+  "The government plans new rules for AI in the workplace",
+  "How AI is changing the way students write essays",
+  "AI in the classroom: teachers say the tools are here to stay",
+  "Workers in the US fear AI will take their jobs",
+  "Why AI matters for all of us",
+  "New AI course opens for working adults",
+  "Teachers and students learn to use AI tools together",
+  "Ministry says AI rules for schools are coming",
+  "Companies in the US and Singapore hire for AI skills",
+  "Parents ask: is AI homework help cheating?",
+  "AI and the future of work in the city"
+];
+const STOP = new Set("a an the of in on at to for and or but is are was were be been it its this that these those with by as from how why what who will can do does not no all us we our you your they their".split(" "));
+function countWords(opts) {
+  const m = new Map();
+  HEADS.forEach(t => {
+    (t.match(/[A-Za-z']+/g) || []).forEach(w0 => {
+      const w = opts.lower ? w0.toLowerCase() : w0;
+      if (opts.stop && STOP.has(w.toLowerCase()) && (opts.lower || STOP.has(w))) return;
+      if (opts.short && w.length < 3) return;
+      m.set(w, (m.get(w) || 0) + 1);
+    });
+  });
+  return [...m.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+function buildCount(def) {
+  L = { def, token: 0 };
+  const o = { lower: false, stop: false, short: false };
+  const tbl = h("div"), why = h("p", { class: "tipline" });
+  const isFn = w => STOP.has(w.toLowerCase());
+  const render = () => {
+    const top = countWords(o).slice(0, 8);
+    tbl.replaceChildren(h("table", { class: "top" }, h("tr", {}, h("th", {}, "Top 8 words"), h("th", {}, "Count")),
+      top.map(([w, n]) => h("tr", { class: w.toLowerCase() === "ai" ? "hit" : isFn(w) ? "fn" : "" }, h("td", {}, w), h("td", { class: "n" }, String(n))))));
+    const notes = [];
+    if (o.short) notes.push("Dropping words under 3 letters deleted \"AI\" (2 letters).");
+    if (o.lower && o.stop) notes.push("Lowercasing turned the country \"US\" into \"us\", and \"us\" is on the stopword list, so the country vanished from the counts.");
+    if (o.stop && !o.lower) notes.push("The stopword list is lowercase, so \"The\" at the start of a headline was not removed.");
+    why.textContent = notes.join(" ");
+  };
+  const tog = (key, name, sub) => h("label", { class: "tog" }, h("input", { type: "checkbox", onchange: e => { o[key] = e.target.checked; render(); } }), h("span", {}, name, h("small", {}, sub)));
+  const check = () => {
+    const top5 = countWords(o).slice(0, 5).map(x => x[0]);
+    const hasAI = top5.some(w => w.toLowerCase() === "ai"), fn = top5.filter(isFn);
+    if (!hasAI) setFb("bad", "\"AI\" is not in your top 5. Some setting deleted it. Which one?");
+    else if (fn.length) setFb("bad", `Your top 5 still has little words: ${fn.join(", ")}. What would remove them? And do they need lowercasing first?`);
+    else { solved(); setFb("good", def.win, true); }
+  };
+  const left = [h("div", { class: "givens" }, "Twelve invented headlines about AI. The table shows the 8 most common words."),
+    h("div", { class: "togs" }, [tog("lower", "Lowercase everything", "\"The\" and \"the\" become one word"), tog("stop", "Remove stopwords", "Drop little words (the, of, in, us ...)"), tog("short", "Drop words under 3 letters", "Short words are rarely content")]),
+    h("p", { class: "label" }, "The headlines"), h("ul", { class: "heads" }, HEADS.map(t => h("li", {}, t)))];
+  const right = [tbl, why, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my top 5"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  render();
+  return { left, right };
+}
+
+/* ---------- level 3: a sentiment dictionary ---------- */
+const LEX = { great: 3, good: 2, bad: -2, joy: 3, sick: -2 };
+const SENT = [
+  { t: "This tool is great", want: 1, why: "Works when \"great\" is in the dictionary." },
+  { t: "This is not good", want: -1, why: "Needs \"good\" in the dictionary and the negation rule switched on." },
+  { t: "Oh great, it deleted my file again", want: -1, why: "Sarcasm. The dictionary sees \"great\" and says positive. No word list can hear the tone." },
+  { t: "Joy asked about the results", want: 0, why: "\"Joy\" is a name here. Neutral needs \"joy\" out of the dictionary." },
+  { t: "I felt pure joy when it worked", want: 1, why: "Positive needs \"joy\" in the dictionary. D and E pull in opposite directions: the dictionary cannot tell a name from a word." },
+  { t: "That demo was sick!", want: 1, why: "Slang. In the dictionary \"sick\" is negative, so this scores negative or neutral, never positive." },
+  { t: "I feel sick today", want: -1, why: "Works when \"sick\" is in the dictionary, but now the slang text above is even more wrong." },
+  { t: "The service was bad", want: -1, why: "Works when \"bad\" is in the dictionary." }
+];
+function scoreText(text, on, neg) {
+  const ws = text.toLowerCase().match(/[a-z']+/g) || []; let s = 0, flip = false;
+  ws.forEach(w => { if (neg && (w === "not" || w === "never")) { flip = true; return; } if (on[w] && LEX[w]) { s += flip ? -LEX[w] : LEX[w]; flip = false; } else if (LEX[w] !== undefined) flip = false; });
+  return s;
+}
+const sign = s => (s > 0 ? 1 : s < 0 ? -1 : 0);
+const SLABEL = { "1": "positive", "-1": "negative", "0": "neutral" };
+function bestPossible() {
+  const ks = Object.keys(LEX); let best = 0;
+  for (let m = 0; m < (1 << ks.length); m++) for (const neg of [false, true]) {
+    const on = {}; ks.forEach((k, i) => { on[k] = !!(m & (1 << i)); });
+    const n = SENT.filter(x => sign(scoreText(x.t, on, neg)) === x.want).length; if (n > best) best = n;
+  }
+  return best;
+}
+function buildLex(def) {
+  L = { def, token: 0 };
+  const on = { great: true, good: true, bad: true, joy: true, sick: true }, st = { neg: false };
+  const best = bestPossible(), out = h("div", { class: "togs" }), sum = h("p", { class: "label" });
+  const render = () => {
+    let n = 0;
+    out.replaceChildren(...SENT.map(x => {
+      const s = scoreText(x.t, on, st.neg), ok = sign(s) === x.want; if (ok) n++;
+      return h("div", { class: "sc " + (ok ? "right" : "wrong") }, h("span", { class: "t" }, x.t), h("span", { class: "r" }, `score ${s} · ${SLABEL[sign(s)]} · should be ${SLABEL[x.want]}`));
+    }));
+    sum.textContent = `Right: ${n} of ${SENT.length}`; render.n = n;
+  };
+  const wtog = w => h("label", { class: "tog" }, h("input", { type: "checkbox", checked: true, onchange: e => { on[w] = e.target.checked; render(); } }), h("span", {}, `${w} (${LEX[w] > 0 ? "+" : ""}${LEX[w]})`));
+  const ntog = h("label", { class: "tog" }, h("input", { type: "checkbox", onchange: e => { st.neg = e.target.checked; render(); } }), h("span", {}, "Negation rule", h("small", {}, "After \"not\", flip the next word's score")));
+  const check = () => {
+    if (render.n >= best) { solved(); setFb("good", def.win + " The best any setting of this dictionary can do is " + best + " of " + SENT.length + ". The rest need a human, or a different method.", true); }
+    else setFb("bad", `You have ${render.n} right and a better setting exists. Try the negation rule, and each word in turn.`);
+  };
+  const left = [h("div", { class: "givens" }, "Eight texts, with the label a person would give. Switch words in and out of the dictionary and the negation rule on and off. Get as many right as you can."),
+    h("p", { class: "label" }, "The dictionary"), h("div", { class: "togs" }, [...Object.keys(LEX).map(wtog), ntog])];
+  const right = [sum, out, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my best"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  render();
+  return { left, right };
+}
+
+/* ---------- level 4: read before you name ---------- */
+const CLU = [
+  { words: "school, students, teachers, exams, homework", ex: ["Teachers say students use AI to finish homework", "Exams change as schools rethink essays", "Parents worry about students and AI tutors", "School leaders set rules for classroom AI", "A teacher's guide to AI and exams"], a: "name", why: "Every example is about AI in education. The top words describe the examples, so you can name it, for example \"AI in education\"." },
+  { words: "AI, new, says, report, week", ex: ["A bank says AI use is up, in a new report", "New AI film opens this week", "Football club says new AI scouting tool is ready", "Report on a city's new AI bus routes", "Minister says new AI laws are coming this week"], a: "mixed", why: "The top words are general news words. The examples are about banking, film, football, buses and law. There is no single topic to name." },
+  { words: "subscribe, newsletter, sign, free, read", ex: ["Sign up for our free newsletter", "Subscribe to read the full story", "Sign in to read more for free", "Get our newsletter: subscribe today", "Read free for 30 days: sign up"], a: "boiler", why: "This is page boilerplate, not content people wrote about the topic. Remove these texts before you count or cluster, and say you did." }
+];
+const CLU_OPTS = [{ v: "name", t: "Coherent: name it" }, { v: "mixed", t: "Too mixed to name" }, { v: "boiler", t: "Not content (boilerplate)" }];
+function buildClu(def) {
+  L = { def, token: 0 };
+  const picks = CLU.map(() => choose(CLU_OPTS));
+  const cards = CLU.map((c, i) => h("div", { class: "clu", id: "cl" + i }, h("p", { class: "label" }, "Cluster " + (i + 1)), h("p", { class: "words" }, "Top words: " + c.words), h("ul", { class: "heads" }, c.ex.map(t => h("li", {}, t))), picks[i]));
+  const check = () => {
+    if (picks.some(p => !p.get())) { setFb("warn", "Decide for every cluster."); return; }
+    let all = true; const out = [];
+    CLU.forEach((c, i) => { const ok = picks[i].get() === c.a; all = all && ok; cards[i].className = "clu " + (ok ? "right" : "wrong"); cards[i].querySelector(".why")?.remove(); cards[i].append(h("p", { class: "why" }, (ok ? "Right. " : "Not quite. ") + c.why)); });
+    if (all) { solved(); setFb("good", def.win, true); } else setFb("bad", "Read the notes under each cluster. The examples are the evidence, not the top words.");
+  };
+  const left = [h("div", { class: "givens" }, "A clustering method grouped invented headlines and printed each cluster's top words. Below each is a sample of its texts. Read them, then decide."), ...cards];
+  const right = [h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my answers"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+const LEVELS = [
+  { w: 0, kind: "tok", title: "Pick a tokenizer",
+    task: "Five invented texts, four ways to cut them into tokens. For each text, pick the tokenizer that gives usable words. Look at the tokens and the count before you decide.",
+    hint: "Ask: would a person call these things words? Does the count match what a reader would count? Chinese is written without spaces.",
+    win: "You matched the tokenizer to the language. A segmenter is needed for Chinese, and no tokenizer is perfect on mixed or messy text." },
+  { w: 1, kind: "count", title: "Same headlines, different counts",
+    task: "Switch the cleaning steps on and off until the top 5 words include AI and no little words. Read the note under the table each time something changes.",
+    hint: "Little words are removed by the stopword step, but it only works on lowercase. One of the three steps deletes AI.",
+    win: "Cleaning steps are choices. The list you want needed lowercasing and stopword removal, and not the short-word filter. And one of them quietly deleted the country \"US\"." },
+  { w: 2, kind: "lex", title: "Fix the dictionary",
+    task: "A sentiment dictionary scores eight texts. Edit the dictionary and the negation rule to get as many right as you can.",
+    hint: "Some texts need a word in. Some need it out. Some cannot be fixed. When two texts need opposite settings, that is the finding.",
+    win: "You found the limit. A dictionary adds up word scores, so it cannot tell a name from a word, hear sarcasm, or know slang." },
+  { w: 3, kind: "clu", title: "Read before you name",
+    task: "Three clusters came out of a clustering run. Read the examples under each one. Decide whether to name it, call it too mixed, or say it is not content.",
+    hint: "The top words are a summary. The examples are the evidence. Do all five examples fit one clear label?",
+    win: "You read first. One cluster could be named, one was a bag of unrelated news, and one was page boilerplate that should never have been in the data." },
+  { w: 4, kind: "bridge", bridge: true, title: "Tokenize five texts two ways",
+    task: "Open the Week 5 notebook, find the warm-up cell, and run this there." }
+];
+
+/* ---------- bridge ---------- */
+const BRIDGE_CODE = [
+  "import re", "",
+  "texts = [",
+  '    "AI isn\'t replacing teachers, it\'s changing homework.",',
+  '    "New York-based startup launches #AI tutor for $5/month",',
+  '    "新加坡推出人工智能學習計劃",',
+  '    "香港大學生如何使用生成式人工智慧",',
+  '    "Singapore 學生 use ChatGPT 寫功課",',
+  "]", "",
+  "def by_spaces(t):", "    return t.split()", "",
+  "def by_words(t):", '    return re.findall(r"\\w+", t.lower())', "",
+  "# Predict first: how many tokens will each method give for each text?",
+  "for t in texts:", "    print(len(by_spaces(t)), len(by_words(t)), t)"
+].join("\n");
+function buildBridge(def) {
+  const prompt = "Write Python that tokenizes these five texts two ways: by splitting on spaces, and with the jieba library. Print the number of tokens each way. Then explain in two sentences what goes wrong when you split Chinese text on spaces. Do not include any API key.";
+  const left = [codeCard("Task 1: two tokenizers", BRIDGE_CODE, "Predict the numbers before you run it. Paste it into the warm-up cell of the Week 5 notebook.")];
+  const right = [
+    codeCard("Task 2: ask an AI, then compare", prompt, "Paste this into your AI assistant. Does its code match what you ran? Did it use jieba correctly?"),
+    h("div", { class: "tray" }, h("p", { class: "label" }, "Task 3: check"), h("p", {}, "For the two Chinese texts, how many tokens did splitting on spaces give? What did you expect? Log one thing that surprised you.")),
+    h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: () => { solved(); setFb("good", "Done. In Exercise 1 you will count words across a whole corpus, and decide which tokenizer to trust."); } }, "I ran all three")),
+    h("div", { id: "fb", class: "fb", "aria-live": "polite" })
+  ];
+  return { left, right };
+}
+
+BUILDERS.tok = buildTok; BUILDERS.count = buildCount; BUILDERS.lex = buildLex; BUILDERS.clu = buildClu; BUILDERS.bridge = buildBridge;
+boot("cactus-what-counts-as-a-word-done");
+</script>

@@ -28,6 +28,8 @@ DECKS = {
     "week02": "week02_clean_it_chart_it",
     "week03": "week03_verify_and_analyze",
     "week04": "week04_collect_your_own_data",
+    "week05": "week05_analyze_text",
+    "week06": "week06_ai_as_annotator",
 }
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700"
@@ -203,5 +205,7 @@ def make_pdf(html_path, pdf_path):
 
 if __name__ == "__main__":
     pdf = "--no-pdf" not in sys.argv
+    only = [a for a in sys.argv[1:] if not a.startswith("--")]   # e.g. python scripts/build_slides.py week05
     for key, name in DECKS.items():
-        build(key, name, pdf)
+        if not only or key in only:
+            build(key, name, pdf)

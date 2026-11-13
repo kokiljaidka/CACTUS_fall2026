@@ -1,4 +1,4 @@
-# RA testing checklist: Weeks 1 to 4
+# RA testing checklist: Weeks 1 to 6
 
 Thank you for testing. Please try everything the way a student would, on a device and account like theirs, and write down anything that is confusing, broken, slow, or wrong. **You are testing the materials, not yourself.** If something confuses you, it will confuse students, so that is a finding.
 
@@ -184,6 +184,54 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
+## K. Week 5: What Counts as a Word? and the text notebook (3 hours; two RAs)
+
+**Practice page** (`week05_what_counts_as_a_word.html`, 30 minutes; one RA on a phone):
+- [ ] Level 1: try splitting on spaces for the Chinese texts, then fix it. Are the notes under each text fair and clear?
+- [ ] Level 2: reach the goal. Did you notice that one setting deleted "AI" and another deleted "US"? Was the note under the table enough to find out why?
+- [ ] Level 3: get as many right as you can. Is it clear why you cannot get all eight? Does the page say so honestly?
+- [ ] Level 4: decide all three clusters. Is any answer one you would argue with? Write it down.
+- [ ] Level 5: copy the code into the Week 5 notebook warm-up. Does it run?
+- [ ] Refresh, reset progress, phone portrait, dark mode.
+
+**Notebook** (`week05_analyze_text.ipynb`, 2 hours; you need the corpus zip from the class drive):
+- [ ] The install cell works in a fresh Colab runtime. How long does it take? What happens if it fails?
+- [ ] The upload step: is it clear how to upload `week05_corpus.zip` and what happens next?
+- [ ] Warm-up and Check 0 pass with a correct `by_jieba`, and fail with the placeholder.
+- [ ] Exercise 1: do the checks fail with a clear message if you leave the stopwords in, or give the same list for "distinctive" as for the counts?
+- [ ] Exercise 2: read the ten posts. Was any post upsetting or identifying? **Do not paste any into an issue.** Tell Kokil privately.
+- [ ] Exercise 3: find the three mistakes **without help** and without opening `instructor/`. Record how long it takes, and which you found last.
+- [ ] Time each section against `schedule/week05.md`.
+- [ ] Confirm no real Reddit or news text appears in the notebook file itself, the slides, or the practice page.
+
+**Done when:** every exercise is done, with times, the install time is recorded, and you have listed the mistakes you found and any you missed.
+
+---
+
+## L. Week 6: Can You Trust the Labeler? and the AI-as-annotator notebook (3 hours; two RAs)
+
+**Practice page** (`week06_trust_the_labeler.html`, 30 minutes; one RA on a phone):
+- [ ] Level 1: try each labeler. Is each wrong pick explained clearly?
+- [ ] Level 2: reach the goal. Do the sliders work with touch? Is it clear what sensitivity and specificity mean?
+- [ ] Level 3: decide the six disagreements. Is any case one you would argue with? Write it down.
+- [ ] Level 4: judge the six claims. Is any claim ambiguous?
+- [ ] Level 5: copy the code into the Week 6 notebook warm-up. Does it run?
+- [ ] Refresh, reset progress, phone portrait, dark mode.
+
+**Notebook** (`week06_ai_as_annotator.ipynb`, 2 hours; you need the corpus zip from the class drive):
+- [ ] The upload step: is it clear how to upload `week06_corpus.zip`?
+- [ ] Warm-up and Check 0 pass with correct code and fail with the placeholders.
+- [ ] Exercise 1: join on `row_id`. Does the check give a clear message if you join on `orig_message_id`?
+- [ ] Exercise 2: do the checks accept correct numbers and reject wrong ones, with a clear message?
+- [ ] Exercise 3: read the disagreements. **The messages include abusive language.** Is the content note enough? Tell Kokil privately about anything that looks identifying. Do not paste messages into an issue.
+- [ ] Exercise 4 (use an AI chat): paste the 20 messages, write a definition, paste the answers into `my_llm`. Does Check 4 handle answers like "Yes", " no " and "YES"? What does the AI do that you did not expect (extra text, a different format)?
+- [ ] Exercise 5: find the three mistakes **without help** and without opening `instructor/`. Record how long it takes, and which you found last.
+- [ ] Time each section against `schedule/week06.md`.
+
+**Done when:** every exercise is done, with times, and you have listed the mistakes you found and any you missed.
+
+---
+
 ## G. Full dress rehearsal (2 sessions, as a group)
 
 Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
@@ -218,8 +266,10 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 | E. Week 2 notebook | | | | | | |
 | I. Week 3 page and notebook | | | | | | |
 | J. Week 4 page and notebook | | | | | | |
+| K. Week 5 page and notebook | | | | | | |
+| L. Week 6 page and notebook | | | | | | |
 | F. Slide decks | | | | | | |
 | G. Rehearsal | | | | | | |
 | H. Data | | | | | | |
 
-**Suggested order:** A and H first (quick), then B and C in parallel, then D and E, then I and J, then F, then G.
+**Suggested order:** A and H first (quick), then B and C in parallel, then D and E, then I, J, K and L, then F, then G.

@@ -1,0 +1,581 @@
+<title>Can You Trust the Labeler?</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* Layout: header + level map on top, then one puzzle at a time: idea and task on the left, board or code beside a tray of draggable pieces. */
+:root {
+  --bg: #edf1ec;
+  --surface: #f8faf7;
+  --surface2: #e0e8df;
+  --ink: #15251d;
+  --muted: #4f6057;
+  --line: #c6d1c4;
+  --accent: #237a4b;
+  --accent-ink: #ffffff;
+  --sun: #d99a1c;
+  --water: #2379c4;
+  --bad: #b0402e;
+  --good: #1d7443;
+  --code-bg: #14241c;
+  --code-ink: #e4efe6;
+  --code-dim: #8fa89a;
+  --slot: #d3e3d6;
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1814; --surface: #15231d; --surface2: #1e3028; --ink: #e3eee6; --muted: #98ab9f;
+    --line: #2b4036; --accent: #4cc080; --accent-ink: #06130c; --sun: #f0ba45; --water: #5bb0f2;
+    --bad: #f28d78; --good: #5fd596; --code-bg: #0a120f; --code-ink: #dcebdf; --code-dim: #7f9a8c; --slot: #23382e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1814; --surface: #15231d; --surface2: #1e3028; --ink: #e3eee6; --muted: #98ab9f;
+  --line: #2b4036; --accent: #4cc080; --accent-ink: #06130c; --sun: #f0ba45; --water: #5bb0f2;
+  --bad: #f28d78; --good: #5fd596; --code-bg: #0a120f; --code-ink: #dcebdf; --code-dim: #7f9a8c; --slot: #23382e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+  padding-block: 20px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+p { margin: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--water); outline-offset: 2px; }
+.top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.kicker { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+h1 { font-size: clamp(30px, 6vw, 44px); margin-top: 4px; }
+.sub { color: var(--muted); max-width: 52ch; margin-top: 6px; }
+.meta { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--muted); }
+.meta b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.linkbtn { background: none; border: 0; padding: 0; text-decoration: underline; color: var(--muted); font-size: 14px; }
+
+/* level map */
+#map { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.world { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0; }
+.world h3 { font-size: 14px; }
+.world small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.world ol { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; flex-wrap: wrap; }
+.dot { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--line); background: var(--bg); font-weight: 600; font-size: 14px; font-variant-numeric: tabular-nums; }
+.dot.done { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.dot.cur { border-color: var(--ink); box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--ink); }
+
+/* level */
+.lvl { display: flex; flex-direction: column; gap: 14px; }
+.eyebrow { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.lvl h2 { font-size: clamp(24px, 4vw, 32px); }
+.idea { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 4px; max-width: 78ch; }
+.idea .where { color: var(--muted); font-size: 14px; }
+.task { font-size: 18px; font-weight: 500; max-width: 62ch; }
+.play { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 820px) { .play { grid-template-columns: minmax(0, 1fr); } }
+.col { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.tray, .prog, .predict, .outbox, .fb, .rowzone { border-radius: 10px; }
+.tray { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.tray .items { display: flex; flex-wrap: wrap; gap: 8px; }
+.tipline { font-size: 13px; color: var(--muted); }
+
+/* draggable things */
+[data-dragitem] { touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; }
+.ghost { position: fixed; left: 0; top: 0; z-index: 100; pointer-events: none; opacity: .92; box-shadow: 0 10px 24px rgba(0,0,0,.28); cursor: grabbing; }
+body.dragging { cursor: grabbing; }
+.over { outline: 3px dashed var(--water); outline-offset: 2px; }
+.tok { display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 14px; font-weight: 500; background: var(--surface2); border: 1px solid var(--line); border-radius: 7px; padding: 5px 10px; white-space: nowrap; color: var(--ink); }
+.tok.small { padding: 1px 7px; font-size: 13px; background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.blk { border-radius: 9px; border: 2px solid var(--accent); background: var(--surface); font-weight: 600; font-size: 15px; display: flex; flex-direction: column; }
+.blk.mv { flex-direction: row; align-items: center; gap: 8px; padding: 7px 10px; }
+.blk.mv .arr { font-family: var(--font-mono); font-size: 18px; width: 20px; text-align: center; color: var(--accent); }
+.blk .x { margin-left: auto; width: 24px; height: 24px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); line-height: 1; font-size: 15px; padding: 0; }
+.blk.rep { border-color: var(--sun); }
+.rep-head { display: flex; align-items: center; gap: 8px; padding: 7px 10px; }
+.rep-head .x { margin-left: auto; }
+.step { width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface2); padding: 0; font-weight: 700; }
+.blk.rep > .zone { margin: 0 8px 8px 20px; min-height: 40px; }
+.blk.running { outline: 3px solid var(--sun); outline-offset: 1px; }
+.zone { display: flex; flex-direction: column; gap: 6px; padding: 8px; border: 2px dashed var(--line); border-radius: 9px; min-height: 64px; background: var(--bg); }
+.zone:empty::before { content: attr(data-hint); color: var(--muted); font-size: 14px; margin: auto; padding: 8px; text-align: center; }
+.prog { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.prog .zone { min-height: 110px; }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.count.full { color: var(--bad); font-weight: 600; }
+
+/* grid board */
+.board { position: relative; width: 100%; max-width: 520px; border-radius: 12px; overflow: hidden; border: 2px solid var(--line); background: var(--surface2); }
+.cells { position: absolute; inset: 0; display: grid; }
+.cell { position: relative; border: 1px solid var(--line); background: transparent; padding: 0; margin: 0; display: grid; place-items: center; }
+.cell:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.cell > span { width: 100%; height: 100%; display: grid; place-items: center; }
+.cell svg, .sprite svg { width: 78%; height: 78%; }
+.sprite { position: absolute; left: 0; top: 0; display: grid; place-items: center; pointer-events: none; transition: transform .32s ease; }
+.sprite.pred { transition: none; }
+.qmark { width: 70%; height: 70%; border: 3px dashed var(--sun); border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: var(--sun); font-size: 18px; }
+
+/* code */
+.code { background: var(--code-bg); color: var(--code-ink); border-radius: 10px; padding: 14px 14px; font-family: var(--font-mono); font-size: 14px; line-height: 2.1; overflow-x: auto; margin: 0; }
+.code .line { white-space: pre; }
+.code .dim { color: var(--code-dim); }
+.slot { display: inline-flex; align-items: center; justify-content: center; min-width: 74px; min-height: 28px; vertical-align: middle; padding: 0 3px; border: 2px dashed var(--code-dim); border-radius: 7px; color: var(--code-dim); font-size: 12px; line-height: 1.2; }
+.slot.filled { border-style: solid; border-color: transparent; padding: 0; min-width: 0; }
+.pathzone { display: inline-flex; flex-wrap: wrap; gap: 4px; align-items: center; min-width: 120px; min-height: 30px; padding: 2px 4px; border: 2px dashed var(--code-dim); border-radius: 7px; vertical-align: middle; }
+.pathzone:empty::before { content: "drop keys and numbers"; color: var(--code-dim); font-size: 12px; padding: 0 4px; }
+.datapre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.55; overflow: auto; max-height: 260px; }
+
+/* controls, feedback */
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.btn { border-radius: 9px; border: 1px solid var(--line); background: var(--surface); padding: 9px 16px; font-weight: 600; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn:hover { filter: brightness(1.06); }
+.predict { background: var(--surface); border: 1px solid var(--line); padding: 10px 12px; display: grid; gap: 6px; }
+.predict textarea { font-family: var(--font-mono); font-size: 14px; width: 100%; resize: vertical; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 8px; }
+.outbox { background: var(--code-bg); color: var(--code-ink); padding: 10px 14px; font-family: var(--font-mono); font-size: 14px; white-space: pre-wrap; min-height: 44px; overflow-wrap: anywhere; }
+.outbox.err { color: #ffb4a4; }
+.fb { padding: 10px 14px; border: 1px solid var(--line); background: var(--surface); display: grid; gap: 10px; justify-items: start; }
+.fb:empty { display: none; }
+.fb.good { border-color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--surface)); }
+.fb.warn { border-color: var(--sun); }
+.fb.bad { border-color: var(--bad); }
+.lvlnav { display: flex; justify-content: space-between; gap: 8px; padding-top: 6px; }
+
+/* row builder */
+.rowzone { border: 2px dashed var(--line); background: var(--bg); padding: 8px; display: flex; flex-direction: column; gap: 6px; min-height: 90px; }
+.rowzone:empty::before { content: "Drag fields here, or tap a field above"; color: var(--muted); font-size: 14px; margin: auto; padding: 10px; text-align: center; }
+.field { display: grid; grid-template-columns: minmax(80px, 130px) 1fr auto; gap: 8px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+.field code { font-family: var(--font-mono); font-size: 13px; overflow-wrap: anywhere; }
+.field input, .addfield input { font: inherit; font-size: 14px; min-width: 0; border-radius: 7px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 5px 8px; width: 100%; }
+.field .x { width: 26px; height: 26px; border-radius: 50%; border: 0; background: var(--surface2); color: var(--muted); padding: 0; }
+.addfield { display: flex; gap: 8px; }
+footer { color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { .sprite { transition: none; } }
+.code.tight { line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.code, .tok, .datapre, .outbox, .field code { font-variant-ligatures: none; }
+.choice { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 4px 12px; font-weight: 600; font-size: 13px; }
+.pill.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.givens { background: var(--surface2); border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+.tcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.tcard.right { border-color: var(--good); }
+.tcard.wrong { border-color: var(--bad); }
+.tcard .src { font-size: 16px; font-weight: 600; }
+.tcard .why { font-size: 13px; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { font-family: var(--font-mono); font-size: 13px; background: var(--surface2); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+.ncount { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.togs { display: grid; gap: 8px; }
+.tog { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.tog input { width: 18px; height: 18px; accent-color: var(--accent); }
+.tog small { color: var(--muted); display: block; font-size: 12px; }
+table.top { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.top td, table.top th { border-bottom: 1px solid var(--line); padding: 4px 8px; text-align: left; }
+table.top td.n { font-family: var(--font-mono); text-align: right; width: 60px; }
+table.top tr.hit td { color: var(--good); font-weight: 700; }
+table.top tr.fn td:first-child { color: var(--muted); }
+ul.heads { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+.sc { display: grid; grid-template-columns: minmax(120px, 1fr) auto; gap: 4px 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.sc.right { border-color: var(--good); }
+.sc.wrong { border-color: var(--bad); }
+.sc .t { font-size: 14px; }
+.sc .r { font-family: var(--font-mono); font-size: 12px; color: var(--muted); text-align: right; }
+.sc .s { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+.clu { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.clu.right { border-color: var(--good); }
+.clu.wrong { border-color: var(--bad); }
+.clu .words { font-family: var(--font-mono); font-size: 13px; font-weight: 700; }
+.clu .why { font-size: 13px; color: var(--muted); }
+.lab { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 6px; }
+.lab.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.lab h4 { margin: 0; font-size: 15px; }
+table.mx { border-collapse: collapse; font-size: 13px; }
+table.mx td, table.mx th { border: 1px solid var(--line); padding: 3px 8px; text-align: center; }
+table.mx th { background: var(--surface2); font-weight: 600; }
+.mets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 13px; }
+.mets b { display: block; font-family: var(--font-mono); font-size: 16px; }
+.mets small { color: var(--muted); text-transform: uppercase; letter-spacing: .04em; font-weight: 700; font-size: 11px; }
+.ctrl { display: grid; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.ctrl .row2 { display: flex; justify-content: space-between; font-size: 14px; }
+.ctrl .row2 b { font-family: var(--font-mono); }
+.ctrl input[type=range] { width: 100%; accent-color: var(--accent); }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+.stat small { display: block; color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; }
+.stat b { font-family: var(--font-mono); font-size: 20px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; }
+.case { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; }
+.case.right { border-color: var(--good); }
+.case.wrong { border-color: var(--bad); }
+.case blockquote { margin: 0; font-weight: 500; }
+.case .why { font-size: 13px; color: var(--muted); }
+.case .lbl { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+</style>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="kicker">CACTUS Fall 2026 · Week 6</p>
+      <h1>Can You Trust the Labeler?</h1>
+      <p class="sub">An AI labels texts, and you measure it against people. See why accuracy can fool you, what agreement beyond chance means, why labelers and people disagree, and which claims a result really supports. Then take the same measures into Colab.</p>
+    </div>
+    <div class="meta"><span><b id="count">0</b> of <span id="total">4</span> solved</span><button class="linkbtn" id="resetProg" type="button">Reset progress</button></div>
+  </header>
+  <nav id="map" aria-label="Levels"></nav>
+  <main id="stage"></main>
+  <footer>All messages and numbers on this page are invented. Nothing on this page is sent anywhere.</footer>
+</div>
+<script>
+"use strict";
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let _id = 0; const uid = () => "b" + (++_id);
+function h(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (v === true) e.setAttribute(k, "");
+    else if (v !== false && v != null) e.setAttribute(k, v);
+  }
+  for (const kid of kids.flat()) { if (kid == null || kid === false) continue; e.append(kid.nodeType ? kid : document.createTextNode(kid)); }
+  return e;
+}
+const svgEl = (cls, html) => { const s = h("span", { class: cls }); s.innerHTML = html; return s; };
+/* ---------- drag engine (pointer events: mouse, touch and pen) ---------- */
+const dragReg = new WeakMap(), dropReg = new WeakMap();
+let drag = null;
+function makeDraggable(el, info) {
+  el.setAttribute("data-dragitem", ""); el.setAttribute("role", "button"); el.tabIndex = 0;
+  dragReg.set(el, info);
+  el.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && !e.target.closest("[data-nodrag]")) { e.preventDefault(); info.tap && info.tap(); } });
+  return el;
+}
+const makeDrop = (el, drop) => { dropReg.set(el, { drop }); return el; };
+const dropTargetAt = (x, y) => { let el = document.elementFromPoint(x, y); while (el) { if (dropReg.has(el)) return el; el = el.parentElement; } return null; };
+let lastOver = null;
+function setOver(t) { if (lastOver === t) return; if (lastOver) lastOver.classList.remove("over"); lastOver = t; if (t) t.classList.add("over"); }
+document.addEventListener("pointerdown", e => {
+  if (e.button > 0 || e.target.closest("[data-nodrag]")) return;
+  const el = e.target.closest("[data-dragitem]"); if (!el) return;
+  const info = dragReg.get(el); if (!info) return;
+  drag = { el, info, x0: e.clientX, y0: e.clientY, active: false, ghost: null };
+});
+window.addEventListener("pointermove", e => {
+  if (!drag) return;
+  if (!drag.active) {
+    if (Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) < 6) return;
+    drag.active = true;
+    const r = drag.el.getBoundingClientRect();
+    drag.ox = drag.x0 - r.left; drag.oy = drag.y0 - r.top;
+    const g = drag.el.cloneNode(true); g.removeAttribute("data-dragitem"); g.classList.add("ghost"); g.style.width = r.width + "px";
+    document.body.append(g); drag.ghost = g; document.body.classList.add("dragging");
+    if (drag.info.pickup) drag.info.pickup();
+  }
+  drag.ghost.style.transform = `translate(${e.clientX - drag.ox}px, ${e.clientY - drag.oy}px)`;
+  setOver(dropTargetAt(e.clientX, e.clientY));
+  e.preventDefault();
+}, { passive: false });
+function endDrag(e, cancelled) {
+  if (!drag) return;
+  const d = drag; drag = null; setOver(null); document.body.classList.remove("dragging");
+  if (d.ghost) d.ghost.remove();
+  if (!d.active) { if (!cancelled && d.info.tap) d.info.tap(); return; }
+  const t = cancelled ? null : dropTargetAt(e.clientX, e.clientY);
+  if (t) dropReg.get(t).drop(d.info.payload, { x: e.clientX, y: e.clientY });
+  else if (d.info.discard) d.info.discard();
+}
+window.addEventListener("pointerup", e => endDrag(e, false));
+window.addEventListener("pointercancel", e => endDrag(e, true));
+
+
+/* ---------- level framework (pages define WORLDS, LEVELS, BUILDERS, then call boot) ---------- */
+const S = { i: 0, done: new Set(), rowCode: null };
+let L = null;
+const BUILDERS = {};
+let STORE_KEY = "cactus-practice";
+const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify([...S.done])); } catch (e) {} };
+const puzzleCount = () => LEVELS.filter(l => !l.bridge).length;
+
+function renderMap() {
+  const m = $("#map"); m.replaceChildren();
+  WORLDS.forEach((w, wi) => {
+    const ol = h("ol");
+    LEVELS.forEach((lv, i) => { if (lv.w === wi) ol.append(h("li", {}, h("button", { class: "dot", "data-i": i, "aria-label": `Level ${i + 1}: ${lv.title}`, title: lv.title, onclick: () => go(i) }, String(i + 1)))); });
+    m.append(h("div", { class: "world" }, h("h3", {}, w.name), h("small", {}, w.blurb), ol));
+  });
+  updateMap();
+}
+function updateMap() {
+  $$(".dot").forEach(b => { const i = +b.dataset.i; b.classList.toggle("done", S.done.has(i)); b.classList.toggle("cur", i === S.i); });
+  $("#count").textContent = String([...S.done].filter(i => LEVELS[i] && !LEVELS[i].bridge).length);
+  $("#total").textContent = String(puzzleCount());
+}
+function go(i) {
+  if (L) L.token = (L.token || 0) + 1;
+  S.i = Math.max(0, Math.min(LEVELS.length - 1, i));
+  try { history.replaceState(null, "", "#l-" + (S.i + 1)); } catch (e) {}
+  renderLevel(); updateMap();
+}
+function setFb(type, msg, next) {
+  const box = $("#fb"); if (!box) return;
+  box.className = "fb " + type; box.replaceChildren(h("p", {}, msg));
+  if (next && S.i < LEVELS.length - 1) box.append(h("button", { class: "btn primary", type: "button", onclick: () => go(S.i + 1) }, "Next level"));
+}
+function solved() { S.done.add(S.i); save(); updateMap(); }
+function renderLevel() {
+  const def = LEVELS[S.i], wd = WORLDS[def.w];
+  const { left, right } = BUILDERS[def.kind](def);
+  const nav = h("div", { class: "lvlnav" },
+    h("button", { class: "btn", type: "button", disabled: S.i === 0, onclick: () => go(S.i - 1) }, "Previous"),
+    h("button", { class: "btn", type: "button", disabled: S.i === LEVELS.length - 1, onclick: () => go(S.i + 1) }, "Next"));
+  $("#stage").replaceChildren(h("section", { class: "lvl" },
+    h("p", { class: "eyebrow" }, `World ${def.w + 1} · ${wd.name} · Level ${S.i + 1}`),
+    h("h2", {}, def.title),
+    h("div", { class: "idea" }, h("p", {}, h("b", {}, "The idea. "), wd.idea), h("p", { class: "where" }, wd.where)),
+    h("p", { class: "task" }, def.task),
+    h("div", { class: "play" }, h("div", { class: "col" }, left), h("div", { class: "col" }, right)),
+    nav));
+}
+const hintBtn = def => h("button", { class: "btn", type: "button", onclick: () => setFb("info", "Hint: " + def.hint) }, "Hint");
+
+/* A block of code with a Copy button. Used by the Colab bridge screens. */
+function codeCard(title, text, note) {
+  const msg = h("span", { class: "tipline", "aria-live": "polite" });
+  const pre = h("pre", { class: "code tight" }, text);
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(text); msg.textContent = "Copied."; }
+    catch (e) { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent = "Selected. Press Ctrl+C or Cmd+C to copy."; }
+  };
+  return h("div", { class: "col" }, h("p", { class: "label" }, title), note ? h("p", {}, note) : null, pre,
+    h("div", { class: "row" }, h("button", { class: "btn", type: "button", onclick: copy }, "Copy code"), msg));
+}
+
+function boot(storeKey) {
+  STORE_KEY = storeKey;
+  try { JSON.parse(localStorage.getItem(STORE_KEY) || "[]").forEach(n => S.done.add(n)); } catch (e) {}
+  $("#resetProg").addEventListener("click", () => { S.done.clear(); save(); updateMap(); });
+  renderMap();
+  const m = /^#l-(\d+)$/.exec(location.hash || "");
+  go(m ? +m[1] - 1 : 0);
+  window.addEventListener("hashchange", () => { const m2 = /^#l-(\d+)$/.exec(location.hash || ""); if (m2 && +m2[1] - 1 !== S.i) go(+m2[1] - 1); });
+}
+/* Week 6: Can You Trust the Labeler? Uses the shared engine (practice/shared/engine.js). All messages and numbers are invented. */
+
+const WORLDS = [
+  { name: "Accuracy", blurb: "Counts of hits and misses",
+    idea: "When the thing you look for is rare, a labeler that says \"no\" every time has high accuracy and finds nothing. Accuracy alone cannot tell a useful labeler from a useless one.",
+    where: "In the notebook: Exercise 1 compares accuracy with the \"always no\" baseline, then adds precision and recall." },
+  { name: "Beyond chance", blurb: "Kappa",
+    idea: "Two labelers who each say \"no\" most of the time will agree often by luck. Cohen's kappa asks how much they agree beyond what chance alone gives.",
+    where: "In the notebook: Exercise 1 computes kappa for two labels." },
+  { name: "Why they disagree", blurb: "Error analysis",
+    idea: "A disagreement can mean the labeler is wrong, the codebook did not say, or the human label is questionable. You only learn which by reading the cases.",
+    where: "In the notebook: Exercise 2 asks you to read disagreements and sort them." },
+  { name: "Say what you found", blurb: "Claims",
+    idea: "A result supports some claims and not others. Say what the numbers show, with the sample size and what you compared against.",
+    where: "In the notebook: Exercise 4 is a bug hunt on an evaluation that looks fine." },
+  { name: "Take it to Colab", blurb: "Real code",
+    idea: "You have judged a result by eye. Now compute the measures on 20 labels.",
+    where: "The Week 6 notebook warm-up uses the same kind of lists." }
+];
+
+const choose = (opts, onpick) => {
+  const wrap = h("div", { class: "choice", role: "group" }); let cur = null; const btns = [];
+  opts.forEach(o => {
+    const b = h("button", { class: "pill", type: "button", onclick: () => { cur = o.v; btns.forEach(x => x.classList.toggle("on", x === b)); onpick && onpick(cur); } }, o.t);
+    btns.push(b); wrap.append(b);
+  });
+  wrap.get = () => cur; return wrap;
+};
+const pct = x => (isFinite(x) ? Math.round(x * 100) + "%" : "n/a");
+function metrics(tp, fn, fp, tn) {
+  const n = tp + fn + fp + tn, po = (tp + tn) / n, ph = (tp + fn) / n, pl = (tp + fp) / n, pe = ph * pl + (1 - ph) * (1 - pl);
+  return { n, acc: po, base: Math.max(ph, 1 - ph), prec: tp + fp ? tp / (tp + fp) : NaN, rec: tp + fn ? tp / (tp + fn) : NaN, kappa: pe === 1 ? 0 : (po - pe) / (1 - pe) };
+}
+const f2 = x => (isFinite(x) ? x.toFixed(2) : "n/a");
+const matrix = (tp, fn, fp, tn) => h("table", { class: "mx" },
+  h("tr", {}, h("th", {}), h("th", {}, "Labeler: yes"), h("th", {}, "Labeler: no")),
+  h("tr", {}, h("th", {}, "Truly abusive"), h("td", {}, String(tp)), h("td", {}, String(fn))),
+  h("tr", {}, h("th", {}, "Not abusive"), h("td", {}, String(fp)), h("td", {}, String(tn))));
+const mets = m => h("div", { class: "mets" },
+  h("div", {}, h("small", {}, "Accuracy"), h("b", {}, pct(m.acc))), h("div", {}, h("small", {}, "Finds"), h("b", {}, pct(m.rec))),
+  h("div", {}, h("small", {}, "Flags right"), h("b", {}, pct(m.prec))), h("div", {}, h("small", {}, "Kappa"), h("b", {}, f2(m.kappa))));
+
+/* ---------- level 1: accuracy ---------- */
+const LABELERS = [
+  { k: "A", name: "Labeler A", tp: 0, fn: 6, fp: 0, tn: 94, note: "Says \"not abusive\" every time." },
+  { k: "B", name: "Labeler B", tp: 5, fn: 1, fp: 24, tn: 70, note: "Flags a lot." },
+  { k: "C", name: "Labeler C", tp: 4, fn: 2, fp: 4, tn: 90, note: "Flags fewer, and mostly right." }
+];
+function buildAcc(def) {
+  L = { def, token: 0 };
+  let pick = null; const cards = {};
+  const render = () => LABELERS.forEach(l => cards[l.k].classList.toggle("on", pick === l.k));
+  const left = LABELERS.map(l => {
+    const m = metrics(l.tp, l.fn, l.fp, l.tn);
+    cards[l.k] = h("div", { class: "lab" }, h("h4", {}, l.name + ": " + l.note), matrix(l.tp, l.fn, l.fp, l.tn), mets(m),
+      h("button", { class: "btn", type: "button", onclick: () => { pick = l.k; render(); } }, "Use " + l.name));
+    return cards[l.k];
+  });
+  const check = () => {
+    if (!pick) { setFb("warn", "Pick a labeler first."); return; }
+    if (pick === "C") { solved(); setFb("good", def.win, true); }
+    else if (pick === "A") setFb("bad", "A has the highest accuracy (tied with C) but finds none of the 6 abusive messages: its \"Finds\" is 0%. Accuracy hides that.");
+    else setFb("bad", "B finds 5 of 6, but 24 of the 29 messages it flags are not abusive. A reviewer would drown. Compare \"Flags right\" across the three.");
+  };
+  const right = [h("div", { class: "givens" }, "Three labelers each read the same 100 invented messages. 6 of them are truly abusive. A person will review every message the labeler flags. Which labeler would you use to find the abusive ones?"),
+    h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my pick"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+/* ---------- level 2: kappa ---------- */
+function buildKappa(def) {
+  L = { def, token: 0 };
+  const P = { p: 6, s: 80, t: 80 };
+  const stats = h("div", { class: "stats" }), note = h("p", { class: "tipline" });
+  const slider = (id, label, min, max, key, fmt) => {
+    const v = h("b", {}, fmt(P[key]));
+    return h("div", { class: "ctrl" }, h("div", { class: "row2" }, h("label", { for: id }, label), v),
+      h("input", { id, type: "range", min, max, step: 1, value: P[key], "aria-label": label, oninput: e => { P[key] = +e.target.value; v.textContent = fmt(P[key]); render(); } }));
+  };
+  const calc = () => {
+    const p = P.p / 100, s = P.s / 100, t = P.t / 100, tp = p * s, fn = p * (1 - s), fp = (1 - p) * (1 - t), tn = (1 - p) * t;
+    return metrics(tp, fn, fp, tn);
+  };
+  const render = () => {
+    const m = calc();
+    stats.replaceChildren(h("div", { class: "stat" }, h("small", {}, "Accuracy"), h("b", {}, pct(m.acc))),
+      h("div", { class: "stat" }, h("small", {}, "Always-no baseline"), h("b", {}, pct(m.base))),
+      h("div", { class: "stat" }, h("small", {}, "Kappa"), h("b", {}, f2(m.kappa))));
+    note.textContent = m.acc >= .9 && m.kappa < .2 ? "High accuracy, and kappa shows almost no agreement beyond chance." : "";
+  };
+  const check = () => {
+    const m = calc();
+    if (m.acc >= .9 && m.kappa < .2) { solved(); setFb("good", def.win, true); }
+    else if (m.acc < .9) setFb("bad", `Accuracy is ${pct(m.acc)}. Get it to 90% or more first.`);
+    else setFb("bad", `Kappa is ${f2(m.kappa)}. You need it under 0.20 while accuracy stays at 90% or more. Try a labeler that misses most of the abusive messages.`);
+  };
+  const left = [h("div", { class: "givens" }, "Set how rare abuse is, and how good the labeler is at finding it (sensitivity) and at leaving alone what is fine (specificity). Make a labeler that looks great on accuracy but is no better than chance."),
+    slider("pp", "Share of messages that are abusive", 1, 50, "p", v => v + "%"),
+    slider("ps", "Finds abusive ones (sensitivity)", 0, 100, "s", v => v + "%"),
+    slider("pt", "Leaves the rest alone (specificity)", 0, 100, "t", v => v + "%")];
+  const right = [stats, note, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my labeler"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  render();
+  return { left, right };
+}
+
+/* ---------- level 3: why they disagree ---------- */
+const CODEBOOK = "Codebook line: \"Abusive = insults or attacks a person. Criticizing an idea or a policy, even harshly, is not abusive.\"";
+const CASES = [
+  { q: "Your plan is idiotic.", h: 0, m: 1, a: "labeler", why: "The insult is aimed at a plan, not at a person, so the codebook says no. The labeler was wrong." },
+  { q: "Typical politician. Lies every time he opens his mouth.", h: 0, m: 1, a: "codebook", why: "An attack on a person, or a general claim about a group? The codebook does not say. That is a codebook gap." },
+  { q: "You are a clown.", h: 0, m: 1, a: "human", why: "A plain insult to a person. The human label of 0 looks like a mistake or a different rule." },
+  { q: "People who think like you are why this country is broken.", h: 1, m: 0, a: "codebook", why: "An attack on a group of people, or on a view? The codebook does not say." },
+  { q: "Thanks, that is a helpful point.", h: 1, m: 0, a: "human", why: "Nothing abusive here. The human label of 1 looks like a slip." },
+  { q: "This policy is a disaster, and the minister who wrote it is a fool.", h: 1, m: 0, a: "labeler", why: "Calls a person a fool. The codebook says yes, and the labeler missed it." }
+];
+const CASE_OPTS = [{ v: "labeler", t: "The labeler is wrong" }, { v: "codebook", t: "The codebook does not say" }, { v: "human", t: "The human label is questionable" }];
+function buildCases(def) {
+  L = { def, token: 0 };
+  const picks = CASES.map(() => choose(CASE_OPTS));
+  const cards = CASES.map((c, i) => h("div", { class: "case", id: "c" + i }, h("p", { class: "label" }, "Disagreement " + (i + 1)), h("blockquote", {}, c.q),
+    h("p", { class: "lbl" }, `Human: ${c.h ? "abusive" : "not abusive"} · Labeler: ${c.m ? "abusive" : "not abusive"}`), picks[i]));
+  const check = () => {
+    if (picks.some(p => !p.get())) { setFb("warn", "Decide on every disagreement."); return; }
+    let n = 0;
+    CASES.forEach((c, i) => {
+      const ok = picks[i].get() === c.a; if (ok) n++;
+      cards[i].className = "case " + (ok ? "right" : "wrong"); cards[i].querySelector(".why")?.remove();
+      cards[i].append(h("p", { class: "why" }, (ok ? "Right. " : "Not quite. ") + c.why));
+    });
+    if (n >= 5) { solved(); setFb("good", def.win + ` You matched ${n} of 6.`, true); } else setFb("bad", `${n} of 6. Read the notes under each case: the codebook line is the test.`);
+  };
+  const left = [h("div", { class: "givens" }, CODEBOOK), ...cards];
+  const right = [h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my answers"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+/* ---------- level 4: claims ---------- */
+const CLAIMS = [
+  { q: "The labeler is 80% accurate, so we can trust its abuse labels.", a: "no", why: "Always saying \"no\" gets 90% here. Accuracy below the baseline is not evidence of a good labeler." },
+  { q: "On abuse, the labeler's accuracy is below the accuracy of always saying \"no\".", a: "yes", why: "80% is less than 90%. That is just reading the table." },
+  { q: "Most messages the labeler flags as abusive really are abusive.", a: "no", why: "\"Flags right\" is 30%. Seven in ten flags are false alarms." },
+  { q: "The labeler finds most of the truly abusive messages.", a: "yes", why: "\"Finds\" is 75%. It catches three in four, at the cost of many false alarms." },
+  { q: "The labeler agrees with people far beyond chance.", a: "no", why: "Kappa is 0.33, which is modest. \"Far beyond chance\" is too strong." },
+  { q: "These 200 messages show the labeler works on every platform.", a: "no", why: "200 messages from one source cannot support a claim about every platform." }
+];
+const CLAIM_OPTS = [{ v: "yes", t: "Supported" }, { v: "no", t: "Not supported" }];
+function buildClaims(def) {
+  L = { def, token: 0 };
+  const picks = CLAIMS.map(() => choose(CLAIM_OPTS));
+  const cards = CLAIMS.map((c, i) => h("div", { class: "case", id: "k" + i }, h("blockquote", {}, c.q), picks[i]));
+  const check = () => {
+    if (picks.some(p => !p.get())) { setFb("warn", "Decide on every claim."); return; }
+    let all = true;
+    CLAIMS.forEach((c, i) => { const ok = picks[i].get() === c.a; all = all && ok; cards[i].className = "case " + (ok ? "right" : "wrong"); cards[i].querySelector(".why")?.remove(); cards[i].append(h("p", { class: "why" }, (ok ? "Right. " : "Not quite. ") + c.why)); });
+    if (all) { solved(); setFb("good", def.win, true); } else setFb("bad", "Check the numbers in the table against each claim. Which number would you point to?");
+  };
+  const m = metrics(15, 5, 35, 145);
+  const left = [h("div", { class: "givens" }, "Invented result: a labeler was run on 200 messages from one forum, and 20 of them (10%) were abusive by the people's labels. The table is below."),
+    h("div", { class: "lab" }, h("h4", {}, "Abuse: labeler versus people (200 messages)"), matrix(15, 5, 35, 145),
+      h("div", { class: "mets" }, h("div", {}, h("small", {}, "Accuracy"), h("b", {}, pct(m.acc))), h("div", {}, h("small", {}, "Always-no"), h("b", {}, pct(m.base))), h("div", {}, h("small", {}, "Finds"), h("b", {}, pct(m.rec))), h("div", {}, h("small", {}, "Flags right"), h("b", {}, pct(m.prec)))),
+      h("p", { class: "tipline" }, "Kappa: " + f2(m.kappa)))];
+  const right = [...cards, h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: check }, "Check my answers"), hintBtn(def)), h("div", { id: "fb", class: "fb", "aria-live": "polite" })];
+  return { left, right };
+}
+
+const LEVELS = [
+  { w: 0, kind: "acc", title: "Which labeler would you use?",
+    task: "Three labelers, one sample of 100 invented messages, 6 truly abusive. Compare their tables and pick the one you would use to find abuse.",
+    hint: "Look at \"Finds\" and \"Flags right\" as well as accuracy. What does each labeler miss, and what does it flag by mistake?",
+    win: "Labeler C. It has the same accuracy as A, but it actually finds abusive messages and most of what it flags is right. Accuracy alone could not tell A from C." },
+  { w: 1, kind: "kappa", title: "High accuracy, no agreement",
+    task: "Set the sliders so the labeler has at least 90% accuracy but a kappa under 0.20.",
+    hint: "When abuse is rare, a labeler that misses most of it still scores high on accuracy. Lower the sensitivity.",
+    win: "You made a labeler that looks great on accuracy and agrees with people no better than chance. That is why you report kappa (or precision and recall) as well." },
+  { w: 2, kind: "cases", title: "Why do they disagree?",
+    task: "Six invented disagreements between a person and a labeler. For each, decide: the labeler is wrong, the codebook does not say, or the human label is questionable.",
+    hint: "Apply the codebook line literally. If it does not settle the case, the codebook is the problem.",
+    win: "Disagreement has more than one cause. Only reading the cases tells you whether to change the prompt, the codebook, or the human labels." },
+  { w: 3, kind: "claims", title: "What does the result support?",
+    task: "Read the table and decide which claims it supports. Use the numbers, not the first impression.",
+    hint: "Compare accuracy with the always-no baseline, and use precision, recall, kappa, and the size and source of the sample.",
+    win: "You matched each claim to the evidence. A short, honest sentence beats a flattering number." },
+  { w: 4, kind: "bridge", bridge: true, title: "Compute the measures on 20 labels",
+    task: "Open the Week 6 notebook, find the warm-up cell, and run this there." }
+];
+
+/* ---------- bridge ---------- */
+const BRIDGE_CODE = [
+  "from sklearn.metrics import accuracy_score, cohen_kappa_score, confusion_matrix", "",
+  "human = [0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0]",
+  "llm   = [0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0]", "",
+  "# Predict first: will accuracy be above or below the always-no baseline?",
+  'print("accuracy:", accuracy_score(human, llm))',
+  'print("always-no baseline:", 1 - sum(human) / len(human))',
+  'print("kappa:", cohen_kappa_score(human, llm))',
+  "print(confusion_matrix(human, llm))"
+].join("\n");
+function buildBridge(def) {
+  const prompt = "I have two lists of 0/1 labels, one from people and one from an AI. Write Python that prints the confusion matrix, accuracy, precision, recall and Cohen's kappa, and the accuracy of always predicting 0. Then explain what kappa means in one sentence. Use scikit-learn. Do not include any real data or keys.";
+  const left = [codeCard("Task 1: the measures", BRIDGE_CODE, "Predict first. Paste it into the warm-up cell of the Week 6 notebook.")];
+  const right = [
+    codeCard("Task 2: ask an AI, then compare", prompt, "Paste this into your AI assistant. Does its code match what you ran? Did it include the always-0 baseline?"),
+    h("div", { class: "tray" }, h("p", { class: "label" }, "Task 3: check"), h("p", {}, "Was accuracy above the baseline? Which of the four counts (the confusion matrix) is largest, and which drives kappa down? Log one sentence on what you would say about this labeler.")),
+    h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: () => { solved(); setFb("good", "Done. In the notebook you will run these on 150 real messages, with labels from an AI and from people."); } }, "I ran all three")),
+    h("div", { id: "fb", class: "fb", "aria-live": "polite" })
+  ];
+  return { left, right };
+}
+
+BUILDERS.acc = buildAcc; BUILDERS.kappa = buildKappa; BUILDERS.cases = buildCases; BUILDERS.claims = buildClaims; BUILDERS.bridge = buildBridge;
+boot("cactus-trust-the-labeler-done");
+</script>

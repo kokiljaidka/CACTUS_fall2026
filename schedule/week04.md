@@ -156,7 +156,7 @@ Every route ends in the same tidy table, so Weeks 5 to 7 work on anyone's data. 
 - **Ex 1, raw data (30 min):** Route A: copy the export into `raw/` untouched and write the log. Route B: collect the 4 pages of the example. Raw data is saved untouched.
 - **Ex 2, parse (30 min):** parse the raw data into the standard table. **Check:** items collected = items saved = rows parsed, or explain each difference. `item_id` must be unique.
 - **Ex 3, anonymize (25 min):** replace usernames with `author_id`, remove handles and links from `text`, coarsen timestamps if the time of day is not needed. **Check:** an `assert` that no username column, `@`, or `http` remains.
-- **Ex 4, data card (15 min):** a short template: what, when, how, which terms, which ethics process, known gaps.
+- **Ex 4, data card (15 min):** a short template: what, when, how, how the posts were chosen, which terms, which ethics process, who holds the raw files, known gaps.
 - **Stretch:** explain the paging loop, or a second dataset.
 
 ### Practice page: Before you collect (`practice/week04_before_you_collect.html`)

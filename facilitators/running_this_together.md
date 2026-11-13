@@ -2,7 +2,7 @@
 
 A short guide for the facilitators (RAs and PhD students) who run the sessions. If you are nervous about this, that is normal. The course is designed so that **no one person has to be the expert**.
 
-> Items in [square brackets] are decisions Kokil still has to make. They are listed at the end so nothing is left vague.
+> Items in [square brackets] are decisions Kokil will confirm. For roles, the rota, and how to run a session, start with the [facilitator hub](README.md).
 
 ## What this is
 
@@ -31,13 +31,13 @@ For each week there is a ready-to-run kit, so you do not prepare from scratch:
 
 ## Roles in each session
 
-Each session has a team, not one presenter. Roles rotate so everyone does each one.
+Each session has a team, not one presenter. Roles rotate so everyone does each one (see the round-robin rota in the [facilitator hub](README.md)).
 
 | Role | What they do | Time |
 |---|---|---|
 | **Lead** | Runs the one-hour learning session using the slides and script. In coding sessions, opens and closes and posts time checks. | About 1 hour of session plus about 1 hour of prep |
-| **Host** | Zoom host: breakout rooms, chat, timekeeping, recordings, late joiners. | Session plus 15 minutes |
-| **Floaters (2 or more)** | Visit breakout rooms. Ask guiding questions before giving answers. Use the hint ladder in the answer key. | Session only |
+| **Desk** | Zoom host in the main room: breakout rooms, chat, "Ask for help", Colab and install problems, timekeeping, late joiners. | Session plus 15 minutes |
+| **Rooms (everyone else)** | Visit breakout rooms. Ask guiding questions before giving answers. Use the hint ladder in the hub and the answer key. | Session only |
 | **Data helper** (Weeks 1 to 4) | Helps students who do not have data yet get an export from Twitter/X, Instagram, Facebook, Reddit, or Bluesky (talk offline in Week 1), writes down what worked in that row of the access guide with the date, and helps at the optional access clinic. | About 1 to 2 hours in total |
 | **On call** | Kokil, reachable during every session for anything the team cannot resolve. | [Kokil to confirm availability] |
 
@@ -52,9 +52,8 @@ Suggested weekly rhythm for the team:
 | When | What happens | Your role |
 |---|---|---|
 | Rehearsal (before Week 1) | The team runs Session 1 and 2 of Week 1 on Zoom, with RAs playing students (`testing/ra_checklist.md`, section G). | Everyone plays every role once |
-| Week 1, Session 1 | Kokil leads. | Floater in breakout rooms |
-| Week 1, Session 2 | An RA leads, Kokil in the room. | Lead or Host, with Kokil watching |
-| Week 2 onward | Rotating lead. Kokil on call. | Rotate each week |
+| Week 1 | Facilitator A leads, with Kokil in the room [Kokil to confirm]. | Rooms or Desk |
+| Week 2 onward | Rotating lead (see the rota). Kokil on call. | Rotate each week |
 
 You are never asked to lead something you have not rehearsed.
 
@@ -110,6 +109,7 @@ Then it is a quiet session and you have time to improve the materials. Tell the 
 **What if I get a question about the research itself?**
 You are not expected to advise on their research. Say: "That is a great question for your supervisor or for the next session. Let us note it." Keep to the course content.
 
+<!-- facilitator:start -->
 ## For Kokil: decisions needed before the kickoff
 
 1. **Recognition and pay.** What the facilitators get, stated in writing.
@@ -119,3 +119,4 @@ You are not expected to advise on their research. Say: "That is a great question
 5. **A shared chat** for the team and a place for participants to ask.
 6. **A kickoff meeting** with the facilitators: walk through this page, share the materials, schedule the rehearsal.
 7. **Whether participation is optional or expected** for the PhD students, and what happens if someone drops out.
+<!-- facilitator:end -->

@@ -136,6 +136,8 @@ md("""
 
 If you do not have data yet, use Route B today and talk to the facilitators about getting some. Plan to have your own data before Week 6.
 
+**Big files.** If your export is large (hundreds of MB), do not load it all at once. Read it in pieces and keep only the columns you need: `for chunk in pd.read_csv(path, chunksize=100_000): ...` (for JSON lines, `pd.read_json(path, lines=True, chunksize=100_000)`). Colab has limited memory and its files disappear when the session ends, so for a large file work on your own computer or keep it on Google Drive, and write in your log which file and which date. **Restricted data** (data from another researcher, a platform export with terms, or anything your ethics approval limits) goes only where those rules allow. If you are unsure, ask before uploading it anywhere.
+
 **How you check it:** count the files in `raw/`, add up the items on each page, and compare with what your log says.
 """)
 
@@ -310,12 +312,14 @@ Project:                      Date:
 
 What it is (one row =):
 Where it came from (platform, query, tool):
+How the posts were chosen (all, random, ranked by the platform, keyword search):
 When collected, and over what period:
 How much (items, pages), and what was left out:
 Which terms of use apply (and where I read them):
 Which ethics process applies, and what I did about it:
 What I removed to protect people:
 What I saved, and where (raw, parsed, anonymized):
+Who holds the raw files, and who may see them:
 Known gaps and biases (who is missing? what did the query miss?):
 What I would do differently next time:
 ```

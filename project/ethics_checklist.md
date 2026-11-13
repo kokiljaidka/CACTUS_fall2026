@@ -34,9 +34,12 @@ This is a list of questions, not a set of rules. It does not tell you what is al
 ## 5. What do I keep, and what do I protect?
 
 - Which fields does my question need? Which can I drop?
+- How were the posts chosen: all of them, a random sample, the platform's top-ranked ones, or a keyword search? That decides who and what is missing.
 - What identifies a person (names, handles, links, exact times, small places, distinctive text)? How will I remove or change it?
+- Am I guessing anything about individual people (gender, religion, caste, nationality) from their names, handles, or pictures? If so, why, and should I?
 - Even after that, could someone be found? What could they search?
-- Where will I store the raw data, and who can see it?
+- Where will I store the raw data, who holds the original files, and who can see them?
+- Am I allowed to send these texts to an AI service (a chat tool or an API)? De-identify them first (names, handles, links, anything that points to a person), send only what I need, and check the platform's terms, the data owner's terms, and my ethics process.
 - Where is my API key, and is it out of every file I share?
 
 ## 6. What will I share, and how?

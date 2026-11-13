@@ -3,7 +3,8 @@
 Each page is one self-contained HTML file (theme, engine, and page code inlined).
 Re-run after editing anything under practice/shared or practice/src.
 Week 2 also needs scripts/week02_toy_data.py (the toy table the page and the
-notebook both use).
+notebook both use). Week 5 needs practice/src/week05/tokens.json (made by
+scripts/make_week05_practice_data.py).
 """
 import json
 import os
@@ -18,6 +19,8 @@ PAGES = {
     "week02": "week02_silent_changes.html",
     "week03": "week03_planted_effect_lab.html",
     "week04": "week04_before_you_collect.html",
+    "week05": "week05_what_counts_as_a_word.html",
+    "week06": "week06_trust_the_labeler.html",
 }
 
 
@@ -36,6 +39,9 @@ def build(name, out_name):
     if "/*__TOY_JSON__*/" in page_js:
         import week02_toy_data
         page_js = page_js.replace("/*__TOY_JSON__*/", json.dumps(week02_toy_data.as_records(), ensure_ascii=False))
+    if "/*__TOKENS_JSON__*/" in page_js:
+        tokens = read("src", name, "tokens.json") or "[]"
+        page_js = page_js.replace("/*__TOKENS_JSON__*/[]", tokens)
     css = read("shared", "theme.css") + "\n" + read("src", name, "page.css")
     html = (
         read("src", name, "head.html") + "\n<style>\n" + css + "\n</style>\n"

@@ -98,3 +98,32 @@ Students do this between the learning session and the coding session. It is most
 - Facilitators giving legal or ethical rulings. Say you do not know and ask Kokil or the ethics office.
 - Students quoting real people from their own data in the breakout room. Ask them to describe it without names.
 - The limits on the page are invented. If a student collects through an API, they need that platform's real limits from its own documentation.
+## Week 5: What Counts as a Word?
+
+Page: `practice/week05_what_counts_as_a_word.html` (about 20 minutes). All texts on the page are invented, and the tokens were computed ahead of time, so nothing runs in the browser.
+
+| Level | What students do | What goes wrong | What to say |
+|---|---|---|---|
+| 1 Pick a tokenizer | Match a tokenizer to five texts | They choose splitting on spaces or characters for Chinese | "Count the tokens for the Chinese sentence. Do they look like words?" |
+| 2 Same headlines, different counts | Switch cleaning steps until AI is in the top 5 and the little words are out | They drop short words and lose AI; or remove stopwords without lowercasing | "Which setting deleted AI? Read the note under the table." |
+| 3 Fix the dictionary | Edit a toy dictionary on eight texts | They keep trying to get all eight right | "Two texts pull in opposite directions. That is the finding." |
+| 4 Read before you name | Decide on three clusters | They name a cluster from its top words | "Read the five examples. Do they fit one label?" |
+| 5 Colab bridge | Tokenize five texts two ways | Prediction skipped | "Predict the Chinese counts first." |
+
+- The page's answers are in `instructor/week05_answer_key.md`.
+- Do not say what an English dictionary does to Chinese text. Students find that in notebook Exercise 2d.
+
+## Week 6: Can You Trust the Labeler?
+
+Page: `practice/week06_trust_the_labeler.html` (about 20 minutes). All messages and numbers on the page are invented.
+
+| Level | What students do | What goes wrong | What to say |
+|---|---|---|---|
+| 1 Which labeler would you use? | Compare three labelers on 100 invented messages | They pick the one with the highest accuracy, or the one that finds the most | "Look at Finds and Flags right as well. What does each one miss, and what does it flag by mistake?" |
+| 2 High accuracy, no agreement | Set sliders for a labeler with 90% accuracy and low kappa | They raise sensitivity | "When abuse is rare, a labeler that misses most of it still scores high on accuracy." |
+| 3 Why do they disagree? | Sort six invented disagreements | They treat every disagreement as the labeler's fault | "Apply the codebook line literally. If it does not settle the case, the codebook is the problem." |
+| 4 What does the result support? | Judge six claims against a table | They trust the accuracy figure | "Compare it with the always-no baseline." |
+| 5 Colab bridge | Compute the measures on 20 labels | Prediction skipped | "Predict first: above or below the baseline?" |
+
+- The page's answers are in `instructor/week06_answer_key.md`.
+- Do not say what happens with the real messages in the notebook. Students find the surprises themselves.
