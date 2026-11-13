@@ -8,12 +8,35 @@ Starts Tuesday, Nov 17, 2026
 
 ## What this is
 
-A workshop where you learn to use AI to write code for your own research, and to check that the code does what you meant. No prior coding experience is needed. All sessions run on Zoom. Each week has two parts:
+A workshop where you learn to use AI to write code for your own research, and to check that the code does what you meant. **No prior coding experience is needed.** You bring a rough topic and, ideally, some data. Over 8 weeks it becomes working code on your own project, and you present it in Week 8.
 
-- **Learning session (about 1 hour from Week 2; 2 hours in Week 1):** a lecture with live demos on the week's concepts. You can follow along on your laptop, and facilitators help anyone who gets stuck.
-- **Coding session (about 2 hours every week):** no lecture. You join a breakout room and work through the exercises, in pairs early on and on your own data later. Facilitators visit the rooms to troubleshoot.
+**Who it is for:** graduate students in communication and related fields, working on AI, culture, social media, or similar topics. It is not for credit and there are no grades, but each week builds on the last, so keeping up matters.
 
-You bring a dataset (or a plan to get one) and a rough research question. Over 8 weeks it becomes working code.
+**What you leave with**
+- A project card: a case study, a main question, and sub-questions you can actually answer.
+- Your own dataset, collected, logged, anonymized, and described in a data card.
+- A notebook that cleans, analyzes, and charts your data, with a record of how you checked each AI-written step.
+- A habit: predict, read, test, record.
+
+## How each week runs
+
+All sessions run on Zoom, and you follow along on your own laptop. Facilitators are there to help anyone who gets stuck.
+
+| Part | Time | What happens |
+|---|---|---|
+| **Reading** | About 1 hour, before the session | Required sections from the course book (listed in the table below). Not graded |
+| **Learning session** | About 1 hour (2 hours in Week 1) | A lecture with live demos on the week's ideas |
+| **Practice page** | About 20 minutes | A short interactive page in your browser. It recaps the ideas and ends with a small coding task |
+| **Coding session** | About 2 hours | No lecture. You join a breakout room and work through the exercises in a Colab notebook, in pairs early on and on your own data later |
+| **Homework** | 45 minutes or less | A small step on your own project |
+
+So plan for about 3 hours live each week, plus the reading and the homework. Week 1 has two 2-hour sessions, and Week 7 has two sessions (a shared one and a track one).
+
+## Before Week 1: three things
+
+1. **A Google account**, for Colab. Nothing to install.
+2. **A chat AI assistant** (ChatGPT, Claude, Gemini, or Colab's built-in help). Use whichever you have.
+3. **A rough topic**, and a thought about where your data will come from. In Week 1 you turn the topic into a project card with [Designing your project](project/designing_your_project.md). **If you do not have data yet, talk to the facilitators in Week 1.** You should have your data (or a plan agreed with us) by Week 3.
 
 ## Approach
 
@@ -36,25 +59,30 @@ Every notebook cell the AI wrote needs a note on how you verified it. You will k
 
 - **Google Colab:** nothing to install. You need a Google account.
 - **A chat AI assistant** (ChatGPT, Claude, Gemini, or Colab's built-in help). Use whichever you have.
-- **SerpAPI:** a free account. Optional in week 1 (saved searches work for everyone), used for new searches from week 2.
-- **GitHub account:** set up in week 3.
+- **SerpAPI:** a free account. Optional in Week 1 (saved searches work for everyone), used for new searches from Week 2.
+- **GitHub account:** set up in Week 3.
 
 **API keys are secrets.** Store them in Colab Secrets. Never paste a key into an AI chat, a notebook you share, or a GitHub repository.
 
-## Schedule
+## Schedule: what to read and have ready, week by week
 
-Topics may shift slightly after the planning survey.
+Everything you need for a week is in its row: the date, what you will do, the required reading, and what to have ready. Click the week's name for the full plan. Topics may shift slightly after the planning survey.
 
-| Week | Focus | You will be able to… | Data |
-|---|---|---|---|
-| 1 | **Define your problem, and how code thinks** | Write a project card: case study, main question, sub-questions. Explain variables, lists, dictionaries, functions, and loops. Run a notebook, read a search response, and ask an AI to explain code. | Google search, news, and trends results for AI topics across Singapore, Hong Kong, and Taiwan (saved searches) |
-| 2 | **Clean it, chart it** | Load and clean a table, chart it, and catch silent errors with checks. Read an error message and make a first attempt at a fix. | Starbucks comments from seven Southeast and East Asian places (Oct 2024) |
-| 3 | **Verify and analyze** | Run descriptive stats and a simple regression in code. Test AI-written stats code against a known answer. Use basic GitHub. | Simulated experiment or survey data with known effects |
-| 4 | **Collect your own data** | Start from your own export, save raw data untouched, and log it. Explain platform terms, consent, and anonymization. | Your own export (Twitter/X, Instagram, Facebook, Reddit, or Bluesky), or a saved example |
-| 5 | **Analyze text** | Count, tokenize (including Chinese), run sentiment, and find topics or clusters. Interpret results critically. | Shared corpus on AI in Singapore, Hong Kong, and Taiwan |
-| 6 | **AI as annotator** | Write a codebook, have an LLM label texts, and compare to human labels (accuracy, agreement). Report where it fails. | Shared corpus subset with hand-coded labels |
-| 7 | **Choose a track** | Networks, images and memes, or a mock feed or experiment. | Track-specific data, or your own |
-| 8 | **Reproduce and present** | Rerun your whole pipeline from scratch, document it, and present results with limitations. | Your own data |
+The course text is *Computational Analysis of Communication* by van Atteveldt, Trilling & Arcila (2022), free and open access at [cssbook.net](https://cssbook.net). The book shows code in Python and R: **follow the Python.** You will not type this code from memory (an AI assistant writes it with you). The book is where you learn what the code means, so you can check it. Reading is required but not graded.
+
+| Week | Date | You will be able to… | Read first (required) | Have ready | Data |
+|---|---|---|---|---|---|
+| [1: Define your problem, and how code thinks](schedule/week01.md) | Tue Nov 17 (two sessions) | Write a project card: case study, main question, sub-questions. Explain variables, lists, dictionaries, functions, and loops. Run a notebook, read a search response, and ask an AI to explain code | [Ch 1](https://cssbook.net/content/chapter01.html) §1.1; [Ch 3](https://cssbook.net/content/chapter03.html) §3.1 to 3.3 (objects and data types, loops and conditions, functions) | A Google account, a chat AI, a rough topic. Tell us whether you already have data for your project. SerpAPI is optional | Google search, news, and trends results for AI topics across Singapore, Hong Kong, and Taiwan (saved searches) |
+| [2: Clean it, chart it](schedule/week02.md) | Tue Nov 24 | Load and clean a table, chart it, and catch silent errors with checks. Read an error message and make a first attempt at a fix | [Ch 5](https://cssbook.net/content/chapter05.html) §5.1 to 5.2 (data frames; reading and saving), then [Ch 6](https://cssbook.net/content/chapter06.html) §6.1 to 6.4 (filtering, calculating, grouping, merging) and [Ch 4](https://cssbook.net/content/chapter04.html) §4.2 (understanding errors and getting help) | Your project card from Week 1. A plan for your data (talk to us if you have none) | Starbucks comments from seven Southeast and East Asian places (Oct 2024) |
+| [3: Verify and analyze](schedule/week03.md) | Tue Dec 1 | Run descriptive stats and a simple regression in code. Test AI-written stats code against a known answer. Use basic GitHub | [Ch 7](https://cssbook.net/content/chapter07.html) §7.1 (exploratory analysis), then [Ch 8](https://cssbook.net/content/chapter08.html) §8.1 to 8.2 (statistical modeling, concepts and principles) and [Ch 4](https://cssbook.net/content/chapter04.html) §4.3 (GitHub and notebooks) | **A free GitHub account, made before the coding session.** Your data, or a plan agreed with the facilitators | Simulated experiment or survey data with known effects |
+| [4: Collect your own data](schedule/week04.md) | Tue Dec 8 | Start from your own export, save raw data untouched, and log it. Explain platform terms, consent, and anonymization | [Ch 12](https://cssbook.net/content/chapter12.html) §12.4 (ethical, legal, and practical considerations), then Ch 12 §12.1 (web APIs) and [Ch 5](https://cssbook.net/content/chapter05.html) §5.3 (data from online sources) | **Your own export** (Twitter/X, Instagram, Facebook, Reddit, or Bluesky), or use the saved example. Read the [Ethics checklist](project/ethics_checklist.md) | Your own export, or a saved example |
+| [5: Analyze text](schedule/week05.md) | Tue Dec 15 | Count, tokenize (including Chinese), run sentiment, and find topics or clusters. Interpret results critically | [Ch 9](https://cssbook.net/content/chapter09.html) §9.1 (text as a string of characters), then [Ch 10](https://cssbook.net/content/chapter10.html) §10.1 and §10.4 (bag of words; which preprocessing to use) and [Ch 11](https://cssbook.net/content/chapter11.html) §11.3 (dictionary approaches) | **Download the class corpus (a zip) from the class drive**; your facilitators share the link. It is for this course only | Shared corpus of Reddit posts and news texts (class drive) |
+| | *Dec 22 and 29: break* | | | | |
+| [6: AI as annotator](schedule/week06.md) | Tue Jan 5 | Write a codebook, have an LLM label texts, and compare to human labels (accuracy, agreement). Report where it fails | [Ch 11](https://cssbook.net/content/chapter11.html) §11.1 and §11.4 (choosing a method; supervised classification), then [Ch 8](https://cssbook.net/content/chapter08.html) §8.5 (validation and best practices) | **Download the class messages zip from the class drive.** A chat AI. The messages include abusive language, and you may step away at any time | Shared set of messages with human labels (class drive) |
+| [7: Applying statistics to social media data](schedule/week07.md) | Tue Jan 12, and a second session on Thu Jan 14 (to be confirmed) | Session 1, everyone: plant an answer, handle rows that come in groups, and check results by permutation. Session 2, your track: networks, images and memes, or a mock feed or experiment | Before Session 1: [Ch 8](https://cssbook.net/content/chapter08.html) §8.1, 8.2 and 8.5. Between sessions, your track: networks, [Ch 13](https://cssbook.net/content/chapter13.html) §13.1 to 13.2; images, [Ch 14](https://cssbook.net/content/chapter14.html) §14.1 to 14.2; mock feed or experiment, [Ch 16](https://cssbook.net/content/chapter16.html) §16.3 | A small de-identified sample of your own data, for Session 2. Decide your track at the end of Session 1 | Simulated data with known answers, then your own |
+| [8: Reproduce and present](schedule/week08.md) | Tue Jan 19 | Rerun your whole pipeline from scratch, document it, and present results with limitations | [Ch 15](https://cssbook.net/content/chapter15.html) §15.3 (publishing your source), then [Ch 16](https://cssbook.net/content/chapter16.html) §16.3 (open, transparent, and ethical computational science) | A notebook that runs from the top, your data card, and your verification log | Your own data |
+
+Other sections of these chapters are good for going further. The Week 7 and Week 8 pages are still being written.
 
 ## Week 1 in brief
 
@@ -62,34 +90,15 @@ Week 1 has no debugging. **Session 1** (learning) is about your project: you lea
 
 ## Practice pages
 
-Each week has a short interactive page that recaps the basics, followed by a small coding task in Colab with a built-in check. The pages run in the browser, need no installation, and send nothing anywhere. Source is in `practice/`; the plan for all weeks is in [practice/page_specs.md](practice/page_specs.md). Built so far: Week 1 (Cactus Code Garden) and Week 2 (Silent Changes).
-
-## Required reading
-
-The course text is *Computational Analysis of Communication* by van Atteveldt, Trilling & Arcila (2022). It is free and open access at [cssbook.net](https://cssbook.net). Each week has required sections, listed below and on the week's page. Reading is required but not graded. Plan to read before the session it is listed under.
-
-The book shows code in Python and R. **Follow the Python.** You will not type this code from memory: an AI assistant writes it with you, and the book is where you learn what the code means so you can check it. The book predates AI coding assistants.
-
-| Week | Required sections |
-|---|---|
-| 1 | [Ch 1](https://cssbook.net/content/chapter01.html) §1.1; [Ch 3](https://cssbook.net/content/chapter03.html) §3.1 to 3.3 (objects and data types, loops and conditions, functions) |
-| 2 | [Ch 5](https://cssbook.net/content/chapter05.html) §5.1 to 5.2 (data frames; reading and saving); [Ch 6](https://cssbook.net/content/chapter06.html) §6.1 to 6.4 (filtering, calculating, grouping, merging); [Ch 4](https://cssbook.net/content/chapter04.html) §4.2 (understanding errors and getting help) |
-| 3 | [Ch 7](https://cssbook.net/content/chapter07.html) §7.1 (exploratory analysis); [Ch 8](https://cssbook.net/content/chapter08.html) §8.1 to 8.2 (statistical modeling, concepts and principles); [Ch 4](https://cssbook.net/content/chapter04.html) §4.3 (GitHub and notebooks) |
-| 4 | [Ch 12](https://cssbook.net/content/chapter12.html) §12.1 (web APIs) and §12.4 (ethical, legal, and practical considerations); [Ch 5](https://cssbook.net/content/chapter05.html) §5.3 (data from online sources) |
-| 5 | [Ch 9](https://cssbook.net/content/chapter09.html) §9.1 (text as a string of characters); [Ch 10](https://cssbook.net/content/chapter10.html) §10.1 and §10.4 (bag of words; which preprocessing to use); [Ch 11](https://cssbook.net/content/chapter11.html) §11.3 (dictionary approaches) |
-| 6 | [Ch 11](https://cssbook.net/content/chapter11.html) §11.1 and §11.4 (choosing a method; supervised classification); [Ch 8](https://cssbook.net/content/chapter08.html) §8.5 (validation and best practices) |
-| 7 | Your track: networks, [Ch 13](https://cssbook.net/content/chapter13.html) §13.1 to 13.2; images, [Ch 14](https://cssbook.net/content/chapter14.html) §14.1 to 14.2; mock feed or experiment, [Ch 8](https://cssbook.net/content/chapter08.html) §8.1 and [Ch 16](https://cssbook.net/content/chapter16.html) §16.3 |
-| 8 | [Ch 15](https://cssbook.net/content/chapter15.html) §15.3 (publishing your source); [Ch 16](https://cssbook.net/content/chapter16.html) §16.3 (open, transparent, and ethical computational science) |
-
-Other sections of these chapters are good for going further. Weeks 3 to 8 may shift slightly after the planning survey, and the list will be updated.
+Each week has a short interactive page that recaps the basics, followed by a small coding task in Colab with a built-in check. The pages run in the browser, need no installation, and send nothing anywhere. Source is in `practice/`; the plan for all weeks is in [practice/page_specs.md](practice/page_specs.md). Built so far: Weeks 1 to 6.
 
 ## What we expect
 
-- Attend both sessions each week and bring a laptop.
+- Attend every session and bring a laptop.
 - Bring a rough topic. In Week 1 you turn it into a project card with [Designing your project](project/designing_your_project.md): a main question, sub-questions, and a plan for the data.
-- Do the required reading for the week.
-- Complete the short weekly notebook and keep your verification log.
-- In week 8, present a working pipeline on your own data.
+- Do the required reading in the table above.
+- Complete the weekly notebook and keep your verification log.
+- In Week 8, present a working pipeline on your own data.
 
 This workshop is not for credit. There are no grades, but the weekly work (and the required reading) builds on itself, so keeping up matters.
 

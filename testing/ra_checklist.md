@@ -25,18 +25,18 @@ A screenshot helps for anything visual. **Never paste an API key into an issue.*
 - [ ] Have one AI chat assistant ready (ChatGPT, Claude, or Gemini).
 - [ ] Pick a device: Windows laptop, Mac laptop, or phone/tablet. Each task below says which devices matter most. Please note which you used.
 - [ ] Course site: https://kokiljaidka.github.io/CACTUS_fall2026/ (all course links should work from here)
-- [ ] The four practice pages and four slide decks are published on the course site. If a link is missing, tell Kokil.
+- [ ] The six practice pages and six slide decks are published on the course site. If a link is missing, tell Kokil.
 
 ---
 
 ## A. Course website (1 hour, any device)
 
-- [ ] Every link on **Home**, **Weeks 1 to 4**, **Project guide**, **Getting data access**, **Ethics checklist**, and **Data** works. Note any broken link or any link that goes to the wrong place.
+- [ ] Every link on **Home**, **Weeks 1 to 6**, **Project guide**, **Getting data access**, **Ethics checklist**, and **Data** works. Note any broken link or any link that goes to the wrong place.
 - [ ] The "Open the notebook in Colab" buttons open the right notebook.
 - [ ] The practice page buttons open the page in a new tab.
 - [ ] The textbook links open the right chapter at https://cssbook.net, and the section numbers named in the reading list (for example "§3.1 to 3.3") actually exist in that chapter.
 - [ ] Download links work (Starbucks CSV, toy café CSV, saved searches zip). Check the CSV opens and the zip unpacks.
-- [ ] Read the Week 1 to 4 pages as a student. Is anything written for facilitators ("send with email", "before assigning", prep notes)? Report it.
+- [ ] Read the Week 1 to 6 pages as a student. Is anything written for facilitators ("send with email", "before assigning", prep notes)? Report it.
 - [ ] Search box: try three searches ("API", "prediction", "reading"). Do sensible results appear?
 - [ ] Phone: does the site read well at phone width? Does any table run off the screen?
 - [ ] Dark mode (if you use it): is text readable everywhere?
@@ -59,7 +59,7 @@ Work through **all 17 levels**.
 - [ ] Levels 1, 2, 9 and 10 (the cactus): tap a square to predict where the cactus stops. Does the marker appear? Does the page say whether your prediction matched?
 - [ ] Levels 9 and 10 have a block limit. Does the limit message appear when you exceed it?
 - [ ] **Level 16**: add a custom field, change an example value, remove a field. Does the Python code on the right update as you type? Does "Copy code" work?
-- [ ] **Level 17 (Colab bridge)**: do the three tasks in the Week 1 notebook (see section D). Does the page's code match what the notebook expects?
+- [ ] **Level 17 (Colab bridge)**: do the three tasks in the Week 1 notebook (see section C). Does the page's code match what the notebook expects?
 - [ ] Refresh the page: does your progress remain? Does **Reset progress** clear it?
 - [ ] Open the page on a phone in portrait: does anything overflow, overlap, or become impossible to reach?
 - [ ] Try dark mode if you use it.
@@ -68,26 +68,7 @@ Work through **all 17 levels**.
 
 ---
 
-## C. Week 2 practice page: Silent Changes (1 hour; at least one RA tests on a phone)
-
-- [ ] **Level 1:** build the pipeline by dragging cards. Try these on purpose and note what the page says each time:
-  - [ ] Only the good cards, in a sensible order
-  - [ ] Add each "tempting" card (the ones that look helpful) one at a time
-  - [ ] Run with an empty pipeline (should ask you to add a card)
-  - [ ] Leave the prediction box empty (should ask for a prediction)
-  - [ ] Put the same card in twice (should not duplicate)
-- [ ] After a run, do the **row-count table** and the summary make sense? Could a student state in one sentence what each step did?
-- [ ] **Levels 2 to 4:** find each bug **before** reading any hint. Time how long it takes. Write down how you found it.
-- [ ] For each bug level, pick a wrong line and a wrong check on purpose. Are the messages fair and helpful?
-- [ ] **Level 5 (Colab bridge):** copy the generated code and run it in the Week 2 notebook warm-up (see section E). Does it pass the check cell?
-- [ ] Rebuild your pipeline with a **different** card order (when you can). Does the generated code reflect your order?
-- [ ] Refresh, reset progress, phone portrait, dark mode: same as section B.
-
-**Done when:** you have solved every level on a computer, tried at least the wrong choices on each bug level, and run the bridge code.
-
----
-
-## D. Week 1 notebook in Colab (1.5 hours; **two** RAs, one with a SerpAPI key, one without)
+## C. Week 1 notebook in Colab (1.5 hours; **two** RAs, one with a SerpAPI key, one without)
 
 Use a fresh Colab notebook opened from the course site's button, not a copy someone has already run.
 
@@ -110,6 +91,25 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
+## D. Week 2 practice page: Silent Changes (1 hour; at least one RA tests on a phone)
+
+- [ ] **Level 1:** build the pipeline by dragging cards. Try these on purpose and note what the page says each time:
+  - [ ] Only the good cards, in a sensible order
+  - [ ] Add each "tempting" card (the ones that look helpful) one at a time
+  - [ ] Run with an empty pipeline (should ask you to add a card)
+  - [ ] Leave the prediction box empty (should ask for a prediction)
+  - [ ] Put the same card in twice (should not duplicate)
+- [ ] After a run, do the **row-count table** and the summary make sense? Could a student state in one sentence what each step did?
+- [ ] **Levels 2 to 4:** find each bug **before** reading any hint. Time how long it takes. Write down how you found it.
+- [ ] For each bug level, pick a wrong line and a wrong check on purpose. Are the messages fair and helpful?
+- [ ] **Level 5 (Colab bridge):** copy the generated code and run it in the Week 2 notebook warm-up (see section E). Does it pass the check cell?
+- [ ] Rebuild your pipeline with a **different** card order (when you can). Does the generated code reflect your order?
+- [ ] Refresh, reset progress, phone portrait, dark mode: same as section B.
+
+**Done when:** you have solved every level on a computer, tried at least the wrong choices on each bug level, and run the bridge code.
+
+---
+
 ## E. Week 2 notebook in Colab (2 hours; two RAs)
 
 - [ ] Open the notebook from the site. Upload `starbucks_sea_comments.csv` when asked. Does the upload step work smoothly?
@@ -126,22 +126,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## F. Slide decks (1.5 hours; Weeks 1 to 4)
-
-- [ ] Weeks 3 and 4 have 11 main slides each. Weeks 3 and 4 notes include TIME / SAY / DO / WATCH FOR lines. Are they usable by someone who did not write the slides?
-- [ ] Week 4 slide 4 needs one real raw API response from a facilitator. Is it clear what to prepare?
-- [ ] Open each deck from its Week page on the site, both the web version and the PDF. Do both match? Do arrow keys, the Previous/Next buttons, and swiping on a phone all work? Does the PDF have one slide per page, with fonts intact?
-
-- [ ] Present each deck aloud to a partner at normal speed. Time it. Does it fit the plan in the schedule (Week 1 session 1 is about 2 hours; the Week 2 learning session is 1 hour, with 11 slides presented and 3 appendix slides not presented)?
-- [ ] Read the **speaker notes** for every slide. Are they complete, accurate, and not contradictory?
-- [ ] Check every fact on the slides against the course site and schedule (times, chapter numbers, what to bring).
-- [ ] Any text too small to read when screen-shared on Zoom? Any slide that is too crowded?
-- [ ] Any typo or inconsistent term across slides?
-- [ ] Dark/light projector test: view at the lowest brightness and note unreadable slides.
-
----
-
-## I. Week 3: Planted-Effect Lab and notebook (3 hours; two RAs)
+## F. Week 3: Planted-Effect Lab and notebook (3 hours; two RAs)
 
 **Practice page** (`week03_planted_effect_lab.html`, 45 minutes; one RA on a phone):
 - [ ] Do all levels: one study, 100 studies, the confounder story, judging claims, the Colab bridge. Does each level's message make sense when you get it wrong on purpose?
@@ -160,7 +145,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## J. Week 4: Before You Collect and the collection notebook (3 hours; two RAs)
+## G. Week 4: Before You Collect and the collection notebook (3 hours; two RAs)
 
 **Practice page** (`week04_before_you_collect.html`, 30 minutes; one RA on a phone):
 - [ ] Do all levels: keep, change or drop each field; the re-identification meter; plan around a limit; four "should you collect it?" scenarios; the Colab bridge.
@@ -184,7 +169,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## K. Week 5: What Counts as a Word? and the text notebook (3 hours; two RAs)
+## H. Week 5: What Counts as a Word? and the text notebook (3 hours; two RAs)
 
 **Practice page** (`week05_what_counts_as_a_word.html`, 30 minutes; one RA on a phone):
 - [ ] Level 1: try splitting on spaces for the Chinese texts, then fix it. Are the notes under each text fair and clear?
@@ -208,7 +193,7 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## L. Week 6: Can You Trust the Labeler? and the AI-as-annotator notebook (3 hours; two RAs)
+## I. Week 6: Can You Trust the Labeler? and the AI-as-annotator notebook (3 hours; two RAs)
 
 **Practice page** (`week06_trust_the_labeler.html`, 30 minutes; one RA on a phone):
 - [ ] Level 1: try each labeler. Is each wrong pick explained clearly?
@@ -232,7 +217,22 @@ Use a fresh Colab notebook opened from the course site's button, not a copy some
 
 ---
 
-## G. Full dress rehearsal (2 sessions, as a group)
+## J. Slide decks (3 hours; Weeks 1 to 6)
+
+- [ ] Weeks 3 to 6 have 11 main slides each. Weeks 3 to 6 notes include TIME / SAY / DO / WATCH FOR lines. Are they usable by someone who did not write the slides?
+- [ ] Week 4 slide 4 needs one real raw API response from a facilitator. Is it clear what to prepare?
+- [ ] Open each deck from its Week page on the site, both the web version and the PDF. Do both match? Do arrow keys, the Previous/Next buttons, and swiping on a phone all work? Does the PDF have one slide per page, with fonts intact?
+
+- [ ] Present each deck aloud to a partner at normal speed. Time it. Does it fit the plan in the schedule (Week 1 session 1 is about 2 hours; the Week 2 learning session is 1 hour, with 11 slides presented and 3 appendix slides not presented)?
+- [ ] Read the **speaker notes** for every slide. Are they complete, accurate, and not contradictory?
+- [ ] Check every fact on the slides against the course site and schedule (times, chapter numbers, what to bring).
+- [ ] Any text too small to read when screen-shared on Zoom? Any slide that is too crowded?
+- [ ] Any typo or inconsistent term across slides?
+- [ ] Dark/light projector test: view at the lowest brightness and note unreadable slides.
+
+---
+
+## K. Full dress rehearsal (2 sessions, as a group)
 
 Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 
@@ -240,13 +240,13 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 - [ ] **Week 1, Session 2 (about 2 hours):** puzzle page, then the notebook. Does the time allocation hold? Where do students stall?
 - [ ] **Week 2 learning session (about 1 hour):** present the 11 main slides with the live demos. Does it fit in 60 minutes? Which slide runs long?
 - [ ] **Week 2, learning session and coding session:** same approach.
-- [ ] **Weeks 3 and 4:** the same, if there is time. Week 4 needs a facilitator's access for the live request.
+- [ ] **Weeks 3 to 6:** the same, if there is time. Week 4 needs a facilitator's access for the live request.
 - [ ] Note exactly which minutes ran over and what you would cut.
 - [ ] Test the **stuck protocol**: can an RA in the main room see "Ask for help" and respond fast enough?
 
 ---
 
-## H. Data checks (30 minutes, one RA)
+## L. Data checks (30 minutes, one RA)
 
 - [ ] `starbucks_sea_comments.csv`: opens without error, Chinese, Thai and other scripts display correctly, and no usernames or links remain in any column.
 - [ ] `lululemon_instagram.csv`, `week02_toy_cafe.csv`, and the Week 3 CSVs: same checks. Confirm the Week 4 sample JSON in `data/week04/sample/` has only invented names.
@@ -261,15 +261,15 @@ Run one RA as "Kokil" and the rest as students, on Zoom, with breakout rooms.
 |---|---|---|---|---|---|---|
 | A. Course website | | | | | | |
 | B. Week 1 puzzle page | | | | | | |
-| C. Week 2 practice page | | | | | | |
-| D. Week 1 notebook | | | | | | |
+| C. Week 1 notebook | | | | | | |
+| D. Week 2 practice page | | | | | | |
 | E. Week 2 notebook | | | | | | |
-| I. Week 3 page and notebook | | | | | | |
-| J. Week 4 page and notebook | | | | | | |
-| K. Week 5 page and notebook | | | | | | |
-| L. Week 6 page and notebook | | | | | | |
-| F. Slide decks | | | | | | |
-| G. Rehearsal | | | | | | |
-| H. Data | | | | | | |
+| F. Week 3 page and notebook | | | | | | |
+| G. Week 4 page and notebook | | | | | | |
+| H. Week 5 page and notebook | | | | | | |
+| I. Week 6 page and notebook | | | | | | |
+| J. Slide decks | | | | | | |
+| K. Rehearsal | | | | | | |
+| L. Data | | | | | | |
 
-**Suggested order:** A and H first (quick), then B and C in parallel, then D and E, then I, J, K and L, then F, then G.
+**Suggested order:** A and L first (quick), then B and D in parallel, then C and E, then F, G, H and I, then J, then K.
