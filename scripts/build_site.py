@@ -32,6 +32,8 @@ PAGES = {
     "schedule/week02.md": "weeks/week02.md",
     "schedule/week03.md": "weeks/week03.md",
     "schedule/week04.md": "weeks/week04.md",
+    "schedule/week05.md": "weeks/week05.md",
+    "schedule/week06.md": "weeks/week06.md",
     "project/ethics_checklist.md": "ethics.md",
     "facilitators/README.md": "facilitators/index.md",
     "facilitators/week_by_week.md": "facilitators/weeks.md",
@@ -61,6 +63,18 @@ WEEKS = {
         "notebook": "week04_collect_your_own_data.ipynb",
         "slides": ("Lecture slides (learning session)", "week04_collect_your_own_data"),
         "practice": ("Before You Collect (practice page)", "week04_before_you_collect.html"),
+        "downloads": [],
+    },
+    "weeks/week05.md": {
+        "notebook": "week05_analyze_text.ipynb",
+        "slides": ("Lecture slides (learning session)", "week05_analyze_text"),
+        "practice": ("What Counts as a Word? (practice page)", "week05_what_counts_as_a_word.html"),
+        "downloads": [],
+    },
+    "weeks/week06.md": {
+        "notebook": "week06_ai_as_annotator.ipynb",
+        "slides": ("Lecture slides (learning session)", "week06_ai_as_annotator"),
+        "practice": ("Can You Trust the Labeler? (practice page)", "week06_trust_the_labeler.html"),
         "downloads": [],
     },
     "weeks/week02.md": {

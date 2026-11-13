@@ -29,6 +29,8 @@ nav:
       - "Week 2: Clean it, chart it": weeks/week02.md
       - "Week 3: Verify and analyze": weeks/week03.md
       - "Week 4: Collect your own data": weeks/week04.md
+      - "Week 5: Analyze text": weeks/week05.md
+      - "Week 6: AI as annotator": weeks/week06.md
   - Project guide: project.md
   - Getting data access: access.md
   - Ethics checklist: ethics.md
