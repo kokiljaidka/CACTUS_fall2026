@@ -42,11 +42,11 @@ Each person leads twice. The Lead rotates, the Desk rotates, and everyone else v
 | 3 | Dec 1 | Verify and analyze | C | A | B |
 | 4 | Dec 8 | Collect your own data | A | B | C |
 | 5 | Dec 15 | Analyze text | D (C backs up) | A | B, C |
-| 6 | Dec 22 | AI as annotator | C | B | A |
-| 7 | Dec 29 | Choose a track | B | A | C |
-| 8 | Jan 5 | Reproduce and present | D (A backs up) | C | A, B |
+| 6 | Jan 5 | AI as annotator | C | B | A |
+| 7 | Jan 12 | Choose a track | B | A | C |
+| 8 | Jan 19 | Reproduce and present | D (A backs up) | C | A, B |
 
-Weeks 6 and 7 fall in the year-end break: confirm the dates with the group.
+There is a two-week break after Week 5 (Dec 22 and 29). Weeks 6 to 8 are in January.
 
 **Rules of the rota**
 
