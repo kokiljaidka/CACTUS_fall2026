@@ -1,6 +1,6 @@
 # Week-by-week run sheets
 
-One sheet per week. Use it with the [facilitator hub](README.md) (roles, rota, stuck protocol, hint ladder) and the slide script (presenter view, press **N**).
+One sheet per week. Use it with the [facilitator hub](README.md) (roles, stuck protocol, hint ladder) and the slide script (presenter view, press **N**).
 
 **Every week:** learning session (1 hour) and the practice page (20 minutes), then the coding session (2 hours, no lecture). Week 1 is two 2-hour sessions. Post a time check in the main chat at each boundary. Never reveal what a notebook will find: students find the bugs and the surprises.
 

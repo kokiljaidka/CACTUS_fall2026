@@ -18,7 +18,7 @@ Everything the team needs to run CACTUS Fall 2026, in one place. If you are new 
 
 ## The team
 
-Four facilitators (called **A, B, C and D** on this page; the names are in the team's private rota). Facilitator D is also a participant (a student-facilitator): D learns alongside the group, and helps the people near them.
+Four facilitators (called **A, B, C and D** on this page; the names are in the team's private list). Facilitator D is also a participant (a student-facilitator): D learns alongside the group, and helps the people near them.
 
 Every session has these roles:
 
@@ -31,29 +31,9 @@ Every session has these roles:
 
 There is no lecture in the coding session, so the Lead is a Rooms person too.
 
-## Round-robin: who does what each week
+## Who does what each week
 
-Each person leads twice. The Lead rotates, the Desk rotates, and everyone else visits rooms. This is a suggestion: swap it if someone knows a week's content better, or if someone cannot make a date.
-
-| Week | Date (Tue) | Topic | Lead | Desk | Rooms |
-|---|---|---|---|---|---|
-| 1 | Nov 17 | Define your problem; how code thinks | A | B | C (D helps their pair) |
-| 2 | Nov 24 | Clean it, chart it | B | C | A |
-| 3 | Dec 1 | Verify and analyze | C | A | B |
-| 4 | Dec 8 | Collect your own data | A | B | C |
-| 5 | Dec 15 | Analyze text | D (C backs up) | A | B, C |
-| 6 | Jan 5 | AI as annotator | C | B | A |
-| 7 | Jan 12 | Choose a track | B | A | C |
-| 8 | Jan 19 | Reproduce and present | D (A backs up) | C | A, B |
-
-There is a two-week break after Week 5 (Dec 22 and 29). Weeks 6 to 8 are in January.
-
-**Rules of the rota**
-
-- **A person who leads for the first time has a backup** (shown in brackets) who has done the notebook and will take over the slide if needed.
-- **Facilitator D does not hold the Desk.** In coding sessions D works through the exercises with a partner and helps the people next to them, and leads only the learning session in Weeks 5 and 8.
-- **Swap freely**, but tell the team chat at least two days ahead.
-- Roughly: a Lead puts in about 3 hours of prep and 3 hours in session; the Desk and Rooms about 1 hour of prep and 3 hours in session. Week 1 is about 4 hours in session.
+Take turns. Each week one of you leads the learning session, one holds the Desk, and the rest visit rooms. Settle the order and the swaps among yourselves, and tell the team chat at least two days ahead if you change. Facilitator D is also a participant, so D does not hold the Desk and leads only if they want to. Anyone leading for the first time should ask another facilitator to back them up.
 
 ## A week at a glance
 

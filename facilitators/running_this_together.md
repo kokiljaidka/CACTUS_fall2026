@@ -2,7 +2,7 @@
 
 A short guide for the facilitators (RAs and PhD students) who run the sessions. If you are nervous about this, that is normal. The course is designed so that **no one person has to be the expert**.
 
-> Items in [square brackets] are decisions Kokil will confirm. For roles, the rota, and how to run a session, start with the [facilitator hub](README.md).
+> Items in [square brackets] are decisions Kokil will confirm. For roles and how to run a session, start with the [facilitator hub](README.md).
 
 ## What this is
 
@@ -31,7 +31,7 @@ For each week there is a ready-to-run kit, so you do not prepare from scratch:
 
 ## Roles in each session
 
-Each session has a team, not one presenter. Roles rotate so everyone does each one (see the round-robin rota in the [facilitator hub](README.md)).
+Each session has a team, not one presenter. Roles rotate so everyone does each one (see the [facilitator hub](README.md)).
 
 | Role | What they do | Time |
 |---|---|---|
@@ -53,7 +53,7 @@ Suggested weekly rhythm for the team:
 |---|---|---|
 | Rehearsal (before Week 1) | The team runs Session 1 and 2 of Week 1 on Zoom, with RAs playing students (`testing/ra_checklist.md`, section K). | Everyone plays every role once |
 | Week 1 | Facilitator A leads, with Kokil in the room [Kokil to confirm]. | Rooms or Desk |
-| Week 2 onward | Rotating lead (see the rota). Kokil on call. | Rotate each week |
+| Week 2 onward | Rotating lead (see the facilitator hub). Kokil on call. | Rotate each week |
 
 You are never asked to lead something you have not rehearsed.
 
