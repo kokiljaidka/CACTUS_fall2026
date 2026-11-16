@@ -13,7 +13,7 @@ Everything the team needs to run CACTUS Fall 2026, in one place. If you are new 
 | What each practice page teaches, where students stall, what to ask | [Practice page guide](practice_pages_guide.md) |
 | How to make this a community, and what to say when you do not know | [Running CACTUS together](running_this_together.md) |
 | Testing everything before students see it | [Testing checklist](../testing/ra_checklist.md) |
-| Slides with a script beside each one | Presenter links in the table at the bottom (press **N** for the notes) |
+| Slides with a script beside each one | Presenter links in the table at the bottom. To see the notes, use the link that ends in **`_presenter`** (see "How to see the speaker notes" below) |
 | Answer keys for the bug hunts | Private. Ask Kokil for the link. They are never posted here |
 
 ## The team
@@ -57,9 +57,28 @@ There is no lecture in the coding session, so the Lead is a Rooms person too.
 | The day | Learning session (1 hour), then the participants do the practice page (20 minutes), then the coding session (2 hours). | All |
 | Within a day after | **15-minute debrief** and three lines in the team chat: what worked, what stalled, what to fix. Anything confusing becomes a GitHub issue. The Desk updates the access table if anyone learned something. | All |
 
+## How to see the speaker notes
+
+Every deck has two web pages. **To see the notes, add `_presenter` to the end of the slide address** (before `.html`):
+
+| Page | Address ends in | Notes? |
+|---|---|---|
+| Student version | `.../slides/week01_define_your_problem.html` | No |
+| **Presenter version** | `.../slides/week01_define_your_problem_presenter.html` | **Yes, in a panel on the right** |
+
+- The presenter links in the table at the bottom of this page already end in `_presenter`.
+- Press **N** to hide or show the notes panel. Move through the slides with the arrow keys or the space bar.
+- Use a wide browser window. Below about 900 pixels wide the notes panel is hidden.
+- Each note has **TIME, SAY, DO and WATCH FOR**.
+- A printable version with the slide and its notes on each A4 page ends in `_handout.pdf` (for example `.../slides/week01_define_your_problem_handout.pdf`).
+
+**On Zoom, do not share the presenter window**: everyone would see your notes. Two ways to keep the notes private:
+1. **Two windows.** Share the **student** window, and keep the **presenter** window on your own screen (a second monitor, or a laptop or tablet beside you). The two windows do **not** move together: press the arrow key in each, and check that both show the same slide number.
+2. **The notes on paper or a second device.** Open the `_handout.pdf` on a tablet or print it, and share only the student window. Then you only have one window to move.
+
 ## Running the learning session (1 hour)
 
-1. Open the **presenter view** of the slides and press **N** to show the notes. Each note has: TIME, SAY, DO, and what to WATCH FOR.
+1. Open the **presenter view** of the slides (the link ending in `_presenter`; see "How to see the speaker notes" below). Each note has: TIME, SAY, DO, and what to WATCH FOR.
 2. Start on time. Post the course site link in the chat.
 3. Run the live demos as written. If a demo breaks, say so, and use the numbers on the slide. A broken demo you recover from is a lesson.
 4. Ask the room to **predict before you run**. Wait for two answers.
@@ -120,7 +139,7 @@ The private answer keys list the hints for each bug hunt in order. Ask Kokil for
 
 ## Where everything is, week by week
 
-Slides open in the **presenter view**: press **N** for the script. Notebooks open in Colab.
+Slides open in the **presenter view** (the link ends in `_presenter`): the script shows beside each slide. Notebooks open in Colab.
 
 | Week | Presenter slides | Practice page | Notebook | Answer key (private) |
 |---|---|---|---|---|
