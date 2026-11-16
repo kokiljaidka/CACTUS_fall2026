@@ -38,6 +38,7 @@ PAGES = {
     "schedule/week07.md": "weeks/week07.md",
     "schedule/week08.md": "weeks/week08.md",
     "project/rerun_report.md": "rerun-report.md",
+    "project/participants.md": "participants.md",
     "project/ethics_checklist.md": "ethics.md",
     "facilitators/README.md": "facilitators/index.md",
     "facilitators/week_by_week.md": "facilitators/weeks.md",
