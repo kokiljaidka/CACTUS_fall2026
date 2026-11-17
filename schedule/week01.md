@@ -98,9 +98,9 @@ Kokil leads. Facilitators watch the chat and, in the pair activity, visit rooms.
 | 5 | What is a case study? | "Social media" is too broad; "How Singapore, Hong Kong and Taiwan users talk about AI chatbots on Reddit" is a case study |
 | 6 | One main question, two or three sub-questions | The mental-health example from the guide |
 | 7 | Structures | The six templates (predictors, mechanism, comparative, debate, multi-level, problem-cause-intervention). Say they are starting points, not a checklist |
-| 8 | A worked example, steps 1 to 3 | The Starbucks comments: a case study (topic, place, period), a main question with three sub-questions, and a comparative structure. 4 minutes |
+| 8 | A worked example, steps 1 to 3 | The Starbucks comments: a case study (topic, place, period), a main question that goes beyond describing (is talking about the boycott linked to how people talk about Starbucks, and does that depend on country and kind of site?), three sub-questions that move from describe to link to context, and a predictors, consequences, moderators structure. 4 minutes |
 | 9 | The doable check | Data, size, measure, method, ethics, scope. Too big versus better. 8 minutes |
-| 10 | A worked example, step 4 | The same Starbucks project run through the checks: one row is one comment; a measure for each sub-question; uneven groups (Thailand 1,595 comments, Hong Kong 13) and machine-translated text are flagged. 6 minutes |
+| 10 | A worked example, step 4 | The same Starbucks project run through the checks: one row is one comment; a measure for each sub-question, with the keyword flag checked against 100 hand-labelled comments (Week 6); uneven groups (Thailand 1,595 comments, Hong Kong 13) and machine-translated text are flagged. 6 minutes |
 | 11 | Use AI to sharpen, not decide | The prompt from the guide. Log accepted and rejected suggestions |
 | 12 | Your task now | The card template; what "finalized" means; time (35 min) |
 | 13 | What is an API? | Restaurant analogy; parameters, response, JSON. One slide, no code |
